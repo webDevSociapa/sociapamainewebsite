@@ -1,0 +1,176 @@
+.emailmarketing-hero {
+  margin-top: 92px;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #1A0508 0%, #2d0a10 40%, #1a0508 70%, #0d0204 100%);
+  padding-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.emailmarketing-hero-tag {
+  background: rgba(255, 77, 77, 0.15) !important;
+  color: #ff4d4d !important;
+  border: 1px solid rgba(255, 77, 77, 0.3) !important;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.section-sub-center {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.emailmarketing-hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(200, 16, 46, .18) 0%, transparent 70%);
+  pointer-events: none;
+}
+.emailmarketing-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.emailmarketing-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+.emailmarketing-hero h1 span {
+  color: #ff4d4d;
+}
+.emailmarketing-hero-desc {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 auto 2rem;
+}
+
+.services-section {
+  padding: 5rem 5%;
+  background: #FDF7F8;
+}
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.section-tag {
+  display: inline-block;
+  background: #fff2f2;
+  color: #d20c0c;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: .3rem .85rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: #1A0508;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.section-sub {
+  color: #6B7280;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.svc-card {
+  background: #FFFFFF;
+  border: 1px solid #FADADD;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all .25s;
+}
+.svc-card:hover {
+  border-color: #d20c0c;
+  box-shadow: 0 8px 32px rgba(200, 16, 46, .12);
+  transform: translateY(-3px);
+}
+.svc-icon {
+  width: 52px;
+  height: 52px;
+  background: #fff2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.svc-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  color: #1A0508;
+}
+.svc-card p {
+  font-size: .875rem;
+  color: #6B7280;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #1A0508, #2d0a10);
+  padding: 5rem 5%;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  color: rgba(255, 255, 255, .7);
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 700px;
+  line-height: 1.7;
+}
+.btn-primary {
+  background: #d20c0c;
+  color: #FFFFFF;
+  padding: .9rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: .95rem;
+  display: inline-block;
+  transition: all .2s;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover {
+  background: #ff4d4d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 16, 46, .4);
+}

@@ -1,0 +1,503 @@
+<style>
+   .table-new-empp-size {
+    width:60%;
+     background: #e3e7f1;
+  }
+   
+  .table-new-empp-size  th , td {
+     color:#ab0012;
+    cursor: pointer;
+     padding: 19px 29px;
+   }
+   .table-new-empp-size td:hover{
+    font-weight: bold;
+   }
+  .new-empp-size-heading h3{
+         color: #ab0012;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+     }
+     .join-us-btn{
+         padding: 10px 30px;
+    border-radius: 8px;
+    background: #CF2D1F;
+    color: white;
+     }
+     .client-new{
+         color:black;
+     }
+       .client-new strong{
+            font-weight: 900;
+     }
+
+     .hero-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center; /* DEFAULT */
+    }
+
+    /* TEXT SECTION */
+.about-heading {
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.since-text {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #333;
+}
+
+/* STATS SECTION */
+.stats-section {
+  background: #CF2D1F;
+  color: #fff;
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+  rgba(0, 0, 0, 0.25) 0px -20px 40px -10px inset;
+}
+
+.stats-section .row {
+  margin-bottom: 0;
+}
+
+.stats-box {
+  text-align: center;
+  padding: 60px 40px !important;
+}
+
+.stats-box h2 {
+  font-family: 'Poppins-bold';
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.stats-box h2::after {
+  content: "+";
+}
+
+
+.stats-box span {
+  letter-spacing: 1px;
+}
+
+/* SECTION RESET */
+.no-margin {
+  margin: 0;
+}
+
+/* MISSION / VISION */
+.mission-vision-section .row {
+  position: relative;
+}
+
+.mission-vision-section {
+  position: relative;
+}
+
+.mission-vision-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0px 10px 10px inset,
+    rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset,
+    rgba(0, 0, 0, 0.95) 0px -20px 40px -10px inset;
+}
+
+
+.mission-box,
+.vision-box {
+  min-height: 590px !important;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px !important;
+  color: #fff;
+}
+
+/* Background images */
+.mission-box {
+  background-image: url('images/mission-1.jpg');
+  border-right: 4px solid #CF2D1F;
+}
+
+.vision-box {
+  background-image: url('images/vision-1.jpg');
+}
+
+.mv-content p {
+  font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Utility */
+.no-margin {
+  margin: 0;
+}
+
+/* value strip */
+.value-strip {
+  position: relative;
+  background: #CF2D1F;
+  padding: 45px 0;
+}
+
+/* Top & bottom inset shadow (premium) */
+.value-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+  rgba(0, 0, 0, 0.5) 0px 0px 10px 5px
+}
+
+/* Content above shadow */
+.value-strip .container {
+  position: relative;
+  z-index: 2;
+}
+
+.value-item img {
+  width: 50%;
+  margin-bottom: 12px;
+  /* filter: invert(1); makes icons white */
+}
+
+.value-item p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.ourTeam h2 {
+  margin-top: 5rem;
+  font-size: 4.5rem;
+}
+
+.ourTeam p {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+@media (max-width: 1600px) {
+
+    .mission-box,
+    .vision-box {
+        min-height: 460px !important;
+        padding: 2rem !important;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .hero-video video {
+        object-position: 45% center;
+    }
+
+    .mission-box,
+    .vision-box {
+        min-height: 450px !important;
+        padding: 0 .75rem !important;
+    }
+}
+
+@media (max-width: 1200px) {
+  .hero-video video {
+    object-position: 40% center;
+  }
+
+  .mission-box,
+  .vision-box {
+    min-height: 350px !important;
+    padding: 0 .75rem !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero-video video {
+    object-position: center center;
+  }
+
+  .mission-box,
+  .vision-box {
+    min-height: 240px !important;
+    padding: 0 .75rem !important;
+  }
+
+  .mv-content p {
+    font-size: 12px;
+  }
+
+  .mission-box {
+    border-right: 3px solid #CF2D1F;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about-text {
+    font-size: 12px;
+  }
+  .since-text {
+    font-size: 12px;
+  }
+  .stats-box{
+    padding: 30px 10px !important;
+    border-top: 2px solid white;
+  }
+  .mission-box,
+  .vision-box {
+    min-height: 245px !important;
+    padding: 25px;
+  }
+
+  .mv-content p {
+    font-size: 12px;
+  }
+
+  .mission-box {
+    border-right: none;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .stats-box {
+    padding: 30px 10px;
+  }
+
+  .stats-box h2 {
+    font-size: 2.5rem;
+  }
+}
+   
+</style>
+<section class="abtArSec">
+  <div class="row">
+    <div class="col s6">
+      <h1 class="text-red poppins-semibold hdngLg"><span class="aboutBlack">What Is</span> Sociapa</h1>
+    </div>
+    <div class="col s6 center">
+      <img src="images/targetCircle.png" alt="Target" class="responsive-img targetCircle">
+
+    </div>
+  </div>
+</section> -->
+<section class="abtArSec">
+  <div class="row">
+    <div class="col s12 center">
+      <h1 class="text-red poppins-bold hdngLg"><span class="aboutBlack">AT</span> SOCIAPA</h1>
+    </div>
+  </div>
+</section>
+
+<!-- video section -->
+<section class="hero-video">
+  <video autoplay muted loop playsinline>
+    <source src="video/hero-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<!-- ABOUT / CONTENT SECTION -->
+<section class="section white">
+  <div class="row center-align">
+
+    <!-- Main Heading -->
+    <h6 class="about-heading">
+      we help brands define who they are, how they are perceived,
+      and how they grow in the digital-first world.
+    </h6>
+
+    <!-- Description -->
+    <p class="about-text">
+      Our core strength lies in <b>brand positioning and creative strategy</b> shaping clear brand narratives, distinct identities, and communication frameworks that resonate with today’s consumers.
+      <br>
+      We begin by deeply analyzing the brand’s current position, category dynamics,
+      cultural context, and audience mindset to build a
+      <b>strong strategic foundation</b> before execution.
+      <br>
+      From there, we translate strategy into high-impact creative and digital execution.
+      Whether it’s content ecosystems, campaign concepts, performance-driven creatives,<br>
+      digital films, or always-on brand communication, our focus is on ensuring that
+      every touchpoint feels consistent, purposeful, and aligned with the brand’s<br>
+      long-term vision. We believe in building <b>sustainable brands, not just short-term campaigns</b>.
+      By combining brand thinking, creativity,<br> and data-led digital execution, we help
+      brands move forward with clarity, relevance, and momentum.
+    </p>
+
+    <!-- Since Line -->
+    <p class="since-text">
+      <b>Since 2019</b>, Sociapa has partnered with brands across categories,
+      offering end-to-end support<br> across branding, creative services, & digital growth
+      helping them connect<br> meaningfully with their target consumers and markets.
+    </p>
+
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-section">
+  <div class="row no-margin">
+
+    <div class="col s12 m4 stats-box center-align">
+      <h2 class="counter">100</h2>
+      <span>CLIENTS</span>
+    </div>
+
+    <div class="col s12 m4 stats-box divider-box center-align">
+      <h2 class="counter">8</h2>
+      <span>YEARS OF EXPERIENCE</span>
+    </div>
+
+    <div class="col s12 m4 stats-box center-align">
+      <h2 class="counter">500</h2>
+      <span>PROJECTS</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION & VISION SECTION -->
+<section class="mission-vision-section">
+    <div class="mv-shadow-wrap">
+        <div class="row no-margin">
+
+            <!-- MISSION -->
+            <div class="col s12 m6 mission-box">
+            <div class="mv-content">
+                <p>
+                Our mission is to provide outstanding design solutions for our clients.
+                We focused on 3 golden values i.e creativity, commitment and customer satisfaction.
+                </p>
+            </div>
+            </div>
+
+            <!-- VISION -->
+            <div class="col s12 m6 vision-box">
+            <div class="mv-content">
+                <p>
+                Our vision is to address the brands in the digital sphere with a smart and quirky approach
+                with the complete pack of creative services. We are passionate about what we do.
+                </p>
+            </div>
+            </div>
+
+        </div>
+    </div>  
+</section>
+
+<section class="value-strip">
+  <div class="container-fluid">
+    <div class="row center-align">
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/QUALITATIVE-SERVICES.png" alt="Qualitative Services">
+        <p>QUALITATIVE<br>SERVICES</p>
+      </div>
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/QUICK-TURN-AROUND-TIME.png" alt="Quick Turn Around">
+        <p>QUICK TURN<br>AROUND TIME</p>
+      </div>
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/DEDICATED-PROJECT-MANAGER.png" alt="Project Manager">
+        <p>DEDICATED PROJECT<br>MANAGER</p>
+      </div>
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/INDUSTRY-LED-PRACTICES.png" alt="Industry Led">
+        <p>INDUSTRY-LED<br>PRACTICES</p>
+      </div>
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/AGENCY-CENTRIC-PROCESSES.png" alt="Agency Centric">
+        <p>AGENCY-CENTRIC<br>PROCESSES</p>
+      </div>
+
+      <div class="col s6 m4 l2 value-item">
+        <img src="images/icons/SALABLE-OPERATIONS.png" alt="Scalable Operations">
+        <p>SCALABLE<br>OPERATIONS</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="aboutMainSEc">
+    <section class="ourTeam">
+      <h2 class="text-red mb-3 mt-5 center poppins-bold">OUR <span class="aboutBlack">TEAM</span></h2>
+      <p class="center mb-5 ps-5 pe-5 black-text poppins">We are a collective of 60+ in-house thinkers, strategists, analysts, and designers who come together to shape meaningful brand stories and bold ideas. Driven by curiosity and creativity, our team works across domains to help brands find their voice and make an impact. We’re always excited to collaborate with like-minded talent, if you think we’d vibe well, we’d love for you to join us.</p>
+      <img src="images/sociapa-team-new.jpg" class="responsive-img w-100 mb-5" alt="sociapa-team-new">
+      <div class="container">
+
+        <section class="dhirajPhoto">
+          <div class="row">
+            <div class="col s12 center">
+              <a href="press-release"><img src="images/Ceo.png" class="responsive-img w-100" alt="Dhiraj Raj"></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="dhirajPhoto">
+          <div class="row">
+            <div class="col s12 center">
+              <img src="images/A-D.png" class="responsive-img w-100" alt="sonakshi-main">
+            </div>
+          </div>
+        </section>
+        <!--<div class="row teamRow text-center ">
+          <div class="col s6 m4 l3">
+            <div class="card center" id="soakshiTeam">
+              <div class="card-image">
+                <img src="images/sonakshi.jpg" alt="sonakshi">
+              </div>
+              <div class="card-content">
+                <h1 class="fs-30 mb-0">Sonakshi</h1>
+                <p class="fs-20">Account Head</p>
+              </div>
+            </div>
+          </div>
+        </div>-->
+    </section>
+</section>
+<section>
+
+<div class="container center mb-5">
+        <p class="client-new">Our team consists of over <strong>40 skilled analysts</strong>, strategists and designers who come together to help brands navigate and shape their unique stories within their respective domains. We are constantly on the lookout for inspiring talents to join our team. 
+If you believe we could vibe well, why don’t you join us?</p>
+
+    <a href="career" class="join-us-btn"><i class="fa-solid fa-arrow-right p-2"></i>Join  Us</a>
+</div>
+
+</section>
+
+  

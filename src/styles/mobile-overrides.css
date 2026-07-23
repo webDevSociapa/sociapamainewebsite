@@ -1,0 +1,460 @@
+/* 
+  GLOBAL MOBILE RESPONSIVENESS OVERRIDES
+  Ensures pixel-perfect mobile rendering across all 250 URLs / pages
+  with ZERO cut-off, ZERO horizontal scrollbar, PERFECT breathing room under sticky navbar,
+  compact floating action buttons, and 100% touch-friendly responsive layouts.
+  STRICTLY SCOPED TO (max-width: 991px) TO KEEP DESKTOP MODE 100% UNTOUCHED.
+*/
+
+/* Tablet & Mobile Screens (Max 991px) */
+@media (max-width: 991px) {
+  /* Ensure no horizontal scrolling on mobile screens */
+  html, body, #root, main {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Base image & video safety for mobile */
+  img, video, iframe, picture {
+    max-width: 100% !important;
+  }
+
+  iframe {
+    width: 100% !important;
+  }
+
+  /* Fix Navbar Logo & Height for Mobile (56px) */
+  .navbar-logo {
+    width: auto !important;
+    height: 38px !important;
+    max-height: 38px !important;
+    object-fit: contain !important;
+  }
+  
+  .navbar {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06) !important;
+    height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  .navbar-inner {
+    margin-top: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  /* 1. Perfect Top Padding for Inner Page Hero Content under Fixed Navbar */
+  body section:first-of-type:not(.home-hero-section),
+  main section:first-of-type:not(.home-hero-section),
+  .page-hero-section,
+  .blog-hero-section,
+  .services-hero-section,
+  .about-intro-section,
+  .stories-hero,
+  .press-hero-section,
+  .awards-hero-section,
+  .contact-hero-section,
+  .career-hero-section,
+  .audit-hero-section,
+  section[class*="-hero"]:not(.home-hero-section),
+  div[class*="-hero-section"]:not(.home-hero-section),
+  .hero:not(.home-hero-section) {
+    padding-top: 90px !important;
+    margin-top: 0 !important;
+    padding-bottom: 28px !important;
+    min-height: auto !important;
+  }
+
+  /* Full-bleed Service & Video Banners starting right under Navbar */
+  .serInsideBnr,
+  .awards-banner-section,
+  .hero-video-section,
+  .hero-banner-section,
+  .video-banner-wrap {
+    margin-top: 56px !important;
+    padding-top: 0 !important;
+  }
+
+  /* Home Video Banner - 0px gap, video touches navbar bottom edge directly */
+  .hero.home-hero-section,
+  .home-hero-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background: transparent !important;
+    min-height: auto !important;
+    position: relative !important;
+    align-items: flex-start !important;
+  }
+
+  .home-banner-video {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  div[class$="-hero-inner"],
+  div[class*="-hero-inner "] {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    text-align: center !important;
+    padding: 0 1rem !important;
+  }
+
+  div[class$="-hero-text"],
+  div[class*="-hero-text "] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* 2. Audit Page Mobile Optimization */
+  .audit-hero-section {
+    padding-top: 90px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .audit-img-frame-section {
+    margin-bottom: 24px !important;
+    padding: 0 1rem !important;
+  }
+
+  .audit-img-frame-card {
+    border-radius: 16px !important;
+  }
+
+  .audit-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .audit-pills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .audit-form-card {
+    padding: 20px 14px !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .audit-meta-grid,
+  .audit-steps-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* 3. Awards Page Mobile Optimization */
+  .awards-hero-section {
+    padding-top: 90px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .awards-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .awards-stat-item {
+    padding: 16px 8px !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .awards-featured-card {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+  }
+
+  .awards-featured-content {
+    padding: 24px 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .awards-featured-h2 {
+    font-size: clamp(1.35rem, 5vw, 1.75rem) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+    word-break: break-word !important;
+  }
+
+  .awards-featured-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .awards-btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 16px !important;
+    font-size: 0.88rem !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    text-align: center !important;
+    border-radius: 50px !important;
+  }
+
+  .awards-media-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .award-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 4. Global Grids & Layouts for Mobile */
+  .services-grid, 
+  .why-grid, 
+  .testi-grid, 
+  .portfolio-grid, 
+  .process-grid, 
+  .pillar-block,
+  .brand-grid,
+  .gallery-grid,
+  .video-grid,
+  .blog-cards-grid,
+  .career-jobs-grid,
+  .stories-grid,
+  .press-grid,
+  .projects-grid,
+  .case-studies-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .stats-inner,
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .ad-split-container,
+  .awards-split,
+  .split-section,
+  .ecosystem-grid,
+  .contact-grid,
+  .about-story-grid,
+  .about-mission-grid,
+  .about-leadership-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column !important;
+    display: flex !important;
+  }
+
+  .flex-row,
+  .row {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .col, [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* 5. Global Typography & Spacing */
+  h1, .h1 {
+    font-size: clamp(1.75rem, 6.5vw, 2.4rem) !important;
+    line-height: 1.25 !important;
+  }
+  
+  h2, .h2 {
+    font-size: clamp(1.45rem, 5vw, 1.95rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  h3, .h3 {
+    font-size: clamp(1.25rem, 4vw, 1.6rem) !important;
+  }
+
+  /* General non-hero sections padding */
+  section:not(:first-of-type):not([class*="-hero"]):not(.hero), 
+  .section-pad:not(:first-of-type):not([class*="-hero"]):not(.hero) {
+    padding: 2.25rem 1rem !important;
+  }
+
+  .container, 
+  .section-inner {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 6. Filter Chips & Badges */
+  .services-filter-tabs, .blog-filter-tabs {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    justify-content: center !important;
+    margin-top: 16px !important;
+    padding: 0 4px !important;
+  }
+
+  .filter-chip, .blog-filter-chip {
+    padding: 8px 14px !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* 7. Floating Action Buttons (Compact & Non-Blocking) */
+  .floating-btns, .float-buttons {
+    right: 10px !important;
+    bottom: 16px !important;
+    gap: 8px !important;
+    z-index: 9999 !important;
+  }
+
+  .float-btn {
+    width: 42px !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18) !important;
+  }
+
+  .float-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .float-tooltip {
+    display: none !important;
+  }
+
+  /* Stack Hero Buttons and CTA Groups */
+  .hero-buttons, .hero-cta, .cta-group, .career-hero-btns, .awards-cta-btns {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-buttons .btn, .hero-cta .btn, .cta-group .btn, .career-hero-btns .btn, .awards-cta-btns .btn, .awards-cta-btns a {
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Smartphone Breakpoint (Max 480px) */
+@media (max-width: 480px) {
+  body section:first-of-type:not(.home-hero-section),
+  main section:first-of-type:not(.home-hero-section),
+  .page-hero-section,
+  .blog-hero-section,
+  .services-hero-section,
+  .about-intro-section,
+  .stories-hero,
+  .press-hero-section,
+  .awards-hero-section,
+  .contact-hero-section,
+  .career-hero-section,
+  .audit-hero-section,
+  section[class*="-hero"]:not(.home-hero-section),
+  div[class*="-hero-section"]:not(.home-hero-section),
+  .hero:not(.home-hero-section) {
+    padding-top: 86px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .serInsideBnr,
+  .awards-banner-section,
+  .hero-video-section,
+  .hero-banner-section {
+    margin-top: 56px !important;
+  }
+
+  .hero.home-hero-section,
+  .home-hero-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+  }
+
+  .awards-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .container, 
+  .section-inner {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  h1, .h1 {
+    font-size: clamp(1.55rem, 6.2vw, 2rem) !important;
+  }
+
+  h2, .h2 {
+    font-size: clamp(1.3rem, 4.8vw, 1.7rem) !important;
+  }
+
+  section:not(:first-of-type):not([class*="-hero"]):not(.hero), 
+  .section-pad:not(:first-of-type):not([class*="-hero"]):not(.hero) {
+    padding: 1.75rem 0.75rem !important;
+  }
+}
+
+/* Ultra Small Smartphones (Max 360px) */
+@media (max-width: 360px) {
+  .container, 
+  .section-inner {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  h1, .h1 {
+    font-size: clamp(1.35rem, 5.5vw, 1.7rem) !important;
+  }
+
+  h2, .h2 {
+    font-size: clamp(1.2rem, 4.2vw, 1.5rem) !important;
+  }
+
+  .btn, button {
+    padding: 0.6rem 0.85rem !important;
+    font-size: 0.82rem !important;
+  }
+}

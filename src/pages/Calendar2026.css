@@ -1,0 +1,36 @@
+.cal2026-hero-section {
+  background: linear-gradient(135deg, #111 0%, #000 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.cal2026-glass-card {
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cal2026-sub {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.cal2026-h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.2;
+}
+
+.cal2026-desc {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.cal2026-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}

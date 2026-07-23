@@ -1,0 +1,56 @@
+.seo-city-content {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.8;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seo-city-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #e3000f; /* Brand Red */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.seo-city-content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 35px;
+  color: #222;
+}
+
+.seo-city-content p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .seo-city-content h1 {
+    font-size: 30px;
+  }
+  .seo-city-content h3 {
+    font-size: 24px;
+  }
+  .seo-city-content p {
+    font-size: 16px;
+  }
+}
+
+.cityseo-not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cityseo-section {
+  min-height: 60vh;
+  padding: 50px 0;
+}
+
