@@ -56,6 +56,16 @@ export default function Blog() {
            img.includes('retail-media');
   };
 
+  const getBlogImage = (b) => {
+    if (!b) return `${base}images/blog/sociapa-News.jpg`;
+    let img = b.localImage || b.image || '';
+    img = img.replace(/^\/sociapareact\//, '/');
+    if (!img.startsWith('/') && !img.startsWith('http')) {
+      img = `/images/blogs/${img}`;
+    }
+    return `${base}${img.replace(/^\//, '')}`;
+  };
+
   // Filter logic
   const filteredBlogs = blogsData.filter(blog => {
     const matchesSearch = blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -176,9 +186,10 @@ export default function Blog() {
                 <div className="blog-featured-img-wrap">
                   <div className="blog-featured-ambient-glow" />
                   <img
-                    src={featuredBlog.localImage}
+                    src={getBlogImage(featuredBlog)}
                     alt={featuredBlog.title}
                     className={`blog-featured-img ${isCircularBlog(featuredBlog) ? 'img-circular' : ''}`}
+                    onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = `${base}images/blog/sociapa-News.jpg`; }}
                   />
                   <div className="blog-featured-overlay-badge">
                     <span className="blog-badge-pulse" />
@@ -249,10 +260,11 @@ export default function Blog() {
                     <div className="blog-card-img-wrap">
                       <div className="blog-card-glow" />
                       <img
-                        src={blog.localImage}
+                        src={getBlogImage(blog)}
                         alt={blog.title}
                         className={`blog-card-img ${isCircularBlog(blog) ? 'img-circular' : ''}`}
                         loading="lazy"
+                        onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = `${base}images/blog/sociapa-News.jpg`; }}
                       />
                       <span className={`blog-card-cat-badge badge-${getCategory(blog.title, blog.description).toLowerCase()}`}>
                         {getCategory(blog.title, blog.description).replace('_', ' ')}

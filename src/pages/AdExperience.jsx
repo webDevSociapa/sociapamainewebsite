@@ -104,10 +104,10 @@ export default function AdExperience() {
           <picture>
             <source
               media="(max-width: 767px)"
-              srcSet="/sociapareact/images/ad-experience-service-banner-mobile.jpeg"
+              srcSet="/images/ad-experience-service-banner-mobile.jpeg"
             />
             <img
-              src="/sociapareact/images/ad-experience-service-banner.jpeg"
+              src="/images/ad-experience-service-banner.jpeg"
               alt="digital banner"
               className="responsive-img w-100"
             />
@@ -134,7 +134,7 @@ export default function AdExperience() {
   <div className="services-grid">
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Polygon Geo-Fencing Ads" width="50" height="50" />
+        <img src="/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Polygon Geo-Fencing Ads" width="50" height="50" />
       </div>
       <h3>Polygon Geo-Fencing Ads</h3>
       <p>Geo-fencing campaigns are our route to achieve the destination of high reach. We aim to trigger users' attention around competitor locations, event venues, and key hotspots, delivering relevant ads the moment they enter the targeted territory.</p>
@@ -142,7 +142,7 @@ export default function AdExperience() {
     </div>
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Immersive-Video-Ads.png" alt="Immersive Video Ads" width="50" height="50" />
+        <img src="/icons/ads-experience/Immersive-Video-Ads.png" alt="Immersive Video Ads" width="50" height="50" />
       </div>
       <h3>Immersive Video Ads</h3>
       <p>We aim to create a lasting impression through presenting brand narratives in High-Definition Video Campaigns across mobile and desktop. HD mediums are a visual treat and serve as an immersive experience for the target group to create brand recall.</p>
@@ -150,7 +150,7 @@ export default function AdExperience() {
     </div>
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Interactive-Rich-Media.png" alt="Interactive Rich Media" width="50" height="50" />
+        <img src="/icons/ads-experience/Interactive-Rich-Media.png" alt="Interactive Rich Media" width="50" height="50" />
       </div>
       <h3>Interactive Rich Media</h3>
       <p>We make narratives an interactive experience with rich media ads powered by touch and motion-led features. Such interactive mediums make ads a moment etched in memory of users.</p>
@@ -158,7 +158,7 @@ export default function AdExperience() {
     </div>
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Native-Ads.png" alt="Native Ads" width="50" height="50" />
+        <img src="/icons/ads-experience/Native-Ads.png" alt="Native Ads" width="50" height="50" />
       </div>
       <h3>Native Ads</h3>
       <p>Native ads become a part of customers' scrolling experience by seamlessly fitting into websites and apps interfaces. They not only create a smoother browsing experience but engage timely with users for brand remembrance.</p>
@@ -166,7 +166,7 @@ export default function AdExperience() {
     </div>
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Experiential-Playful-Ads.png" alt="Experiential Playable Ads" width="50" height="50" />
+        <img src="/icons/ads-experience/Experiential-Playful-Ads.png" alt="Experiential Playable Ads" width="50" height="50" />
       </div>
       <h3>Experiential Playable Ads</h3>
       <p>Before clicking the download button or buying a product, it is good to take a trial and we offer this experience to users with playable ads. Playable ads act as a pre-revelation step where users get an overall feel of the product. Once a trust is gained, the brand receives maximum conversions.</p>
@@ -174,7 +174,7 @@ export default function AdExperience() {
     </div>
     <div className="service-card">
       <div className="service-icon">
-        <img src="/sociapareact/icons/ads-experience/Dynamic-Carousel-Ads.png" alt="Dynamic Carousel Ads" width="50" height="50" />
+        <img src="/icons/ads-experience/Dynamic-Carousel-Ads.png" alt="Dynamic Carousel Ads" width="50" height="50" />
       </div>
       <h3>Dynamic Carousel Ads</h3>
       <p>Full screen carousel ads are a storyteller that enable viewers to swipe through brand communication, collections, and product utility. A narrative is built and categorized into each carousel so that the brand message gets delivered to users.</p>
@@ -194,70 +194,70 @@ export default function AdExperience() {
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Google-Ads.png" alt="Google Ads" />
+            <img src="/icons/ads-experience/Google-Ads.png" alt="Google Ads" />
         </span>
         <span className="tech-name">Google Ads</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Meta-Ads.png" alt="Meta Ads" />
+            <img src="/icons/ads-experience/Meta-Ads.png" alt="Meta Ads" />
         </span>
         <span className="tech-name">Meta Ads</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/YouTube-Ads.png" alt="YouTube Ads" />
+            <img src="/icons/ads-experience/YouTube-Ads.png" alt="YouTube Ads" />
         </span>
         <span className="tech-name">YouTube Ads</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Instagram-Ads.png" alt="Instagram Ads" />
+            <img src="/icons/ads-experience/Instagram-Ads.png" alt="Instagram Ads" />
         </span>
         <span className="tech-name">Instagram Ads</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/LinkedIn-Ads.png" alt="LinkedIn Ads" />
+            <img src="/icons/ads-experience/LinkedIn-Ads.png" alt="LinkedIn Ads" />
         </span>
         <span className="tech-name">LinkedIn Ads</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Programmatic-DSPs.png" alt="Programmatic DSPs" />
+            <img src="/icons/ads-experience/Programmatic-DSPs.png" alt="Programmatic DSPs" />
         </span>
         <span className="tech-name">Programmatic DSPs</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Geo-Fencing Platforms" />
+            <img src="/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Geo-Fencing Platforms" />
         </span>
         <span className="tech-name">Geo-Fencing Platforms</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/In-App Networks.png" alt="In-App Networks" />
+            <img src="/icons/ads-experience/In-App Networks.png" alt="In-App Networks" />
         </span>
         <span className="tech-name">In-App Networks</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/In-House-Video-Expertise.png" alt="OTT / CTV" />
+            <img src="/icons/ads-experience/In-House-Video-Expertise.png" alt="OTT / CTV" />
         </span>
         <span className="tech-name">OTT / CTV</span>
     </div>
 
     <div className="tech-chip">
         <span className="tech-icon">
-            <img src="/sociapareact/icons/ads-experience/Native-Ads.png" alt="Native Ad Networks" />
+            <img src="/icons/ads-experience/Native-Ads.png" alt="Native Ad Networks" />
         </span>
         <span className="tech-name">Native Ad Networks</span>
     </div>
@@ -280,7 +280,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Audience-Brief.png" alt="Audience Brief" width="60" height="60" />
+            <img src="/icons/ads-experience/Audience-Brief.png" alt="Audience Brief" width="60" height="60" />
         </div>
         <h3>Audience Brief</h3>
         <p>Define target personas, intent signals, and campaign objectives.</p>
@@ -288,7 +288,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Platform-Strategy.png" alt="Platform Strategy" width="60" height="60" />
+            <img src="/icons/ads-experience/Platform-Strategy.png" alt="Platform Strategy" width="60" height="60" />
         </div>
         <h3>Platform Strategy</h3>
         <p>Select channels, ad formats, and geo-targeting parameters.</p>
@@ -296,7 +296,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Creative-Production.png" alt="Creative Production" width="60" height="60" />
+            <img src="/icons/ads-experience/Creative-Production.png" alt="Creative Production" width="60" height="60" />
         </div>
         <h3>Creative Production</h3>
         <p>Design rich media, video, and static ad assets with A/B variants.</p>
@@ -304,7 +304,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Campaign-Launch.png" alt="Campaign Launch" width="60" height="60" />
+            <img src="/icons/ads-experience/Campaign-Launch.png" alt="Campaign Launch" width="60" height="60" />
         </div>
         <h3>Campaign Launch</h3>
         <p>Trafficking, tracking setup, and precision bid strategy activation.</p>
@@ -312,7 +312,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Optimisation.png" alt="Optimisation" width="60" height="60" />
+            <img src="/icons/ads-experience/Optimisation.png" alt="Optimisation" width="60" height="60" />
         </div>
         <h3>Optimisation</h3>
         <p>Real-time performance monitoring and creative rotation testing.</p>
@@ -320,7 +320,7 @@ export default function AdExperience() {
 
     <div className="process-step">
         <div className="step-num">
-            <img src="/sociapareact/icons/ads-experience/Impact-Report.png" alt="Impact Report" width="60" height="60" />
+            <img src="/icons/ads-experience/Impact-Report.png" alt="Impact Report" width="60" height="60" />
         </div>
         <h3>Impact Report</h3>
         <p>Full attribution reporting with viewability, engagement, and conversion data.</p>
@@ -340,7 +340,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/Award-Winning Creatives.png" alt="Compelling Ad Creatives" width="50" height="50" />
+            <img src="/icons/ads-experience/Award-Winning Creatives.png" alt="Compelling Ad Creatives" width="50" height="50" />
         </div>
         <h3>Compelling Ad Creatives</h3>
         <p>Be it mobile screen or desktop interface, we tap customer attention and convert it into buying experience through our compelling ad creatives. Ads are the mediums that carry the brand story and message for lasting recall.</p>
@@ -348,7 +348,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Proprietary Geo-Fence Tech" width="50" height="50" />
+            <img src="/icons/ads-experience/Polygon-Geo-Fencing-Ads.png" alt="Proprietary Geo-Fence Tech" width="50" height="50" />
         </div>
         <h3>Proprietary Geo-Fence Tech</h3>
         <p>Go beyond radius targeting with advanced polygon geo-fencing. Deliver highly targeted ads around competitor locations, event venues, and high-intent areas to reach the right audience at the right moment.</p>
@@ -356,7 +356,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/In-House-Video-Expertise.png" alt="In-House Video Expertise" width="50" height="50" />
+            <img src="/icons/ads-experience/In-House-Video-Expertise.png" alt="In-House Video Expertise" width="50" height="50" />
         </div>
         <h3>In-House Video Expertise</h3>
         <p>From initial thought to final edit, we weave a story in HD videos that prompt engagement and conversions across all platforms. Be it interactive or immersive, the designed videos communicate the positioning of brands in their respective released territories.</p>
@@ -364,7 +364,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/Viewability-Guaranteed-Placements.png" alt="Viewability-Guaranteed Placements" width="50" height="50" />
+            <img src="/icons/ads-experience/Viewability-Guaranteed-Placements.png" alt="Viewability-Guaranteed Placements" width="50" height="50" />
         </div>
         <h3>Viewability-Guaranteed Placements</h3>
         <p>Success of any digital ad is directly proportional to the views. We deploy our spending to the potential sites of visibility for the best user engagement.</p>
@@ -372,7 +372,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/Real-Time-Optimisation.png" alt="Real-Time Optimisation" width="50" height="50" />
+            <img src="/icons/ads-experience/Real-Time-Optimisation.png" alt="Real-Time Optimisation" width="50" height="50" />
         </div>
         <h3>Real-Time Optimisation</h3>
         <p>Maximise campaign performance with real-time programmatic optimisation. We tap the potential areas of conversion and shift budgets to the best-performing audiences, creatives, and placements to improve efficiency and ROI.</p>
@@ -380,7 +380,7 @@ export default function AdExperience() {
 
     <div className="why-card">
         <div className="why-icon">
-            <img src="/sociapareact/icons/ads-experience/Full-Funnel-Coverage.png" alt="Full-Funnel Coverage" width="50" height="50" />
+            <img src="/icons/ads-experience/Full-Funnel-Coverage.png" alt="Full-Funnel Coverage" width="50" height="50" />
         </div>
         <h3>Full-Funnel Coverage</h3>
         <p>Customers follow a digital journey - from awareness to buying action. We tend to accompany them at every stage with our content that disseminates brand essence and prompts buying action.</p>
