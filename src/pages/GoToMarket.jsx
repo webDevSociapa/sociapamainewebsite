@@ -65,13 +65,21 @@ export default function GoToMarket() {
         <link rel="canonical" href="https://sociapa.com/go-to-market" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
         <meta
           property="og:description"
           content="Launch your product successfully with Sociapa's Go-To-Market (GTM) strategy services. We offer influencer marketing, social media, performance marketing, quick commerce setup, UGC, product photography, retail activation, and end-to-end product launch solutions for D2C and FMCG brands."
         />
         <meta property="og:url" content="https://sociapa.com/go-to-market" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
+        <meta name="twitter:description" content="Launch your product successfully with Sociapa's Go-To-Market (GTM) strategy services. We offer influencer marketing, social media, performance marketing, quick commerce setup, UGC, product photography, retail activation, and end-to-end product launch solutions for D2C and FMCG brands." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -97,7 +105,7 @@ export default function GoToMarket() {
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/go_to_market/go_to_market.webp`} />
           <img
             src={`${base}assets/images/services_banner/go_to_market/go_to_market.webp`}
-            alt="Go To Market Strategy Services - Sociapa Brand Studio"
+            alt="Go To Market Strategy Services - Sociapa"
             className="hero-banner-img"
             decoding="async"
             width="1920"

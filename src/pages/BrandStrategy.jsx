@@ -61,10 +61,10 @@ export default function BrandStrategy() {
   return (
     <div className="brand-strategy-page">
       <Helmet>
-        <title>Brand Strategy Agency India | Sociapa Brand Studio</title>
+        <title>Brand Strategy Agency India | Sociapa</title>
         <meta
           name="description"
-          content="Sociapa Brand Studio is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
+          content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
         />
         <meta
           name="keywords"
@@ -73,13 +73,21 @@ export default function BrandStrategy() {
         <link rel="canonical" href="https://sociapa.com/brand-strategy" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Brand Strategy Agency India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Brand Strategy Agency India | Sociapa" />
         <meta
           property="og:description"
-          content="Sociapa Brand Studio is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
+          content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
         />
         <meta property="og:url" content="https://sociapa.com/brand-strategy" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brand Strategy Agency India | Sociapa" />
+        <meta name="twitter:description" content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming &amp; tagline for D2C &amp; FMCG brands." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -93,13 +101,13 @@ export default function BrandStrategy() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sociapa.com/" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://sociapa.com/our-services" }, { "@type": "ListItem", "position": 3, "name": "Brand Strategy Agency India | Sociapa Brand Studio", "item": "https://sociapa.com/brand-strategy" }] })}</script>
+        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sociapa.com/" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://sociapa.com/our-services" }, { "@type": "ListItem", "position": 3, "name": "Brand Strategy Agency India | Sociapa", "item": "https://sociapa.com/brand-strategy" }] })}</script>
       </Helmet>
 
       {/* Hero Banner Section */}
       <section className="hero-banner-section">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Brand Strategy Agency India - Sociapa Brand Studio
+          Brand Strategy Agency India - Sociapa
         </h1>
         <picture>
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/brand_strategy/brand_start.webp`} />

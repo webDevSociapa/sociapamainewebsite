@@ -61,7 +61,7 @@ export default function CreativeDesigning() {
   return (
     <div className="creative-designing-page">
       <Helmet>
-        <title>Creative Designing Agency in India | Sociapa Brand Studio</title>
+        <title>Creative Designing Agency in India | Sociapa</title>
         <meta
           name="description"
           content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design."
@@ -73,13 +73,21 @@ export default function CreativeDesigning() {
         <link rel="canonical" href="https://sociapa.com/creative-designing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Creative Designing Agency in India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Creative Designing Agency in India | Sociapa" />
         <meta
           property="og:description"
           content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design."
         />
         <meta property="og:url" content="https://sociapa.com/creative-designing" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Creative Designing Agency in India | Sociapa" />
+        <meta name="twitter:description" content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -99,13 +107,13 @@ export default function CreativeDesigning() {
       {/* Hero Banner Section */}
       <section className="hero-banner-section">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Creative Designing Agency India - Sociapa Brand Studio
+          Creative Designing Agency India - Sociapa
         </h1>
         <picture>
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/creative_designing/creative_designing1.webp`} />
           <img
             src={`${base}assets/images/services_banner/creative_designing/creative_designing1.webp`}
-            alt="Creative Designing Agency India - Sociapa Brand Studio"
+            alt="Creative Designing Agency India - Sociapa"
             className="hero-banner-img"
             decoding="async"
             width="1920"

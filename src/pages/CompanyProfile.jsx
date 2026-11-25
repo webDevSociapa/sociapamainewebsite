@@ -41,7 +41,7 @@ export default function CompanyProfile() {
             "@type": "Organization",
             "@id": "https://sociapa.com/#organization",
             "name": "Sociapa",
-            "alternateName": "Sociapa Brand Studio",
+            "alternateName": "SOCIAPA",
             "description": "Sociapa is India's award-winning one-stop brand & creative agency specializing in digital marketing, social media, brand strategy, packaging design, photography, videography, SEO/AEO/GEO, and PR services.",
             "foundingDate": "2017",
             "url": "https://sociapa.com/",

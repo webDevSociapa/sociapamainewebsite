@@ -61,25 +61,33 @@ export default function BrandIdentityDesign() {
   return (
     <div className="brand-identity-design-page brand-identity-page">
       <Helmet>
-        <title>Brand Identity Design | Sociapa Brand Studio</title>
+        <title>Brand Identity Design Agency India | Sociapa</title>
         <meta
           name="description"
-          content="Sociapa Brand Studio is India's full-service brand consultancy — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production & Photography, and Unboxing Experience."
+          content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience."
         />
         <meta
           name="keywords"
-          content="brand strategy agency India, brand identity design, packaging design agency, go to market strategy, brand studio India, D2C branding agency, FMCG brand design"
+          content="brand strategy agency India, brand identity design, packaging design agency, go to market strategy, D2C branding agency, FMCG brand design"
         />
         <link rel="canonical" href="https://sociapa.com/brand-identity-design" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Brand Identity Design" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Brand Identity Design Agency India | Sociapa" />
         <meta
           property="og:description"
-          content="Sociapa Brand Studio is India's full-service brand consultancy — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production & Photography, and Unboxing Experience."
+          content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience."
         />
         <meta property="og:url" content="https://sociapa.com/brand-identity-design" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brand Identity Design Agency India | Sociapa" />
+        <meta name="twitter:description" content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -93,19 +101,19 @@ export default function BrandIdentityDesign() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Brand Identity Design Agency India | Sociapa","item":"https://sociapa.com/brand-identity-design"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sociapa.com/" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://sociapa.com/our-services" }, { "@type": "ListItem", "position": 3, "name": "Brand Identity Design Agency India | Sociapa", "item": "https://sociapa.com/brand-identity-design" }] })}</script>
       </Helmet>
 
       {/* Hero Banner Section */}
       <section className="hero-banner-section">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Brand Identity Design Agency - Sociapa Brand Studio
+          Brand Identity Design Agency India - Sociapa
         </h1>
         <picture>
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/brand_identity_design/brand_identityban.webp`} />
           <img
             src={`${base}assets/images/services_banner/brand_identity_design/brand_identityban.jpg`}
-            alt="Brand Identity Design Agency - Sociapa Brand Studio"
+            alt="Brand Identity Design Agency India - Sociapa"
             className="hero-banner-img"
             decoding="async"
             width="1920"

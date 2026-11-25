@@ -190,35 +190,76 @@ export default function Home() {
             <div className="home-about-content">
               <h2 className="home-about-heading">ABOUT SOCIAPA</h2>
               <p className="home-about-desc">
-                Sociapa is a full-service creative digital marketing agency headquartered in Delhi NCR, India, with offices in Dubai, UAE and London, UK. We partner with startups, scale-ups, and established enterprises across FMCG, F&amp;B, fashion, real estate, healthcare, and technology sectors to build powerful brands and drive measurable digital growth. Our capabilities span brand identity design, packaging design, brand strategy &amp; positioning, performance marketing (Meta &amp; Google Ads), social media management, search engine optimisation (SEO), answer engine optimisation (AEO), generative engine optimisation (GEO), photography &amp; videography, PR &amp; media relations, influencer marketing, website development, app development, and content marketing — all under one roof.
+                <strong>Sociapa</strong> is a full-service creative{' '}
+                <Link to="/best-digital-marketing-services-india">digital marketing agency</Link>{' '}
+                headquartered in <strong>Delhi NCR, India</strong>, with offices in <strong>Dubai, UAE</strong> and{' '}
+                <strong>London, UK</strong>. We help startups, scale-ups and established enterprises build strong brands
+                and achieve measurable digital growth. Our clients come from{' '}
+                <strong>FMCG, F&amp;B, fashion, real estate, healthcare and technology</strong>, and for each of them we pair
+                creative thinking with data-driven strategy so brands get noticed, earn trust and turn audiences into loyal customers.
+              </p>
+              <p className="home-about-desc">
+                Everything happens under one roof. On the <strong>brand</strong> side, we handle{' '}
+                <Link to="/brand-strategy">brand strategy and positioning</Link>,{' '}
+                <Link to="/brand-identity-design">brand identity design</Link> and{' '}
+                <Link to="/best-packaging-design-agency-india">packaging design</Link>. For{' '}
+                <strong>growth</strong>, we run{' '}
+                <Link to="/pay-per-click-ppc-services-india">performance marketing on Meta and Google Ads</Link>,{' '}
+                <Link to="/best-social-media-marketing-agency-india">social media management</Link>,{' '}
+                <Link to="/influencer-marketing-services">influencer marketing</Link> and{' '}
+                <Link to="/content-designing">content marketing</Link>. To build{' '}
+                <strong>visibility</strong>, we offer{' '}
+                <Link to="/seo-aeo-geo">
+                  search engine optimisation (SEO), answer engine optimisation (AEO) and generative engine optimisation (GEO)
+                </Link>
+                , plus <Link to="/best-pr-agency-india">PR and media relations</Link>. We also do{' '}
+                <strong>production and tech</strong>: <Link to="/best-photography-services">photography</Link>,{' '}
+                <Link to="/videos">videography</Link>, <strong>microdrama production</strong>,{' '}
+                <Link to="/case-studies/ai-video">AI-powered video and content production</Link>,{' '}
+                <Link to="/best-web-development-agency-india">website development</Link> and{' '}
+                <Link to="/services-app-development">app development</Link>. With one integrated team, your brand stays consistent
+                across every channel and is easy to find on Google, social media and AI-powered search.
               </p>
             </div>
 
             {/* Right Column: Stats with Vertical Dividers & Animated Numbers */}
             <div className="home-stats-block">
-              <div className="home-stat-item">
-                <div className="home-stat-number">
-                  <Counter end={100} suffix="+" />
+              {/* Row 1: Clients & Years of Experience */}
+              <div className="home-stats-row">
+                <div className="home-stat-item">
+                  <div className="home-stat-number">
+                    <Counter end={100} suffix="+" />
+                  </div>
+                  <div className="home-stat-label">CLIENTS</div>
                 </div>
-                <div className="home-stat-label">CLIENTS</div>
+
+                <div className="home-stat-divider" aria-hidden="true" />
+
+                <div className="home-stat-item">
+                  <div className="home-stat-number">
+                    <Counter end={8} suffix="+" />
+                  </div>
+                  <div className="home-stat-label">YEARS OF EXPERIENCE</div>
+                </div>
               </div>
 
-              <div className="home-stat-divider" aria-hidden="true" />
-
-              <div className="home-stat-item">
-                <div className="home-stat-number">
-                  <Counter end={8} suffix="+" />
+              {/* Row 2: Projects & In-House Team */}
+              <div className="home-stats-row">
+                <div className="home-stat-item">
+                  <div className="home-stat-number">
+                    <Counter end={500} suffix="+" />
+                  </div>
+                  <div className="home-stat-label">PROJECTS</div>
                 </div>
-                <div className="home-stat-label">YEARS OF EXPERIENCE</div>
-              </div>
 
-              <div className="home-stat-divider" aria-hidden="true" />
+                <div className="home-stat-divider" aria-hidden="true" />
 
-              <div className="home-stat-item">
-                <div className="home-stat-number">
-                  <Counter end={500} suffix="+" />
+                <div className="home-stat-item">
+                  <div className="home-stat-number">
+                    <Counter end={75} suffix="+" />
+                  </div>
+                  <div className="home-stat-label">IN-HOUSE TEAM</div>
                 </div>
-                <div className="home-stat-label">PROJECTS</div>
               </div>
             </div>
           </div>

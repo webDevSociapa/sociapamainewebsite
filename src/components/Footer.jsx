@@ -282,7 +282,7 @@ export default function Footer() {
             <Link to="/creative-designing">Creative Agency in Noida</Link>
             <Link to="/pay-per-click-ppc-services-india">Advertising Agency Noida Sector 116</Link>
             <Link to="/best-digital-marketing-services-india">Marketing Agency in Delhi</Link>
-            <Link to="/our-services">Brand Studio Delhi NCR</Link>
+            <Link to="/our-services">Branding Agency Delhi NCR</Link>
             <Link to="/seo-aeo-geo">SEO Agency Delhi</Link>
             <Link to="/best-social-media-marketing-agency-india">Social Media Agency Delhi</Link>
             <Link to="/best-packaging-design-agency-india">Packaging Design Agency India</Link>

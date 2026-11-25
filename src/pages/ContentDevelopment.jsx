@@ -84,7 +84,7 @@ export default function ContentDevelopment() {
   return (
     <div className="content-development-page">
       <Helmet>
-        <title>Content Designing & Copywriting Services India | Sociapa Brand Studio</title>
+        <title>Content Designing &amp; Copywriting Services India | Sociapa</title>
         <meta
           name="description"
           content="Transform your brand narrative with Sociapa's content designing & copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers."
@@ -96,13 +96,21 @@ export default function ContentDevelopment() {
         <link rel="canonical" href="https://sociapa.com/content-designing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Content Designing & Copywriting Services India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Content Designing &amp; Copywriting Services India | Sociapa" />
         <meta
           property="og:description"
           content="Transform your brand narrative with Sociapa's content designing & copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers."
         />
         <meta property="og:url" content="https://sociapa.com/content-designing" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Content Designing &amp; Copywriting Services India | Sociapa" />
+        <meta name="twitter:description" content="Transform your brand narrative with Sociapa's content designing &amp; copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

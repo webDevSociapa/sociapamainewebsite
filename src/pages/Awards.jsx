@@ -54,7 +54,7 @@ export default function Awards() {
       {/* ── FULL BLEED HERO BANNER ── */}
       <div className="serInsideBnr">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Awards, Industry Honors &amp; Media Recognitions - Sociapa Brand Studio
+          Awards, Industry Honors &amp; Media Recognitions - Sociapa
         </h1>
         <div className="row">
           <picture>

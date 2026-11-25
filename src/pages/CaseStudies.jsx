@@ -611,7 +611,7 @@ function LeadDownloadModal({ csItem, doc, onClose, onSuccess }) {
       name: formData.name.trim(),
       phone: formData.phone.trim(),
       email: formData.email.trim(),
-      address: formData.company.trim() || 'Brand Studio Case Study Lead',
+      address: formData.company.trim() || 'Sociapa Case Study Lead',
       case_study_title: doc ? doc.title : csItem.title,
       case_study_file: doc ? doc.file : csItem.id,
     };
@@ -809,12 +809,12 @@ export default function CaseStudies() {
       <Helmet>
         <title>
           {activeDetailItem
-            ? `${activeDetailItem.title} | Sociapa Brand Studio Case Studies`
-            : 'Case Studies | Sociapa Brand Studio — Proven Marketing & Packaging ROI'}
+            ? `${activeDetailItem.title} | Sociapa Case Studies`
+            : 'Case Studies | Sociapa — Proven Marketing & Packaging ROI'}
         </title>
         <meta
           name="description"
-          content="Explore how Sociapa Brand Studio transforms brands and delivers results. Real case studies across FMCG, celebrity launches, packaging design, and performance marketing."
+          content="Explore how Sociapa transforms brands and delivers results. Real case studies across FMCG, celebrity launches, packaging design, and performance marketing."
         />
         <link
           rel="canonical"
@@ -824,6 +824,18 @@ export default function CaseStudies() {
               : 'https://sociapa.com/case-studies'
           }
         />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={activeDetailItem ? `${activeDetailItem.title} | Sociapa Case Studies` : 'Case Studies | Sociapa — Proven Marketing & Packaging ROI'} />
+        <meta property="og:description" content="Explore how Sociapa transforms brands and delivers results. Real case studies across FMCG, celebrity launches, packaging design, and performance marketing." />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={activeDetailItem ? `${activeDetailItem.title} | Sociapa Case Studies` : 'Case Studies | Sociapa — Proven Marketing & Packaging ROI'} />
+        <meta name="twitter:description" content="Explore how Sociapa transforms brands and delivers results." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
       {/* ── TOP HERO BANNER (RELEVANT BANNER ACROSS ALL PAGES EXCEPT EXACT FIGMA DESIGNS) ── */}
@@ -846,8 +858,8 @@ export default function CaseStudies() {
               }
               alt={
                 activeDetailItem
-                  ? `${activeDetailItem.brand} Case Study — Sociapa Brand Studio`
-                  : "Case Studies — Proven FMCG & Digital Marketing ROI — Sociapa Brand Studio"
+                  ? `${activeDetailItem.brand} Case Study — Sociapa`
+                  : "Case Studies — Proven FMCG & Digital Marketing ROI — Sociapa"
               }
               className="hero-banner-img"
               decoding="async"
@@ -1084,7 +1096,7 @@ export default function CaseStudies() {
            ══════════════════════════════════════════════════════════════ */
         <>
           <h1 className="visually-hidden" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-            Proven FMCG &amp; Digital Marketing Case Studies — Sociapa Brand Studio
+            Proven FMCG &amp; Digital Marketing Case Studies — Sociapa
           </h1>
 
           {/* Filter Pills Bar (Matching Screenshot - Clicking filters the cards!) */}
@@ -1162,7 +1174,7 @@ export default function CaseStudies() {
               <div className="cs-figma-interlink-card">
                 <h2 className="cs-figma-interlink-title">Ready to Write Your Success Story?</h2>
                 <p className="cs-figma-interlink-desc">
-                  Whether you need strategic <a href="/best-packaging-design-agency-india" className="seo-interlink">packaging design</a>, high-octane <a href="/influencer-marketing-services" className="seo-interlink">influencer marketing</a>, end-to-end <a href="/best-digital-marketing-services-india" className="seo-interlink">digital marketing</a>, or <a href="/pay-per-click-ppc-services-india" className="seo-interlink">performance marketing</a> — Sociapa Brand Studio delivers from strategy to shelf.
+                  Whether you need strategic <a href="/best-packaging-design-agency-india" className="seo-interlink">packaging design</a>, high-octane <a href="/influencer-marketing-services" className="seo-interlink">influencer marketing</a>, end-to-end <a href="/best-digital-marketing-services-india" className="seo-interlink">digital marketing</a>, or <a href="/pay-per-click-ppc-services-india" className="seo-interlink">performance marketing</a> — Sociapa delivers from strategy to shelf.
                 </p>
                 <div className="cs-figma-interlink-btns">
                   <Link to="/contact-us" className="cs-figma-btn-primary">

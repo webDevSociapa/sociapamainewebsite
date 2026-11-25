@@ -61,10 +61,10 @@ export default function PackagingDesign() {
   return (
     <div className="packaging-design-page">
       <Helmet>
-        <title>Packaging Design Services India | Sociapa Brand Studio</title>
+        <title>Packaging Design Services India | Sociapa</title>
         <meta
           name="description"
-          content="Sociapa Brand Studio provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
+          content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
         />
         <meta
           name="keywords"
@@ -73,13 +73,21 @@ export default function PackagingDesign() {
         <link rel="canonical" href="https://sociapa.com/best-packaging-design-agency-india" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Packaging Design Services India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Packaging Design Services India | Sociapa" />
         <meta
           property="og:description"
-          content="Sociapa Brand Studio provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
+          content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
         />
         <meta property="og:url" content="https://sociapa.com/best-packaging-design-agency-india" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Packaging Design Services India | Sociapa" />
+        <meta name="twitter:description" content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce &amp; quick commerce packaging, and dieline production." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -99,13 +107,13 @@ export default function PackagingDesign() {
       {/* Hero Banner Section */}
       <section className="hero-banner-section">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Best Packaging Design Agency India - Sociapa Brand Studio
+          Best Packaging Design Agency India - Sociapa
         </h1>
         <picture>
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/packaging_design/packaging.webp`} />
           <img
             src={`${base}assets/images/services_banner/packaging_design/packaging.webp`}
-            alt="Best Packaging Design Agency India - Sociapa Brand Studio"
+            alt="Best Packaging Design Agency India - Sociapa"
             className="hero-banner-img"
             decoding="async"
             width="1920"

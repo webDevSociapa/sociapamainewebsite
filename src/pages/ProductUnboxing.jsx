@@ -53,7 +53,7 @@ export default function ProductUnboxing() {
         <title>Product Unboxing Experience Services India | D2C Packaging Design | Sociapa</title>
         <meta
           name="description"
-          content="Create viral, share-worthy product unboxing experiences with Sociapa Brand Studio. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
+          content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
         />
         <meta
           name="keywords"
@@ -62,13 +62,21 @@ export default function ProductUnboxing() {
         <link rel="canonical" href="https://sociapa.com/product-unboxing-experience" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Product Unboxing Experience Services India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Product Unboxing Experience Services India | Sociapa" />
         <meta
           property="og:description"
-          content="Create viral, share-worthy product unboxing experiences with Sociapa Brand Studio. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
+          content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
         />
         <meta property="og:url" content="https://sociapa.com/product-unboxing-experience" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Product Unboxing Experience Services India | Sociapa" />
+        <meta name="twitter:description" content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C &amp; FMCG brands." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -88,13 +96,13 @@ export default function ProductUnboxing() {
       {/* Hero Banner Section */}
       <section className="hero-banner-section">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
-          Product Unboxing Experience Services India - Sociapa Brand Studio
+          Product Unboxing Experience Services India - Sociapa
         </h1>
         <picture>
           <source type="image/webp" srcSet={`${base}assets/images/services_banner/unboxing_experience/unboxing1.webp`} />
           <img
             src={`${base}assets/images/services_banner/unboxing_experience/unboxing1.webp`}
-            alt="Product Unboxing Experience Services - Sociapa Brand Studio"
+            alt="Product Unboxing Experience Services - Sociapa"
             className="hero-banner-img"
             decoding="async"
             width="1920"

@@ -38,7 +38,7 @@ export default function AboutUs() {
             "@type": "Organization",
             "@id": "https://www.sociapa.com/#organization",
             "name": "Sociapa",
-            "alternateName": "Sociapa Brand Studio",
+            "alternateName": "SOCIAPA",
             "description": "About Sociapa — At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. We have expertise in Digital Marketing, Social Media Marketing, Video Production and more.",
             "foundingDate": "2017",
             "url": "https://www.sociapa.com/",

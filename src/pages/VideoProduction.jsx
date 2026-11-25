@@ -8,7 +8,7 @@ import './VideoProduction.css';
 
 const faqsData = [
   {
-    q: "1. What video production services does Sociapa Brand Studio offer?",
+    q: "1. What video production services does Sociapa offer?",
     a: "<p>We provide end-to-end video production services, including TV commercials (TVCs), corporate brand films, product videos, CGI, animation, motion graphics, <a href='/best-social-media-marketing-agency-india' class='seo-interlink'>social media content</a>, <a href='/best-photography-services' class='seo-interlink'>product photography</a>, lifestyle photography, and post-production.</p>"
   },
   {
@@ -44,8 +44,8 @@ const faqsData = [
     a: "<p>Every project includes a final video review and revision round to ensure the content aligns with your creative brief, brand guidelines, and campaign objectives before delivery.</p>"
   },
   {
-    q: "10. Why choose Sociapa Brand Studio for video production?",
-    a: "<p>Sociapa Brand Studio combines <a href='/brand-strategy' class='seo-interlink'>creative brand strategy</a>, professional film production, <a href='/best-photography-services' class='seo-interlink'>commercial photography</a>, and post-production under one roof, delivering visual content that scales across digital channels and quick commerce platforms.</p>"
+    q: "10. Why choose Sociapa for video production?",
+    a: "<p>Sociapa combines <a href='/brand-strategy' class='seo-interlink'>creative brand strategy</a>, professional film production, <a href='/best-photography-services' class='seo-interlink'>commercial photography</a>, and post-production under one roof, delivering visual content that scales across digital channels and quick commerce platforms.</p>"
   }
 ];
 
@@ -136,10 +136,10 @@ export default function VideoProduction() {
   return (
     <div className="video-production-page">
       <Helmet>
-        <title>Video Production & Photography Agency India | Sociapa Brand Studio</title>
+        <title>Video Production &amp; Photography Agency India | Sociapa</title>
         <meta
           name="description"
-          content="Sociapa Brand Studio provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
+          content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
         />
         <meta
           name="keywords"
@@ -148,13 +148,21 @@ export default function VideoProduction() {
         <link rel="canonical" href="https://sociapa.com/videos" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Sociapa Brand Studio" />
-        <meta property="og:title" content="Video Production & Photography Agency India | Sociapa Brand Studio" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Video Production &amp; Photography Agency India | Sociapa" />
         <meta
           property="og:description"
-          content="Sociapa Brand Studio provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
+          content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
         />
         <meta property="og:url" content="https://sociapa.com/videos" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Video Production &amp; Photography Agency India | Sociapa" />
+        <meta name="twitter:description" content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -171,8 +179,8 @@ export default function VideoProduction() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "VideoObject",
-          "name": "Sociapa Brand Studio – Video Production Showreel",
-          "description": "Sociapa Brand Studio's full video production capabilities — including TV commercials, corporate brand films, CGI animations, AI videos, recipe content, and product photography for India's leading brands.",
+          "name": "Sociapa – Video Production Showreel",
+          "description": "Sociapa's full video production capabilities — including TV commercials, corporate brand films, CGI animations, AI videos, recipe content, and product photography for India's leading brands.",
           "thumbnailUrl": "https://img.youtube.com/vi/PWXwi-gLxPw/maxresdefault.jpg",
           "uploadDate": "2026-01-01T08:00:00+05:30",
           "duration": "PT3M",
@@ -226,7 +234,7 @@ export default function VideoProduction() {
           />
           <img
             src={`${base}assets/images/services_banner/video_photography/video.webp`}
-            alt="Video Production & Photography - Sociapa Brand Studio"
+            alt="Video Production & Photography - Sociapa"
             className="hero-banner-img"
             decoding="async"
             loading="eager"
@@ -238,7 +246,7 @@ export default function VideoProduction() {
       </section>
 
       {/* Portfolio Highlight / Production Scope */}
-            {/* Portfolio / Our Work Section */}
+      {/* Portfolio / Our Work Section */}
       <ServiceOurWorkSection
         work={serviceClientSectionsData['video-production']?.work}
       />
@@ -301,7 +309,7 @@ export default function VideoProduction() {
               Our Video Production &amp; Photography <em>Services</em>
             </h2>
             <p className="sec-sub" style={{ textAlign: 'center', margin: '0 auto', maxWidth: '720px' }}>
-              In a world where consumers decide within seconds whether your brand deserves their attention, premium visual content is essential. Sociapa Brand Studio creates high-quality brand films, product photography, lifestyle imagery, and social media content that capture attention, strengthen brand perception, and inspire action across every platform.
+              In a world where consumers decide within seconds whether your brand deserves their attention, premium visual content is essential. Sociapa creates high-quality brand films, product photography, lifestyle imagery, and social media content that capture attention, strengthen brand perception, and inspire action across every platform.
             </p>
           </div>
           <div className="sub-grid">
@@ -539,7 +547,7 @@ export default function VideoProduction() {
           <div className="faq-header">
             <span className="eyebrow" style={{ textAlign: 'center', display: 'block' }}>Video Production &amp; Photography FAQ</span>
             <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know before starting your video production &amp; photography project with Sociapa Brand Studio.</p>
+            <p>Everything you need to know before starting your video production &amp; photography project with Sociapa.</p>
           </div>
 
           <div className="faq-list">
@@ -559,7 +567,7 @@ export default function VideoProduction() {
       </section>
 
       {/* Testimonials Section */}
-            {/* Behind the Work Section */}
+      {/* Behind the Work Section */}
       <ServiceBehindWorkSection
         testimonials={serviceClientSectionsData['video-production']?.testimonials}
       />

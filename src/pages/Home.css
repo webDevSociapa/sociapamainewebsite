@@ -109,12 +109,41 @@
   font-weight: 400 !important;
 }
 
-/* Right Column: Stats Block with Vertical Dividers */
+#about-sociapa .home-about-desc + .home-about-desc {
+  margin-top: 14px !important;
+}
+
+.home-about-desc strong {
+  font-weight: 600 !important;
+  color: #2b2b2b !important;
+}
+
+.home-about-desc a {
+  color: #D20C0C !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(210, 12, 12, 0.3) !important;
+  transition: border-color 0.2s ease, color 0.2s ease !important;
+}
+
+.home-about-desc a:hover {
+  border-bottom-color: #D20C0C !important;
+  color: #a50a0a !important;
+}
+
+/* Right Column: Stats Block with 2 Rows & Vertical Dividers */
 .home-stats-block {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: clamp(26px, 3.6vw, 44px) !important;
+  width: 100% !important;
+}
+
+.home-stats-row {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: clamp(14px, 2.2vw, 32px) !important;
+  gap: clamp(16px, 2.5vw, 36px) !important;
   width: 100% !important;
 }
 
@@ -123,7 +152,8 @@
   flex-direction: column !important;
   align-items: flex-start !important;
   justify-content: center !important;
-  flex: 1 1 auto !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
 }
 
 .home-stat-number {
@@ -1432,7 +1462,8 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 /* Remove right border on the 4th column */
@@ -1470,22 +1501,16 @@
   height: auto;
   object-fit: contain;
   display: block;
-  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
-}
-
-/* Maintain black & white look for general catalog, color on hover */
-.client-cell-logo img:not([src*="figma_"]) {
   filter: grayscale(100%);
-  opacity: 0.85;
-}
-
-.client-cell-fig:hover .client-cell-logo img {
-  transform: scale(1.04);
-}
-
-.client-cell-fig:hover .client-cell-logo img:not([src*="figma_"]) {
-  filter: grayscale(0%);
   opacity: 1;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.client-cell-fig:hover .client-cell-logo img,
+.client-cell-logo img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%) !important;
+  opacity: 1 !important;
 }
 
 /* View more / less button */
@@ -3210,7 +3235,11 @@
   }
 
   .home-stats-block {
-    gap: 8px !important;
+    gap: 22px !important;
+  }
+
+  .home-stats-row {
+    gap: 12px !important;
   }
 
   .home-stat-number {
