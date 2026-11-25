@@ -420,7 +420,7 @@ export default function AdExperience() {
   <p>Tell us your campaign objectives and we'll design an ad experience strategy that makes your brand impossible to ignore.</p>
   <div className="cta-buttons">
     <a href="mailto:mail@sociapa.com" className="btn-white">Start a Campaign</a>
-    <a href="https://wa.me/8375828920" className="btn-outline-white">WhatsApp Us</a>
+    <a href="https://wa.me/917011057175" className="btn-outline-white">WhatsApp Us</a>
   </div>
 </section>
 </div>

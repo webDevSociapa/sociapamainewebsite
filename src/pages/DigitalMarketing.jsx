@@ -566,7 +566,7 @@ export default function DigitalMarketing() {
       <p>Tell us your goals and we'll build a custom digital marketing strategy — no fluff, just a clear plan to grow your brand online.</p>
       <div className="cta-buttons">
         <a href="mailto:mail@sociapa.com" className="btn-white">Get a Free Audit</a>
-        <a href="https://wa.me/8375828920" className="btn-outline-white">WhatsApp Us</a>
+        <a href="https://wa.me/917011057175" className="btn-outline-white">WhatsApp Us</a>
       </div>
     </section>
     </div>

@@ -6,7 +6,7 @@ export default function FloatingButtons() {
       {/* WhatsApp — LEFT side */}
       <div className="floating-btns floating-left">
         <a
-          href="https://wa.me/918375828920"
+          href="https://wa.me/917011057175"
           target="_blank"
           rel="noopener noreferrer"
           className="float-btn float-btn-whatsapp"
