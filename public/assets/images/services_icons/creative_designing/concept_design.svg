@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Lightbulb / Creative Bulb -->
+      <path d="M84 100 C84 64, 102 44, 128 44 C154 44, 172 64, 172 100 C172 124, 154 138, 150 156 H106 C102 138, 84 124, 84 100 Z" fill="#FFEBEF" stroke="#C8102E" stroke-width="10"/>
+      <!-- Bulb Base / Screw -->
+      <rect x="106" y="162" width="44" height="12" rx="4" fill="#1A0508"/>
+      <rect x="112" y="178" width="32" height="10" rx="4" fill="#1A0508"/>
+      <path d="M120 192 H136" stroke="#1A0508" stroke-width="6"/>
+      <!-- Creative Filament / Pen Tool Shape inside -->
+      <path d="M128 72 L140 108 L128 136 L116 108 Z" fill="#C8102E"/>
+      <circle cx="128" cy="108" r="4" fill="#FFFFFF"/>
+      <!-- Creative Radiance Rays -->
+      <line x1="128" y1="20" x2="128" y2="34" stroke="#FF3355" stroke-width="8"/>
+      <line x1="56" y1="56" x2="68" y2="68" stroke="#FF3355" stroke-width="8"/>
+      <line x1="200" y1="56" x2="188" y2="68" stroke="#FF3355" stroke-width="8"/>
+      <line x1="44" y1="108" x2="60" y2="108" stroke="#FF3355" stroke-width="8"/>
+      <line x1="212" y1="108" x2="196" y2="108" stroke="#FF3355" stroke-width="8"/>
+    </g>
+  </svg>

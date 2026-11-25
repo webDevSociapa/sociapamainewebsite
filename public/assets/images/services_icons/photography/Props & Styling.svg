@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Styling Board / Slate -->
+    <rect x="42" y="44" width="172" height="168" rx="16" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Botanical Monstera Leaf (Prop) -->
+    <path d="M76 160 C76 100, 140 84, 156 80 C156 96, 140 160, 80 160" fill="#FFFFFF" stroke="#D20C0C" stroke-width="6"/>
+    <line x1="76" y1="160" x2="148" y2="88" stroke="#D20C0C" stroke-width="4"/>
+    <!-- Color Swatch Cards -->
+    <rect x="144" y="118" width="34" height="64" rx="4" fill="#D20C0C" stroke="#1A0508" stroke-width="4" transform="rotate(15 144 118)"/>
+    <rect x="124" y="126" width="34" height="64" rx="4" fill="#FFFFFF" stroke="#1A0508" stroke-width="4" transform="rotate(-10 124 126)"/>
+    <!-- Stylist Brush / Tweezers -->
+    <line x1="68" y1="68" x2="114" y2="114" stroke="#1A0508" stroke-width="7"/>
+    <rect x="58" y="58" width="16" height="16" fill="#D20C0C"/>
+  </g>
+</svg>

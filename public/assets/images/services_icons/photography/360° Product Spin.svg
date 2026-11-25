@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 3D Turntable Base -->
+    <ellipse cx="128" cy="188" rx="88" ry="24" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <path d="M40 188 v14 c0 13 39 24 88 24 s88 -11 88 -24 v-14" stroke="#1A0508" stroke-width="8" fill="#FFEBEF"/>
+    <!-- 3D Product Box -->
+    <polygon points="128,70 178,95 128,120 78,95" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <polygon points="78,95 128,120 128,168 78,143" fill="#FFEBEF" stroke="#D20C0C" stroke-width="6"/>
+    <polygon points="178,95 128,120 128,168 178,143" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <!-- 360 Degree Circular Arrow -->
+    <path d="M48 116 C36 138, 48 162, 88 174" stroke="#D20C0C" stroke-width="7"/>
+    <path d="M208 116 C220 138, 208 162, 168 174" stroke="#D20C0C" stroke-width="7"/>
+    <!-- Arrowhead -->
+    <polyline points="58,104 46,116 62,126" stroke="#D20C0C" stroke-width="7"/>
+    <!-- 360 Text Badge -->
+    <rect x="94" y="32" width="68" height="28" rx="6" fill="#D20C0C"/>
+    <text x="128" y="52" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="16" text-anchor="middle">360°</text>
+  </g>
+</svg>

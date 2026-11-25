@@ -1,0 +1,505 @@
+/* ==========================================================================
+   Geofencing Page Scoped Styles - Sociapa
+   ========================================================================== */
+
+.geofencing-page {
+  --geo-red: #d20c0c;
+  --geo-red-dark: #8b0000;
+  --geo-red-light: #ff4d4d;
+  --geo-red-pale: #fff2f2;
+  --geo-dark: #0f172a;
+  --geo-gray: #64748b;
+  --geo-light: #f8fafc;
+  --geo-white: #ffffff;
+  --geo-border: #e2e8f0;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  color: #1e293b;
+  line-height: 1.6;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Banner Image & Hero Section */
+.geofencing-page .hero-banner-section {
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  background: transparent !important;
+}
+
+.geofencing-page .hero-banner-section picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.geofencing-page .hero-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .geofencing-page .hero-banner-section {
+    margin-top: 56px !important;
+  }
+}
+
+/* Page Intro Header */
+.geofencing-page .page-intro-section {
+  background: linear-gradient(180deg, #ffffff 0%, #fef2f2 100%);
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.geofencing-page .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.geofencing-page .badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff2f2;
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.geofencing-page .badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #d20c0c;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(210, 12, 12, 0.6);
+  animation: geoPulse 2s infinite;
+}
+
+@keyframes geoPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.geofencing-page .main-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.geofencing-page .main-title .highlight-text {
+  color: #d20c0c;
+}
+
+.geofencing-page .intro-lead {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.geofencing-page .hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.geofencing-page .btn-primary-geo {
+  background: #d20c0c;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(210, 12, 12, 0.25);
+}
+
+.geofencing-page .btn-primary-geo:hover {
+  background: #b50a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(210, 12, 12, 0.35);
+  color: #ffffff;
+}
+
+.geofencing-page .btn-secondary-geo {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geofencing-page .btn-secondary-geo:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-2px);
+  color: #0f172a;
+}
+
+/* Stats Bar */
+.geofencing-page .stats-bar-geo {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 2.5rem 1.5rem;
+}
+
+.geofencing-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.geofencing-page .stat-val {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #ff4d4d;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.geofencing-page .stat-lbl {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .geofencing-page .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Content Sections */
+.geofencing-page .content-section {
+  padding: 5rem 1.5rem;
+}
+
+.geofencing-page .bg-light {
+  background: #f8fafc;
+}
+
+.geofencing-page .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.geofencing-page .section-tag {
+  display: inline-block;
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.geofencing-page .section-heading {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.geofencing-page .section-desc {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Feature & Service Grid */
+.geofencing-page .geo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.geofencing-page .geo-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.geofencing-page .geo-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(210, 12, 12, 0.3);
+  box-shadow: 0 20px 30px -10px rgba(210, 12, 12, 0.12);
+}
+
+.geofencing-page .geo-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #fff2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #d20c0c;
+}
+
+.geofencing-page .geo-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.geofencing-page .geo-card h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.85rem;
+}
+
+.geofencing-page .geo-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.geofencing-page .geo-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.geofencing-page .geo-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+
+/* Process Timeline */
+.geofencing-page .process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.geofencing-page .process-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.geofencing-page .process-card:hover {
+  border-color: #d20c0c;
+}
+
+.geofencing-page .process-num {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(210, 12, 12, 0.15);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.geofencing-page .process-card h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.geofencing-page .process-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Comparison Table */
+.geofencing-page .comparison-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.geofencing-page .comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.geofencing-page .comparison-table th {
+  background: #0f172a;
+  color: #ffffff;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.geofencing-page .comparison-table th.highlight-col {
+  background: #d20c0c;
+}
+
+.geofencing-page .comparison-table td {
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.geofencing-page .comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.geofencing-page .comparison-table tr:hover td {
+  background: #fff8f8;
+}
+
+.geofencing-page .comparison-table td.highlight-col {
+  font-weight: 600;
+  color: #8b0000;
+  background: #fff5f5;
+}
+
+/* FAQ Accordion */
+.geofencing-page .faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.geofencing-page .faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.geofencing-page .faq-item.active {
+  border-color: #d20c0c;
+  box-shadow: 0 4px 12px rgba(210, 12, 12, 0.08);
+}
+
+.geofencing-page .faq-trigger {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  gap: 1rem;
+}
+
+.geofencing-page .faq-icon {
+  font-size: 1.4rem;
+  color: #d20c0c;
+  transition: transform 0.3s ease;
+}
+
+.geofencing-page .faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.geofencing-page .faq-body {
+  padding: 0 1.5rem 1.25rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Bottom CTA Banner */
+.geofencing-page .bottom-cta-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.geofencing-page .bottom-cta-banner h2 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.geofencing-page .bottom-cta-banner p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+}
+
+/* Service Interlink styling */
+.geofencing-page a.seo-interlink {
+  color: #d20c0c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.geofencing-page a.seo-interlink:hover {
+  color: #8b0000;
+}

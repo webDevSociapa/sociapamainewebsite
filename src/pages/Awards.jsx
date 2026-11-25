@@ -1,72 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { stats, awardsData } from '../data/awardsData';
 import './Awards.css';
-
-const stats = [
-  { num: '15+', label: 'Industry Awards & Recognition' },
-  { num: '100+', label: 'Brands Transformed & Grown' },
-  { num: '7+', label: 'Years of Creative Excellence' },
-  { num: '50M+', label: 'Organic Views & Reach' }
-];
-
-const awardsData = [
-  {
-    img: 'new-recognition.jpg',
-    alt: 'ET Leadership Excellence Award 2023 - Sociapa',
-    title: 'ET Leadership Excellence Award 2022',
-    tag: 'National Award',
-    desc: 'Sociapa honored with the ET Leadership Excellence Award 2022 for outstanding brand innovation and marketing brilliance.',
-    link: 'https://economictimes.indiatimes.com/industry/media/entertainment/media/et-leadership-excellence-awards-2023-celebrates-the-business-leaders/articleshow/103135718.cms'
-  },
-  {
-    img: 'SociapaMediaNews.jpg',
-    alt: "Sociapa's Soul Focus is the USP - MediaNews4U",
-    title: "Sociapa's Soul Focus is the USP",
-    tag: 'Media Interview',
-    desc: 'MediaNews4U features Sociapa Founder Dheeraj Raj on process-driven brand marketing solutions for modern D2C & FMCG brands.',
-    link: 'https://www.medianews4u.com/sociapas-soul-focus-is-the-usp-which-is-process-driven-brand-centric-marketing-solutions-dheeraj-raj/'
-  },
-  {
-    img: 'achieverStory.jpg',
-    alt: 'IAF India Achievers Success Story - Dheeraj Raj',
-    title: "Achievers' Success Story — IAF India",
-    tag: 'Leadership Profile',
-    desc: 'Indian Achievers Forum spotlights Dheeraj Raj, Founder of Sociapa, on redefining brand strategy and digital performance.',
-    link: 'https://www.iafindia.com/mr-dheeraj-raj/'
-  },
-  {
-    img: 'ceoStory.jpg',
-    alt: 'Believing in Vision Meeting Excellence - The CEO Story',
-    title: 'Believing in Vision Meeting Excellence',
-    tag: 'CEO Story Feature',
-    desc: 'The CEO Story magazine covers Sociapa\'s core philosophy — targeted market strategy, bold creative, and execution brilliance.',
-    link: 'https://theceostory.in/lounge-interview/sociapa/'
-  },
-  {
-    img: 'bcConnect.jpg',
-    alt: 'Marketing Brilliance Begins - Business Connect',
-    title: 'Where Marketing Brilliance Begins',
-    tag: 'Business Connect',
-    desc: 'Business Connect India profiles Sociapa as a top-tier digital marketing agency driving revenue and business scale.',
-    link: 'https://businessconnectindia.in/sociapa/'
-  },
-  {
-    img: 'innnovativeZone.jpg',
-    alt: 'Marketing Specialist Fastened with Innovation - Innovative Zone',
-    title: 'Marketing Fastened with Innovation',
-    tag: 'Innovation Award',
-    desc: 'Innovative Zone India honors Sociapa for innovative campaign design and high-converting marketing strategies.',
-    link: 'http://innovativezoneindia.com/sociapa/'
-  }
-];
 
 export default function Awards() {
   const base = import.meta.env.BASE_URL;
+  const [selectedAward, setSelectedAward] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setSelectedAward(null);
+    };
+    if (selectedAward) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedAward]);
 
   return (
     <>
@@ -74,47 +34,38 @@ export default function Awards() {
         <title>Awards &amp; Media Features - Best Digital Marketing Firm | Sociapa</title>
         <meta name="description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
         <meta name="keywords" content="Digital Marketing" />
-        <link rel="canonical" href="https://www.sociapa.com/press-release/" />
+        <link rel="canonical" href="https://sociapa.com/best-creative-and-digital-agency-award" />
         <meta property="og:title" content="Best Digital Marketing Firm In Noida &amp; Delhi NCR, India -Sociapa" />
         <meta property="og:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
-        <meta property="og:url" content="https://www.sociapa.com/press-release/" />
+        <meta property="og:url" content="https://sociapa.com/best-creative-and-digital-agency-award" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sociapa" />
+        <meta name="twitter:title" content="Best Creative and Digital Agency Award - Sociapa" />
+        <meta name="twitter:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
-      {/* ── 1. STUNNING HERO BANNER SECTION ── */}
-      <section className="awards-hero-section">
-        {/* Pattern & Orbs */}
-        <div className="awards-hero-pattern" />
-        <div className="awards-hero-orb-1" />
-        <div className="awards-hero-orb-2" />
-
-        <div className="container awards-hero-container">
-          <div className="awards-hero-badge">
-            <span className="awards-hero-badge-dot"></span>
-            RECOGNIZED FOR EXCELLENCE
-          </div>
-
-          <h1 className="hero-title awards-hero-title">
-            Award-Winning <span className="awards-gradient-text">Creative Agency</span> &amp; Industry Features
-          </h1>
-
-          <p className="awards-hero-desc">
-            Celebrating our journey of brand innovation, prestigious awards, leadership recognition, and features across top national media publications.
-          </p>
-        </div>
-      </section>
-
-      {/* ── 2. CLEAN FRAMED AWARD BANNER ── */}
-      <section className="awards-banner-section">
-        <div className="container awards-banner-container">
-          <div className="awards-banner-wrap">
+      {/* ── FULL BLEED HERO BANNER ── */}
+      <div className="serInsideBnr">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Awards, Industry Honors &amp; Media Recognitions - Sociapa Brand Studio
+        </h1>
+        <div className="row">
+          <picture>
             <img
-              src={`${base}images/awardBanner.jpg`}
-              alt="Best Creative and Digital Agency Award Banner"
-              className="awards-banner-img"
+              src={`${base}images/banners/award/award.webp`}
+              alt="Best Creative and Digital Agency Award Banner - Sociapa"
+              className="responsive-img w-100"
             />
-          </div>
+          </picture>
         </div>
-      </section>
+      </div>
 
       {/* ── 3. IMPACT STATS STRIP ── */}
       <section className="awards-stats-strip">
@@ -136,20 +87,20 @@ export default function Awards() {
           <div className="awards-featured-card">
             <div className="awards-featured-img-wrap">
               <img
-                src={`${base}images/new-recognition.jpg`}
-                alt="ET Leadership Excellence Award 2023 — Most Promising Digital & Creative Agency — Sociapa"
+                src={`${base}images/outlook-business-achievers-award-2026.webp`}
+                alt="Outlook Business Spotlight Achievers Awards 2026 — Innovative Digital & Creative Agency of the Year — Sociapa"
                 className="awards-featured-img"
               />
             </div>
             <div className="awards-featured-content">
-              <span className="awards-major-tag">MAJOR FEATURE</span>
+              <span className="awards-major-tag">OUTLOOK BUSINESS SPOTLIGHT</span>
 
               <h2 className="awards-featured-h2">
-                ET Leadership Excellence Award 2022
+                Innovative Agency of the Year 2026
               </h2>
 
               <p className="awards-featured-desc">
-                Sociapa was honored with the prestigious <strong>ET Leadership Excellence Award</strong> for groundbreaking brand strategy, creative storytelling, and driving transformative digital growth for clients across India.
+                Sociapa honored as the <strong>Innovative Digital &amp; Creative Agency of the Year</strong> at the prestigious 10th Edition Outlook Business Spotlight Achievers Awards 2026. This landmark national accolade celebrates our visionary brand storytelling, data-driven performance marketing, and transformative growth delivered for brands across India.
               </p>
 
               <Link to="/contact-us" className="btn btn-primary awards-btn-primary">
@@ -173,46 +124,93 @@ export default function Awards() {
           </div>
 
           <div className="awards-media-grid">
-            {awardsData.map((item, index) => (
-              <a
-                key={index}
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="award-card"
-              >
-                {/* Image Box */}
-                <div className="award-card-img-wrapper">
-                  <img
-                    src={`${base}images/${item.img}`}
-                    alt={item.alt}
-                    className="award-card-img"
-                  />
-                  {/* Category badge */}
-                  <div className="award-card-badge">
-                    {item.tag}
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="award-card-body">
-                  <h3 className="award-card-title">
-                    {item.title}
-                  </h3>
-
-                  <p className="award-card-desc">
-                    {item.desc}
-                  </p>
-
-                  <div className="award-card-footer">
-                    <div className="award-card-link-btn">
-                      <span>Read Media Article</span>
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            {awardsData.map((item, index) => {
+              const cardInner = (
+                <>
+                  {/* Image Box */}
+                  <div className="award-card-img-wrapper">
+                    <img
+                      src={`${base}images/${item.img}`}
+                      alt={item.alt}
+                      className="award-card-img"
+                    />
+                    {/* Category badge */}
+                    <div className="award-card-badge">
+                      {item.tag}
                     </div>
                   </div>
+
+                  {/* Content */}
+                  <div className="award-card-body">
+                    <h3 className="award-card-title">
+                      {item.title}
+                    </h3>
+
+                    <p className="award-card-desc">
+                      {item.desc}
+                    </p>
+
+                    <div className="award-card-footer">
+                      <div className="award-card-link-btn">
+                        <span>
+                          {item.link
+                            ? 'Read Media Article'
+                            : item.fullStory
+                            ? 'View Award Story'
+                            : 'Honored & Recognized'}
+                        </span>
+                        {item.link ? (
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        ) : item.fullStory ? (
+                          <span style={{ fontSize: '13px', marginLeft: '4px' }}>✦</span>
+                        ) : (
+                          <span style={{ fontSize: '13px', marginLeft: '4px' }}>★</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+
+              if (item.link) {
+                return (
+                  <a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="award-card"
+                  >
+                    {cardInner}
+                  </a>
+                );
+              }
+
+              if (item.fullStory) {
+                return (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => setSelectedAward(item)}
+                    className="award-card award-card--interactive"
+                    role="button"
+                    aria-label={`View details for ${item.title}`}
+                  >
+                    {cardInner}
+                  </button>
+                );
+              }
+
+              return (
+                <div
+                  key={index}
+                  className="award-card award-card--static"
+                  role="article"
+                >
+                  {cardInner}
                 </div>
-              </a>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -246,6 +244,98 @@ export default function Awards() {
           </div>
         </div>
       </section>
+
+      {/* ── 7. AWARD DETAILS MODAL ── */}
+      {selectedAward && (
+        <div
+          className="award-modal-backdrop"
+          onClick={() => setSelectedAward(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="award-modal-title"
+        >
+          <div
+            className="award-modal-dialog"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="award-modal-close"
+              onClick={() => setSelectedAward(null)}
+              aria-label="Close award modal"
+            >
+              ✕
+            </button>
+
+            <div className="award-modal-layout">
+              {/* Left / Top Media Box */}
+              <div className="award-modal-media">
+                <img
+                  src={`${base}images/${selectedAward.img}`}
+                  alt={selectedAward.alt}
+                  className="award-modal-img"
+                />
+                <div className="award-modal-badge">{selectedAward.tag}</div>
+              </div>
+
+              {/* Right / Bottom Content Box */}
+              <div className="award-modal-content">
+                <div className="award-modal-subtag">
+                  Official Recognition · 2026 Winner
+                </div>
+
+                <h3 id="award-modal-title" className="award-modal-title">
+                  {selectedAward.title}
+                </h3>
+
+                <div className="award-modal-meta-strip">
+                  {selectedAward.category && (
+                    <div className="award-modal-meta-item">
+                      <span className="award-modal-meta-label">Category:</span>
+                      <strong className="award-modal-meta-value">{selectedAward.category}</strong>
+                    </div>
+                  )}
+                  {selectedAward.brand && (
+                    <div className="award-modal-meta-item">
+                      <span className="award-modal-meta-label">Client / Brand:</span>
+                      <strong className="award-modal-meta-value">{selectedAward.brand}</strong>
+                    </div>
+                  )}
+                </div>
+
+                <div className="award-modal-divider" />
+
+                <div className="award-modal-story">
+                  {Array.isArray(selectedAward.fullStory) ? (
+                    selectedAward.fullStory.map((para, pIdx) => (
+                      <p key={pIdx}>{para}</p>
+                    ))
+                  ) : (
+                    <p>{selectedAward.fullStory || selectedAward.desc}</p>
+                  )}
+                </div>
+
+                <div className="award-modal-actions">
+                  <Link
+                    to="/contact-us"
+                    className="btn btn-primary award-modal-cta"
+                    onClick={() => setSelectedAward(null)}
+                  >
+                    Build an Award-Winning Campaign ✦
+                  </Link>
+                  <button
+                    type="button"
+                    className="award-modal-dismiss-btn"
+                    onClick={() => setSelectedAward(null)}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

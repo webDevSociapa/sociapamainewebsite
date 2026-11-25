@@ -1,270 +1,555 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
+import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
+import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
+import { serviceClientSectionsData } from '../data/serviceClientSectionsData';
 import './BrandIdentityDesign.css';
 
 const faqsData = [
   {
-    "q": "What does your brand identity design service include?",
-    "a": "<p>Our service includes mood boards, logo design, colour palette, typography, visual identity systems, brand guidelines, mascot design, and brand assets.</p>"
+    q: "1. What is included in your brand identity design service?",
+    a: "<p>Our brand identity design service includes mood boards, logo design, colour palette development, typography systems, brand mascots, visual identity systems, and comprehensive brand guidelines to ensure a consistent brand presence across every touchpoint.</p>"
   },
   {
-    "q": "Do you design custom logos?",
-    "a": "<p>Yes. We create original logo designs with primary, secondary, and icon variations for use across digital and print.</p>"
+    q: "2. How do you create a brand identity?",
+    a: "<p>We begin by translating your <a href='/brand-strategy' class='seo-interlink'>brand strategy</a> and personality into visual mood boards, defining the creative direction before designing your logo, colour palette, typography, and complete visual identity system.</p>"
   },
   {
-    "q": "What is included in a brand guidelines document?",
-    "a": "<p>Our brand guidelines cover logo usage, colours, typography, imagery, visual elements, and brand application standards to ensure consistent branding across every touchpoint.</p>"
+    q: "3. What types of logos do you design?",
+    a: "<p>We design premium logos, including wordmarks, lettermarks, monograms, and combination marks, with primary, secondary, and icon-only variations for use across digital and print applications.</p>"
   },
   {
-    "q": "Do you create complete visual identity systems?",
-    "a": "<p>Yes. We design complete visual identity systems, including icons, patterns, illustrations, photography styles, branded assets, and other visual elements that create a cohesive brand experience.</p>"
+    q: "4. Do you provide brand guidelines?",
+    a: "<p>Yes. We deliver a comprehensive brand guidelines document covering logo usage, colour codes (HEX, RGB, CMYK, and Pantone), typography specifications, imagery style, and brand usage guidelines for your team and production vendors.</p>"
   },
   {
-    "q": "Can you redesign an existing brand identity?",
-    "a": "<p>Yes. We help businesses refresh their logo, colour palette, typography, and overall visual identity while maintaining brand consistency and recognition.</p>"
+    q: "5. Do you create colour palettes and typography systems?",
+    a: "<p>Yes. We develop strategically selected colour palettes and typography systems, including primary and secondary fonts with clear hierarchy guidelines for print, digital, <a href='/best-packaging-design-agency-india' class='seo-interlink'>packaging</a>, and <a href='/best-social-media-marketing-agency-india' class='seo-interlink'>social media</a>.</p>"
   },
   {
-    "q": "Will my brand identity work across all platforms?",
-    "a": "<p>Absolutely. Every brand identity is designed to work seamlessly across websites, social media, packaging, retail, advertising, digital campaigns, and printed marketing materials.</p>"
+    q: "6. Can you design a custom brand mascot?",
+    a: "<p>Absolutely. We create custom brand mascots that reflect your brand personality, strengthen emotional connections, and improve brand recall across packaging, digital platforms, and marketing materials.</p>"
   },
   {
-    "q": "Do you provide all design source files?",
-    "a": "<p>Yes. Upon project completion, you'll receive AI, EPS, SVG, PNG, PDF files, colour codes, and a complete brand guidelines document for future use.</p>"
+    q: "7. What is a visual identity system?",
+    a: "<p>A visual identity system goes beyond the logo and includes brand patterns, icons, illustration styles, photography guidelines, and design templates to ensure a consistent brand experience across every customer touchpoint.</p>"
   },
   {
-    "q": "How long does a brand identity project take?",
-    "a": "<p>Initial design concepts are typically delivered within 7 business days, followed by structured feedback sessions and refinement rounds to finalize your brand identity.</p>"
+    q: "8. Will my brand identity work across different platforms?",
+    a: "<p>Yes. Every logo and visual identity element is designed to perform seamlessly across packaging, retail, websites, social media, outdoor advertising, merchandise, and other brand applications.</p>"
   },
   {
-    "q": "Will I own the copyright to my logo and brand identity?",
-    "a": "<p>Yes. All designs are 100% original, and full intellectual property ownership is transferred to you after the project is completed and approved.</p>"
+    q: "9. Is your design process based on strategy?",
+    a: "<p>Yes. Every visual identity decision, from colours and typography to icons and layouts, is rooted in your brand strategy to ensure every design choice supports your business objectives and brand positioning.</p>"
   },
   {
-    "q": "Why choose Sociapa for brand identity design?",
-    "a": "<p>We combine strategic brand thinking with creative design to build distinctive visual identities that improve brand recognition, maintain consistency, and create long-term business value.</p>"
+    q: "10. Do you work with startups and established brands?",
+    a: "<p>Yes. Our experience spans FMCG, D2C, retail, wellness, fashion, and technology, creating visual identities for businesses ranging from early-stage startups to established national brands.</p>"
   }
 ];
 
 export default function BrandIdentityDesign() {
-    const [openFaq, setOpenFaq] = useState(null);
-    const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
-    useEffect(() => { window.scrollTo(0, 0); }, []);
+  const [openFaq, setOpenFaq] = useState(null);
+  const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
+  const base = import.meta.env.BASE_URL || '/';
 
-    return (
-      <>
-        <section className="brandidentitydesign-hero">
-          <div className="brandidentitydesign-hero-blob hero-blob-1"></div>
-          <div className="brandidentitydesign-hero-blob hero-blob-2"></div>
-          <div className="brandidentitydesign-hero-content">
-            <div className="brandidentitydesign-hero-badge"><span className="brandidentitydesign-hero-badge-dot"></span>Logo Design · Visual Identity · Brand Guidelines · Mascot</div>
-            <h1>Brand Identity Design That <span>Makes You Unforgettable</span></h1>
-            <p>Sociapa creates impactful brand identities, from logo design and visual systems to complete brand guidelines, helping your business build recognition, credibility, and lasting brand value.</p>
-            <div className="brandidentitydesign-hero-buttons">
-              <a href="#services" className="btn-white">Explore Our Services</a>
-              <a href="mailto:mail@sociapa.com" className="btn-outline-white">Start Your Identity Project</a>
-            </div>
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="brand-identity-design-page brand-identity-page">
+      <Helmet>
+        <title>Brand Identity Design | Sociapa Brand Studio</title>
+        <meta
+          name="description"
+          content="Sociapa Brand Studio is India's full-service brand consultancy — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production & Photography, and Unboxing Experience."
+        />
+        <meta
+          name="keywords"
+          content="brand strategy agency India, brand identity design, packaging design agency, go to market strategy, brand studio India, D2C branding agency, FMCG brand design"
+        />
+        <link rel="canonical" href="https://sociapa.com/brand-identity-design" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Sociapa Brand Studio" />
+        <meta property="og:title" content="Brand Identity Design" />
+        <meta
+          property="og:description"
+          content="Sociapa Brand Studio is India's full-service brand consultancy — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production & Photography, and Unboxing Experience."
+        />
+        <meta property="og:url" content="https://sociapa.com/brand-identity-design" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqsData.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": (faq.a || '').replace(/<[^>]*>/g, '')
+            }
+          }))
+        })}</script>
+        {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Brand Identity Design Agency India | Sociapa","item":"https://sociapa.com/brand-identity-design"}]})}</script>
+      </Helmet>
+
+      {/* Hero Banner Section */}
+      <section className="hero-banner-section">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Brand Identity Design Agency - Sociapa Brand Studio
+        </h1>
+        <picture>
+          <source type="image/webp" srcSet={`${base}assets/images/services_banner/brand_identity_design/brand_identityban.webp`} />
+          <img
+            src={`${base}assets/images/services_banner/brand_identity_design/brand_identityban.jpg`}
+            alt="Brand Identity Design Agency - Sociapa Brand Studio"
+            className="hero-banner-img"
+            decoding="async"
+            width="1920"
+            height="1080"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
+      </section>
+
+      {/* Stats Bar */}
+      <div className="stats-bar">
+        <div className="stats-inner">
+          <div className="stat-item">
+            <div className="stat-num">160+</div>
+            <div className="stat-label">Brand Identities Created</div>
           </div>
-        </section>
-
-        <div className="stats-bar">
-          <div className="stat-item"><div className="stat-num">160+</div><div className="stat-label">Brand Identities Created</div></div>
-          <div className="stat-item"><div className="stat-num">8+</div><div className="stat-label">Years of Design Excellence</div></div>
-          <div className="stat-item"><div className="stat-num">50+</div><div className="stat-label">Industries Served</div></div>
-          <div className="stat-item"><div className="stat-num">98%</div><div className="stat-label">Client Satisfaction</div></div>
+          <div className="stat-item">
+            <div className="stat-num">8+</div>
+            <div className="stat-label">Years of Design Excellence</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-num">50+</div>
+            <div className="stat-label">Industries Served</div>
+          </div>
+          <div className="stat-item">
+            <div className="stat-num">98%</div>
+            <div className="stat-label">Client Satisfaction</div>
+          </div>
         </div>
+      </div>
 
-        <section id="services" className="pub-section-light">
-          <div className="section-header">
-            <span className="section-tag">What We Design</span>
-            <h2>Complete <span>Brand Identity Design</span> Services</h2>
-            <div className="divider"></div>
-            <p className="section-sub seo-sub-top">From mood boards to brand guidelines, we create strategic visual identities that are memorable, scalable, and built for long-term brand success.</p>
-          </div>
-          <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">🎨</div>
-              <h3>Mood Board Design</h3>
-              <p>Bring your brand vision to life with strategic mood boards that define colours, typography, imagery, and visual direction before the design process begins. </p>
-              <div className="service-tags"><span className="tag">Visual Direction</span><span className="tag">Creative Brief</span><span className="tag">Aesthetic Mapping</span><span className="tag">Style Board</span></div>
+      {/* Services Section */}
+      <section id="services">
+        <div className="section-header">
+          <span className="section-tag">What We Design</span>
+          <h2>Complete <span>Brand Identity Design</span> Services</h2>
+          <div className="divider"></div>
+          <p className="section-sub">
+            From the first mood board to the final brand guidelines, we craft strategic, beautiful, and scalable visual identities that strengthen brand recognition, build trust, and create a consistent brand experience across every touchpoint.
+          </p>
+        </div>
+        <div className="services-grid">
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/mood_board_design.png`}
+                alt="Mood Board Design"
+              />
             </div>
-            <div className="service-card">
-              <div className="service-icon">🌈</div>
-              <h3>Colour Palette & Typography</h3>
-              <p>Develop a strategic colour palette and typography system that ensures a consistent, professional brand identity across print, digital, and social media. </p>
-              <div className="service-tags"><span className="tag">Brand Colours</span><span className="tag">Font Selection</span><span className="tag">Type Hierarchy</span><span className="tag">Color Psychology</span></div>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">✨</div>
-              <h3>Logo Design</h3>
-              <p>Create a distinctive logo with primary, secondary, and icon variations, designed for consistent branding across digital, print, packaging, and marketing materials. </p>
-              <div className="service-tags"><span className="tag">Logo Design</span><span className="tag">Wordmark</span><span className="tag">Monogram</span><span className="tag">Icon Design</span></div>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">📋</div>
-              <h3>Brand Guidelines</h3>
-              <p>Create a comprehensive brand guidelines document covering logo usage, colour palettes, typography, imagery, and visual standards to ensure brand consistency across every touchpoint. </p>
-              <div className="service-tags"><span className="tag">Brand Book</span><span className="tag">Style Guide</span><span className="tag">Logo Usage Rules</span><span className="tag">Design Tokens</span></div>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">⚡</div>
-              <h3>Mascot Design</h3>
-              <p>Custom brand mascots designed to reflect your brand personality, strengthen customer connections, and enhance recognition across digital, packaging, and marketing materials. </p>
-              <div className="service-tags"><span className="tag">Character Design</span><span className="tag">Brand Mascot</span><span className="tag">Illustration</span><span className="tag">Brand Character</span></div>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">🚀</div>
-              <h3>Visual Identity System</h3>
-              <p>A complete visual identity system including patterns, icons, illustrations, photography guidelines, and branded assets for packaging, stationery, social media, and digital platforms. </p>
-              <div className="service-tags"><span className="tag">Identity System</span><span className="tag">Brand Patterns</span><span className="tag">Brand Templates</span><span className="tag">Stationery Design</span></div>
+            <h3>Mood Board Design</h3>
+            <p>
+              We translate your brand personality and strategy into visual mood boards, setting the creative direction for colours, textures, photography style, and design language before a single logo is created.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Visual Direction</span>
+              <span className="tag">Creative Brief</span>
+              <span className="tag">Aesthetic Mapping</span>
+              <span className="tag">Style Board</span>
             </div>
           </div>
-        </section>
 
-        <section id="tools">
-          <div className="section-header">
-            <span className="section-tag">Design Tools</span>
-            <h2>Tools Our <span>Designers Master</span></h2>
-            <div className="divider"></div>
-            <p className="section-sub seo-sub-top">Industry-leading design tools for pixel-perfect identity systems across print and digital.</p>
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/colour_palette_and_typography.png`}
+                alt="Colour Palette & Typography"
+              />
+            </div>
+            <h3>Colour Palette &amp; Typography</h3>
+            <p>
+              Craft a scientifically and psychologically informed colour palette alongside a precise typography system, including primary fonts, secondary fonts, and typography hierarchy for print, digital, and social media applications.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Brand Colours</span>
+              <span className="tag">Font Selection</span>
+              <span className="tag">Type Hierarchy</span>
+              <span className="tag">Color Psychology</span>
+            </div>
           </div>
-          <div className="tech-grid">
-            <div className="tech-chip"><span>Adobe Illustrator</span></div>
-            <div className="tech-chip"><span>Adobe Photoshop</span></div>
-            <div className="tech-chip"><span>Adobe InDesign</span></div>
-            <div className="tech-chip"><span>Figma</span></div>
-            <div className="tech-chip"><span>Affinity Designer</span></div>
-            <div className="tech-chip"><span>Procreate</span></div>
-            <div className="tech-chip"><span>Coolors / Pantone</span></div>
-            <div className="tech-chip"><span>Adobe Fonts</span></div>
-            <div className="tech-chip"><span>Brand Folder</span></div>
-            <div className="tech-chip"><span>Notion (Brand Docs)</span></div>
-          </div>
-        </section>
 
-        <section id="portfolio" className="pub-section-light">
-          <div className="section-header">
-            <span className="section-tag">Our Work</span>
-            <h2>Identities We've <span>Built to Last</span></h2>
-            <div className="divider"></div>
-            <p className="section-sub seo-sub-top">Visual identity projects across beauty, wellness, food, fashion, and lifestyle categories.</p>
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/logo_design.png`}
+                alt="Logo Design"
+              />
+            </div>
+            <h3>Logo Design</h3>
+            <p>
+              Premium logo design, including wordmarks, lettermarks, monograms, and combination marks, with multiple logo variations, including primary, secondary, and icon-only versions, designed for every application from business cards to billboards.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Logo Design</span>
+              <span className="tag">Wordmark</span>
+              <span className="tag">Monogram</span>
+              <span className="tag">Icon Design</span>
+            </div>
           </div>
-          <div className="projects-grid">
-            <div className="project-card">
-              <div className="project-preview">
-                <img src="images/vanesa.png" alt="Vanesa Cosmetics Brand Identity" />
-                <span className="project-badge">Beauty · Identity</span>
-                <div className="project-overlay">
-                  <a href="https://www.vanesacosmetics.com/">➔ View Project</a>
-                </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/brand_guidelines.png`}
+                alt="Brand Guidelines"
+              />
+            </div>
+            <h3>Brand Guidelines</h3>
+            <p>
+              A comprehensive brand guidelines document covering logo usage, colour codes (HEX, RGB, CMYK, and Pantone), typography specifications, imagery style, and brand do's and don'ts for your design team and production vendors.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Brand Book</span>
+              <span className="tag">Style Guide</span>
+              <span className="tag">Logo Usage Rules</span>
+              <span className="tag">Design Tokens</span>
+            </div>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/mascot_design.png`}
+                alt="Mascot Design"
+              />
+            </div>
+            <h3>Mascot Design</h3>
+            <p>
+              Custom brand mascot design, creating a unique character that embodies your brand personality, builds an emotional connection, and enhances brand recall across packaging, digital platforms, and marketing collateral.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Character Design</span>
+              <span className="tag">Brand Mascot</span>
+              <span className="tag">Illustration</span>
+              <span className="tag">Brand Character</span>
+            </div>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/visual_identity_system.png`}
+                alt="Visual Identity System"
+              />
+            </div>
+            <h3>Visual Identity System</h3>
+            <p>
+              Beyond the logo, we create a complete visual identity system that includes brand patterns, custom icons, illustration styles, photography guidelines, and application templates for business cards, letterheads, social media, packaging, and other brand touchpoints.
+            </p>
+            <div className="service-tags">
+              <span className="tag">Identity System</span>
+              <span className="tag">Brand Patterns</span>
+              <span className="tag">Brand Templates</span>
+              <span className="tag">Stationery Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools Section */}
+      <section id="tools">
+        <div className="section-header">
+          <span className="section-tag">Design Tools</span>
+          <h2>Tools Our <span>Designers Master</span></h2>
+          <div className="divider"></div>
+          <p className="section-sub">
+            Industry-leading design tools for pixel-perfect identity systems across print and digital.
+          </p>
+        </div>
+        <div className="tech-grid">
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/adobe_illustrator.png`}
+                alt="Adobe Illustrator"
+              />
+            </span>
+            <span>Adobe Illustrator</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/adobe_indesign.png`}
+                alt="Adobe InDesign"
+              />
+            </span>
+            <span>Adobe InDesign</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/figma.png`}
+                alt="Figma"
+              />
+            </span>
+            <span>Figma</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/affinity_designer.png`}
+                alt="Affinity Designer"
+              />
+            </span>
+            <span>Affinity Designer</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/procreate.png`}
+                alt="Procreate"
+              />
+            </span>
+            <span>Procreate</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/pantone.png`}
+                alt="Coolors / Pantone"
+              />
+            </span>
+            <span>Coolors / Pantone</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/adpbe_fonts.png`}
+                alt="Adobe Fonts"
+              />
+            </span>
+            <span>Adobe Fonts</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/brand_folder.png`}
+                alt="Brand Folder"
+              />
+            </span>
+            <span>Brand Folder</span>
+          </div>
+          <div className="tech-chip">
+            <span className="tech-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/notion_brand_docs.png`}
+                alt="Notion (Brand Docs)"
+              />
+            </span>
+            <span>Notion (Brand Docs)</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <ServiceOurWorkSection
+        work={serviceClientSectionsData['brand-identity-design']?.work}
+        subtitle="Visual identity projects across FMCG, food & beverages, healthcare, and lifestyle categories."
+      />
+
+      {/* Process Section */}
+      <section id="process">
+        <div className="section-header">
+          <span className="section-tag">How We Design</span>
+          <h2>Our <span>5-Step Identity</span> Design Process</h2>
+          <div className="divider"></div>
+        </div>
+        <div className="process-steps">
+          <div className="process-step">
+            <div className="step-circle">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/discovery.png`}
+                alt="Discovery"
+              />
+            </div>
+            <h4>Discovery</h4>
+            <p>Brand audit, competitor visual analysis, and deep-dive brief to understand design goals and audience</p>
+          </div>
+          <div className="process-step">
+            <div className="step-circle">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/moodboard.png`}
+                alt="Mood Board"
+              />
+            </div>
+            <h4>Mood Board</h4>
+            <p>Visual direction concepts presented — colour worlds, typography styles, and design languages to choose from</p>
+          </div>
+          <div className="process-step">
+            <div className="step-circle">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/concept_design.png`}
+                alt="Concept Design"
+              />
+            </div>
+            <h4>Concept Design</h4>
+            <p>2–3 distinct logo and identity concepts developed and presented with rationale and applications</p>
+          </div>
+          <div className="process-step">
+            <div className="step-circle">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/refinement.png`}
+                alt="Refinement"
+              />
+            </div>
+            <h4>Refinement</h4>
+            <p>Selected concept refined through structured feedback rounds until it's perfect across all applications</p>
+          </div>
+          <div className="process-step">
+            <div className="step-circle">
+              <img
+                src={`${base}assets/images/services_icons/brand_identity_design/brand_guidelines_2.png`}
+                alt="Brand Guidelines"
+              />
+            </div>
+            <h4>Brand Guidelines</h4>
+            <p>Final brand guidelines document delivered with all file formats — AI, EPS, SVG, PNG, PDF</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Sociapa Section */}
+      <section id="why">
+        <div className="section-header">
+          <span className="section-tag">Why Sociapa</span>
+          <h2>Design That Is <span>Strategic, Not Just Pretty</span></h2>
+          <div className="divider" style={{ background: 'rgba(255,255,255,0.3)' }}></div>
+          <p className="section-sub">
+            We design with your brand strategy at the core, ensuring every visual identity decision is intentional, purposeful, and aligned with your business goals.
+          </p>
+        </div>
+        <div className="why-grid">
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/strategy_led_design.png`}
+                alt="Strategy-Led Design"
+              />
+            </div>
+            <h3>Strategy-Led Design</h3>
+            <p>Every visual identity decision, including colour, typography, shapes, and icons, is rooted in your brand strategy. We don't guess; we design with purpose, clarity, and strategic insight.</p>
+          </div>
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/160_plus_identity_projects.png`}
+                alt="160+ Identity Projects"
+              />
+            </div>
+            <h3>160+ Identity Projects</h3>
+            <p>Across FMCG, D2C, retail, wellness, fashion, and technology, our portfolio spans diverse industries and supports businesses ranging from startups to national brands.</p>
+          </div>
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/print_and_digital_ready.png`}
+                alt="Print & Digital Ready"
+              />
+            </div>
+            <h3>Print &amp; Digital Ready</h3>
+            <p>Every logo and visual identity element is designed to perform seamlessly across packaging, retail stores, social media, websites, outdoor advertising, merchandise, and every customer touchpoint.</p>
+          </div>
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/fast_turnaround.png`}
+                alt="Fast Turnaround"
+              />
+            </div>
+            <h3>Fast Turnaround</h3>
+            <p>First concepts delivered within 7 business days. Structured feedback rounds ensure on-time delivery without sacrificing quality.</p>
+          </div>
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/comprehensive_deliverables.png`}
+                alt="Comprehensive Deliverables"
+              />
+            </div>
+            <h3>Comprehensive Deliverables</h3>
+            <p>You receive all file formats (AI, EPS, SVG, PNG, PDF), colour codes for every medium, and a complete brand guidelines document.</p>
+          </div>
+          <div className="why-card">
+            <div className="why-icon">
+              <img
+                src={`${base}assets/images/services_icons/brand_strategy/full_ip_ownership.png`}
+                alt="Full IP Ownership"
+              />
+            </div>
+            <h3>Full IP Ownership</h3>
+            <p>All design work is 100% original, with complete intellectual property (IP) rights transferred to you upon project completion. Every logo, visual identity, and brand asset is custom designed with no templates or stock elements.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Behind the Work Section */}
+      <ServiceBehindWorkSection
+        testimonials={serviceClientSectionsData['brand-identity-design']?.testimonials}
+      />
+
+      {/* Featured Case Studies Slider */}
+      <ServiceCaseStudiesSlider />
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <div className="section-header">
+          <span className="section-tag">FAQ</span>
+          <h2>Brand Identity Design <span>Questions Answered</span></h2>
+          <div className="divider"></div>
+          <p className="section-sub">
+            Everything you need to know about getting your brand identity designed with Sociapa.
+          </p>
+        </div>
+        <div className="faq-list">
+          {faqsData.map((faq, idx) => (
+            <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+              <div className="faq-q" onClick={() => toggleFaq(idx)}>
+                {faq.q}
+                <span className="faq-icon">{openFaq === idx ? '−' : '+'}</span>
               </div>
-              <div className="project-info">
-                <h3>Vanesa Cosmetics</h3>
-                <p>Complete brand identity redesign with a new logo system, refreshed colour palette, typography, and comprehensive brand guidelines for 500+ retail touchpoints.</p>
-                <div className="project-meta">
-                  <span className="tag">Logo</span>
-                  <span className="tag">Guidelines</span>
-                  <span className="tag">Beauty</span>
-                </div>
+              <div className="faq-a">
+                <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
 
-            <div className="project-card">
-              <div className="project-preview">
-                <img src="images/Nature-pearls.png" alt="Nature Pearls Organic Branding" />
-                <span className="project-badge">Wellness · Identity</span>
-                <div className="project-overlay">
-                  <a href="https://www.naturepearlsorganic.com/">➔ View Project</a>
-                </div>
-              </div>
-              <div className="project-info">
-                <h3>Nature Pearls Organic</h3>
-                <p>Developed a premium visual identity featuring a custom logo, natural colour palette, brand mood board, and a complete digital identity system. </p>
-                <div className="project-meta">
-                  <span className="tag">Logo</span>
-                  <span className="tag">Mood Board</span>
-                  <span className="tag">Wellness</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-card">
-              <div className="project-preview">
-                <img src="images/DF-logo-blue.png" alt="Dhavani Brand Identity" />
-                <span className="project-badge">Lifestyle · Identity</span>
-                <div className="project-overlay">
-                  <a href="https://dhavani.life/">➔ View Project</a>
-                </div>
-              </div>
-              <div className="project-info">
-                <h3>Dhavani</h3>
-                <p>Designed a minimalist brand identity with a custom wordmark, curated colour palette, and a visual identity system tailored for digital-first and D2C marketing. </p>
-                <div className="project-meta">
-                  <span className="tag">Logo</span>
-                  <span className="tag">Color System</span>
-                  <span className="tag">Lifestyle</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="why">
-          <div className="section-header">
-            <span className="section-tag">Why Sociapa</span>
-            <h2>Design That Is <span>Strategic, Not Just Pretty</span></h2>
-            <div className="divider divider-alpha-white"></div>
-            <p className="section-sub seo-sub-top">We design every visual element around your brand strategy, ensuring a purposeful, consistent, and impactful brand identity.</p>
-          </div>
-          <div className="why-grid">
-            <div className="why-card"><div className="why-icon">🎯</div><h3>Strategy-Led Design</h3><p>Every visual element, from colours and typography to icons and layouts, is guided by your brand strategy to create a consistent, purposeful, and impactful identity. </p></div>
-            <div className="why-card"><div className="why-icon">🏆</div><h3>160+ Identity Projects</h3><p>Our experience spans FMCG, D2C, retail, wellness, fashion, and technology, creating impactful brand identities for startups, growing businesses, and established brands. </p></div>
-            <div className="why-card"><div className="why-icon">🖨️</div><h3>Print & Digital Ready</h3><p>Every logo and brand identity is designed for seamless use across packaging, websites, social media, retail, advertising, and marketing materials. </p></div>
-            <div className="why-card"><div className="why-icon">⚡</div><h3>Fast Turnaround</h3><p>First design concepts delivered within 7 business days, with structured feedback rounds to ensure timely delivery and exceptional quality. </p></div>
-            <div className="why-card"><div className="why-icon">📋</div><h3>Comprehensive Deliverables</h3><p>Receive all essential brand assets, including AI, EPS, SVG, PNG, and PDF files, complete colour codes, and detailed brand guidelines for consistent use across every platform. </p></div>
-            <div className="why-card"><div className="why-icon">🔥</div><h3>Full IP Ownership</h3><p>All designs are 100% original with full intellectual property ownership transferred to you upon project completion. </p></div>
-          </div>
-        </section>
-
-        <section id="testimonials" className="pub-section-light">
-          <div className="section-header">
-            <span className="section-tag">Client Voices</span>
-            <h2>What Our <span>Clients Say</span></h2>
-            <div className="divider"></div>
-          </div>
-          <div className="testimonials-grid">
-            <div className="testimonial-card"><div className="stars">★★★★★</div><blockquote>"The visual identity Sociapa designed for us is the most complimented aspect of our brand. People recognise us instantly at retail — the logo and colour system is just perfect."</blockquote><div className="testimonial-author"><div className="author-avatar">VC</div><div><div className="author-name">Brand Head, Vanesa Cosmetics</div><div className="author-title">Beauty Brand, Pan-India</div></div></div></div>
-            <div className="testimonial-card"><div className="stars">★★★★★</div><blockquote>"Our new identity got us featured on Instagram as a 'beautiful brand' by two industry accounts. The attention to detail in the mood board and colour palette stage was exceptional."</blockquote><div className="testimonial-author"><div className="author-avatar">NP</div><div><div className="author-name">Founder, Nature Pearls Organic</div><div className="author-title">Wellness D2C Brand</div></div></div></div>
-            <div className="testimonial-card"><div className="stars">★★★★★</div><blockquote>"Sociapa delivered a brand guidelines document so thorough that onboarding new vendors and agencies became effortless. Our brand looks consistent everywhere now."</blockquote><div className="testimonial-author"><div className="author-avatar">DH</div><div><div className="author-name">Marketing Director, Dhavani</div><div className="author-title">Lifestyle Brand, D2C</div></div></div></div>
-          </div>
-        </section>
-
-        <section id="faq">
-          <div className="section-header">
-            <span className="section-tag">FAQ</span>
-            <h2>Brand Identity Design <span>Questions Answered</span></h2>
-            <div className="divider"></div>
-            <p className="section-sub seo-sub-top">Everything you need to know about getting your brand identity designed with Sociapa.</p>
-          </div>
-          <div className="faq-list">
-            {faqsData.map((faq, idx) => (
-              <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
-                <div className="faq-q" onClick={() => toggleFaq(idx)}>
-                  {faq.q}
-                  <span className="faq-icon">{openFaq === idx ? '-' : '+'}</span>
-                </div>
-                <div className="faq-a" dangerouslySetInnerHTML={{ __html: faq.a }}></div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="cta">
-          <h2>Ready for an Identity That <span>Turns Heads & Builds Trust?</span></h2>
-          <p>Share your brand vision and let us design a visual identity that stands the test of time.</p>
-          <div className="cta-buttons">
-            <a href="mailto:mail@sociapa.com" className="btn-white">Get a Design Proposal</a>
-            <a href="https://wa.me/8375828920" className="btn-outline-white">WhatsApp Us</a>
-          </div>
-        </section>
-      </>
-    );
+      {/* CTA Section */}
+      <section id="cta">
+        <h2>Ready for an Identity That <span>Turns Heads &amp; Builds Trust?</span></h2>
+        <p>Share your brand vision and let us design a visual identity that stands the test of time.</p>
+        <div className="cta-buttons">
+          <a href="mailto:mail@sociapa.com" className="btn-white">Get a Design Proposal</a>
+          <a
+            href="https://wa.me/918287445375"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-white"
+          >
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
+    </div>
+  );
 }

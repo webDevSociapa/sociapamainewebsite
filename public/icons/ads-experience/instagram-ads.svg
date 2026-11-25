@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180">
+      <defs>
+        <radialGradient id="igR" cx="20%" cy="110%" r="130%">
+          <stop offset="0%" stop-color="#FFDD55"/>
+          <stop offset="20%" stop-color="#FF5D3B"/>
+          <stop offset="50%" stop-color="#D62976"/>
+          <stop offset="80%" stop-color="#962FBF"/>
+          <stop offset="100%" stop-color="#4F5BD5"/>
+        </radialGradient>
+      </defs>
+      <g transform="translate(20, 30)">
+        <g transform="translate(0, 10)">
+          <rect width="96" height="96" rx="24" fill="url(#igR)"/>
+          <rect x="18" y="18" width="60" height="60" rx="16" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+          <circle cx="48" cy="48" r="15" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+          <circle cx="68" cy="28" r="4.5" fill="#FFFFFF"/>
+        </g>
+        <g transform="translate(118, 56)">
+          <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="38" fill="#262626" letter-spacing="-0.5">Instagram</text>
+          <text x="2" y="40" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="#D62976" letter-spacing="-0.5">Ads</text>
+        </g>
+      </g>
+    </svg>

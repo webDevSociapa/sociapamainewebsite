@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="512" height="512">
+    <defs>
+      <linearGradient id="atpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF5C4D" />
+        <stop offset="100%" stop-color="#F02D5E" />
+      </linearGradient>
+    </defs>
+    <!-- Concentric radar search arc -->
+    <path d="M 20 60 A 40 40 0 1 1 100 60" fill="none" stroke="url(#atpGrad)" stroke-width="3" stroke-dasharray="5 5" opacity="0.8" />
+    <path d="M 32 60 A 28 28 0 1 1 88 60" fill="none" stroke="url(#atpGrad)" stroke-width="2" opacity="0.4" />
+    <!-- Radiating query question nodes -->
+    <circle cx="20" cy="60" r="4" fill="#FF5C4D" />
+    <circle cx="34" cy="30" r="4" fill="#FF5C4D" />
+    <circle cx="60" cy="20" r="5" fill="#FF5C4D" />
+    <circle cx="86" cy="30" r="4" fill="#FF5C4D" />
+    <circle cx="100" cy="60" r="4" fill="#FF5C4D" />
+    <!-- Connector branches -->
+    <line x1="60" y1="20" x2="60" y2="38" stroke="#FF5C4D" stroke-width="2.5" />
+    <line x1="34" y1="30" x2="48" y2="44" stroke="#FF5C4D" stroke-width="2" />
+    <line x1="86" y1="30" x2="72" y2="44" stroke="#FF5C4D" stroke-width="2" />
+    <!-- Central Head & Mind -->
+    <circle cx="60" cy="46" r="9" fill="url(#atpGrad)" />
+    <path d="M 46 72 C 46 62 53 58 60 58 C 67 58 74 62 74 72 Z" fill="url(#atpGrad)" />
+    <!-- Public / Audience Crowd in Front -->
+    <!-- Left Crowd Member -->
+    <circle cx="38" cy="78" r="7" fill="#424242" />
+    <path d="M 28 100 C 28 91 33 87 38 87 C 43 87 48 91 48 100 Z" fill="#424242" />
+    <!-- Center Leader -->
+    <circle cx="60" cy="75" r="8" fill="#1E1E1E" />
+    <path d="M 48 100 C 48 89 53 85 60 85 C 67 85 72 89 72 100 Z" fill="#1E1E1E" />
+    <!-- Right Crowd Member -->
+    <circle cx="82" cy="78" r="7" fill="#424242" />
+    <path d="M 72 100 C 72 91 77 87 82 87 C 87 87 92 91 92 100 Z" fill="#424242" />
+  </svg>

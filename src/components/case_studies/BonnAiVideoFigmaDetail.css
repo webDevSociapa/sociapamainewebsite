@@ -1,0 +1,585 @@
+/* ═══════════════════════════════════════════════════════════════════
+   BonnAiVideoFigmaDetail.css
+   Figma baHXdLxEmfe8anxZpPS2Nq / node-id=509-2 (AI Video)
+   Exact 1:1 Pixel-Perfect Replica
+   Typography: Classic Editorial Serif with Dual Tone (Charcoal & Red)
+   Colors: #C8282A (Bonn Crimson Red), #111827 (Charcoal),
+           #FFF1F0 / #FDF3F2 (Blush Card Bg), #FFFFFF (White)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Base Container & Reset ── */
+.bav-figma-case-study {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: inherit;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.bav-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Screen Reader Accessible H1 ── */
+.bav-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── Editorial Serif Headings (Matching Figma Exact Design) ── */
+.bav-serif-red {
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.bav-serif-dark {
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Red Underlined Words matching Figma Headings exactly */
+.bav-red-underlined {
+  position: relative;
+  display: inline-block;
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.bav-red-underlined .bav-red-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -6px;
+  height: 3px;
+  background-color: #C8282A;
+  border-radius: 2px;
+}
+
+.bav-section-heading {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  text-align: center;
+  margin: 0 0 16px;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+.bav-center-header {
+  max-width: 960px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+/* ── 1. HERO BANNER SECTION (FIGMA UNTITLED-1 1) ── */
+.bav-hero-section {
+  padding: 16px 0 28px;
+}
+
+.bav-hero-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E5E7EB;
+  background: #FFFFFF;
+}
+
+.bav-hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 3. TAG PILLS ROW ── */
+.bav-tags-section {
+  padding: 20px 0 32px;
+}
+
+.bav-tags-pills-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.bav-tag-pill {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #FFFFFF;
+  border: 1.5px solid #C8282A;
+  color: #C8282A;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.bav-tag-pill:hover {
+  background: #FFF1F0;
+  color: #991B1B;
+  transform: translateY(-2px);
+}
+
+/* ── 4. PROJECT OVERVIEW SECTION (FIGMA 2-COLUMN METADATA) ── */
+.bav-overview-section {
+  padding: 44px 0 56px;
+}
+
+.bav-overview-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.bav-overview-left {
+  padding-top: 4px;
+}
+
+.bav-overview-title {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2.2rem, 3.4vw, 3rem);
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bav-overview-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.bav-meta-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bav-meta-key {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', serif;
+}
+
+.bav-meta-val {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.bav-meta-services {
+  grid-column: span 2;
+  margin-top: 6px;
+}
+
+/* ── 5. THE CHALLENGE SECTION (FIGMA 2-COLUMN MATCHING IMAGE 2 EXACTLY) ── */
+.bav-challenge-section {
+  padding: 56px 0 64px;
+}
+
+.bav-challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.bav-challenge-content p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #1F2937;
+  margin: 0 0 20px;
+}
+
+.bav-challenge-content p:last-child {
+  margin-bottom: 0;
+}
+
+.bav-challenge-visual {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.bav-challenge-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 6. THE STRATEGY SECTION (FIGMA CENTER NARRATIVE + 3 MASCOTS BANNER) ── */
+.bav-strategy-section {
+  padding: 56px 0 64px;
+}
+
+.bav-strategy-narrative {
+  max-width: 940px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.bav-strategy-narrative p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin: 0 0 16px;
+}
+
+.bav-strategy-visual-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E5E7EB;
+}
+
+.bav-strategy-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 7. OUR APPROACH SECTION (FIGMA 4 DUAL-TONE EDITORIAL ROWS) ── */
+.bav-approach-section {
+  padding: 64px 0 56px;
+}
+
+.bav-approach-list {
+  max-width: 980px;
+  margin: 44px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.bav-approach-item {
+  position: relative;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.bav-approach-item:last-child {
+  border-bottom: none;
+}
+
+.bav-approach-item-title {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bav-approach-item-title .dark-part {
+  color: #111827;
+}
+
+.bav-approach-item-title .red-part {
+  color: #C8282A;
+}
+
+.bav-approach-item-desc {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #4B5563;
+  margin: 0;
+}
+
+/* ── 8. CREATIVE CONCEPT & VISUAL EXECUTION ── */
+.bav-concept-section {
+  padding: 56px 0 64px;
+  background: #FAFAFA;
+}
+
+.bav-concept-narrative {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bav-concept-narrative p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #374151;
+  margin: 0;
+}
+
+/* ── 9. CAMPAIGN PERFORMANCE SECTION (FIGMA 4 RED STAT CARDS) ── */
+.bav-performance-section {
+  padding: 64px 0 48px;
+}
+
+.bav-perf-subtitle {
+  font-size: 1.05rem;
+  color: #4B5563;
+  margin: 12px auto 0;
+  max-width: 800px;
+}
+
+.bav-stats-4-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.bav-stat-card {
+  background: #FFF1F0;
+  border-radius: 14px;
+  padding: 32px 20px 28px;
+  text-align: center;
+  border: 1px solid #FECDD3;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bav-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(200, 40, 42, 0.1);
+}
+
+.bav-stat-num {
+  font-family: 'Playfair Display', 'Cinzel', serif;
+  font-size: clamp(2.2rem, 3.2vw, 3rem);
+  font-weight: 800;
+  color: #C8282A;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.bav-stat-lbl {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.45;
+}
+
+/* ── 10. FACEBOOK PERFORMANCE SECTION (FIGMA 3 RED STAT CARDS) ── */
+.bav-fb-performance-section {
+  padding: 44px 0 64px;
+}
+
+.bav-stats-3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+
+/* ── 11. THE FINAL OUTCOME SECTION ── */
+.bav-outcome-section {
+  padding: 64px 0 80px;
+  background: #FAFAFA;
+}
+
+.bav-outcome-narrative {
+  max-width: 880px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.bav-outcome-narrative p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #374151;
+  margin: 0 0 20px;
+}
+
+.bav-bottom-cta-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.bav-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #C8282A;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 36px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(200, 40, 42, 0.28);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.bav-btn-primary:hover {
+  background: #A81E20;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(200, 40, 42, 0.35);
+  color: #FFFFFF;
+}
+
+.bav-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #111827;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.bav-btn-secondary:hover {
+  background: #1F2937;
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+.bav-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #C8282A;
+  border: 2px solid #C8282A;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.bav-btn-outline:hover {
+  background: #FFF1F0;
+  transform: translateY(-2px);
+  color: #A81E20;
+}
+
+/* ── 12. OTHER SERVICES / FOOTER EXPLORE ── */
+.bav-other-services-section {
+  padding: 64px 0 24px;
+}
+
+.bav-other-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.bav-other-card {
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E5E7EB;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #FFFFFF;
+}
+
+.bav-other-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+.bav-other-card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── RESPONSIVE DESIGN ── */
+@media (max-width: 991px) {
+  .bav-overview-grid,
+  .bav-challenge-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bav-stats-4-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bav-stats-3-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bav-other-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bav-overview-right {
+    grid-template-columns: 1fr;
+  }
+
+  .bav-meta-services {
+    grid-column: span 1;
+  }
+
+  .bav-stats-3-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bav-bottom-cta-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bav-bottom-cta-wrap .bav-btn-primary,
+  .bav-bottom-cta-wrap .bav-btn-secondary,
+  .bav-bottom-cta-wrap .bav-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .bav-stats-4-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bav-other-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bav-cat-pill {
+    padding: 8px 16px;
+    font-size: 11.5px;
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(36, 36)">
+        <!-- CMYK Alignment Registration Marks -->
+        <circle cx="220" cy="220" r="160" stroke="#1A0508" stroke-width="12" fill="#FFEBEF"/>
+        <line x1="220" y1="30" x2="220" y2="410" stroke="#C8102E" stroke-width="12"/>
+        <line x1="30" y1="220" x2="410" y2="220" stroke="#C8102E" stroke-width="12"/>
+        <circle cx="220" cy="220" r="80" stroke="#1A0508" stroke-width="10" fill="#FFFFFF"/>
+        <!-- CMYK Color Wedges -->
+        <circle cx="170" cy="170" r="26" fill="#00AEEF"/>
+        <circle cx="270" cy="170" r="26" fill="#EC008C"/>
+        <circle cx="170" cy="270" r="26" fill="#FFF200"/>
+        <circle cx="270" cy="270" r="26" fill="#1A0508"/>
+      </g>
+    </svg>

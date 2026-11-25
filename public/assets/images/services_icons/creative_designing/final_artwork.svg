@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Artboard / Canvas -->
+      <rect x="44" y="44" width="168" height="168" rx="20" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Corner Crop / Registration Marks -->
+      <path d="M30 44 H44 V30" stroke="#C8102E" stroke-width="6"/>
+      <path d="M226 44 H212 V30" stroke="#C8102E" stroke-width="6"/>
+      <path d="M30 212 H44 V226" stroke="#C8102E" stroke-width="6"/>
+      <path d="M226 212 H212 V226" stroke="#C8102E" stroke-width="6"/>
+      <!-- Verified Quality Diamond Seal -->
+      <g transform="translate(128, 128)">
+        <polygon points="0,-48 48,0 0,48 -48,0" fill="#C8102E"/>
+        <!-- Crisp Checkmark -->
+        <path d="M-16 2 L-4 14 L20 -12" stroke="#FFFFFF" stroke-width="8"/>
+      </g>
+    </g>
+  </svg>

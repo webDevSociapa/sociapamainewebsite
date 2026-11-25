@@ -1,7 +1,7 @@
-:root {
+.digital-marketing-page :root, .digital-marketing-page {
 	 --red:#d20c0c;
   --red-dark:#8b0000;
-  --red-light:#ff4d4d;
+  --red-light:#FFF0F2;
   --red-pale:#fff2f2;
 	--white: #FFFFFF;
 	--offwhite: #FDF7F8;
@@ -10,7 +10,66 @@
 	--border: #FADADD;
 }
 
-.digitalmarketing-hero {
+/* Hero Section */
+.digital-marketing-page .hero-banner-section,
+.digital-marketing-page section.hero-banner-section {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  display: block !important;
+  position: relative !important;
+  overflow: hidden;
+  line-height: 0 !important;
+  min-height: auto !important;
+  height: auto !important;
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .digital-marketing-page .hero-banner-section,
+  .digital-marketing-page section.hero-banner-section {
+    margin-top: 56px !important;
+    padding: 0 !important;
+  }
+}
+
+.digital-marketing-page .hero-banner-section picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+.digital-marketing-page .hero-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Stats Bar Zero-Gap */
+.digital-marketing-page .stats-bar {
+  margin-top: -6px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 768px) {
+  .digital-marketing-page .stats-bar {
+    margin-top: -4px !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+.digital-marketing-page .digitalmarketing-hero {
 	min-height: 100vh;
 	background: linear-gradient(135deg, #8b0000 0%, #d20c0c 45%, #ff4d4d 100%);
 	display: flex;
@@ -22,35 +81,35 @@
 	padding-bottom: 60px;
 }
 
-.digitalmarketing-hero-blob {
+.digital-marketing-page .digitalmarketing-hero-blob {
 	position: absolute;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.06);
 	filter: blur(60px);
 }
 
-.digitalmarketing-hero-blob-1 {
+.digital-marketing-page .digitalmarketing-hero-blob-1 {
 	width: 500px;
 	height: 500px;
 	top: -100px;
 	right: -100px;
 }
 
-.digitalmarketing-hero-blob-2 {
+.digital-marketing-page .digitalmarketing-hero-blob-2 {
 	width: 300px;
 	height: 300px;
 	bottom: 50px;
 	left: -50px;
 }
 
-.digitalmarketing-hero-content {
+.digital-marketing-page .digitalmarketing-hero-content {
 	position: relative;
 	text-align: center;
 	max-width: 860px;
 	padding: 0 24px;
 }
 
-.digitalmarketing-hero-badge {
+.digital-marketing-page .digitalmarketing-hero-badge {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
@@ -66,7 +125,7 @@
 	text-transform: uppercase;
 }
 
-.digitalmarketing-hero-badge-dot {
+.digital-marketing-page .digitalmarketing-hero-badge-dot {
 	width: 7px;
 	height: 7px;
 	background: #4ADE80;
@@ -88,8 +147,8 @@
 	}
 }
 
-.digitalmarketing-hero h1 {
-	font-family: 'Playfair Display', serif;
+.digital-marketing-page .digitalmarketing-hero h1 {
+	font-family: var(--font-heading, 'Outfit', sans-serif);
 	/* font-size: clamp(2.8rem, 6vw, 5rem); */
 	font-size: 4.5rem;
 	color: white;
@@ -98,11 +157,11 @@
 	margin-bottom: 24px;
 }
 
-.digitalmarketing-hero h1 span {
+.digital-marketing-page .digitalmarketing-hero h1 span {
 	color: rgba(255, 255, 255, 0.55);
 }
 
-.digitalmarketing-hero p {
+.digital-marketing-page .digitalmarketing-hero p {
 	font-size: 1.15rem;
 	color: rgba(255, 255, 255, 0.82);
 	line-height: 1.7;
@@ -112,14 +171,14 @@
 	margin-right: auto;
 }
 
-.digitalmarketing-hero-buttons {
+.digital-marketing-page .digitalmarketing-hero-buttons {
 	display: flex;
 	gap: 16px;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.btn-white {
+.digital-marketing-page .btn-white {
 	background: white;
 	color: #d20c0c;
 	padding: 14px 32px;
@@ -130,7 +189,7 @@
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.btn-outline-white {
+.digital-marketing-page .btn-outline-white {
 	background: transparent;
 	color: white;
 	border: 2px solid rgba(255, 255, 255, 0.5);
@@ -142,35 +201,33 @@
 }
 
 /* Pillar tabs */
-.pillar-tabs{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:52px;}
-.pillar-tab{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.25);border-radius:12px;padding:14px 28px;text-align:center;color:white;cursor:default;}
-.pillar-tab strong{display:block;font-size:1rem;font-weight:800;margin-bottom:3px;}
-.pillar-tab span{font-size:0.76rem;color:rgba(255,255,255,0.65);font-weight:500;}
+.digital-marketing-page .pillar-tabs{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:52px;}
+.digital-marketing-page .pillar-tab{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.25);border-radius:12px;padding:14px 28px;text-align:center;color:white;cursor:default;}
+.digital-marketing-page .pillar-tab strong{display:block;font-size:1rem;font-weight:800;margin-bottom:3px;}
+.digital-marketing-page .pillar-tab span{font-size:0.76rem;color:rgba(255,255,255,0.65);font-weight:500;}
 
-.stats-bar {
+.digital-marketing-page .dm-stats-bar {
 	background: #1A0508;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
 }
 
-.stat-item {
+.digital-marketing-page .stat-item {
 	padding: 36px 24px;
 	text-align: center;
 	border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.stat-item:last-child {
+.digital-marketing-page .stat-item:last-child {
 	border-right: none;
 }
 
-.stat-num {
+.digital-marketing-page .stat-num {
 	font-size: 2.6rem;
 	font-weight: 900;
 	color: #d20c0c;
 	line-height: 1;
 }
 
-.stat-label {
+.digital-marketing-page .stat-label {
 	font-size: 0.82rem;
 	color: rgba(255, 255, 255, 0.55);
 	margin-top: 6px;
@@ -179,11 +236,11 @@
 	letter-spacing: 0.5px;
 }
 
-section {
+.digital-marketing-page section {
 	padding: 100px 60px;
 }
 
-.section-tag {
+.digital-marketing-page .section-tag {
 	display: inline-block;
 	background: #fff2f2;
 	color: #d20c0c;
@@ -196,8 +253,8 @@ section {
 	margin-bottom: 16px;
 }
 
-h2 {
-	font-family: 'Playfair Display', serif;
+.digital-marketing-page h2 {
+	font-family: var(--font-heading, 'Outfit', sans-serif);
 	font-size: clamp(2rem, 4vw, 3rem);
 	font-weight: 800;
 	color: #1A0508;
@@ -205,27 +262,27 @@ h2 {
 	margin-bottom: 20px;
 }
 
-h2 span {
+.digital-marketing-page h2 span {
 	color: #d20c0c;
 }
 
-.section-sub {
+.digital-marketing-page .section-sub {
 	font-size: 1.05rem;
 	color: #6B7280;
 	line-height: 1.7;
 	max-width: 560px;
 }
 
-.section-header {
+.digital-marketing-page .section-header {
 	text-align: center;
 	margin-bottom: 64px;
 }
 
-.section-header .section-sub {
+.digital-marketing-page .section-header .section-sub {
 	margin: 0 auto;
 }
 
-.divider {
+.digital-marketing-page .divider {
 	width: 60px;
 	height: 4px;
 	background: #d20c0c;
@@ -233,17 +290,17 @@ h2 span {
 	margin: 20px auto 0;
 }
 
-#services {
+.digital-marketing-page #services {
 	background: #FDF7F8;
 }
 
-.services-grid {
+.digital-marketing-page .services-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 28px;
 }
 
-.service-card {
+.digital-marketing-page .service-card {
 	background: white;
 	border-radius: 20px;
 	padding: 40px 36px;
@@ -253,7 +310,7 @@ h2 span {
 	overflow: hidden;
 }
 
-.service-card::before {
+.digital-marketing-page .service-card::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -266,47 +323,61 @@ h2 span {
 	transition: transform 0.3s;
 }
 
-.service-card:hover {
+.digital-marketing-page .service-card:hover {
 	transform: translateY(-6px);
 	box-shadow: 0 20px 50px rgba(200, 16, 46, 0.12);
 }
 
-.service-card:hover::before {
+.digital-marketing-page .service-card:hover::before {
 	transform: scaleX(1);
 }
 
-.service-icon {
-	width: 56px;
-	height: 56px;
-	border-radius: 14px;
-	background: #fff2f2;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 24px;
-	font-size: 1.6rem;
+.digital-marketing-page .service-icon {
+	width: 76px !important;
+	height: 76px !important;
+	border-radius: 16px !important;
+	background: #fff2f2 !important;
+	border: 1px solid #FADADD !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	margin-bottom: 24px !important;
+	transition: all 0.25s ease !important;
+	box-shadow: 0 4px 12px rgba(200, 16, 46, 0.06) !important;
 }
 
-.service-card h3 {
+.digital-marketing-page .service-card:hover .service-icon {
+	background: #ffe3e7 !important;
+	transform: scale(1.05) !important;
+}
+
+.digital-marketing-page .service-icon img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+	display: block;
+}
+
+.digital-marketing-page .service-card h3 {
 	font-size: 1.15rem;
 	font-weight: 700;
 	margin-bottom: 12px;
 }
 
-.service-card p {
+.digital-marketing-page .service-card p {
 	font-size: 0.9rem;
 	color: #6B7280;
 	line-height: 1.65;
 }
 
-.service-tags {
+.digital-marketing-page .service-tags {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-top: 20px;
 }
 
-.tag {
+.digital-marketing-page .tag {
 	background: #fff2f2;
 	color: #d20c0c;
 	font-size: 0.72rem;
@@ -317,72 +388,88 @@ h2 span {
 }
 
 /* Pillar Deep Dive */
-#pillars{background:white;}
-.pillar-block{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid #FADADD;}
-.pillar-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
-.pillar-block.reverse{direction:rtl;}
-.pillar-block.reverse > *{direction:ltr;}
-.pillar-visual{border-radius:20px;background:linear-gradient(135deg,#8b0000,#d20c0c);padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:340px;position:relative;overflow:hidden;}
-.pillar-visual::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.05);top:-80px;right:-80px;}
-.pillar-visual-icon{font-size:3.5rem;margin-bottom:16px;position:relative;z-index:1;}
-.pillar-visual h3{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:white;margin-bottom:10px;position:relative;z-index:1;}
-.pillar-visual p{font-size:0.88rem;color:rgba(255,255,255,0.72);line-height:1.6;max-width:260px;position:relative;z-index:1;}
-.pillar-visual .pillar-label{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:white;padding:4px 14px;border-radius:100px;font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px;position:relative;z-index:1;}
-.pillar-content .section-tag{display:block;width:fit-content;}
-.pillar-content h2{font-size:clamp(1.7rem,3vw,2.5rem);margin-top:8px;}
-.pillar-content .section-sub{max-width:100%;margin-bottom:28px;}
-.pillar-checklist{list-style:none;display:flex;flex-direction:column;gap:12px;}
-.pillar-checklist li{display:flex;align-items:flex-start;gap:12px;font-size:0.9rem;color:#1A0508;line-height:1.5;}
-.check-icon{width:22px;height:22px;background:#fff2f2;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-.check-icon::after{content:'✓';color:#d20c0c;font-size:0.7rem;font-weight:700;}
+.digital-marketing-page #pillars{background:white;}
+.digital-marketing-page .pillar-block{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid #FADADD;}
+.digital-marketing-page .pillar-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.digital-marketing-page .pillar-block.reverse{direction:rtl;}
+.digital-marketing-page .pillar-block.reverse > *{direction:ltr;}
+.digital-marketing-page .pillar-visual{border-radius:20px;background:linear-gradient(135deg,#8b0000,#d20c0c);padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:340px;position:relative;overflow:hidden;}
+.digital-marketing-page .pillar-visual::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.05);top:-80px;right:-80px;}
+.digital-marketing-page .pillar-visual-icon{font-size:3.5rem;margin-bottom:16px;position:relative;z-index:1;}
+.digital-marketing-page .pillar-visual h3{font-family:var(--font-heading, 'Outfit', sans-serif);font-size:1.8rem;font-weight:800;color:white;margin-bottom:10px;position:relative;z-index:1;}
+.digital-marketing-page .pillar-visual p{font-size:0.88rem;color:rgba(255,255,255,0.72);line-height:1.6;max-width:260px;position:relative;z-index:1;}
+.digital-marketing-page .pillar-visual .pillar-label{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:white;padding:4px 14px;border-radius:100px;font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px;position:relative;z-index:1;}
+.digital-marketing-page .pillar-content .section-tag{display:block;width:fit-content;}
+.digital-marketing-page .pillar-content h2{font-size:clamp(1.7rem,3vw,2.5rem);margin-top:8px;}
+.digital-marketing-page .pillar-content .section-sub{max-width:100%;margin-bottom:28px;}
+.digital-marketing-page .pillar-checklist{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.digital-marketing-page .pillar-checklist li{display:flex;align-items:flex-start;gap:12px;font-size:0.9rem;color:#1A0508;line-height:1.5;}
+.digital-marketing-page .check-icon{width:22px;height:22px;background:#fff2f2;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.digital-marketing-page .check-icon::after{content:'✓';color:#d20c0c;font-size:0.7rem;font-weight:700;}
 
-#tech {
+.digital-marketing-page #tech {
 	background: white;
 }
 
-.tech-grid {
+.digital-marketing-page .tech-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 	gap: 20px;
 }
 
-.tech-chip {
+.digital-marketing-page .tech-chip {
 	border: 1.5px solid #FADADD;
 	border-radius: 14px;
 	padding: 20px 16px;
 	text-align: center;
 	transition: border-color 0.2s, background 0.2s, transform 0.2s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
-.tech-chip:hover {
+.digital-marketing-page .tech-chip:hover {
 	border-color: #d20c0c;
 	background: #fff2f2;
 	transform: translateY(-3px);
+	box-shadow: 0 6px 18px rgba(200, 16, 46, 0.1);
 }
 
-.tech-chip .tech-icon {
-	font-size: 2rem;
-	margin-bottom: 8px;
+.digital-marketing-page .tech-chip .tech-icon {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.digital-marketing-page .tech-chip .tech-icon img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
 	display: block;
 }
 
-.tech-chip span {
+.digital-marketing-page .tech-chip span {
 	font-size: 0.82rem;
 	font-weight: 600;
 	color: #1A0508;
 }
 
-#portfolio {
+.digital-marketing-page #portfolio {
 	background: #FDF7F8;
 }
 
-.projects-grid {
+.digital-marketing-page .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 24px;
 }
 
-.project-card {
+.digital-marketing-page .project-card {
 	background: white;
 	border-radius: 18px;
 	overflow: hidden;
@@ -391,18 +478,18 @@ h2 span {
 	position: relative;
 }
 
-.project-card:hover {
+.digital-marketing-page .project-card:hover {
 	transform: translateY(-6px);
 	box-shadow: 0 24px 50px rgba(200, 16, 46, 0.14);
 }
 
-.project-preview {
+.digital-marketing-page .project-preview {
 	height: 180px;
 	position: relative;
 	overflow: hidden;
 }
 
-.project-preview img {
+.digital-marketing-page .project-preview img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -411,11 +498,11 @@ h2 span {
 	transition: transform 0.4s;
 }
 
-.project-card:hover .project-preview img {
+.digital-marketing-page .project-card:hover .project-preview img {
 	transform: scale(1.05);
 }
 
-.project-badge {
+.digital-marketing-page .project-badge {
 	position: absolute;
 	top: 10px;
 	left: 10px;
@@ -430,7 +517,7 @@ h2 span {
 	z-index: 2;
 }
 
-.project-overlay {
+.digital-marketing-page .project-overlay {
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(to bottom, transparent 30%, rgba(155, 11, 34, 0.92) 100%);
@@ -442,41 +529,41 @@ h2 span {
 	z-index: 1;
 }
 
-.project-card:hover .project-overlay {
+.digital-marketing-page .project-card:hover .project-overlay {
 	opacity: 1;
 }
 
-.project-overlay a {
+.digital-marketing-page .project-overlay a {
 	color: white;
 	font-size: 0.78rem;
 	font-weight: 600;
 	text-decoration: none;
 }
 
-.project-info {
+.digital-marketing-page .project-info {
 	padding: 18px;
 }
 
-.project-info h3 {
+.digital-marketing-page .project-info h3 {
 	font-size: 0.92rem;
 	font-weight: 700;
 	margin-bottom: 4px;
 }
 
-.project-info p {
+.digital-marketing-page .project-info p {
 	font-size: 0.76rem;
 	color: #6B7280;
 	line-height: 1.5;
 }
 
-.project-meta {
+.digital-marketing-page .project-meta {
 	display: flex;
 	gap: 6px;
 	margin-top: 10px;
 	flex-wrap: wrap;
 }
 
-.project-url {
+.digital-marketing-page .project-url {
 	display: flex;
 	align-items: center;
 	gap: 4px;
@@ -487,7 +574,7 @@ h2 span {
 	font-weight: 600;
 }
 
-.img-placeholder {
+.digital-marketing-page .img-placeholder {
 	width:100%;
 	height:100%;
 	display:flex;
@@ -497,7 +584,7 @@ h2 span {
 	position:relative;
 }
 
-.img-placeholder::after {
+.digital-marketing-page .img-placeholder::after {
 	content:'[ Client Screenshot ]';
 	position:absolute;
 	bottom:10px;left:0;right:0;
@@ -508,11 +595,11 @@ h2 span {
 	letter-spacing:0.5px;
 	font-family:'Inter',sans-serif;}
 
-#team {
+.digital-marketing-page #team {
 	background: white;
 }
 
-.team-intro {
+.digital-marketing-page .team-intro {
 	background: #fff2f2;
 	border: 1px solid #FADADD;
 	border-radius: 20px;
@@ -523,29 +610,29 @@ h2 span {
 	gap: 28px;
 }
 
-.dept-block {
+.digital-marketing-page .dept-block {
 	text-align: center;
 }
 
-.dept-icon {
+.digital-marketing-page .dept-icon {
 	font-size: 2.5rem;
 	margin-bottom: 12px;
 }
 
-.dept-block h3 {
+.digital-marketing-page .dept-block h3 {
 	font-size: 1rem;
 	font-weight: 700;
 	color: #1A0508;
 	margin-bottom: 8px;
 }
 
-.dept-block p {
+.digital-marketing-page .dept-block p {
 	font-size: 0.85rem;
 	color: #6B7280;
 	line-height: 1.6;
 }
 
-.dept-count {
+.digital-marketing-page .dept-count {
 	display: inline-block;
 	background: #d20c0c;
 	color: white;
@@ -556,13 +643,13 @@ h2 span {
 	margin-top: 10px;
 }
 
-.team-roles-grid {
+.digital-marketing-page .team-roles-grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 20px;
 }
 
-.role-card {
+.digital-marketing-page .role-card {
 	background: white;
 	border-radius: 18px;
 	padding: 24px 18px;
@@ -571,13 +658,13 @@ h2 span {
 	transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 
-.role-card:hover {
+.digital-marketing-page .role-card:hover {
 	transform: translateY(-5px);
 	border-color: #d20c0c;
 	box-shadow: 0 16px 40px rgba(200, 16, 46, 0.1);
 }
 
-.role-avatar {
+.digital-marketing-page .role-avatar {
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
@@ -589,14 +676,14 @@ h2 span {
 	background: linear-gradient(135deg, #FFF0F2, #FADADD);
 }
 
-.role-card .role {
+.digital-marketing-page .role-card .role {
 	font-size: 0.88rem;
 	font-weight: 700;
 	color: #1A0508;
 	margin-bottom: 6px;
 }
 
-.role-card .dept-tag {
+.digital-marketing-page .role-card .dept-tag {
 	display: inline-block;
 	background: #fff2f2;
 	color: #d20c0c;
@@ -609,14 +696,14 @@ h2 span {
 	margin-bottom: 10px;
 }
 
-.role-skills {
+.digital-marketing-page .role-skills {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 4px;
 	justify-content: center;
 }
 
-.skill-pill {
+.digital-marketing-page .skill-pill {
 	background: #f4f4f4;
 	color: #555;
 	font-size: 0.62rem;
@@ -625,18 +712,18 @@ h2 span {
 	border-radius: 100px;
 }
 
-#process {
+.digital-marketing-page #process {
 	background: #FDF7F8;
 }
 
-.process-steps {
+.digital-marketing-page .process-steps {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	gap: 0;
 	position: relative;
 }
 
-.process-steps::before {
+.digital-marketing-page .process-steps::before {
 	content: '';
 	position: absolute;
 	top: 40px;
@@ -647,124 +734,152 @@ h2 span {
 	z-index: 0;
 }
 
-.process-step {
+.digital-marketing-page .process-step {
 	text-align: center;
 	padding: 0 12px;
 	position: relative;
 }
 
-.step-num {
-	width: 80px;
-	height: 80px;
+.digital-marketing-page .step-num {
+	width: 76px;
+	height: 76px;
 	border-radius: 50%;
-	background: #f7efef;
-	color: white;
+	background: #FFFFFF;
+	border: 2px solid #d20c0c;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.5rem;
 	margin: 0 auto 16px;
 	position: relative;
 	z-index: 1;
-	box-shadow: 0 4px 20px rgba(200, 16, 46, 0.3);
+	box-shadow: 0 4px 20px rgba(200, 16, 46, 0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.process-step h3 {
+.digital-marketing-page .process-step:hover .step-num {
+	transform: scale(1.08);
+	box-shadow: 0 8px 24px rgba(200, 16, 46, 0.25);
+}
+
+.digital-marketing-page .step-num img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+	display: block;
+}
+
+.digital-marketing-page .process-step h3 {
 	font-size: 0.85rem;
 	font-weight: 700;
 	margin-bottom: 8px;
 }
 
-.process-step p {
+.digital-marketing-page .process-step p {
 	font-size: 0.75rem;
 	color: #6B7280;
 	line-height: 1.5;
 }
 
-#why {
+.digital-marketing-page #why {
 	background: #d20c0c;
 }
 
-#why .section-tag {
+.digital-marketing-page #why .section-tag {
 	background: rgba(255, 255, 255, 0.15);
 	color: white;
 }
 
-#why h2 {
+.digital-marketing-page #why h2 {
 	color: white;
 }
 
-#why h2 span {
+.digital-marketing-page #why h2 span {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-#why .section-sub {
+.digital-marketing-page #why .section-sub {
 	color: rgba(255, 255, 255, 0.75);
 }
 
-.why-grid {
+.digital-marketing-page .why-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 28px;
 }
 
-.why-card {
+.digital-marketing-page .why-card {
 	background: rgba(255, 255, 255, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	padding: 36px 30px;
+	transition: transform 0.25s ease;
 }
 
-.why-icon {
-	font-size: 2rem;
-	margin-bottom: 16px;
-	width: 70px;
-    height: 70px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #ffffff, #ffe9e9);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, .15);
+.digital-marketing-page .why-card:hover {
+	transform: translateY(-4px);
 }
 
-.why-card h3 {
+.digital-marketing-page .why-icon {
+	width: 76px;
+	height: 76px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+	margin-bottom: 20px;
+	transition: transform 0.3s ease;
+}
+
+.digital-marketing-page .why-card:hover .why-icon {
+	transform: scale(1.06);
+}
+
+.digital-marketing-page .why-icon img {
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+	display: block;
+}
+
+.digital-marketing-page .why-card h3 {
 	font-size: 1.1rem;
 	font-weight: 700;
 	color: white;
 	margin-bottom: 10px;
 }
 
-.why-card p {
+.digital-marketing-page .why-card p {
 	font-size: 0.88rem;
 	color: rgba(255, 255, 255, 0.72);
 	line-height: 1.65;
 }
 
-#testimonials {
+.digital-marketing-page #testimonials {
 	background: #FDF7F8;
 }
 
-.testimonials-grid {
+.digital-marketing-page .testimonials-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 28px;
 }
 
-.testimonial-card {
+.digital-marketing-page .testimonial-card {
 	background: white;
 	border-radius: 20px;
 	padding: 36px;
 	border: 1px solid #FADADD;
 }
 
-.stars {
+.digital-marketing-page .stars {
 	color: #d20c0c;
 	font-size: 1rem;
 	margin-bottom: 16px;
 }
 
-.testimonial-card blockquote {
+.digital-marketing-page .testimonial-card blockquote {
 	font-size: 0.92rem;
 	color: #1A0508;
 	line-height: 1.7;
@@ -772,13 +887,13 @@ h2 span {
 	margin-bottom: 24px;
 }
 
-.testimonial-author {
+.digital-marketing-page .testimonial-author {
 	display: flex;
 	align-items: center;
 	gap: 14px;
 }
 
-.author-avatar {
+.digital-marketing-page .author-avatar {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
@@ -791,34 +906,34 @@ h2 span {
 	font-size: 1rem;
 }
 
-.author-name {
+.digital-marketing-page .author-name {
 	font-weight: 700;
 	font-size: 0.9rem;
 }
 
-.author-title {
+.digital-marketing-page .author-title {
 	font-size: 0.78rem;
 	color: #6B7280;
 }
 
-#cta {
+.digital-marketing-page #cta {
 	background: linear-gradient(135deg, #1A0508, #3D0010);
 	text-align: center;
 	padding: 100px 60px;
 }
 
-#cta h2 {
+.digital-marketing-page #cta h2 {
 	color: white;
-	font-family: 'Playfair Display', serif;
+	font-family: var(--font-heading, 'Outfit', sans-serif);
 	font-size: 2.8rem;
 	margin-bottom: 20px;
 }
 
-#cta h2 span {
+.digital-marketing-page #cta h2 span {
 	color: #ff4d4d;
 }
 
-#cta p {
+.digital-marketing-page #cta p {
 	color: rgba(255, 255, 255, 0.65);
 	font-size: 1.05rem;
 	max-width: 520px;
@@ -826,33 +941,33 @@ h2 span {
 	line-height: 1.7;
 }
 
-.cta-buttons {
+.digital-marketing-page .cta-buttons {
 	display: flex;
 	gap: 16px;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-#calendlyBtn{
+.digital-marketing-page #calendlyBtn{
   border:none;
   cursor:pointer;
 }
 
 /* FAQ Section */
-.faq-section{background:#FDF7F8;}
-.faq-section .section-inner{max-width:1280px;margin:0 auto;}
-.faq-list{max-width:860px;margin:2.5rem auto 0;}
-.faq-item{border:1px solid #FADADD;border-radius:14px;margin-bottom:12px;overflow:hidden;background:#FFFFFF;}
-.faq-q{padding:20px 26px;font-weight:700;font-size:.92rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1A0508;gap:12px;}
-.faq-icon{width:28px;height:28px;background:#fff2f2;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#d20c0c;font-size:1.2rem;font-weight:400;flex-shrink:0;transition:transform 0.3s;}
-.faq-item.open .faq-icon{transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease;}
-.faq-item.open .faq-a{max-height:320px;}
-.faq-a p{padding:0 26px 20px;color:#6B7280;line-height:1.75;font-size:.875rem;}
+.digital-marketing-page .faq-section{background:#FDF7F8;}
+.digital-marketing-page .faq-section .section-inner{max-width:1280px;margin:0 auto;}
+.digital-marketing-page .faq-list{max-width:860px;margin:2.5rem auto 0;}
+.digital-marketing-page .faq-item{border:1px solid #FADADD;border-radius:14px;margin-bottom:12px;overflow:hidden;background:#FFFFFF;}
+.digital-marketing-page .faq-q{padding:20px 26px;font-weight:700;font-size:.92rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1A0508;gap:12px;}
+.digital-marketing-page .faq-icon{width:28px;height:28px;background:#fff2f2;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#d20c0c;font-size:1.2rem;font-weight:400;flex-shrink:0;transition:transform 0.3s;}
+.digital-marketing-page .faq-item.open .faq-icon{transform:rotate(45deg);}
+.digital-marketing-page .faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease;}
+.digital-marketing-page .faq-item.open .faq-a{max-height:320px;}
+.digital-marketing-page .faq-a p{padding:0 26px 20px;color:#6B7280;line-height:1.75;font-size:.875rem;}
 
-.faq-divider{text-align:center;margin:40px 0 24px;position:relative;}
-.faq-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:#FADADD;}
-.faq-divider span{position:relative;background:#FDF7F8;padding:0 16px;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#d20c0c;}
+.digital-marketing-page .faq-divider{text-align:center;margin:40px 0 24px;position:relative;}
+.digital-marketing-page .faq-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:#FADADD;}
+.digital-marketing-page .faq-divider span{position:relative;background:#FDF7F8;padding:0 16px;font-size:0.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#d20c0c;}
 
 
 /* =========================
@@ -861,107 +976,107 @@ h2 span {
 
 @media(max-width:1100px){
 
-  section{
+  .digital-marketing-page section{
     padding:80px 40px;
   }
 
-  .projects-grid{
+  .digital-marketing-page .projects-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .process-steps{
+  .digital-marketing-page .process-steps{
     grid-template-columns:repeat(3,1fr);
     gap:40px 20px;
   }
 
-  .process-steps::before{
+  .digital-marketing-page .process-steps::before{
     display:none;
   }
 }
 
 @media(max-width:992px){
 
-  .services-grid,
-  .why-grid{
+  .digital-marketing-page .services-grid,
+  .digital-marketing-page .why-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .testimonials-grid{
+  .digital-marketing-page .testimonials-grid{
     grid-template-columns:1fr;
   }
 
-  .stats-bar{
+  .digital-marketing-page .stats-bar{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .digitalmarketing-hero h1{
+  .digital-marketing-page .digitalmarketing-hero h1{
     font-size:3rem;
   }
 }
 
 @media(max-width:768px){
 
-  section{
+  .digital-marketing-page section{
     padding:70px 20px;
   }
 
-  .digitalmarketing-hero{
+  .digital-marketing-page .digitalmarketing-hero{
     min-height:auto;
     padding:110px 20px 70px;
   }
 
-  .digitalmarketing-hero h1{
+  .digital-marketing-page .digitalmarketing-hero h1{
     font-size:2.2rem;
     line-height:1.25;
   }
 
-  .digitalmarketing-hero p{
+  .digital-marketing-page .digitalmarketing-hero p{
     font-size:0.95rem;
   }
 
-  .digitalmarketing-hero-buttons{
+  .digital-marketing-page .digitalmarketing-hero-buttons{
     flex-direction:column;
     align-items:center;
   }
 
-  .btn-white,
-  .btn-outline-white{
+  .digital-marketing-page .btn-white,
+  .digital-marketing-page .btn-outline-white{
     width:100%;
     max-width:300px;
     text-align:center;
   }
 
-  .stats-bar,
-  .services-grid,
-  .projects-grid,
-  .why-grid,
-  .testimonials-grid,
-  .process-steps{
+  .digital-marketing-page .stats-bar,
+  .digital-marketing-page .services-grid,
+  .digital-marketing-page .projects-grid,
+  .digital-marketing-page .why-grid,
+  .digital-marketing-page .testimonials-grid,
+  .digital-marketing-page .process-steps{
     grid-template-columns:1fr;
   }
 
-  .tech-grid{
+  .digital-marketing-page .tech-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
-  .process-steps{
+  .digital-marketing-page .process-steps{
     gap:30px;
   }
 
-  h2{
+  .digital-marketing-page h2{
     font-size:2rem;
   }
 
-  #cta{
+  .digital-marketing-page #cta{
     padding:80px 20px;
   }
 
-  #cta h2{
+  .digital-marketing-page #cta h2{
     font-size:2rem;
     line-height:1.3;
   }
 
-  .cta-buttons{
+  .digital-marketing-page .cta-buttons{
     flex-direction:column;
     align-items:center;
   }
@@ -969,37 +1084,37 @@ h2 span {
 
 @media(max-width:480px){
 
-  .digitalmarketing-hero h1{
+  .digital-marketing-page .digitalmarketing-hero h1{
     font-size:1.8rem;
   }
 
-  .digitalmarketing-hero-badge{
+  .digital-marketing-page .digitalmarketing-hero-badge{
     font-size:0.68rem;
     padding:6px 12px;
   }
 
-  .stat-num{
+  .digital-marketing-page .stat-num{
     font-size:2rem;
   }
 
-  .tech-grid{
+  .digital-marketing-page .tech-grid{
     grid-template-columns:1fr;
   }
 
-  .project-preview{
+  .digital-marketing-page .project-preview{
     height:180px;
   }
 
-  .service-card,
-  .project-card,
-  .testimonial-card,
-  .why-card{
+  .digital-marketing-page .service-card,
+  .digital-marketing-page .project-card,
+  .digital-marketing-page .testimonial-card,
+  .digital-marketing-page .why-card{
     border-radius:16px;
   }
 }
 
 /* pakcging gallary */
-.portfolio-gallery{
+.digital-marketing-page .portfolio-gallery{
     width:min(1400px,92%);
     margin:70px auto;
     display:grid;
@@ -1008,7 +1123,7 @@ h2 span {
     grid-auto-rows:170px;
 }
 
-.gallery-item{
+.digital-marketing-page .gallery-item{
     overflow:hidden;
     border-radius:24px;
     position:relative;
@@ -1018,75 +1133,75 @@ h2 span {
     transition:.45s;
 }
 
-.gallery-item img{
+.digital-marketing-page .gallery-item img{
     width:100%;
     height:100%;
     object-fit:cover;
     transition:transform .8s ease;
 }
 
-.gallery-item:hover{
+.digital-marketing-page .gallery-item:hover{
     transform:translateY(-10px);
     box-shadow:0 30px 80px rgba(0,0,0,.15);
 }
 
-.gallery-item:hover img{
+.digital-marketing-page .gallery-item:hover img{
     transform:scale(1.12);
 }
 
 /* Different Sizes */
 
-.gallery-item:nth-child(1){
+.digital-marketing-page .gallery-item:nth-child(1){
     grid-column:span 8;
     grid-row:span 3;
 }
 
-.gallery-item:nth-child(2){
+.digital-marketing-page .gallery-item:nth-child(2){
     grid-column:span 4;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(3){
+.digital-marketing-page .gallery-item:nth-child(3){
     grid-column:span 4;
     grid-row:span 1;
 }
 
-.gallery-item:nth-child(4){
+.digital-marketing-page .gallery-item:nth-child(4){
     grid-column:span 4;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(5){
+.digital-marketing-page .gallery-item:nth-child(5){
     grid-column:span 8;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(6),
-.gallery-item:nth-child(7),
-.gallery-item:nth-child(8){
+.digital-marketing-page .gallery-item:nth-child(6),
+.digital-marketing-page .gallery-item:nth-child(7),
+.digital-marketing-page .gallery-item:nth-child(8){
     grid-column:span 4;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(9){
+.digital-marketing-page .gallery-item:nth-child(9){
     grid-column:span 8;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(10){
+.digital-marketing-page .gallery-item:nth-child(10){
     grid-column:span 4;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(11),
-.gallery-item:nth-child(12){
+.digital-marketing-page .gallery-item:nth-child(11),
+.digital-marketing-page .gallery-item:nth-child(12){
     grid-column:span 6;
     grid-row:span 2;
 }
 
-.gallery-item:nth-child(13),
-.gallery-item:nth-child(14),
-.gallery-item:nth-child(15){
+.digital-marketing-page .gallery-item:nth-child(13),
+.digital-marketing-page .gallery-item:nth-child(14),
+.digital-marketing-page .gallery-item:nth-child(15){
     grid-column:span 4;
     grid-row:span 2;
 }
@@ -1097,39 +1212,39 @@ h2 span {
 
 @media (max-width:992px){
 
-    .portfolio-gallery{
+    .digital-marketing-page .portfolio-gallery{
         grid-template-columns:repeat(6,1fr);
         grid-auto-rows:160px;
         gap:18px;
     }
 
-    .gallery-item:nth-child(1){
+    .digital-marketing-page .gallery-item:nth-child(1){
         grid-column:span 6;
         grid-row:span 2;
     }
 
-    .gallery-item:nth-child(2),
-    .gallery-item:nth-child(3),
-    .gallery-item:nth-child(4){
+    .digital-marketing-page .gallery-item:nth-child(2),
+    .digital-marketing-page .gallery-item:nth-child(3),
+    .digital-marketing-page .gallery-item:nth-child(4){
         grid-column:span 3;
         grid-row:span 2;
     }
 
-    .gallery-item:nth-child(5){
+    .digital-marketing-page .gallery-item:nth-child(5){
         grid-column:span 6;
         grid-row:span 2;
     }
 
-    .gallery-item:nth-child(6),
-    .gallery-item:nth-child(7),
-    .gallery-item:nth-child(8),
-    .gallery-item:nth-child(9),
-    .gallery-item:nth-child(10),
-    .gallery-item:nth-child(11),
-    .gallery-item:nth-child(12),
-    .gallery-item:nth-child(13),
-    .gallery-item:nth-child(14),
-    .gallery-item:nth-child(15){
+    .digital-marketing-page .gallery-item:nth-child(6),
+    .digital-marketing-page .gallery-item:nth-child(7),
+    .digital-marketing-page .gallery-item:nth-child(8),
+    .digital-marketing-page .gallery-item:nth-child(9),
+    .digital-marketing-page .gallery-item:nth-child(10),
+    .digital-marketing-page .gallery-item:nth-child(11),
+    .digital-marketing-page .gallery-item:nth-child(12),
+    .digital-marketing-page .gallery-item:nth-child(13),
+    .digital-marketing-page .gallery-item:nth-child(14),
+    .digital-marketing-page .gallery-item:nth-child(15){
         grid-column:span 3;
         grid-row:span 2;
     }
@@ -1143,7 +1258,7 @@ h2 span {
 
 @media (max-width:768px){
 
-    .portfolio-gallery{
+    .digital-marketing-page .portfolio-gallery{
 
         grid-template-columns:repeat(2,1fr);
 
@@ -1155,7 +1270,7 @@ h2 span {
 
     }
 
-    .gallery-item:nth-child(1){
+    .digital-marketing-page .gallery-item:nth-child(1){
 
         grid-column:span 2;
 
@@ -1163,20 +1278,20 @@ h2 span {
 
     }
 
-    .gallery-item:nth-child(2),
-    .gallery-item:nth-child(3),
-    .gallery-item:nth-child(4),
-    .gallery-item:nth-child(5),
-    .gallery-item:nth-child(6),
-    .gallery-item:nth-child(7),
-    .gallery-item:nth-child(8),
-    .gallery-item:nth-child(9),
-    .gallery-item:nth-child(10),
-    .gallery-item:nth-child(11),
-    .gallery-item:nth-child(12),
-    .gallery-item:nth-child(13),
-    .gallery-item:nth-child(14),
-    .gallery-item:nth-child(15){
+    .digital-marketing-page .gallery-item:nth-child(2),
+    .digital-marketing-page .gallery-item:nth-child(3),
+    .digital-marketing-page .gallery-item:nth-child(4),
+    .digital-marketing-page .gallery-item:nth-child(5),
+    .digital-marketing-page .gallery-item:nth-child(6),
+    .digital-marketing-page .gallery-item:nth-child(7),
+    .digital-marketing-page .gallery-item:nth-child(8),
+    .digital-marketing-page .gallery-item:nth-child(9),
+    .digital-marketing-page .gallery-item:nth-child(10),
+    .digital-marketing-page .gallery-item:nth-child(11),
+    .digital-marketing-page .gallery-item:nth-child(12),
+    .digital-marketing-page .gallery-item:nth-child(13),
+    .digital-marketing-page .gallery-item:nth-child(14),
+    .digital-marketing-page .gallery-item:nth-child(15){
 
         grid-column:span 1;
 
@@ -1193,7 +1308,7 @@ h2 span {
 
 @media (max-width:480px){
 
-    .portfolio-gallery{
+    .digital-marketing-page .portfolio-gallery{
 
         grid-template-columns:1fr;
 
@@ -1203,7 +1318,7 @@ h2 span {
 
     }
 
-    .gallery-item{
+    .digital-marketing-page .gallery-item{
 
         grid-column:span 1 !important;
 
@@ -1213,7 +1328,7 @@ h2 span {
 
     }
 
-    .gallery-item img{
+    .digital-marketing-page .gallery-item img{
 
         aspect-ratio:4/3;
 
@@ -1225,13 +1340,24 @@ h2 span {
 
 }
 
+@media (max-width: 360px) {
+  .digital-marketing-page .stat-num {
+    font-size: 1.45rem;
+  }
+  .digital-marketing-page .service-card,
+  .digital-marketing-page .why-card,
+  .digital-marketing-page .testi-card {
+    padding: 16px 12px;
+  }
+}
+
 /* ── Shared helpers ── */
-.section-tag-white { background: rgba(255, 255, 255, 0.15); color: #fff; }
-.text-brand-red { color: #d20c0c; }
-.section-inner-narrow { max-width: 700px; }
-.faq-section-padded { padding: 5rem 5%; }
-.faq-q { cursor: pointer; }
-.pub-section-light { background: #FDF7F8; }
-.seo-sub-top { margin-top: 20px; }
-.project-preview-rel { position: relative; }
-.divider-alpha-white { background: rgba(255, 255, 255, 0.3); }
+.digital-marketing-page .section-tag-white { background: rgba(255, 255, 255, 0.15); color: #fff; }
+.digital-marketing-page .text-brand-red { color: #d20c0c; }
+.digital-marketing-page .section-inner-narrow { max-width: 700px; }
+.digital-marketing-page .faq-section-padded { padding: 5rem 5%; }
+.digital-marketing-page .faq-q { cursor: pointer; }
+.digital-marketing-page .pub-section-light { background: #FDF7F8; }
+.digital-marketing-page .seo-sub-top { margin-top: 20px; }
+.digital-marketing-page .project-preview-rel { position: relative; }
+.digital-marketing-page .divider-alpha-white { background: rgba(255, 255, 255, 0.3); }

@@ -1,76 +1,70 @@
-.emailmarketing-hero {
-  margin-top: 92px;
-  padding-top: 80px;
-  background: linear-gradient(135deg, #1A0508 0%, #2d0a10 40%, #1a0508 70%, #0d0204 100%);
-  padding-bottom: 60px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
+/* Hero Banner Full-Bleed Layout */
+.email-marketing-page .hero-banner-section,
+.email-marketing-page section.hero-banner-section {
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative !important;
+  line-height: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  min-height: auto !important;
+  height: auto !important;
+  background: transparent !important;
 }
 
-.emailmarketing-hero-tag {
-  background: rgba(255, 77, 77, 0.15) !important;
-  color: #ff4d4d !important;
-  border: 1px solid rgba(255, 77, 77, 0.3) !important;
+.email-marketing-page .hero-banner-section picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
 }
 
-.services-header {
+.email-marketing-page .hero-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .email-marketing-page .hero-banner-section,
+  .email-marketing-page section.hero-banner-section {
+    margin-top: 56px !important;
+    padding: 0 !important;
+  }
+}
+
+.email-marketing-page .services-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.section-title-center {
+.email-marketing-page .section-title-center {
   text-align: center;
 }
 
-.section-sub-center {
+.email-marketing-page .section-sub-center {
   margin: 0 auto !important;
   text-align: center !important;
 }
 
-.emailmarketing-hero::before {
-  content: '';
-  position: absolute;
-  top: -200px;
-  right: -200px;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, rgba(200, 16, 46, .18) 0%, transparent 70%);
-  pointer-events: none;
-}
-.emailmarketing-hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-.emailmarketing-hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  color: #FFFFFF;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-}
-.emailmarketing-hero h1 span {
-  color: #ff4d4d;
-}
-.emailmarketing-hero-desc {
-  color: rgba(255, 255, 255, .75);
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 0 auto 2rem;
-}
-
-.services-section {
+.email-marketing-page .services-section {
   padding: 5rem 5%;
   background: #FDF7F8;
 }
-.section-inner {
+.email-marketing-page .section-inner {
   max-width: 1280px;
   margin: 0 auto;
 }
-.section-tag {
+.email-marketing-page .section-tag {
   display: inline-block;
   background: #fff2f2;
   color: #d20c0c;
@@ -82,82 +76,96 @@
   border-radius: 4px;
   margin-bottom: 1rem;
 }
-.section-title {
-  font-family: 'Playfair Display', serif;
+.email-marketing-page .section-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 800;
   color: #1A0508;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.section-sub {
+.email-marketing-page .section-sub {
   color: #6B7280;
   font-size: 1rem;
   line-height: 1.7;
   max-width: 800px;
 }
-.services-grid {
+.email-marketing-page .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
-.svc-card {
+.email-marketing-page .svc-card {
   background: #FFFFFF;
   border: 1px solid #FADADD;
   border-radius: 12px;
   padding: 2rem;
   transition: all .25s;
 }
-.svc-card:hover {
+.email-marketing-page .svc-card:hover {
   border-color: #d20c0c;
   box-shadow: 0 8px 32px rgba(200, 16, 46, .12);
   transform: translateY(-3px);
 }
-.svc-icon {
-  width: 52px;
-  height: 52px;
+.email-marketing-page .svc-icon {
+  width: 76px;
+  height: 76px;
   background: #fff2f2;
-  border-radius: 10px;
+  border-radius: 16px;
+  border: 1px solid #FADADD;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.06);
 }
-.svc-card h3 {
+
+.email-marketing-page .svc-card:hover .svc-icon {
+  background: #ffe3e7;
+  transform: scale(1.05);
+}
+
+.email-marketing-page .svc-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
+.email-marketing-page .svc-card h3 {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: .6rem;
   color: #1A0508;
 }
-.svc-card p {
+.email-marketing-page .svc-card p {
   font-size: .875rem;
   color: #6B7280;
   line-height: 1.7;
   margin-bottom: 0;
 }
 
-.cta-section {
+.email-marketing-page .cta-section {
   background: linear-gradient(135deg, #1A0508, #2d0a10);
   padding: 5rem 5%;
   text-align: center;
 }
-.cta-section h2 {
-  font-family: 'Playfair Display', serif;
+.email-marketing-page .cta-section h2 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
-.cta-section p {
+.email-marketing-page .cta-section p {
   color: rgba(255, 255, 255, .7);
   font-size: 1rem;
   margin: 0 auto 2rem;
   max-width: 700px;
   line-height: 1.7;
 }
-.btn-primary {
+.email-marketing-page .btn-primary {
   background: #d20c0c;
   color: #FFFFFF;
   padding: .9rem 2rem;
@@ -169,8 +177,110 @@
   cursor: pointer;
   border: none;
 }
-.btn-primary:hover {
+.email-marketing-page .btn-primary:hover {
   background: #ff4d4d;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(200, 16, 46, .4);
+}
+
+/* ── Mobile & Tablet Responsiveness (Desktop 100% Locked) ── */
+@media (max-width: 991px) {
+  .email-marketing-page .services-section {
+    padding: 3.5rem 1.25rem;
+  }
+  .email-marketing-page .services-header {
+    margin-bottom: 2rem;
+  }
+  .email-marketing-page .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  .email-marketing-page .cta-section {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-marketing-page .services-section {
+    padding: 3rem 1rem;
+  }
+  .email-marketing-page .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .email-marketing-page .svc-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .email-marketing-page .svc-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.25rem;
+  }
+  .email-marketing-page .svc-icon img {
+    width: 48px;
+    height: 48px;
+  }
+  .email-marketing-page .cta-section {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-marketing-page .services-section {
+    padding: 2.25rem 0.85rem;
+  }
+  .email-marketing-page .section-title {
+    font-size: clamp(1.4rem, 6vw, 1.85rem);
+  }
+  .email-marketing-page .section-sub {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+  .email-marketing-page .services-grid {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  .email-marketing-page .svc-card {
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+  }
+  .email-marketing-page .cta-section {
+    padding: 2.5rem 0.85rem;
+  }
+  .email-marketing-page .cta-section h2 {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem);
+  }
+  .email-marketing-page .cta-section p {
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+  }
+  .email-marketing-page .btn-primary {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 360px) {
+  .email-marketing-page .services-section {
+    padding: 2rem 0.5rem;
+  }
+  .email-marketing-page .svc-card {
+    padding: 1rem 0.75rem;
+  }
+  .email-marketing-page .svc-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  .email-marketing-page .svc-icon img {
+    width: 38px;
+    height: 38px;
+  }
+  .email-marketing-page .cta-section {
+    padding: 2rem 0.5rem;
+  }
 }

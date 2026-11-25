@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+    <defs>
+      <linearGradient id="flBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#0F172A"/>
+        <stop offset="100%" stop-color="#1E293B"/>
+      </linearGradient>
+      <linearGradient id="flGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF6B4A"/>
+        <stop offset="100%" stop-color="#38BDF8"/>
+      </linearGradient>
+    </defs>
+    <rect width="512" height="512" rx="104" fill="url(#flBg)"/>
+    <rect x="16" y="16" width="480" height="480" rx="92" fill="none" stroke="#38BDF8" stroke-width="16" stroke-opacity="0.4"/>
+    <!-- Precision Typography Caliper & Stylized 'F' -->
+    <g transform="translate(256, 256)">
+      <!-- Outer bezier control guide circle -->
+      <circle cx="0" cy="0" r="160" fill="none" stroke="#38BDF8" stroke-width="4" stroke-dasharray="8 8" opacity="0.3"/>
+      <!-- FontLab 'F' with Bezier Handles -->
+      <path d="M -80 -130 H 75 C 95 -130, 105 -115, 95 -95 C 85 -75, 70 -75, 50 -75 H -35 V -20 H 35 C 55 -20, 65 -5, 55 15 C 45 35, 30 35, 10 35 H -35 V 130 C -35 150, -50 155, -65 145 C -75 135, -80 120, -80 100 Z" fill="url(#flGrad)"/>
+      <!-- Bezier vector nodes -->
+      <rect x="-86" y="-136" width="16" height="16" fill="#FFFFFF" stroke="#FF6B4A" stroke-width="4"/>
+      <rect x="80" y="-136" width="16" height="16" fill="#FFFFFF" stroke="#FF6B4A" stroke-width="4"/>
+      <rect x="44" y="27" width="16" height="16" fill="#FFFFFF" stroke="#38BDF8" stroke-width="4"/>
+      <rect x="-86" y="94" width="16" height="16" fill="#FFFFFF" stroke="#38BDF8" stroke-width="4"/>
+    </g>
+  </svg>

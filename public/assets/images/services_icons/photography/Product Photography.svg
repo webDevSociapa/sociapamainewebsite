@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Studio Pedestal -->
+    <ellipse cx="128" cy="208" rx="84" ry="24" fill="#FFEBEF" stroke="#D20C0C" stroke-width="8"/>
+    <path d="M44 208 v16 c0 13 37 24 84 24 s84 -11 84 -24 v-16" stroke="#1A0508" stroke-width="8" fill="#FFEBEF"/>
+    <!-- Luxury Cosmetic / Perfume Product Bottle -->
+    <rect x="96" y="88" width="64" height="96" rx="14" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Liquid / Core Tint -->
+    <rect x="108" y="112" width="40" height="58" rx="8" fill="#FFEBEF" stroke="#D20C0C" stroke-width="5"/>
+    <!-- Bottle Cap & Atomizer -->
+    <rect x="114" y="66" width="28" height="22" rx="4" fill="#D20C0C" stroke="#1A0508" stroke-width="6"/>
+    <line x1="128" y1="50" x2="128" y2="66" stroke="#1A0508" stroke-width="6"/>
+    <!-- Focus Reticle & Lighting Sparkles -->
+    <path d="M52 80 L68 80 M52 80 L52 96" stroke="#D20C0C" stroke-width="6"/>
+    <path d="M204 80 L188 80 M204 80 L204 96" stroke="#D20C0C" stroke-width="6"/>
+    <path d="M188 44 L192 56 L204 60 L192 64 L188 76 L184 64 L172 60 L184 56 Z" fill="#D20C0C"/>
+  </g>
+</svg>

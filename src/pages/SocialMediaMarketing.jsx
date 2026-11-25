@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
+import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
+import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
+import { serviceClientSectionsData } from '../data/serviceClientSectionsData';
 import './SocialMediaMarketing.css';
-
 
 const faqsData = [
   {
@@ -18,11 +22,11 @@ const faqsData = [
   },
   {
     "q": "4. Can Social Media Marketing drive traffic to my website?",
-    "a": "<p>Yes. Sharing valuable content, business updates, and promotional information on social media encourages users to visit your website, helping increase traffic and potential conversions.</p>"
+    "a": "<p>Yes. Sharing valuable content, business updates, and promotional campaigns on social media directs qualified users to your <a href='/best-web-development-agency-india' class='seo-interlink'>website</a>, helping increase organic visits and overall conversions.</p>"
   },
   {
     "q": "5. What does a Social Media Marketing strategy include?",
-    "a": "<p>A Social Media Marketing strategy includes understanding business goals, identifying the target audience, selecting the right platforms, planning content, scheduling posts, and measuring performance through analytics and reporting.</p>"
+    "a": "<p>A Social Media Marketing strategy includes audience profiling, selecting optimal channels, <a href='/content-designing' class='seo-interlink'>content development</a>, <a href='/creative-designing' class='seo-interlink'>creative designing</a>, scheduling posts, and measuring performance through analytics.</p>"
   },
   {
     "q": "6. Is Social Media Marketing cost-effective?",
@@ -34,261 +38,503 @@ const faqsData = [
   },
   {
     "q": "8. How can Sociapa help with Social Media Marketing?",
-    "a": "<p>Sociapa provides complete Social Media Marketing Services, including social media strategy, content planning and publishing, social media analytics and reporting, and social media advertising to help businesses build a strong digital presence and connect with their audience effectively.</p>"
+    "a": "<p>Sociapa provides end-to-end Social Media Marketing Services, including social media strategy, <a href='/influencer-marketing-services' class='seo-interlink'>influencer collaborations</a>, <a href='/videos' class='seo-interlink'>Reels and video production</a>, and paid social advertising to scale brand visibility.</p>"
   }
 ];
 
-
 export default function SocialMediaMarketing() {
-    const [openFaq, setOpenFaq] = useState(null);
-    const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  const [openFaq, setOpenFaq] = useState(null);
+  const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
+  const base = import.meta.env.BASE_URL || '/';
 
-    return (
-        <>
-            
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="social-media-marketing-page">
       <Helmet>
         <title>Sociapa Social Media Marketing services in Noida &amp; Delhi NCR -Explore to grow your brand.</title>
         <meta name="description" content="Social Media Marketing Services in Noida & Delhi NCR, india- Increased Brand Recognition, Loyalty, and Love.Customer Experience & Conversion | Best Digital Marketing Company In Noida & Delhi NCR" />
         <meta name="keywords" content="Social Media Marketing" />
-        <link rel="canonical" href="https://www.sociapa.com/social-media-marketing-services/" />
+        <link rel="canonical" href="https://sociapa.com/best-social-media-marketing-agency-india" />
         <meta property="og:title" content="Sociapa Social Media Marketing services in Noida & Delhi NCR -Explore to grow your brand." />
         <meta property="og:description" content="Social Media Marketing Services in Noida & Delhi NCR, india- Increased Brand Recognition, Loyalty, and Love.Customer Experience & Conversion | Best Digital Marketing Company In Noida & Delhi NCR" />
-        <meta property="og:url" content="https://www.sociapa.com/social-media-marketing-services/" />
+        <meta property="og:url" content="https://sociapa.com/best-social-media-marketing-agency-india" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:image" content="https://www.sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sociapa" />
+        <meta name="twitter:title" content="Social Media Marketing Services in Noida &amp; Delhi NCR - Sociapa" />
+        <meta name="twitter:description" content="Social Media Marketing Services in Noida & Delhi NCR, india- Increased Brand Recognition, Loyalty, and Love.Customer Experience & Conversion | Best Digital Marketing Company In Noida & Delhi NCR" />
+        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqsData.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a.replace(/<[^>]*>/g, '')
+            }
+          }))
+        })}</script>
+        {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best Social Media Marketing Agency India | Sociapa","item":"https://www.sociapa.com/best-social-media-marketing-agency-india"}]})}</script>
       </Helmet>
-<div className="serInsideBnr">
-  <div className="row">
-    <picture>
-        
-        <source
-            media="(max-width: 767px)"
-            srcset="/sociapareact/images/smm-service-banner-mobile.jpeg" />
-
-        
-        <img src="/sociapareact/images/smm-service-banner.jpeg" alt="social-media-marketing-banner" className="responsive-img w-100" />
-    </picture>
-  </div>
-</div>
-<section className="socialmediamarketing-hero">
-  <div className="socialmediamarketing-hero-inner">
-    <div>
-      <div className="socialmediamarketing-hero-badge">📱 Instagram · Facebook · LinkedIn · X · YouTube</div>
-      <h1>Social Media That <em>Builds Communities</em> & Drives Revenue</h1>
-      <p className="socialmediamarketing-hero-desc">Sociapa manages social media for 80+ brands across India—from content strategy and creative production to community management and paid social campaigns that convert.</p>
-      <div className="socialmediamarketing-hero-btns">
-        <a href="/contact" className="btn-primary">Grow My Social Presence</a>
-        <a href="/portfolio" className="btn-outline">See Case Studies</a>
-      </div>
-    </div>
-    <div className="socialmediamarketing-hero-visual">
-      <img src="/sociapareact/images/smm-left-img.jpeg" alt="smm-left-img" className="socialmediamarketing-hero-img" />  
-    
-    </div>
-  </div>
-</section>
-
-<div className="stats-bar">
-  <div className="stats-inner">
-    <div><span className="stat-num">5M+</span><div className="stat-lbl">Followers Grown for Clients</div></div>
-    <div><span className="stat-num">80+</span><div className="stat-lbl">Active Brand Accounts Managed</div></div>
-    <div><span className="stat-num">12x</span><div className="stat-lbl">Average Engagement Lift</div></div>
-    <div><span className="stat-num">8+</span><div className="stat-lbl">Years Managing Social Media</div></div>
-  </div>
-</div>
-
-<section className="services-section">
-  <div className="section-inner">
-    <span className="section-tag">What We Do</span>
-    <h2 className="section-title">Full-Service Social Media Management</h2>
-    <p className="section-sub">From strategy and content planning to post scheduling, community management, and paid social campaigns, we manage your social media presence end-to-end to increase engagement, grow your audience, and drive meaningful business results. </p>
-    <div className="services-grid">
-      <div className="svc-card">
-        <div className="svc-icon">🗺️</div>
-        <h3>Social Media Strategy</h3>
-        <p>Build a strong foundation for social media success with data-driven strategy and planning. We develop platform-specific strategies, content pillars, posting calendars, and growth roadmaps tailored to your brand goals, target audience, and market trends-helping you increase engagement, grow your online presence, and achieve measurable results.</p>
-        <div className="service-tags"><span>Content Calendar</span><span>Audience Research</span><span>Platform Strategy</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">✍️</div>
-        <h3>Content Creation & Copywriting</h3>
-        <p>Engage your audience with high-quality, brand-focused content designed to drive visibility and interaction. Our creative team produces compelling social media posts, carousels, reels, stories, and long-form content, all tailored to your brand voice, audience preferences, and marketing objectives.</p>
-        <div className="service-tags"><span>Reels</span><span>Carousels</span><span>Stories</span><span>Captions</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">💬</div>
-        <h3>Community Management</h3>
-        <p>Build stronger customer relationships with proactive community management. We provide daily monitoring, comment moderation, DM management, and online reputation management across all major social platforms, helping you increase engagement, strengthen brand trust, and maintain a positive online presence.</p>
-        <div className="service-tags"><span>Comment Moderation</span><span>DM Responses</span><span>Crisis Handling</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">💰</div>
-        <h3>Paid Social Advertising</h3>
-        <p>Reach the right audience and drive measurable results with targeted social media advertising. We create and manage high-performing Meta Ads, LinkedIn Ads, and YouTube campaigns designed to increase brand awareness, generate qualified leads, and maximise ROAS through continuous optimisation and audience targeting.</p>
-        <div className="service-tags"><span>Meta Ads</span><span>LinkedIn Ads</span><span>YouTube Ads</span><span>Retargeting</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">📊</div>
-        <h3>Analytics & Monthly Reporting</h3>
-        <p>Track your social media performance with detailed monthly reports covering reach, engagement, audience growth, and paid campaign results. We provide clear insights, KPI tracking, and actionable recommendations to continuously improve performance and maximise your marketing ROI.</p>
-        <div className="service-tags"><span>Monthly Reports</span><span>Insights</span><span>Competitor Analysis</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🤝</div>
-        <h3>Influencer Collaboration</h3>
-        <p>Expand your reach and build brand credibility through strategic influencer partnerships. We identify, vet, and manage micro to macro influencers, creating authentic co-branded content that connects with relevant audiences, increases engagement, and generates valuable social proof.</p>
-        <div className="service-tags"><span>Micro Influencers</span><span>Macro Influencers</span><span>Co-Branding</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="tools-section">
-  <div className="section-inner">
-    <span className="section-tag">Platforms & Tools</span>
-    <h2 className="section-title">Platforms We Manage & Amplify</h2>
-    <p className="section-sub">We manage content and paid campaigns across every major social platform with a certified team and professional scheduling infrastructure.</p>
-    <div className="tools-grid">
-      <div className="tool-chip"><span className="tool-icon">📸</span>Instagram</div>
-      <div className="tool-chip"><span className="tool-icon">👍</span>Facebook</div>
-      <div className="tool-chip"><span className="tool-icon">💼</span>LinkedIn</div>
-      <div className="tool-chip"><span className="tool-icon">▶️</span>YouTube</div>
-      <div className="tool-chip"><span className="tool-icon">🐦</span>X (Twitter)</div>
-      <div className="tool-chip"><span className="tool-icon">📌</span>Pinterest</div>
-      <div className="tool-chip"><span className="tool-icon">🎵</span>Snapchat</div>
-      <div className="tool-chip"><span className="tool-icon">📅</span>Hootsuite</div>
-      <div className="tool-chip"><span className="tool-icon">🗓️</span>Buffer</div>
-      <div className="tool-chip"><span className="tool-icon">📈</span>Sprout Social</div>
-    </div>
-  </div>
-</section>
-
-<section className="portfolio-section">
-  <div className="section-inner">
-    <span className="section-tag">Our Work</span>
-    <h2 className="section-title">Brands We've Grown on Social</h2>
-    <p className="section-sub">Real growth, real communities, real results—across FMCG, food, healthcare, and travel brands.</p>
-    <div className="portfolio-grid">
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">🌾</span></div>
-        <div className="port-info">
-          <div className="port-tag">Instagram + Facebook</div>
-          <h4>Pansari Group</h4>
-          <p>Grew FMCG brand from 10K to 280K followers in 18 months with recipe-led content and influencer partnerships.</p>
+      <div className="serInsideBnr">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Best Social Media Marketing &amp; Management Agency India - Sociapa
+        </h1>
+        <div className="row">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet={`${base}images/smm-service-banner-mobile.jpeg`} />
+            <img src={`${base}images/smm-service-banner.webp`} alt="social-media-marketing-banner" className="responsive-img w-100" />
+          </picture>
         </div>
       </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">🍞</span></div>
-        <div className="port-info">
-          <div className="port-tag">Facebook + YouTube</div>
-          <h4>Bonn Breads</h4>
-          <p>Managed social accounts and YouTube channel—produced 120+ videos and grew page reach by 6x in one year.</p>
+
+      <div className="stats-bar">
+        <div className="stats-inner">
+          <div><span className="stat-num">5M+</span><div className="stat-lbl">Followers Grown for Clients</div></div>
+          <div><span className="stat-num">80+</span><div className="stat-lbl">Active Brand Accounts Managed</div></div>
+          <div><span className="stat-num">12x</span><div className="stat-lbl">Average Engagement Lift</div></div>
+          <div><span className="stat-num">8+</span><div className="stat-lbl">Years Managing Social Media</div></div>
         </div>
       </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">💊</span></div>
-        <div className="port-info">
-          <div className="port-tag">LinkedIn + Instagram</div>
-          <h4>APIS India</h4>
-          <p>B2B and B2C social strategy for pharmaceutical brand—LinkedIn follower growth of 400% in 12 months.</p>
+
+      <section className="services-section">
+        <div className="section-inner">
+          <span className="section-tag">What We Do</span>
+          <h2 className="section-title">Full-Service Social Media Management</h2>
+          <p className="section-sub">From strategy and content planning to post scheduling, community management, and paid social campaigns, we manage your social media presence end-to-end to increase engagement, grow your audience, and drive meaningful business results. </p>
+          <div className="services-grid">
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Social Media Strategy.png`}
+                  alt="Social Media Strategy"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Social Media Strategy</h3>
+              <p>We aim to conquer Social Media territory for the brands that entrust their vision on us. From positioning to tonality to competitor analysis, we present brands with strong narrative in content calendars that trigger consideration among target audience.</p>
+              <div className="service-tags"><span>Content Calendar</span><span>Audience Research</span><span>Platform Strategy</span></div>
+            </div>
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Content Creation & Copywriting.png`}
+                  alt="Content Creation & Copywriting"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Content Creation & Copywriting</h3>
+              <p>With the advent of the social media landscape, brands have got a space for establishing a lasting presence. We give brands a dialogue through Copywriting which itself is about disseminating the brand's benefits for purchasing action. Also, the copy is included in reels, stories, captions and carousels as a consistent reminder for viewers to consider the brand they look for.</p>
+              <div className="service-tags"><span>Reels</span><span>Carousels</span><span>Stories</span><span>Captions</span></div>
+            </div>
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Community Management.png`}
+                  alt="Community Management"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Community Management</h3>
+              <p>For effective monitoring, we build community groups: a sole roof to address queries, communication offers and new prospects of brands. Replying to DMs, comments and posts serves as an assurance that the brand is there with them through thick and thin. An engaged community creates advocacy for a brand.</p>
+              <div className="service-tags"><span>Comment Moderation</span><span>DM Responses</span><span>Crisis Handling</span></div>
+            </div>
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Paid Social Advertising.png`}
+                  alt="Paid Social Advertising"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Paid Social Advertising</h3>
+              <p>Social Media Advertising is a space where attention of target group can be achieved. We achieve the same by optimizing Meta Ads, LinkedIn Ads, and YouTube Ads. Truly, Social media Ads have revolutionized the profit model of marketer and brand leaders.</p>
+              <div className="service-tags"><span>Meta Ads</span><span>LinkedIn Ads</span><span>YouTube Ads</span><span>Retargeting</span></div>
+            </div>
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Analytics & Monthly Reporting.png`}
+                  alt="Analytics & Monthly Reporting"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Analytics & Monthly Reporting</h3>
+              <p>Once we deploy budget, strategy and narratives in ads, we actively track our ads to analyze performance, engagement and ROAS. We summarize everything in a monthly report and shed light on limitations and gaps for a better performance and recall in our next project.</p>
+              <div className="service-tags"><span>Monthly Reports</span><span>Insights</span><span>Competitor Analysis</span></div>
+            </div>
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Influencer Collaboration.png`}
+                  alt="Influencer Collaboration"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h3>Influencer Collaboration</h3>
+              <p>The Creators Economy is booming where influencers make brands a part of their content. We enter this space and vet micro to macro influencers for the best dissemination of brand messages. We strive to build lasting influencer collaboration for timeless trust and the best co-branding outcome.</p>
+              <div className="service-tags"><span>Micro Influencers</span><span>Macro Influencers</span><span>Co-Branding</span></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">✈️</span></div>
-        <div className="port-info">
-          <div className="port-tag">Instagram + Meta Ads</div>
-          <h4>Kesari Tours</h4>
-          <p>Seasonal social campaigns with Meta Ads integration—delivered 3.2x ROAS on ₹80L annual ad spend.</p>
+      </section>
+
+      <section className="tools-section">
+        <div className="section-inner">
+          <span className="section-tag">Platforms & Tools</span>
+          <h2 className="section-title">Platforms We Manage & Amplify</h2>
+          <p className="section-sub">We manage content and paid campaigns across every major social platform with a certified team and professional scheduling infrastructure.</p>
+          <div className="tools-grid">
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Instagram.png`}
+                  alt="Instagram"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Instagram</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/facebook.png`}
+                  alt="Facebook"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Facebook</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/linkedin.png`}
+                  alt="LinkedIn"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>LinkedIn</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/utube.png`}
+                  alt="YouTube"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>YouTube</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/X (Twitter).png`}
+                  alt="X (Twitter)"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>X (Twitter)</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/pinterest.png`}
+                  alt="Pinterest"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Pinterest</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/snapchat.png`}
+                  alt="Snapchat"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Snapchat</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Hootsuite.png`}
+                  alt="Hootsuite"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Hootsuite</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Buffer.png`}
+                  alt="Buffer"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Buffer</span>
+            </div>
+            <div className="tool-chip">
+              <span className="tool-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Sprout social.png`}
+                  alt="Sprout Social"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </span>
+              <span>Sprout Social</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-<section className="process-section">
-  <div className="section-inner">
-    <span className="section-tag">How We Work</span>
-    <h2 className="section-title">Our Social Media Management Process</h2>
-    <p className="section-sub">A repeatable monthly rhythm that keeps content consistent, performance improving, and your team always in the loop.</p>
-    <div className="process-grid">
-      <div className="process-step"><div className="step-num">1</div><h4>Brand & Audience Audit</h4><p>Review current profiles, audience data, and competitive landscape</p></div>
-      <div className="process-step"><div className="step-num">2</div><h4>Strategy & Calendar</h4><p>Monthly content plan with pillars, formats, and posting schedule</p></div>
-      <div className="process-step"><div className="step-num">3</div><h4>Content Production</h4><p>Creatives, captions, and hashtag sets produced and approved</p></div>
-      <div className="process-step"><div className="step-num">4</div><h4>Scheduling & Publishing</h4><p>Optimised-time publishing and real-time community management</p></div>
-      <div className="process-step"><div className="step-num">5</div><h4>Paid Amplification</h4><p>Boosting top-performing posts and running targeted paid campaigns</p></div>
-      <div className="process-step"><div className="step-num">6</div><h4>Monthly Review</h4><p>Performance report, insights debrief, and next-month planning</p></div>
-    </div>
-  </div>
-</section>
+      {/* Portfolio / Our Work Section */}
+      <ServiceOurWorkSection
+        work={serviceClientSectionsData['social-media-marketing']?.work}
+        subtitle="A selection of end-to-end social media strategies, creative campaigns, and content engines executed for top brands."
+      />
 
-<section className="why-section">
-  <div className="section-inner">
-    <span className="section-tag section-tag-white">Why Sociapa</span>
-    <h2 className="section-title">India's Social Media Agency of Choice</h2>
-    <p className="section-sub">We've grown social channels for over 80 brands—here's what makes our approach different.</p>
-    <div className="why-grid">
-      <div className="why-card"><div className="w-icon">🎯</div><h4>Platform-Specific Expertise</h4><p>Benefit from platform-focused social media specialists who understand the unique algorithms, audience behaviours, and best practices of Instagram, LinkedIn, Facebook, and YouTube. We create tailored strategies for each channel to maximise engagement, reach, and business results.</p></div>
-      <div className="why-card"><div className="w-icon">🎨</div><h4>In-House Creative Studio</h4><p>Get high-quality content delivered faster with our in-house creative team. From design and copywriting to video production, everything is managed under one roof, ensuring consistent branding, streamlined workflows, and seamless content delivery.</p></div>
-      <div className="why-card"><div className="w-icon">📊</div><h4>Data-Driven Decisions</h4><p>Make smarter marketing decisions with insights backed by real performance data. We analyse audience behaviour, content performance, and engagement trends to identify the formats, topics, and posting times that deliver the best results for your brand.</p></div>
-      <div className="why-card"><div className="w-icon">⚡</div><h4>Agile Content Operations</h4><p>Stay relevant with fast, responsive content execution. Our agile content team delivers rapid turnaround for trending topics, real-time events, and crisis communications while maintaining brand consistency, quality, and strategic messaging.</p></div>
-      <div className="why-card"><div className="w-icon">🌐</div><h4>Vernacular Content Capability</h4><p>Hindi, English, and regional language content for brands targeting diverse Indian audiences across geographies.</p></div>
-      <div className="why-card"><div className="w-icon">🤝</div><h4>Dedicated Account Manager</h4><p>Enjoy seamless communication and strategic support with a dedicated account manager who understands your brand, goals, and priorities. With a single point of contact, you benefit from faster execution, proactive guidance, and a more efficient partnership.</p></div>
-    </div>
-  </div>
-</section>
-
-<section className="testi-section">
-  <div className="section-inner">
-    <span className="section-tag">Client Stories</span>
-    <h2 className="section-title">Brands Winning on Social with Sociapa</h2>
-    <div className="testi-grid">
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"In 18 months, Sociapa took our Instagram from a dormant page to a thriving community of 280,000 followers. The content quality and consistency is unmatched."</blockquote>
-        <div className="testi-author"><div className="avatar">PG</div><div><strong>Rohit Agarwal</strong><span>Brand Head, Pansari Group</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"Our LinkedIn went from 2,000 to 12,000 followers in a year. The B2B content strategy Sociapa built for us generates qualified leads we never expected from social."</blockquote>
-        <div className="testi-author"><div className="avatar">AI</div><div><strong>Sunita Khanna</strong><span>Marketing VP, APIS India</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"3.2x ROAS on our travel campaign spend—the paid social team really understands seasonal spikes and audience targeting for the travel segment."</blockquote>
-        <div className="testi-author"><div className="avatar">KT</div><div><strong>Anand Desai</strong><span>Digital Head, Kesari Tours</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="faq-section faq-section-padded" id="faq">
-  <div className="section-inner">
-    <span className="section-tag">FAQ</span>
-    <h2 className="section-title">Social Media Marketing <span className="text-brand-red">Questions Answered</span></h2>
-    <div className="faq-list">
-    {faqsData.map((faq, idx) => (
-      <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
-        <div className="faq-q" onClick={() => toggleFaq(idx)}>
-          {faq.q}
-          <span className="faq-icon">{openFaq === idx ? '-' : '+'}</span>
+      <section className="process-section">
+        <div className="section-inner">
+          <span className="section-tag">How We Work</span>
+          <h2 className="section-title">Our Social Media Management Process</h2>
+          <p className="section-sub">A repeatable monthly rhythm that keeps content consistent, performance improving, and your team always in the loop.</p>
+          <div className="process-grid">
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Brand & Audience Audit.png`}
+                  alt="Brand & Audience Audit"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Brand &amp; Audience Audit</h4>
+              <p>Review current profiles, audience data, and competitive landscape</p>
+            </div>
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Strategy & Calendar.png`}
+                  alt="Strategy & Calendar"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Strategy &amp; Calendar</h4>
+              <p>Monthly content plan with pillars, formats, and posting schedule</p>
+            </div>
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Content Production.png`}
+                  alt="Content Production"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Content Production</h4>
+              <p>Creatives, captions, and hashtag sets produced and approved</p>
+            </div>
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Scheduling & Publishing.png`}
+                  alt="Scheduling & Publishing"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Scheduling &amp; Publishing</h4>
+              <p>Optimised-time publishing and real-time community management</p>
+            </div>
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Paid Amplification.png`}
+                  alt="Paid Amplification"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Paid Amplification</h4>
+              <p>Boosting top-performing posts and running targeted paid campaigns</p>
+            </div>
+            <div className="process-step">
+              <div className="step-num">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Monthly Review.png`}
+                  alt="Monthly Review"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Monthly Review</h4>
+              <p>Performance report, insights debrief, and next-month planning</p>
+            </div>
+          </div>
         </div>
-        <div className="faq-a" dangerouslySetInnerHTML={{ __html: faq.a }}></div>
-      </div>
-    ))}
-  </div>
-  </div>
-</section>
+      </section>
 
-<section className="cta-section">
-  <div className="section-inner section-inner-narrow">
-    <h2>Ready to Own Your Social Media Presence?</h2>
-    <p>Get a free social media audit and a custom growth strategy for your brand within 48 hours.</p>
-    <a href="/contact" className="btn-primary">Get My Free Social Audit</a>
-  </div>
-</section>
+      <section className="why-section">
+        <div className="section-inner">
+          <span className="section-tag section-tag-white">Why Sociapa</span>
+          <h2 className="section-title">India's Social Media Agency of Choice</h2>
+          <p className="section-sub">We've grown social channels for over 80 brands—here's what makes our approach different.</p>
+          <div className="why-grid">
+            <div className="why-card">
+              <div className="w-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/In-House Creative Studio.png`}
+                  alt="In-House Creative Studio"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>In-House Creative Studio</h4>
+              <p>We have built an in-house creative studio employing Account Managers, Copywriters, Designers, Developers and Photographers. They all lead with the best of their artistic and business expertise for the brand growth and credibility.</p>
+            </div>
+            <div className="why-card">
+              <div className="w-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Data-Driven Decisions.png`}
+                  alt="Data-Driven Decisions"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Data-Driven Decisions</h4>
+              <p>We make smarter marketing decisions with insights backed by real performance data. We analyse audience behaviour, content performance, and engagement trends to identify the formats, topics, and posting times that deliver the best results for your brand.</p>
+            </div>
+            <div className="why-card">
+              <div className="w-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Agile Content Operations.png`}
+                  alt="Agile Content Operations"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Agile Content Operations</h4>
+              <p>Stay relevant with fast, responsive content execution. Our agile content team delivers rapid turnaround for trending topics, real-time events, and crisis communications while maintaining brand consistency, quality, and strategic messaging.</p>
+            </div>
+            <div className="why-card">
+              <div className="w-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Vernacular Content Capability.png`}
+                  alt="Vernacular Content Capability"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Vernacular Content Capability</h4>
+              <p>Our content caters to diverse Indian audiences in multiple languages: Hindi, English and Regional. We hire the best of the writers in the marketing space that writes in the language of consumers.</p>
+            </div>
+            <div className="why-card">
+              <div className="w-icon">
+                <img
+                  src={`${base}assets/images/services_icons/social_media/Dedicated Account Manager.png`}
+                  alt="Dedicated Account Manager"
+                  width="60"
+                  height="60"
+                  style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                />
+              </div>
+              <h4>Dedicated Account Manager</h4>
+              <p>For key communication, we have employed a dedicated account manager who understands your brand, goals, and priorities. With a single point of contact, you benefit from faster execution, proactive guidance, and a more efficient partnership.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </>
-    );
+      {/* Behind the Work Section */}
+      <ServiceBehindWorkSection
+        testimonials={serviceClientSectionsData['social-media-marketing']?.testimonials}
+      />
+
+      {/* Featured Case Studies Slider */}
+      <ServiceCaseStudiesSlider />
+
+      <section className="faq-section faq-section-padded" id="faq">
+        <div className="section-inner">
+          <h2 className="section-title">Social Media Marketing <span className="text-brand-red">Questions Answered</span></h2>
+          <div className="faq-list">
+            {faqsData.map((faq, idx) => (
+              <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                <div className="faq-q" onClick={() => toggleFaq(idx)}>
+                  {faq.q}
+                  <span className="faq-icon">{openFaq === idx ? '-' : '+'}</span>
+                </div>
+                <div className="faq-a" dangerouslySetInnerHTML={{ __html: faq.a }}></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-section">
+        <div className="section-inner section-inner-narrow">
+          <h2>Ready to Own Your Social Media Presence?</h2>
+          <p>Get a free social media audit and a custom growth strategy for your brand within 48 hours.</p>
+          <Link to="/contact-us" className="btn-primary">Get My Free Social Audit</Link>
+        </div>
+      </section>
+    </div>
+  );
 }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" width="460" height="180">
+      <g transform="translate(20, 30)">
+        <g transform="translate(0, 10)">
+          <rect width="130" height="92" rx="24" fill="#FF0000"/>
+          <polygon points="54,28 90,46 54,64" fill="#FFFFFF"/>
+        </g>
+        <g transform="translate(145, 58)">
+          <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#212121" letter-spacing="-1">YouTube</text>
+          <text x="2" y="38" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#606060" letter-spacing="0.2">Advertising</text>
+        </g>
+      </g>
+    </svg>

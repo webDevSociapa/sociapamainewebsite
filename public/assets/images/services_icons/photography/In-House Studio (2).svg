@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(36, 36)">
+        <!-- Infinity Cyclorama Studio Backdrop -->
+        <path d="M60 70 V320 C60 370, 90 380, 140 380 H380" stroke="#1A0508" stroke-width="14"/>
+        <!-- Studio Light Umbrellas Left & Right -->
+        <polygon points="90,120 150,80 150,160" fill="#FFEBEF" stroke="#C8102E" stroke-width="10"/>
+        <line x1="150" y1="120" x2="200" y2="120" stroke="#C8102E" stroke-width="8"/>
+        <!-- Camera on Tripod in Foreground -->
+        <rect x="270" y="220" width="80" height="55" rx="10" fill="#FFFFFF" stroke="#1A0508" stroke-width="12"/>
+        <circle cx="295" cy="247" r="16" fill="#C8102E"/>
+        <line x1="310" y1="275" x2="270" y2="360" stroke="#1A0508" stroke-width="10"/>
+        <line x1="310" y1="275" x2="350" y2="360" stroke="#1A0508" stroke-width="10"/>
+      </g>
+    </svg>

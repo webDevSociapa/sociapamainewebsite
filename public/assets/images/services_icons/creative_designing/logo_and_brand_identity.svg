@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Shield / Crest Outline -->
+      <path d="M128 32 C176 32, 208 48, 208 88 C208 160, 156 208, 128 224 C100 208, 48 160, 48 88 C48 48, 80 32, 128 32 Z" fill="#FFEBEF" stroke="#C8102E" stroke-width="10"/>
+      <!-- Crown Top -->
+      <path d="M96 90 L112 110 L128 75 L144 110 L160 90 L156 125 H100 Z" fill="#C8102E" stroke="#C8102E" stroke-width="4"/>
+      <!-- Stylized Monogram / Star in Center -->
+      <path d="M128 140 L135 158 L154 158 L138 170 L144 188 L128 176 L112 188 L118 170 L102 158 L121 158 Z" fill="#1A0508"/>
+      <!-- Sparkle Highlights -->
+      <path d="M60 44 L64 54 L74 58 L64 62 L60 72 L56 62 L46 58 L56 54 Z" fill="#FF3355"/>
+      <path d="M196 44 L200 54 L210 58 L200 62 L196 72 L192 62 L182 58 L192 54 Z" fill="#FF3355"/>
+    </g>
+  </svg>

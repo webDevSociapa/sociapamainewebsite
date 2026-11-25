@@ -1,71 +1,51 @@
 /* ContactUs.css - Clean, Professional External Stylesheet */
 
-.contact-hero-section {
-  position: relative;
-  padding: 180px 0 140px;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-  overflow: hidden;
-  text-align: center;
+/* Hero Banner - Standard Full-Bleed Layout */
+.contact-hero-banner,
+.contact-us-page section.contact-hero-banner {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: block !important;
+  position: relative !important;
+  background: transparent !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
 }
 
-.contact-hero-section::before {
-  content: '';
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(210, 12, 12, 0.06) 0%, rgba(210, 12, 12, 0) 70%);
+.contact-hero-banner picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
 }
 
-.contact-hero-section::after {
-  content: '';
-  position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(25, 118, 210, 0.04) 0%, transparent 70%);
+.contact-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.contact-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #ffffff;
-  color: #D20C0C;
-  padding: 8px 20px;
-  border-radius: 30px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
-}
-
-.contact-hero-title {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  color: #111111;
-  line-height: 1.2;
-  margin-bottom: 24px;
-}
-
-.contact-hero-title-highlight {
-  color: #D20C0C;
-}
-
-.contact-hero-desc {
-  font-size: 1.15rem;
-  color: #555555;
-  max-width: 680px;
-  margin: 0 auto;
-  line-height: 1.8;
+@media (max-width: 991px) {
+  .contact-hero-banner,
+  .contact-us-page section.contact-hero-banner {
+    margin-top: 56px !important;
+    padding: 0 !important;
+  }
 }
 
 .contact-content-section {
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -74,7 +54,7 @@
   grid-template-columns: 1fr 1.3fr;
   gap: 60px;
   align-items: stretch;
-  margin-top: -80px;
+  margin-top: 0;
   position: relative;
   z-index: 10;
 }
@@ -259,6 +239,105 @@
   box-shadow: 0 20px 40px rgba(210, 12, 12, 0.35);
 }
 
+/* ── reCAPTCHA & Action Buttons (Design Matching Image 2) ── */
+.recaptcha-box-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 16px 0 20px;
+  min-height: 78px;
+  width: 100%;
+}
+
+.btn-send-message {
+  background: #D20C0C;
+  background: linear-gradient(135deg, #D20C0C 0%, #E50914 100%);
+  color: #ffffff;
+  width: 100%;
+  height: 54px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(210, 12, 12, 0.28);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.btn-send-message:hover:not(:disabled) {
+  background: linear-gradient(135deg, #b80808 0%, #d20c0c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(210, 12, 12, 0.38);
+  color: #ffffff;
+}
+
+.btn-send-message:active {
+  transform: translateY(0);
+}
+
+.contact-or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.contact-or-divider::before,
+.contact-or-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.contact-or-divider span {
+  padding: 0 16px;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.btn-schedule-meeting-dark {
+  background: #0b0f19;
+  color: #ffffff;
+  width: 100%;
+  height: 54px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.btn-schedule-meeting-dark:hover {
+  background: #000000;
+  border-color: #334155;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.btn-schedule-meeting-dark:active {
+  transform: translateY(0);
+}
+
 .contact-map-section {
   width: 100%;
   line-height: 0;
@@ -269,18 +348,77 @@
 }
 
 @media(max-width: 992px) {
+  .contact-content-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
-    margin-top: -40px;
+    margin-top: 0;
   }
-  .contact-hero-section {
-    padding: 140px 20px 100px !important;
-  }
-  .contact-card-light, .contact-form-wrap {
+
+  .contact-card-light,
+  .contact-form-wrap {
     padding: 30px 20px;
   }
+
   .contact-form-grid-2col {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content-section {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .contact-card-light,
+  .contact-form-wrap {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .contact-card-title,
+  .contact-form-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-info-row {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .btn-submit-premium,
+  .btn-schedule-meeting-dark {
+    width: 100%;
+    padding: 13px 18px;
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-card-light,
+  .contact-form-wrap {
+    padding: 20px 10px;
+    border-radius: 14px;
+  }
+
+  .contact-card-title,
+  .contact-form-title {
+    font-size: 1.4rem;
+  }
+
+  .recaptcha-wrapper,
+  .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: left top;
+    margin-bottom: -10px;
   }
 }

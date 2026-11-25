@@ -1,0 +1,1071 @@
+/* ============================================================
+   CityServicePage.css — Sociapa Local Service Pages
+   Aligned with SOCIAPA Global Design System (Light Theme)
+   ============================================================ */
+
+.city-service-page {
+  background: var(--bg-white, #ffffff);
+  color: var(--text-body, #4A4A68);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ── 1. Stats Bar (Matching SocialMediaMarketing Standard) ── */
+.city-service-page .stats-bar {
+  background: #1A0508;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(200, 16, 46, 0.2);
+  border-bottom: 1px solid rgba(200, 16, 46, 0.2);
+  margin-top: -6px;
+  position: relative;
+  z-index: 2;
+}
+
+.city-service-page .stats-inner {
+  max-width: var(--container-w, 1200px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.city-service-page .stat-num {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #ff4d4d;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  display: block;
+  line-height: 1.1;
+}
+
+.city-service-page .stat-lbl {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── 2. Pro Location & Breadcrumb Strip ── */
+.csp-location-strip {
+  background: #FDF7F8;
+  border-bottom: 1px solid rgba(250, 218, 221, 0.7);
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.csp-location-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.csp-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.csp-breadcrumbs a {
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.csp-breadcrumbs a:hover {
+  color: #d20c0c;
+}
+
+.csp-sep {
+  color: #D1D5DB;
+  font-size: 12px;
+}
+
+.csp-curr {
+  color: #1A0508;
+  font-weight: 700;
+}
+
+.csp-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(210, 12, 12, 0.08);
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  color: #d20c0c;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.csp-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  display: inline-block;
+}
+
+/* ── 3. Trusted Brand Logos Strip ── */
+.csp-clients-strip {
+  background: #FFFFFF;
+  padding: 54px 0;
+  border-bottom: 1px solid #F0F2F5;
+  text-align: center;
+}
+
+.csp-clients-header {
+  margin-bottom: 30px;
+}
+
+.csp-clients-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(20px, 2.8vw, 30px);
+  font-weight: 800;
+  color: #1A0508;
+  margin: 10px 0 0;
+}
+
+.csp-clients-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.csp-client-logo-card {
+  height: 92px;
+  min-width: 175px;
+  padding: 14px 28px;
+  background: #FFFFFF;
+  border: 1.5px solid #EAECF0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-client-logo-card:hover {
+  border-color: rgba(210, 12, 12, 0.45);
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(210, 12, 12, 0.12);
+}
+
+.csp-client-logo-card img {
+  max-height: 60px;
+  max-width: 155px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: transform 0.25s ease;
+}
+
+.csp-client-logo-card:hover img {
+  transform: scale(1.06);
+}
+
+/* ── 4. Shared Section Typography & Containers ── */
+.csp-services-section,
+.csp-why-section,
+.csp-industries-section,
+.csp-city-section,
+.csp-faq-section {
+  padding: clamp(65px, 7.5vw, 95px) 0;
+}
+
+.csp-section-header {
+  margin-bottom: 44px;
+}
+
+.csp-section-header.text-center {
+  text-align: center;
+}
+
+.csp-section-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(26px, 3.4vw, 38px);
+  font-weight: 800;
+  color: #1A0508;
+  margin: 12px 0 14px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.csp-section-sub {
+  color: #6B7280;
+  font-size: 16px;
+  max-width: 680px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.csp-section-sub.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── 5. Services Grid (Pro Elevation) ── */
+.csp-services-section {
+  background: #FAFBFC;
+}
+
+.csp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.csp-service-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(240, 218, 222, 0.85);
+  border-radius: 20px;
+  padding: 36px 30px;
+  box-shadow: 0 4px 18px rgba(26, 5, 8, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.csp-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(210, 12, 12, 0.1);
+  border-color: rgba(210, 12, 12, 0.35);
+}
+
+.csp-service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.csp-service-icon-box {
+  width: 66px;
+  height: 66px;
+  border-radius: 16px;
+  background: #FFF2F2;
+  border: 1px solid rgba(210, 12, 12, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-service-icon-box img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.csp-service-icon-fallback {
+  font-size: 24px;
+  color: #d20c0c;
+}
+
+.csp-service-card:hover .csp-service-icon-box {
+  transform: scale(1.08);
+  background: #fee2e2;
+  border-color: #d20c0c;
+}
+
+.csp-service-card-idx {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #E2CFD2;
+}
+
+.csp-service-card-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1A0508;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.csp-service-card-desc {
+  font-size: 0.94rem;
+  color: #555568;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.csp-service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.csp-service-tags span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #d20c0c;
+  background: #FFF0F2;
+  border: 1px solid rgba(210, 12, 12, 0.12);
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+/* ── 6. Why Choose Grid (Pro Elevation) ── */
+.csp-why-section {
+  background: #FFFFFF;
+}
+
+.csp-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 26px;
+}
+
+.csp-why-card {
+  background: #FDF7F8;
+  border: 1px solid #FADADD;
+  border-radius: 20px;
+  padding: 34px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-why-card:hover {
+  transform: translateY(-5px);
+  background: #FFFFFF;
+  border-color: rgba(210, 12, 12, 0.35);
+  box-shadow: 0 14px 34px rgba(210, 12, 12, 0.09);
+}
+
+.csp-why-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.csp-why-icon-box {
+  width: 62px;
+  height: 62px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  border: 1px solid rgba(210, 12, 12, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-why-icon-box img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.csp-why-icon-fallback {
+  font-size: 22px;
+  color: #d20c0c;
+}
+
+.csp-why-card:hover .csp-why-icon-box {
+  transform: scale(1.08);
+  border-color: #d20c0c;
+}
+
+.csp-why-badge {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #d20c0c;
+  background: #FFF0F2;
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.csp-why-card-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1A0508;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.csp-why-card-text {
+  font-size: 0.93rem;
+  color: #555568;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── 7. Industries Grid (Pro Elevation) ── */
+.csp-industries-section {
+  background: #FDF7F8;
+}
+
+.csp-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.csp-industry-card {
+  background: #FFFFFF;
+  border: 1px solid #FADADD;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.csp-industry-card:hover {
+  border-color: #d20c0c;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(210, 12, 12, 0.1);
+}
+
+.csp-industry-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #FFF0F2;
+  border: 1px solid rgba(210, 12, 12, 0.15);
+  color: #d20c0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-industry-card:hover .csp-industry-icon-box {
+  background: #d20c0c;
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.csp-industry-name {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1A0508;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.csp-industry-pill {
+  font-size: 11px;
+  color: #d20c0c;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ── 8. Local City Market Insight (Pro Agency Editorial) ── */
+.csp-city-section {
+  background: #FFFFFF;
+  padding: 85px 0;
+}
+
+.csp-city-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.csp-city-spotlight-card {
+  background: linear-gradient(145deg, #1A0508 0%, #2E0810 50%, #1A0508 100%);
+  border: 1px solid rgba(255, 77, 77, 0.25);
+  border-radius: 22px;
+  padding: 42px 36px;
+  box-shadow: 0 16px 40px rgba(26, 5, 8, 0.2);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.csp-spotlight-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #ff8080;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  background: rgba(210, 12, 12, 0.3);
+  border: 1px solid rgba(255, 77, 77, 0.35);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.csp-spotlight-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+
+.csp-spotlight-quote {
+  font-size: 1.02rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.csp-spotlight-footer {
+  display: flex;
+  gap: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 22px;
+}
+
+.csp-spotlight-stat strong {
+  display: block;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ff6666;
+  margin-bottom: 4px;
+}
+
+.csp-spotlight-stat span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.csp-city-editorial .csp-city-para {
+  font-size: 0.98rem;
+  color: #4A4A68;
+  line-height: 1.85;
+  margin-bottom: 28px;
+}
+
+.csp-city-editorial .csp-city-para p {
+  margin-bottom: 16px;
+}
+
+.csp-city-editorial .csp-city-para strong {
+  color: #1A0508;
+  font-weight: 700;
+}
+
+.csp-city-editorial a.seo-interlink {
+  color: #d20c0c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(210, 12, 12, 0.35);
+  text-underline-offset: 4px;
+  transition: all 0.2s ease;
+}
+
+.csp-city-editorial a.seo-interlink:hover {
+  color: #b30909;
+  text-decoration-color: #b30909;
+}
+
+.csp-city-cta-inline {
+  margin-top: 24px;
+}
+
+/* ── 9. FAQ Section (Pro Agency Style) ── */
+.csp-faq-section {
+  background: radial-gradient(circle at 15% 20%, rgba(210, 12, 12, 0.04) 0%, transparent 45%),
+              radial-gradient(circle at 85% 75%, rgba(210, 12, 12, 0.035) 0%, transparent 45%),
+              #FDF7F8;
+  padding: clamp(70px, 8vw, 105px) 0;
+  border-top: 1px solid rgba(250, 218, 221, 0.7);
+  border-bottom: 1px solid rgba(250, 218, 221, 0.7);
+  position: relative;
+}
+
+.csp-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(210, 12, 12, 0.08);
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.csp-faq-section .csp-section-header {
+  margin-bottom: 3rem;
+}
+
+.csp-faq-section .text-brand-red {
+  color: #d20c0c;
+}
+
+.csp-faq-list {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.csp-faq-item {
+  position: relative;
+  border: 1px solid #FADADD;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #FFFFFF;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(26, 5, 8, 0.03);
+}
+
+.csp-faq-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #d20c0c 0%, #ff4d4d 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.csp-faq-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(210, 12, 12, 0.3);
+  box-shadow: 0 8px 24px rgba(210, 12, 12, 0.08);
+}
+
+.csp-faq-item.open {
+  transform: translateY(-2px);
+  border-color: rgba(210, 12, 12, 0.4);
+  box-shadow: 0 12px 30px rgba(210, 12, 12, 0.09);
+}
+
+.csp-faq-item.open .csp-faq-indicator {
+  opacity: 1;
+}
+
+.csp-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 28px;
+  background: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.csp-faq-q-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.csp-faq-num {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #a22;
+  background: #F8EEEE;
+  border: 1px solid rgba(210, 12, 12, 0.14);
+  padding: 4px 10px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+.csp-faq-item:hover .csp-faq-num,
+.csp-faq-item.open .csp-faq-num {
+  background: #d20c0c;
+  color: #FFFFFF;
+  border-color: #d20c0c;
+}
+
+.csp-faq-q-text {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1A0508;
+  margin: 0;
+  line-height: 1.45;
+  transition: color 0.2s ease;
+}
+
+.csp-faq-item:hover .csp-faq-q-text,
+.csp-faq-item.open .csp-faq-q-text {
+  color: #d20c0c;
+}
+
+.csp-faq-icon-wrap {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: #FFF0F2;
+  border: 1px solid rgba(210, 12, 12, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.csp-faq-icon {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #d20c0c;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s;
+}
+
+.csp-faq-item.open .csp-faq-icon-wrap {
+  background: #d20c0c;
+  border-color: #d20c0c;
+  box-shadow: 0 4px 12px rgba(210, 12, 12, 0.35);
+}
+
+.csp-faq-item.open .csp-faq-icon {
+  transform: rotate(45deg);
+  color: #FFFFFF;
+}
+
+.csp-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.35s ease;
+  padding: 0 28px 0 76px;
+  font-size: 0.95rem;
+  color: #4A4A68;
+  line-height: 1.8;
+  border-top: 1px solid transparent;
+}
+
+.csp-faq-item.open .csp-faq-answer {
+  max-height: 600px;
+  opacity: 1;
+  padding: 14px 28px 26px 76px;
+  border-top: 1px dashed rgba(250, 218, 221, 0.8);
+}
+
+.csp-faq-answer p {
+  margin: 0 0 12px;
+}
+
+.csp-faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.csp-faq-answer a.seo-interlink {
+  color: #d20c0c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(210, 12, 12, 0.35);
+  text-underline-offset: 4px;
+  transition: all 0.2s ease;
+}
+
+.csp-faq-answer a.seo-interlink:hover {
+  color: #b30909;
+  text-decoration-color: #b30909;
+}
+
+/* ── Pro FAQ Footer Card ── */
+.csp-faq-footer-card {
+  max-width: 880px;
+  margin: 36px auto 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 6px 20px rgba(210, 12, 12, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.csp-faq-footer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(210, 12, 12, 0.09);
+}
+
+.csp-faq-footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.csp-faq-footer-icon {
+  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 12px;
+  background: #FFF0F2;
+  border: 1px solid rgba(210, 12, 12, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.csp-faq-footer-text h4 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1A0508;
+  margin: 0 0 4px;
+  line-height: 1.35;
+}
+
+.csp-faq-footer-text p {
+  font-size: 0.88rem;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.csp-faq-footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d20c0c;
+  color: #FFFFFF !important;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(210, 12, 12, 0.3);
+  flex-shrink: 0;
+}
+
+.csp-faq-footer-btn:hover {
+  background: #b30909;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(210, 12, 12, 0.4);
+}
+
+/* ── 10. High-Converting Bottom CTA ── */
+.csp-cta-section {
+  background: linear-gradient(135deg, #1A0508 0%, #2D0A10 50%, #1A0508 100%);
+  padding: 80px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.csp-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.csp-cta-badge {
+  display: inline-block;
+  background: rgba(210, 12, 12, 0.25);
+  border: 1px solid rgba(255, 77, 77, 0.4);
+  color: #ff8080;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: var(--radius-full, 9999px);
+  margin-bottom: 18px;
+}
+
+.csp-cta-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(26px, 3.8vw, 42px);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.22;
+}
+
+.csp-cta-sub {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.csp-cta-contact-chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.csp-contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full, 9999px);
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.csp-contact-chip:hover {
+  background: rgba(210, 12, 12, 0.35);
+  border-color: #ff4d4d;
+}
+
+.csp-chip-location {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.csp-btn-large {
+  font-size: 16px !important;
+  padding: 16px 38px !important;
+}
+
+/* ── Responsive Rules ── */
+@media (max-width: 991px) {
+  .city-service-page .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .csp-city-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .csp-location-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .csp-why-grid {
+    grid-template-columns: 1fr;
+  }
+  .csp-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .csp-city-spotlight-card {
+    padding: 28px 22px;
+  }
+  .csp-spotlight-footer {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .csp-faq-question {
+    padding: 16px 18px;
+    gap: 12px;
+  }
+  .csp-faq-q-left {
+    gap: 10px;
+  }
+  .csp-faq-num {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+  }
+  .csp-faq-q-text {
+    font-size: 0.95rem;
+  }
+  .csp-faq-answer,
+  .csp-faq-item.open .csp-faq-answer {
+    padding: 10px 18px 20px 18px;
+  }
+  .csp-faq-footer-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    gap: 16px;
+  }
+  .csp-faq-footer-badge {
+    align-items: flex-start;
+  }
+  .csp-faq-footer-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .csp-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .csp-clients-grid {
+    gap: 14px 16px;
+  }
+  .csp-client-logo-card {
+    height: 78px;
+    min-width: 140px;
+    padding: 10px 18px;
+  }
+  .csp-client-logo-card img {
+    max-height: 48px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .city-service-page .stats-inner {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .csp-industries-grid {
+    grid-template-columns: 1fr;
+  }
+  .csp-clients-grid {
+    gap: 10px 12px;
+  }
+  .csp-client-logo-card {
+    height: 70px;
+    min-width: 120px;
+    padding: 8px 14px;
+  }
+  .csp-client-logo-card img {
+    max-height: 42px;
+    max-width: 105px;
+  }
+}

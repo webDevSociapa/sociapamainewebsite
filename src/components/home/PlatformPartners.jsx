@@ -1,33 +1,45 @@
 export default function PlatformPartners() {
+  const base = import.meta.env.BASE_URL;
   const partners = [
-    { img: '/sociapareact/images/ads/meta.png', name: 'Meta' },
-    { img: '/sociapareact/images/ads/amazon-ads.png', name: 'Amazon Ads' },
-    { img: '/sociapareact/images/ads/marketing.png', name: 'LinkedIn Marketing' },
-    { img: '/sociapareact/images/ads/jiostar.png', name: 'Jio Hotstar' },
-    { img: '/sociapareact/images/ads/spotify.png', name: 'Spotify Ads' },
+    { img: `${base}images/ads/meta.webp`,      name: 'Meta Business Partner' },
+    { img: `${base}images/ads/jiostar.webp`,   name: 'JioHotstar Ads' },
+    { img: `${base}images/ads/amazon-ads.webp`,name: 'Amazon Ads' },
+    { img: `${base}images/ads/marketing.webp`, name: 'LinkedIn Marketing Partner' },
+    { img: `${base}images/ads/spotify.webp`,   name: 'Spotify Ads' },
   ]
 
   return (
-    <section className="section section-pad bg-white">
-      <div className="container">
-        
-        <div className="section-title animate-on-scroll">
-          <h2 className="text-red poppins-semibold mb-2 partners-title">
-            Proudly Trusted by Our <span className="text-black">Platform Partners</span>
+    <section className="partners-banner-section">
+      <div className="partners-banner-inner">
+
+        {/* LEFT: heading + description */}
+        <div className="partners-banner-left">
+          <h2 className="partners-banner-heading">
+            PROUDLY TRUSTED BY<br />OUR PLATFORM PARTNERS
           </h2>
-          <p className="mx-auto partners-desc">
-            We collaborate with leading advertising and marketing platforms to deliver impactful digital growth solutions.
+          <p className="partners-banner-desc">
+            These are our giants, our strengthening bond is a testament to the success
+            that we have helped them achieve. At Sociapa we believe in modern
+            marketing, creative ideas and big hearts.
           </p>
         </div>
 
-        <div className="partners-grid animate-on-scroll delay-1">
+        {/* DIVIDER */}
+        <div className="partners-banner-divider" aria-hidden="true" />
+
+        {/* RIGHT: logo cards */}
+        <div className="partners-banner-logos">
           {partners.map((partner, i) => (
-            <div key={i} className="partner-card glass-card center-flex hover-scale partner-card-box">
-              <img 
-                src={partner.img} 
-                alt={partner.name} 
-                className="partner-card-img"
-                loading="lazy" decoding="async" />
+            <div key={i} className="partners-banner-card">
+              <img
+                src={partner.img}
+                alt={partner.name}
+                className="partners-banner-img"
+                width="160"
+                height="70"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           ))}
         </div>

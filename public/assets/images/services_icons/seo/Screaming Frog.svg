@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Frog Face Silhouette -->
+    <path d="M48 140 C48 88, 88 56, 128 56 C168 56, 208 88, 208 140 C208 184, 172 208, 128 208 C84 208, 48 184, 48 140 Z" fill="#E8F8EE" stroke="#1A0508" stroke-width="8"/>
+    <!-- Big Frog Bulging Eyes -->
+    <circle cx="84" cy="74" r="26" fill="#FFFFFF" stroke="#1A0508" stroke-width="7"/>
+    <circle cx="84" cy="74" r="14" fill="#00A859"/>
+    <circle cx="80" cy="70" r="4" fill="#FFFFFF"/>
+    <circle cx="172" cy="74" r="26" fill="#FFFFFF" stroke="#1A0508" stroke-width="7"/>
+    <circle cx="172" cy="74" r="14" fill="#00A859"/>
+    <circle cx="168" cy="70" r="4" fill="#FFFFFF"/>
+    <!-- Screaming Open Mouth -->
+    <ellipse cx="128" cy="154" rx="46" ry="28" fill="#D20C0C" stroke="#1A0508" stroke-width="7"/>
+    <path d="M110 168 C118 174, 138 174, 146 168" stroke="#FFFFFF" stroke-width="4"/>
+    <!-- Web Crawler Antennae / SEO spider legs -->
+    <path d="M36 128 L18 116 M34 152 L14 154 M38 176 L22 188" stroke="#00A859" stroke-width="6"/>
+    <path d="M220 128 L238 116 M222 152 L242 154 M218 176 L234 188" stroke="#00A859" stroke-width="6"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Portrait Badge Frame -->
+    <rect x="44" y="36" width="168" height="184" rx="20" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Head & Shoulders Silhouette -->
+    <circle cx="128" cy="100" r="32" fill="#FFFFFF" stroke="#D20C0C" stroke-width="8"/>
+    <!-- Suit Shoulders & Necktie -->
+    <path d="M78 184 c0 -28 22 -44 50 -44 s50 16 50 44" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <polygon points="128,142 134,166 128,184 122,166" fill="#D20C0C" stroke="#D20C0C" stroke-width="2"/>
+    <!-- Verified / Studio Shutter Star -->
+    <circle cx="178" cy="62" r="14" fill="#D20C0C"/>
+    <polyline points="172,62 176,66 184,58" stroke="#FFFFFF" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" width="460" height="180">
+      <defs>
+        <linearGradient id="mG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0064E0"/>
+          <stop offset="100%" stop-color="#0082FB"/>
+        </linearGradient>
+      </defs>
+      <g transform="translate(20, 25)">
+        <g transform="translate(0, 15)">
+          <path fill="url(#mG)" d="M70 14 C52 14, 38 24, 30 38 C22 52, 21 70, 29 84 C37 98, 52 108, 70 108 C86 108, 98 99, 108 86 L115 77 L122 86 C132 99, 144 108, 160 108 C178 108, 193 98, 201 84 C209 70, 208 52, 200 38 C192 24, 178 14, 160 14 C144 14, 132 23, 122 36 L115 45 L108 36 C98 23, 86 14, 70 14 Z M70 36 C79 36, 87 42, 94 53 L101 62 L94 71 C87 82, 79 88, 70 88 C60 88, 52 81, 47 72 C43 63, 43 52, 47 43 C52 38, 60 36, 70 36 Z M160 36 C170 36, 178 38, 183 43 C187 52, 187 63, 183 72 C178 81, 170 88, 160 88 C151 88, 143 82, 136 71 L129 62 L136 53 C143 42, 151 36, 160 36 Z"/>
+        </g>
+        <g transform="translate(230, 64)">
+          <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#1C2B33" letter-spacing="-0.5">Meta</text>
+          <text x="0" y="48" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#1C2B33" letter-spacing="-0.5">Ads</text>
+        </g>
+      </g>
+    </svg>

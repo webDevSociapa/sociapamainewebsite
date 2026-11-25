@@ -1,0 +1,383 @@
+/* ══════════════════════════════════════════════════════════════
+   OTHER CASE STUDIES SLIDER (CAROUSEL FOR ALL 7 CASE STUDIES)
+   Matches exact layout, black titles & typography from Case Studies Grid
+   ══════════════════════════════════════════════════════════════ */
+
+.cs-slider-section {
+  padding: 80px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+  width: 100%;
+  position: relative;
+}
+
+.cs-slider-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 54px;
+  box-sizing: border-box;
+}
+
+/* ── Section Heading ── */
+.cs-slider-header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.cs-slider-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cs-slider-heading-dark {
+  color: #111827;
+}
+
+.cs-slider-heading-red {
+  color: #C8282A;
+}
+
+.cs-slider-heading-line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #C8282A;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+/* ── Carousel Wrapper ── */
+.cs-slider-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* ── Scroll Track ── */
+.cs-slider-track {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  padding: 14px 4px 20px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.cs-slider-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* ── Card Items (Each Slide) ── */
+.cs-slider-card-item {
+  flex: 0 0 calc((100% - 56px) / 3);
+  max-width: calc((100% - 56px) / 3);
+  scroll-snap-align: start;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.cs-slider-card-item.current-item {
+  cursor: default;
+}
+
+/* ── Card Container matching Image 2 ── */
+.cs-slider-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cs-slider-card-item:hover .cs-slider-card {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+  border-color: #D20C0C;
+}
+
+/* Active / Current Page Card (Matching User Reference) */
+.cs-slider-card.current {
+  border: 2px solid #D20C0C;
+  box-shadow: 0 8px 30px rgba(210, 12, 12, 0.14);
+}
+
+.cs-slider-current-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #D20C0C;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(210, 12, 12, 0.35);
+  z-index: 3;
+}
+
+/* ── Top Image Box ── */
+.cs-slider-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-slider-card-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.cs-slider-card-item:hover .cs-slider-card-img {
+  transform: scale(1.04);
+}
+
+/* ── Card Body (Exact Matching Image 2 & 3) ── */
+.cs-slider-card-body {
+  padding: 22px 24px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  text-align: left;
+}
+
+.cs-slider-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cs-slider-card-tag {
+  color: #D20C0C;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.cs-slider-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 8px;
+  line-height: 1.35;
+  font-family: inherit;
+  letter-spacing: -0.01em;
+}
+
+.cs-slider-card-tagline {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #64748B;
+  margin: 0;
+  font-family: inherit;
+}
+
+/* ── Card Footer CTA ── */
+.cs-slider-card-footer {
+  padding: 14px 24px;
+  border-top: 1px solid #F1F5F9;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D20C0C;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.cs-slider-card-item:hover .cs-slider-card-footer {
+  background: #FFF5F5;
+}
+
+.cs-slider-card-btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.cs-slider-card-item:hover .cs-slider-card-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Navigation Arrows ── */
+.cs-slider-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1.5px solid #E5E7EB;
+  color: #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.cs-slider-nav-btn.prev {
+  left: -52px;
+}
+
+.cs-slider-nav-btn.next {
+  right: -52px;
+}
+
+.cs-slider-nav-btn:hover:not(:disabled) {
+  background: #C8282A;
+  color: #FFFFFF;
+  border-color: #C8282A;
+  box-shadow: 0 6px 20px rgba(200, 40, 42, 0.35);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.cs-slider-nav-btn.disabled,
+.cs-slider-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── Pagination Dots ── */
+.cs-slider-dots-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.cs-slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #D1D5DB;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.cs-slider-dot:hover {
+  background: #9CA3AF;
+  transform: scale(1.2);
+}
+
+.cs-slider-dot.active {
+  width: 28px;
+  border-radius: 999px;
+  background: #C8282A;
+  box-shadow: 0 2px 6px rgba(200, 40, 42, 0.3);
+}
+
+/* ── Responsive Queries ── */
+@media (max-width: 1024px) {
+  .cs-slider-container {
+    padding: 0 40px;
+  }
+
+  .cs-slider-card-item {
+    flex: 0 0 calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .cs-slider-track {
+    gap: 24px;
+  }
+
+  .cs-slider-nav-btn.prev {
+    left: -20px;
+  }
+
+  .cs-slider-nav-btn.next {
+    right: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-slider-section {
+    padding: 60px 0 40px;
+  }
+
+  .cs-slider-heading {
+    font-size: 2rem;
+  }
+
+  .cs-slider-container {
+    padding: 0 16px;
+  }
+
+  .cs-slider-card-item {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+
+  .cs-slider-track {
+    gap: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .cs-slider-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cs-slider-nav-btn.prev {
+    left: 4px;
+  }
+
+  .cs-slider-nav-btn.next {
+    right: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-slider-card-item {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}

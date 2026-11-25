@@ -1,0 +1,382 @@
+/* ══════════════════════════════════════════════════════════════
+   SERVICE CASE STUDIES SLIDER
+   Matches User Screenshot Exactly:
+   - Header with • FEATURED CAMPAIGNS pill badge
+   - "Case Studies" title (red "Studies")
+   - Subtitle: Real brands. Real results. Explore how we craft...
+   - 3-card desktop slider with rounded cards & badges
+   - Bottom centered chevron arrows < >
+   - Fully responsive & mobile-safe (zero overflow)
+   ══════════════════════════════════════════════════════════════ */
+
+.service-cs-section {
+  padding: 80px 0 65px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.service-cs-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* ── 1. Header Row ── */
+.service-cs-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.service-cs-badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.service-cs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFF1F1;
+  color: #D20C0C;
+  border: 1px solid #FFD4D4;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+.service-cs-dot {
+  width: 6px;
+  height: 6px;
+  background: #D20C0C;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.service-cs-title {
+  font-family: inherit;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 12px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.service-cs-title-red {
+  color: #D20C0C;
+}
+
+.service-cs-subtitle {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #64748B;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ── 2. Carousel Wrapper ── */
+.service-cs-carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.service-cs-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 12px 4px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.service-cs-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── 3. Card Items ── */
+.service-cs-card-item {
+  flex: 0 0 calc((100% - 48px) / 3);
+  max-width: calc((100% - 48px) / 3);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.service-cs-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.service-cs-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.1);
+  border-color: #E2E8F0;
+}
+
+/* ── 4. Card Image & Badge ── */
+.service-cs-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #FAFAFA;
+  display: block;
+  text-decoration: none;
+}
+
+.service-cs-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.service-cs-card:hover .service-cs-img {
+  transform: scale(1.05);
+}
+
+.service-cs-cat-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #D20C0C;
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(210, 12, 12, 0.35);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Card Hover Overlay (View Case Study button over image) */
+.service-cs-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 3;
+}
+
+.service-cs-card:hover .service-cs-hover-overlay {
+  opacity: 1;
+}
+
+.service-cs-hover-btn {
+  background: rgba(255, 255, 255, 0.95);
+  color: #D20C0C;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(4px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.service-cs-card:hover .service-cs-hover-btn {
+  transform: translateY(0);
+}
+
+/* ── 5. Card Body ── */
+.service-cs-body {
+  padding: 22px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.service-cs-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  font-family: inherit;
+  letter-spacing: -0.01em;
+}
+
+.service-cs-card-title a {
+  color: #0F172A;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.service-cs-card-title a:hover {
+  color: #D20C0C;
+}
+
+.service-cs-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #64748B;
+  margin: 0 0 20px;
+  flex: 1;
+  font-family: inherit;
+}
+
+.service-cs-action-wrap {
+  margin-top: auto;
+}
+
+/* Bottom Pill Button matching Screenshot */
+.service-cs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #FFF1F1;
+  color: #D20C0C;
+  border: 1px solid rgba(210, 12, 12, 0.12);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.service-cs-btn:hover {
+  background: #D20C0C;
+  color: #FFFFFF;
+  border-color: #D20C0C;
+  box-shadow: 0 4px 12px rgba(210, 12, 12, 0.25);
+  transform: translateY(-1px);
+}
+
+/* ── 6. Bottom Navigation Controls (Exact Match for Screenshot < >) ── */
+.service-cs-nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.service-cs-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  color: #1E293B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.service-cs-nav-btn:hover:not(:disabled) {
+  background: #D20C0C;
+  color: #FFFFFF;
+  border-color: #D20C0C;
+  box-shadow: 0 4px 14px rgba(210, 12, 12, 0.3);
+  transform: scale(1.08);
+}
+
+.service-cs-nav-btn:disabled,
+.service-cs-nav-btn.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── 7. Responsive Media Queries ── */
+@media (max-width: 1024px) {
+  .service-cs-container {
+    padding: 0 20px;
+  }
+
+  .service-cs-card-item {
+    flex: 0 0 calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+  }
+
+  .service-cs-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cs-section {
+    padding: 55px 0 45px;
+  }
+
+  .service-cs-title {
+    font-size: 2rem;
+  }
+
+  .service-cs-container {
+    padding: 0 16px;
+  }
+
+  .service-cs-card-item {
+    flex: 0 0 86%;
+    max-width: 86%;
+  }
+
+  .service-cs-track {
+    gap: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .service-cs-img-wrap {
+    height: 200px;
+  }
+
+  .service-cs-body {
+    padding: 18px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-cs-card-item {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .service-cs-title {
+    font-size: 1.75rem;
+  }
+}

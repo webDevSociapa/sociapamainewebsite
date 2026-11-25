@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Security Shield -->
+      <path d="M128 32 C172 32, 204 48, 204 88 C204 156, 156 208, 128 224 C100 208, 52 156, 52 88 C52 48, 84 32, 128 32 Z" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Inner Shield Inset -->
+      <path d="M128 54 C158 54, 182 66, 182 96 C182 144, 148 184, 128 198 C108 184, 74 144, 74 96 C74 66, 98 54, 128 54 Z" fill="#FFFFFF" stroke="#C8102E" stroke-width="6"/>
+      <!-- Verified Padlock / Check Guarantee -->
+      <g transform="translate(128, 124)">
+        <!-- Lock Shackle -->
+        <path d="M-18 -8 V-24 C-18 -36, 18 -36, 18 -24 V-8" stroke="#1A0508" stroke-width="8"/>
+        <!-- Lock Body -->
+        <rect x="-28" y="-8" width="56" height="46" rx="10" fill="#C8102E"/>
+        <circle cx="0" cy="12" r="6" fill="#FFFFFF"/>
+        <line x1="0" y1="18" x2="0" y2="26" stroke="#FFFFFF" stroke-width="4"/>
+      </g>
+    </g>
+  </svg>

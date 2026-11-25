@@ -1,0 +1,475 @@
+/* ==========================================================================
+   Polygon Page Scoped Styles - Sociapa
+   ========================================================================== */
+
+.polygon-page {
+  --poly-red: #d20c0c;
+  --poly-red-dark: #8b0000;
+  --poly-red-light: #ff4d4d;
+  --poly-red-pale: #fff2f2;
+  --poly-dark: #090d16;
+  --poly-dark-card: #111827;
+  --poly-gray: #64748b;
+  --poly-light: #f8fafc;
+  --poly-white: #ffffff;
+  --poly-border: #e2e8f0;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  color: #1e293b;
+  line-height: 1.6;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Banner Image & Hero Section */
+.polygon-page .hero-banner-section {
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  background: transparent !important;
+}
+
+.polygon-page .hero-banner-section picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.polygon-page .hero-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .polygon-page .hero-banner-section {
+    margin-top: 56px !important;
+  }
+}
+
+/* Page Intro Header */
+.polygon-page .page-intro-section {
+  background: linear-gradient(180deg, #ffffff 0%, #fff5f5 100%);
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.polygon-page .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.polygon-page .badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff2f2;
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.polygon-page .badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #d20c0c;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(210, 12, 12, 0.6);
+  animation: polyPulse 2s infinite;
+}
+
+@keyframes polyPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.polygon-page .main-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.polygon-page .main-title .highlight-text {
+  color: #d20c0c;
+}
+
+.polygon-page .intro-lead {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.polygon-page .hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.polygon-page .btn-primary-poly {
+  background: #d20c0c;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(210, 12, 12, 0.25);
+}
+
+.polygon-page .btn-primary-poly:hover {
+  background: #b50a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(210, 12, 12, 0.35);
+  color: #ffffff;
+}
+
+.polygon-page .btn-secondary-poly {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.polygon-page .btn-secondary-poly:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-2px);
+  color: #0f172a;
+}
+
+/* Stats Bar */
+.polygon-page .stats-bar-poly {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 2.5rem 1.5rem;
+}
+
+.polygon-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.polygon-page .stat-val {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #ff4d4d;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.polygon-page .stat-lbl {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .polygon-page .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Content Sections */
+.polygon-page .content-section {
+  padding: 5rem 1.5rem;
+}
+
+.polygon-page .bg-light {
+  background: #f8fafc;
+}
+
+.polygon-page .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.polygon-page .section-tag {
+  display: inline-block;
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.polygon-page .section-heading {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.polygon-page .section-desc {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Visual Comparison Cards: Circle vs Polygon */
+.polygon-page .visual-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .polygon-page .visual-compare-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.polygon-page .compare-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.polygon-page .compare-box.bad {
+  border-top: 4px solid #94a3b8;
+}
+
+.polygon-page .compare-box.good {
+  border-top: 4px solid #d20c0c;
+  background: #fffafa;
+}
+
+.polygon-page .compare-box h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.polygon-page .compare-box.good h3 {
+  color: #d20c0c;
+}
+
+.polygon-page .compare-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.polygon-page .compare-box li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.polygon-page .compare-box li:last-child {
+  border-bottom: none;
+}
+
+/* Polygon Grid */
+.polygon-page .poly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.polygon-page .poly-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.polygon-page .poly-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(210, 12, 12, 0.3);
+  box-shadow: 0 20px 30px -10px rgba(210, 12, 12, 0.12);
+}
+
+.polygon-page .poly-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #fff2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #d20c0c;
+}
+
+.polygon-page .poly-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.polygon-page .poly-card h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.85rem;
+}
+
+.polygon-page .poly-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.polygon-page .poly-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.polygon-page .poly-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+
+/* FAQ Accordion */
+.polygon-page .faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.polygon-page .faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.polygon-page .faq-item.active {
+  border-color: #d20c0c;
+  box-shadow: 0 4px 12px rgba(210, 12, 12, 0.08);
+}
+
+.polygon-page .faq-trigger {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  gap: 1rem;
+}
+
+.polygon-page .faq-icon {
+  font-size: 1.4rem;
+  color: #d20c0c;
+  transition: transform 0.3s ease;
+}
+
+.polygon-page .faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.polygon-page .faq-body {
+  padding: 0 1.5rem 1.25rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Bottom CTA Banner */
+.polygon-page .bottom-cta-banner {
+  background: linear-gradient(135deg, #090d16 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.polygon-page .bottom-cta-banner h2 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.polygon-page .bottom-cta-banner p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+}
+
+/* Service Interlink styling */
+.polygon-page a.seo-interlink {
+  color: #d20c0c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.polygon-page a.seo-interlink:hover {
+  color: #8b0000;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180">
+      <g transform="translate(20, 35)">
+        <text x="0" y="74" font-family="Arial, sans-serif" font-weight="bold" font-size="52" fill="#000000" letter-spacing="-0.5">Linked</text>
+        <g transform="translate(175, 18)">
+          <rect width="72" height="72" rx="14" fill="#0A66C2"/>
+          <text x="36" y="54" font-family="Arial, sans-serif" font-weight="bold" font-size="52" fill="#FFFFFF" text-anchor="middle">in</text>
+        </g>
+        <text x="260" y="74" font-family="Arial, sans-serif" font-weight="bold" font-size="44" fill="#666666">ads</text>
+      </g>
+    </svg>

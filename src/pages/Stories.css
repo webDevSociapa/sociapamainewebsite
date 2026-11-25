@@ -1,552 +1,301 @@
-/* Stories.css - High-End Instagram Stories Page Styling */
+/* Stories.css - High-End Instagram Stories Page with Full Mobile Responsiveness */
 
-/* Ambient Animations */
-@keyframes storyRingRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+/* Hide watermark & admin floating panels safely */
+a[href*="elfsight.com"],
+a[class*="eapps-link"],
+[class*="WidgetAdminPanel"],
+[class*="WidgetOwnerPanel"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.05); }
+@keyframes storiesPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.6; }
 }
 
-@keyframes floatOrb {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-15px) scale(1.04); }
-}
-
-@keyframes shineSweep {
-  0% { left: -100%; }
-  100% { left: 200%; }
-}
-
-/* Hero Section */
-.stories-hero {
-  padding-top: 100px;
-  padding-bottom: 30px;
-  background: linear-gradient(135deg, #FAF9FB 0%, #FFF5F5 50%, #FFEBEB 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.stories-hero-dots {
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(210, 12, 12, 0.06) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-}
-
-.stories-orb-1 {
-  position: absolute;
-  top: -80px;
-  right: -60px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(210, 12, 12, 0.15) 0%, rgba(225, 48, 108, 0.08) 50%, transparent 70%);
-  filter: blur(40px);
-  animation: floatOrb 8s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.stories-orb-2 {
-  position: absolute;
-  bottom: -60px;
-  left: -80px;
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(131, 58, 180, 0.12) 0%, rgba(253, 29, 29, 0.06) 50%, transparent 70%);
-  filter: blur(40px);
-  animation: floatOrb 10s ease-in-out infinite reverse;
-  pointer-events: none;
-}
-
-/* Profile Glass Card */
-.stories-profile-card {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 28px;
-  border: 1px solid rgba(210, 12, 12, 0.12);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06), 0 2px 10px rgba(210, 12, 12, 0.04);
-  padding: 36px 44px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 28px;
-  margin-bottom: 36px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stories-profile-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.09), 0 4px 20px rgba(210, 12, 12, 0.08);
-}
-
-/* Avatar Story Ring */
-.stories-avatar-wrapper {
-  position: relative;
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.35);
-  transition: transform 0.3s ease;
-}
-
-.stories-avatar-wrapper:hover {
-  transform: scale(1.06);
-}
-
-.stories-avatar-inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+/* Page Container */
+.stories-page-wrapper {
   background: #ffffff;
-  padding: 6px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* ── Hero Banner Section (serInsideBnr handles top alignment & mobile navbar spacing) ── */
+.stories-page-wrapper .serInsideBnr {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* ── Intro Header Section (Under Banner) ── */
+.stories-intro-section {
+  padding: 44px 0 24px 0;
+  background: linear-gradient(180deg, #FDF8F8 0%, #FFFFFF 100%);
+  border-bottom: 1px solid rgba(210, 12, 12, 0.08);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.stories-intro-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Breadcrumbs */
+.stories-breadcrumbs {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-
-.stories-avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Stats Items */
-.stories-stat-item {
-  text-align: center;
-  transition: transform 0.2s ease;
-  cursor: default;
-}
-
-.stories-stat-item:hover {
-  transform: translateY(-2px);
-}
-
-.stories-stat-number {
-  font-weight: 900;
-  font-size: 1.25rem;
-  color: #111111;
-  letter-spacing: -0.02em;
-}
-
-.stories-stat-label {
-  font-size: 0.78rem;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: #777777;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-/* IG Follow Button */
-.stories-ig-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 32px;
-  border-radius: 50px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #ffffff !important;
-  background: linear-gradient(45deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
-  background-size: 200% 200%;
-  box-shadow: 0 8px 24px rgba(225, 48, 108, 0.35);
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-.stories-ig-btn:hover {
-  background-position: right center;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(225, 48, 108, 0.5);
-  color: #ffffff !important;
-}
-
-.stories-ig-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transform: skewX(-20deg);
-  transition: 0.7s;
-}
-
-.stories-ig-btn:hover::before {
-  left: 180%;
-}
-
-/* Filter / Section Header Pill */
-.stories-section-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(210, 12, 12, 0.06);
-  border: 1px solid rgba(210, 12, 12, 0.18);
-  color: var(--brand-red, #D20C0C);
-  padding: 8px 22px;
-  border-radius: 30px;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  box-shadow: 0 4px 14px rgba(210, 12, 12, 0.06);
-}
-
-/* Grid Section */
-.stories-grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.stories-card {
-  display: block;
-  position: relative;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #181824 0%, #2A0909 100%);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.stories-card:hover {
-  transform: translateY(-6px) scale(1.015);
-  box-shadow: 0 20px 40px rgba(210, 12, 12, 0.2), 0 8px 16px rgba(0, 0, 0, 0.12);
-  border-color: rgba(210, 12, 12, 0.3);
-}
-
-.stories-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.stories-card:hover .stories-card-img {
-  transform: scale(1.1);
-}
-
-/* Badge Top Right */
-.stories-badge {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #ffffff;
-  border-radius: 30px;
-  padding: 4px 12px;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 2;
-  transition: transform 0.3s ease;
-}
-
-.stories-card:hover .stories-badge {
-  transform: scale(1.08);
-  background: rgba(210, 12, 12, 0.85);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-/* Top Left IG Indicator Icon */
-.stories-ig-type-icon {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.3s ease;
-}
-
-.stories-card:hover .stories-ig-type-icon {
-  background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
-  border-color: transparent;
-  transform: scale(1.1);
-}
-
-/* Hover Overlay */
-.stories-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(15, 15, 26, 0.92) 0%, rgba(15, 15, 26, 0.4) 60%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 22px;
-  z-index: 3;
-}
-
-.stories-card:hover .stories-card-overlay {
-  opacity: 1;
-}
-
-.stories-card-caption {
-  color: #ffffff;
-  font-size: 0.92rem;
-  font-weight: 700;
-  line-height: 1.45;
-  transform: translateY(10px);
-  transition: transform 0.35s ease;
-}
-
-.stories-card:hover .stories-card-caption {
-  transform: translateY(0);
-}
-
-.stories-card-cta-text {
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.78rem;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(6px);
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  width: fit-content;
-}
-
-/* Fallback Container */
-.stories-fallback {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #1A0505 0%, #D20C0C 60%, #8B0000 100%);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  text-align: center;
-}
-
-.stories-fallback-logo {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 16px;
-  filter: brightness(0) invert(1);
-  opacity: 0.95;
-}
-
-.stories-fallback-title {
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 800;
-  line-height: 1.4;
   margin-bottom: 14px;
 }
 
-.stories-fallback-btn {
+.stories-breadcrumbs a {
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.stories-breadcrumbs a:hover {
+  color: #D20C0C;
+}
+
+.breadcrumb-separator {
+  color: #cccccc;
+  font-size: 0.8rem;
+}
+
+.breadcrumb-current {
+  color: #D20C0C;
+  font-weight: 600;
+}
+
+/* Badge */
+.stories-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(210, 12, 12, 0.08);
+  color: #D20C0C;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.stories-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #D20C0C;
+  animation: storiesPulse 1.8s infinite ease-in-out;
+}
+
+/* Hero Heading <h1> */
+.stories-hero-title {
+  font-size: clamp(1.6rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.01em;
+  line-height: 1.22;
+  margin: 0 auto 14px;
+  max-width: 860px;
+  text-align: center;
+}
+
+/* Description */
+.stories-hero-desc {
+  font-size: 0.98rem;
+  color: #555555;
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 auto 22px;
+  text-align: center;
+}
+
+/* Hero Actions / Follow Button */
+.stories-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.stories-hero-ig-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 16px rgba(220, 39, 67, 0.28);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stories-hero-ig-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(220, 39, 67, 0.4);
+  color: #ffffff !important;
+}
+
+.stories-hero-meta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  padding: 7px 16px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  color: #777777;
+  font-weight: 600;
 }
 
-/* Bottom CTA Banner */
-.stories-cta-banner {
-  margin-top: 70px;
-  background: linear-gradient(135deg, #0F0F1A 0%, #1A0505 50%, #2D0808 100%);
-  border-radius: 28px;
-  padding: 56px 40px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(210, 12, 12, 0.25);
-}
-
-.stories-cta-glow {
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  height: 400px;
+.stories-meta-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(210, 12, 12, 0.25) 0%, rgba(225, 48, 108, 0.1) 60%, transparent 80%);
-  filter: blur(50px);
-  pointer-events: none;
+  background: #25D366;
 }
 
-.stories-cta-icon-box {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  box-shadow: 0 10px 30px rgba(225, 48, 108, 0.4);
-  margin-bottom: 22px;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
+/* ── Feed Section & Widget ── */
+.stories-feed-section {
+  padding: 34px 0 80px 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
-.stories-cta-title {
-  font-size: 1.85rem;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-  position: relative;
-  z-index: 1;
+.stories-inner-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.stories-cta-desc {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.05rem;
-  max-width: 520px;
-  margin: 0 auto 32px;
-  line-height: 1.6;
-  position: relative;
-  z-index: 1;
+.stories-widget-wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-height: 520px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-/* Responsive Media Queries */
+/* Strict mobile constraints on injected Elfsight elements to prevent side scroll */
+.stories-widget-wrapper [class*="elfsight-app"],
+.stories-widget-wrapper [class*="eapps-instagram-feed"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.stories-widget-wrapper [class*="eapps-instagram-feed"] * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* ── Responsive Breakpoints ── */
 @media (max-width: 991px) {
-  .stories-grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .stories-profile-card {
-    padding: 30px 28px;
-    justify-content: center;
-    text-align: center;
-  }
-  .stories-profile-card > div {
-    justify-content: center;
+  .stories-page-wrapper .serInsideBnr {
+    margin-top: 56px !important;
+    padding-top: 0 !important;
   }
 }
 
-@media (max-width: 576px) {
-  .stories-grid-container {
-    grid-template-columns: 1fr;
-    gap: 16px;
+@media (max-width: 768px) {
+  .stories-intro-section {
+    padding: 26px 16px 18px 16px !important;
   }
-  .stories-profile-card {
-    padding: 24px 20px;
+  .stories-intro-container {
+    padding: 0 12px !important;
   }
-  .stories-avatar-wrapper {
-    width: 82px;
-    height: 82px;
+  .stories-hero-title {
+    font-size: 1.48rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 10px !important;
   }
-  .stories-cta-banner {
-    padding: 40px 20px;
+  .stories-hero-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
+    max-width: 100% !important;
   }
-  .stories-cta-title {
-    font-size: 1.45rem;
+  .stories-hero-ig-btn {
+    padding: 9px 20px !important;
+    font-size: 0.88rem !important;
+  }
+  .stories-feed-section {
+    padding: 20px 0 95px 0 !important; /* Bottom clearance for floating call & WhatsApp icons */
+  }
+  .stories-inner-container {
+    padding: 0 10px !important;
   }
 }
 
-.stories-hero-container {
-  position: relative;
-  z-index: 1;
-  padding: 24px 20px 0;
-}
-
-.stories-profile-left {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.stories-handle-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.stories-handle-text {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #111111;
-  letter-spacing: -0.02em;
-}
-
-.stories-stats-row {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 12px;
-}
-
-.stories-bio-text {
-  font-size: 0.88rem;
-  color: #555555;
-  margin: 0;
-  font-weight: 500;
-}
-
-.stories-profile-right {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.stories-label-center {
-  text-align: center;
-  padding-bottom: 32px;
-}
-
-.stories-grid-section {
-  background: #FAF9FB;
-  padding-bottom: 90px;
-}
-
-.stories-grid-inner {
-  padding-top: 0;
-}
-
-.stories-cta-btn-lg {
-  padding: 15px 44px;
-  font-size: 1rem;
+@media (max-width: 480px) {
+  .stories-intro-section {
+    padding: 20px 12px 14px 12px !important;
+  }
+  .stories-hero-badge {
+    font-size: 0.76rem !important;
+    padding: 4px 12px !important;
+    margin-bottom: 10px !important;
+  }
+  .stories-hero-title {
+    font-size: 1.34rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 8px !important;
+  }
+  .stories-hero-desc {
+    font-size: 0.82rem !important;
+    line-height: 1.46 !important;
+    margin-bottom: 14px !important;
+  }
+  .stories-hero-actions {
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  .stories-hero-ig-btn {
+    width: 100% !important;
+    max-width: 270px !important;
+    justify-content: center !important;
+    font-size: 0.86rem !important;
+    padding: 9px 16px !important;
+  }
+  .stories-feed-section {
+    padding: 14px 0 100px 0 !important;
+  }
+  .stories-inner-container {
+    padding: 0 6px !important;
+  }
 }

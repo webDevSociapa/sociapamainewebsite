@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stopwatch Dial -->
+    <circle cx="128" cy="136" r="76" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Stopwatch Top Buttons -->
+    <rect x="116" y="38" width="24" height="22" rx="4" fill="#D20C0C" stroke="#1A0508" stroke-width="6"/>
+    <line x1="128" y1="26" x2="128" y2="38" stroke="#1A0508" stroke-width="6"/>
+    <line x1="174" y1="74" x2="188" y2="60" stroke="#1A0508" stroke-width="7"/>
+    <!-- 48H Text inside Dial -->
+    <text x="128" y="146" fill="#D20C0C" font-family="sans-serif" font-weight="900" font-size="36" text-anchor="middle">48h</text>
+    <text x="128" y="172" fill="#1A0508" font-family="sans-serif" font-weight="bold" font-size="14" text-anchor="middle">PROOFS</text>
+    <!-- Speed Flash Trail -->
+    <path d="M44 116 L28 126 M40 148 L22 152 M46 178 L30 186" stroke="#D20C0C" stroke-width="6"/>
+  </g>
+</svg>

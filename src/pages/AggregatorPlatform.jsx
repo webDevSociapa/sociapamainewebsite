@@ -1,5 +1,10 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
+import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
+import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
+import { serviceClientSectionsData } from '../data/serviceClientSectionsData';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import './AggregatorPlatform.css';
 
 
@@ -22,7 +27,7 @@ const faqsData = [
   },
   {
     "q": "Can Sociapa build a custom aggregator platform?",
-    "a": "<p>Yes. Sociapa specializes in developing fully customized aggregator platforms designed around your business model, target audience, industry requirements, and long-term growth strategy.</p>"
+    "a": "<p>Yes. Sociapa specializes in building scalable aggregator platforms using our modern <a href='/best-web-development-agency-india' class='seo-interlink'>web development services</a>, engineered for high concurrency, microservices architecture, and conversion optimization.</p>"
   },
   {
     "q": "What features are included in an aggregator platform?",
@@ -34,7 +39,7 @@ const faqsData = [
   },
   {
     "q": "Can you build mobile apps along with the platform?",
-    "a": "<p>Absolutely. Along with the web platform, we develop native Android and iOS applications to provide your customers and vendors with a seamless cross-platform experience.</p>"
+    "a": "<p>Absolutely. Along with high-performance <a href='/best-web-development-agency-india' class='seo-interlink'>custom web platforms</a>, we develop native mobile apps to provide customers and vendors with a seamless omnichannel experience.</p>"
   },
   {
     "q": "How can platform owners maintain quality standards?",
@@ -56,71 +61,82 @@ export default function AggregatorPlatform() {
     }, []);
 
     return (
-        <>
+        <div className="aggregator-platform-page">
             
       <Helmet>
         <title>Looking for Aggregator Platform Service in Noida &amp; Delhi NCR - Contact Sociapa</title>
         <meta name="description" content="Get Best Aggregator Platform Service in Noida & Delhi NCR- In Digital era, aggregator business is booming, and it has transformed the industry. Sociapa can assist you in expanding your business." />
         <meta name="keywords" content="Aggregator Platform Service" />
-        <link rel="canonical" href="https://www.sociapa.com/aggregator-platform-service/" />
+        <link rel="canonical" href="https://sociapa.com/aggregator-platform-service" />
         <meta property="og:title" content="Looking for Aggregator Platform Service in Noida & Delhi NCR - Contact Sociapa" />
         <meta property="og:description" content="Get Best Aggregator Platform Service in Noida & Delhi NCR- In Digital era, aggregator business is booming, and it has transformed the industry. Sociapa can assist you in expanding your business." />
-        <meta property="og:url" content="https://www.sociapa.com/aggregator-platform-service/" />
+        <meta property="og:url" content="https://sociapa.com/aggregator-platform-service" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:image" content="https://www.sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@sociapa" />
+        <meta name="twitter:title" content="Aggregator Platform Services - Sociapa" />
+        <meta name="twitter:description" content="Get Best Aggregator Platform Service in Noida & Delhi NCR- In Digital era, aggregator business is booming, and it has transformed the industry. Sociapa can assist you in expanding your business." />
+        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqsData.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faq.a.replace(/<[^>]*>/g, '')
+            }
+          }))
+        })}</script>
+        {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Aggregator Platform Service | Sociapa","item":"https://www.sociapa.com/aggregator-platform-service"}]})}</script>
       </Helmet>
-<div className="serInsideBnr">
-  <div className="row">
-    <picture>
-        
-        <source
-            media="(max-width: 767px)"
-            srcset="/sociapareact/images/aggregator-service-banner-mobile.jpeg" />
 
-        
-        <img
-            src="/sociapareact/images/aggregator-service-banner.jpeg"
-            alt="Aggregator Platform Service"
-            className="responsive-img w-100" />
-    </picture>
-</div>
-</div>
-<section className="aggregatorplatform-hero">
-  <div className="aggregatorplatform-hero-inner">
-    <div>
-      <div className="aggregatorplatform-hero-badge"> Amazon · Flipkart · Blinkit · Swiggy Instamart · Zepto</div>
-      <h1>Aggregator Platform Management That <em>Grows Your Online Sales</em></h1>
-      <p className="aggregatorplatform-hero-desc">From Amazon catalogue management to Blinkit and Zepto promotions, Sociapa optimises your brand across 30+ marketplaces to maximise visibility, sales, and growth. </p>
-      <div className="aggregatorplatform-hero-btns">
-        <a href="/contact" className="btn-primary">Grow My Marketplace Sales</a>
-        <a href="/portfolio" className="btn-outline">See Platform Results</a>
+      <div className="serInsideBnr">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Ecommerce Marketplace &amp; Aggregator Platform Management Services - Sociapa
+        </h1>
+        <div className="row">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet="/sociapareact/images/aggregator-service-banner-mobile.jpeg"
+            />
+            <img
+              src="/sociapareact/images/aggregator-service-banner.jpeg"
+              alt="Aggregator Platform Service"
+              className="responsive-img w-100"
+            />
+          </picture>
+        </div>
       </div>
-    </div>
-    <div className="aggregatorplatform-hero-visual">
-      <img src="/sociapareact/images/Aggregator-platform-Services-right.jpeg" alt="aggregator-left-img" className="aggregatorplatform-hero-img" />
-    </div>
-  </div>
-</section>
 
-<div className="stats-bar">
-  <div className="stats-inner">
-    <div><span className="stat-num">30+</span><div className="stat-lbl">Platforms Managed</div></div>
-    <div><span className="stat-num">₹25Cr+</span><div className="stat-lbl">Marketplace GMV Managed</div></div>
-    <div><span className="stat-num">3.5x</span><div className="stat-lbl">Average Sales Growth</div></div>
-    <div><span className="stat-num">5,000+</span><div className="stat-lbl">Product Listings Optimised</div></div>
-  </div>
-</div>
-
-<section className="services-section">
-  <div className="section-inner">
-    <span className="section-tag">Platform Services</span>
-    <h2 className="section-title">Complete Aggregator Platform Management</h2>
-    <p className="section-sub">Grow your online sales with end-to-end marketplace management. From catalogue creation and optimisation to advertising and performance tracking, we help your brand succeed across India's top eCommerce and Q-commerce platforms. </p>
-    <div className="services-grid">
-
-    <div className="svc-card">
-      <div className="svc-icon">
-        <img src="/sociapareact/icons/aggregator/amazon-and-flipkart.png" alt="Amazon & Flipkart Management" width="50" height="50" />
+      <div className="stats-bar">
+        <div className="stats-inner">
+          <div><span className="stat-num">30+</span><div className="stat-lbl">Platforms Managed</div></div>
+          <div><span className="stat-num">₹25Cr+</span><div className="stat-lbl">Marketplace GMV Managed</div></div>
+          <div><span className="stat-num">3.5x</span><div className="stat-lbl">Average Sales Growth</div></div>
+          <div><span className="stat-num">5,000+</span><div className="stat-lbl">Product Listings Optimised</div></div>
+        </div>
       </div>
-      <h3>Amazon & Flipkart Management</h3>
+
+      <section className="services-section">
+        <div className="section-inner">
+          <span className="section-tag">Platform Services</span>
+          <h2 className="section-title">Complete Aggregator Platform Management</h2>
+          <p className="section-sub">Grow your online sales with end-to-end marketplace management. From catalogue creation and optimisation to advertising and performance tracking, we help your brand succeed across India's top eCommerce and Q-commerce platforms. </p>
+          <div className="services-grid">
+            <div className="svc-card">
+              <div className="svc-icon">
+                <img src="/sociapareact/icons/aggregator/amazon-and-flipkart.png" alt="Amazon & Flipkart Management" width="50" height="50" />
+              </div>
+              <h3>Amazon & Flipkart Management</h3>
       <p>End-to-end marketplace management, including Seller Central setup, listing optimisation, A+ Content, Sponsored Ads, Brand Store management, and review optimisation to increase visibility and sales.</p>
       <div className="service-tags">
         <span>Amazon Ads</span>
@@ -212,119 +228,82 @@ export default function AggregatorPlatform() {
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/amazon.png" alt="Amazon India" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/amazon.png" alt="Amazon India" />
         </span>
-        Amazon India
+        <span className="tool-name">Amazon India</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/flipkart.png" alt="Flipkart" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/flipkart.png" alt="Flipkart" />
         </span>
-        Flipkart
+        <span className="tool-name">Flipkart</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/blinkit.png" alt="Blinkit" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/blinkit.png" alt="Blinkit" />
         </span>
-        Blinkit
+        <span className="tool-name">Blinkit</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/swiggy-instamart.png" alt="Swiggy Instamart" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/swiggy-instamart.png" alt="Swiggy Instamart" />
         </span>
-        Swiggy Instamart
+        <span className="tool-name">Swiggy Instamart</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/zepto.png" alt="Zepto" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/zepto.png" alt="Zepto" />
         </span>
-        Zepto
+        <span className="tool-name">Zepto</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/bigbasket.png" alt="BigBasket" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/bigbasket.png" alt="BigBasket" />
         </span>
-        BigBasket
+        <span className="tool-name">BigBasket</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/zomato.png" alt="Zomato" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/zomato.png" alt="Zomato" />
         </span>
-        Zomato
+        <span className="tool-name">Zomato</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/swiggy-food.png" alt="Swiggy Food" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/swiggy-food.png" alt="Swiggy Food" />
         </span>
-        Swiggy Food
+        <span className="tool-name">Swiggy Food</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/makemytrip.png" alt="MakeMyTrip" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/makemytrip.png" alt="MakeMyTrip" />
         </span>
-        MakeMyTrip
+        <span className="tool-name">MakeMyTrip</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/sociapareact/icons/aggregator/jiomart.png" alt="JioMart" width="70" height="70" />
+          <img src="/sociapareact/icons/aggregator/jiomart.png" alt="JioMart" />
         </span>
-        JioMart
+        <span className="tool-name">JioMart</span>
       </div>
 
     </div>
   </div>
 </section>
 
-<section className="portfolio-section">
-  <div className="section-inner">
-    <span className="section-tag">Platform Success Stories</span>
-    <h2 className="section-title">Brands Growing Faster on Marketplaces</h2>
-    <p className="section-sub">Real results from marketplace management programmes we've run for FMCG, food, and consumer brands.</p>
-    <div className="portfolio-grid">
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon"></span></div>
-        <div className="port-info">
-          <div className="port-tag">Amazon + Flipkart</div>
-          <h4>Pansari Group eCommerce</h4>
-          <p>Launched on Amazon and Flipkart with fully optimised product listings and A+ Content, achieving the #1 Best Seller Rank (BSR) in the Cooking Oils category within 4 months. </p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon"></span></div>
-        <div className="port-info">
-          <div className="port-tag">Q-Commerce · 3 Platforms</div>
-          <h4>Nutrela — Q-Commerce Rollout</h4>
-          <p>Expanded across Blinkit, Swiggy Instamart, and Zepto, delivering a 2.8x increase in sales within 6 months through strategic listing optimisation and promotional campaigns.</p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon"></span></div>
-        <div className="port-info">
-          <div className="port-tag">Flipkart + BigBasket</div>
-          <h4>Bonn Breads Marketplace Growth</h4>
-          <p>Optimised 80+ product listings across Flipkart and BigBasket, achieving 4.2x sales growth through catalogue optimisation and marketplace advertising. </p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon"></span></div>
-        <div className="port-info">
-          <div className="port-tag">Zomato + Swiggy</div>
-          <h4>F&B Brand — Delivery Platform</h4>
-          <p>Optimised Zomato and Swiggy listings, menus, and promotional campaigns, delivering a 3.1x increase in order volume within 3 months.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      {/* Portfolio / Our Work Section */}
+      <ServiceOurWorkSection
+        work={serviceClientSectionsData['aggregator-platform']?.work}
+      />
 
 <section className="process-section">
   <div className="section-inner">
@@ -375,7 +354,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/sociapareact/icons/aggregator/promotions-calendar-planning.png" alt="Promotions Calendar Planning" width="50" height="50" />
+          <img src="/sociapareact/icons/aggregator/promotions-calendar-planning.png" alt="Promotions Planning" width="50" height="50" />
         </div>
         <h4>Promotions Calendar Planning</h4>
         <p>Big Billion Days, Great Indian Festival, Republic Day sales—we plan and execute platform promotions months in advance for maximum impact.</p>
@@ -401,29 +380,13 @@ export default function AggregatorPlatform() {
   </div>
 </section>
 
-<section className="testi-section">
-  <div className="section-inner">
-    <span className="section-tag">Client Stories</span>
-    <h2 className="section-title">Brands Winning on Indian Marketplaces</h2>
-    <div className="testi-grid">
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"#1 BSR in our category within 4 months of listing. Sociapa's Amazon expertise is exceptional—every optimisation they recommended delivered measurable ranking improvement."</blockquote>
-        <div className="testi-author"><div className="avatar">PG</div><div><strong>Neha Agarwal</strong><span>eCommerce Head, Pansari Group</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"2.8x Q-commerce sales growth in 6 months—the promotional slot management on Blinkit and Zepto has completely changed the velocity of our D2C business."</blockquote>
-        <div className="testi-author"><div className="avatar">NU</div><div><strong>Deepika Mehra</strong><span>eCommerce Head, Nutrela</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"4.2x sales growth on Flipkart and BigBasket. Having one team manage both platforms with a unified strategy made an enormous difference to our results."</blockquote>
-        <div className="testi-author"><div className="avatar">BB</div><div><strong>Manish Kapoor</strong><span>Marketing Director, Bonn Breads</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+      {/* Behind the Work Section */}
+      <ServiceBehindWorkSection
+        testimonials={serviceClientSectionsData['aggregator-platform']?.testimonials}
+      />
+
+      {/* Featured Case Studies Slider */}
+      <ServiceCaseStudiesSlider />
 
 
 
@@ -450,13 +413,9 @@ export default function AggregatorPlatform() {
   <div className="section-inner section-inner-narrow">
     <h2>Ready to Dominate Your Category on Indian Marketplaces?</h2>
     <p>Get a free marketplace audit covering your listing quality, advertising efficiency, and growth opportunity across Amazon, Flipkart, and Q-commerce platforms.</p>
-    <a href="/contact" className="btn-primary">Get My Free Marketplace Audit</a>
+    <Link to="/contact-us" className="btn-primary">Get My Free Marketplace Audit</Link>
   </div>
 </section>
-  
-
-        </>
+        </div>
     );
 }
-
-

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 200" width="512" height="200">
+      <g transform="translate(20, 30)">
+        <!-- Esko Green Star Disc -->
+        <circle cx="70" cy="70" r="68" fill="#88B719"/>
+        <!-- Star Glyph -->
+        <g transform="translate(70, 70)" fill="#FFFFFF">
+          <circle cx="0" cy="0" r="22"/>
+          <rect x="-11" y="-46" width="22" height="92" rx="11"/>
+          <rect x="-11" y="-46" width="22" height="92" rx="11" transform="rotate(72)"/>
+          <rect x="-11" y="-46" width="22" height="92" rx="11" transform="rotate(144)"/>
+          <rect x="-11" y="-46" width="22" height="92" rx="11" transform="rotate(216)"/>
+          <rect x="-11" y="-46" width="22" height="92" rx="11" transform="rotate(288)"/>
+        </g>
+        <!-- "esko" typography -->
+        <text x="165" y="94" font-family="Arial, sans-serif" font-weight="900" font-size="78" fill="#2B363C" letter-spacing="-2">esko</text>
+      </g>
+    </svg>

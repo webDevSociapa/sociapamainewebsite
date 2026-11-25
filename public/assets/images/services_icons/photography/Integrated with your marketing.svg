@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Central Marketing Hub -->
+    <circle cx="128" cy="128" r="32" fill="#FFEBEF" stroke="#D20C0C" stroke-width="8"/>
+    <circle cx="128" cy="128" r="14" fill="#D20C0C"/>
+    <!-- Radiating Connected Nodes -->
+    <line x1="128" y1="96" x2="128" y2="48" stroke="#1A0508" stroke-width="6"/>
+    <circle cx="128" cy="48" r="18" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <line x1="154" y1="144" x2="194" y2="176" stroke="#1A0508" stroke-width="6"/>
+    <circle cx="194" cy="176" r="18" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <line x1="102" y1="144" x2="62" y2="176" stroke="#1A0508" stroke-width="6"/>
+    <circle cx="62" cy="176" r="18" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <!-- Channel Icons in Nodes -->
+    <path d="M122 48 h12 M128 42 v12" stroke="#D20C0C" stroke-width="3"/>
+    <circle cx="194" cy="176" r="6" fill="#D20C0C"/>
+    <circle cx="62" cy="176" r="6" fill="#D20C0C"/>
+  </g>
+</svg>

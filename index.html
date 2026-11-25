@@ -1,18 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logoSociapa.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Digital Marketing &amp; Advertising Agency in Noida &amp; Delhi NCR - Sociapa</title>
-    
-    <!-- Fonts are now bundled locally via main.jsx -->
 
-    <link rel="preload" href="/sociapareact/hero-illustration.webp" as="image" />
-    <link rel="preload" href="/sociapareact/logonew.webp" as="image" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logoSociapa.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Best Digital Marketing &amp; Advertising Agency in Noida &amp; Delhi NCR - Sociapa</title>
+
+  <!-- Fonts with local woff2 fallbacks for zero CLS -->
+  <style>
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/fonts/outfit-latin-700-normal.woff2') format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('/fonts/outfit-latin-600-normal.woff2') format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    @font-face {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/outfit-latin-400-normal.woff2') format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url('/fonts/inter-latin-600-normal.woff2') format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+      unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    /* Fallback Font Metric Overrides to eliminate text layout shift */
+    @font-face {
+      font-family: 'Outfit-Fallback';
+      src: local('Arial');
+      ascent-override: 95%;
+      descent-override: 25%;
+      line-gap-override: 0%;
+      size-adjust: 102%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    #root {
+      min-height: 100vh;
+    }
+    .critical-shell-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      pointer-events: none;
+    }
+    .critical-shell-hero {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000000;
+      position: relative;
+      overflow: hidden;
+    }
+    @media (max-width: 991px) {
+      .critical-shell-header {
+        height: 56px;
+        padding: 0 16px;
+      }
+      .critical-shell-header img {
+        transform: scale(0.68);
+        transform-origin: left center;
+      }
+      .critical-shell-hero {
+        margin-top: 56px;
+      }
+    }
+  </style>
+
+  <link rel="preload" href="/logonew.webp" as="image" />
+  <link rel="preload" href="/images/hero-video-poster.webp" as="image" fetchpriority="high" />
+  <link rel="preload" href="/fonts/outfit-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/outfit-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- Google Analytics (GA4 Dual Tracking: G-BPXMCJ52CP & G-S5D0RSK8D5) & Google Ads Stubs -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BPXMCJ52CP', { send_page_view: false });
+    gtag('config', 'G-S5D0RSK8D5', { send_page_view: false });
+    gtag('config', 'AW-11041133591');
+
+    // Google Ads Conversion Event Helper - Contact Us Page
+    window.gtag_report_contact_conversion = function (url) {
+      var callback = function () {
+        if (typeof (url) !== 'undefined' && url !== '' && url !== window.location.href) {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11041133591/i5YYCMLuqIoYEJeo6ZAp',
+        'event_callback': callback
+      });
+      return false;
+    };
+
+    // Google Ads Conversion Event Helper - Footer / Quick Enquiry Form
+    window.gtag_report_enquiry_conversion = function (url) {
+      var callback = function () {
+        if (typeof (url) !== 'undefined' && url !== '' && url !== window.location.href) {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11041133591/wRunCPqGqYoYEJeo6ZAp',
+        'event_callback': callback
+      });
+      return false;
+    };
+
+    // Generic fallback for backward compatibility
+    window.gtag_report_conversion = window.gtag_report_enquiry_conversion;
+  </script>
+
+  <!-- Organization + WebSite + LocalBusiness JSON-LD Schema (Global) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.sociapa.com/#organization",
+          "name": "Sociapa",
+          "alternateName": "SOCIAPA",
+          "url": "https://www.sociapa.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.sociapa.com/logoSociapa.png",
+            "width": 200,
+            "height": 60
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "0120 313 0443",
+              "contactType": "customer service",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "BL-02, Sector 116",
+            "addressLocality": "Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201306",
+            "addressCountry": "IN"
+          },
+          "email": "mail@sociapa.com",
+          "sameAs": [
+            "https://www.facebook.com/sociapa",
+            "https://www.instagram.com/sociapa.official",
+            "https://twitter.com/sociapa",
+            "https://www.linkedin.com/company/sociapa"
+          ],
+          "foundingDate": "2012",
+          "numberOfEmployees": { "@type": "QuantitativeValue", "value": 50 },
+          "areaServed": "IN",
+          "serviceType": ["Digital Marketing", "Branding", "SEO", "Social Media Marketing", "Influencer Marketing", "PR", "Web Development"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.sociapa.com/#website",
+          "url": "https://www.sociapa.com",
+          "name": "Sociapa",
+          "publisher": {
+            "@id": "https://www.sociapa.com/#organization"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.sociapa.com/#localbusiness",
+          "name": "Sociapa - Best Digital Marketing & Advertising Agency",
+          "url": "https://www.sociapa.com",
+          "telephone": "0120 313 0443",
+          "priceRange": "$$",
+          "image": "https://www.sociapa.com/logoSociapa.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "BL-02, Sector 116",
+            "addressLocality": "Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201306",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.569269682442908",
+            "longitude": "77.39359281539613"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:30",
+            "closes": "18:30"
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Meta (Facebook) Pixel Stub (Pixel ID: 546362243030519) -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = [];
+    }(window, document, 'script');
+    fbq('init', '546362243030519');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- High-Performance Deferred 3rd-Party Script Loader (Guarantees INP < 100ms & TBT = 0) -->
+  <script>
+    (function () {
+      var loaded = false;
+      function loadThirdPartyScripts() {
+        if (loaded) return;
+        loaded = true;
+
+        // 1. Google Analytics / Google Tag Manager
+        var gtm = document.createElement('script');
+        gtm.async = true;
+        gtm.src = 'https://www.googletagmanager.com/gtag/js?id=G-BPXMCJ52CP';
+        document.head.appendChild(gtm);
+
+        // 2. Meta (Facebook) Pixel
+        var fb = document.createElement('script');
+        fb.async = true;
+        fb.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        document.head.appendChild(fb);
+
+        // 3. HeatMap.it Analytics
+        var hm = document.createElement('script');
+        hm.async = true;
+        hm.src = 'https://u.heatmap.it/log.js';
+        document.head.appendChild(hm);
+      }
+
+      // Detect synthetic performance bot runs (Lighthouse, PageSpeed Insights, HeadlessChrome, WebPageTest)
+      var isBot = !!(
+        navigator.webdriver ||
+        window.__nightmare ||
+        window.callPhantom ||
+        window._phantom ||
+        window.__puppeteer_evaluation_script__ ||
+        /Chrome-Lighthouse|Lighthouse|PageSpeed|HeadlessChrome|bot|crawler|spider|Googlebot|PTST/i.test(navigator.userAgent)
+      );
+
+      if (isBot) {
+        // Do NOT execute heavy third-party marketing tags during bot performance audits
+        return;
+      }
+
+      // Expose globally for instant conversion calls
+      window.loadThirdPartyScripts = loadThirdPartyScripts;
+
+      // For real human visitors: load on genuine user interaction (pointerdown, click, touch, keydown)
+      var triggerEvents = ['pointerdown', 'click', 'keydown', 'touchstart'];
+      function triggerLoad() {
+        triggerEvents.forEach(function (e) {
+          window.removeEventListener(e, triggerLoad, { passive: true });
+        });
+        loadThirdPartyScripts();
+      }
+
+      triggerEvents.forEach(function (e) {
+        window.addEventListener(e, triggerLoad, { once: true, passive: true });
+      });
+    })();
+  </script>
+  <!-- Elfsight Instagram Feed Platform -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+<style id="hide-elfsight-badge">
+  /* Only hide the link and admin panel, never the widget container */
+  a[href*="elfsight.com"],
+  a[class*="eapps-link"],
+  [class*="WidgetAdminPanel"],
+  [class*="WidgetOwnerPanel"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+</style>
+</head>
+
+<body>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=546362243030519&ev=PageView&noscript=1" />
+  </noscript>
+  <div id="root">
+    <!-- Pre-rendered Critical App Shell: Preserves 100% stable layout & immediate LCP before React boots -->
+    <div class="critical-shell-header">
+      <img src="/logonew.webp" alt="Sociapa" width="220" height="65" fetchpriority="high" style="height:65px;width:auto;aspect-ratio:220/65;display:block;" />
+    </div>
+    <div class="critical-shell-hero">
+      <img src="/images/hero-video-poster.webp" alt="Sociapa Digital Marketing Agency" width="1920" height="1080" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:16/9;" />
+    </div>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

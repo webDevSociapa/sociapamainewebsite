@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(36, 36)">
+        <!-- Magic Wand / Stylus Tool -->
+        <line x1="90" y1="350" x2="310" y2="130" stroke="#1A0508" stroke-width="18"/>
+        <!-- Stylus Tip in Red -->
+        <polygon points="310,130 350,90 330,70 290,110" fill="#C8102E" stroke="#C8102E" stroke-width="8"/>
+        <line x1="75" y1="365" x2="95" y2="345" stroke="#C8102E" stroke-width="12"/>
+        <!-- Sparkles / Retouch Glow -->
+        <path d="M370 40 L378 65 L403 73 L378 81 L370 106 L362 81 L337 73 L362 65 Z" fill="#C8102E"/>
+        <path d="M220 50 L225 65 L240 70 L225 75 L220 90 L215 75 L200 70 L215 65 Z" fill="#1A0508"/>
+        <path d="M390 170 L395 185 L410 190 L395 195 L390 210 L385 195 L370 190 L385 185 Z" fill="#C8102E"/>
+      </g>
+    </svg>

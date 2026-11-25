@@ -11,32 +11,104 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <>
+    <div className="about-page-wrapper">
       <Helmet>
         <title>Know more about our digital marketing services in Noida &amp; Delhi NCR - Sociapa</title>
         <meta name="description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. We have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
+        <link rel="canonical" href="https://sociapa.com/about" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Know more about our digital marketing services in Noida & Delhi NCR - Sociapa" />
         <meta property="og:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business." />
-        <meta property="og:url" content="https://www.sociapa.com/about/" />
+        <meta property="og:url" content="https://sociapa.com/about" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Know more about our digital marketing services in Noida & Delhi NCR - Sociapa" />
+        <meta name="twitter:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        {/* ProfilePage Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "dateCreated": "2017-01-01T00:00:00+05:30",
+          "dateModified": "2026-01-01T00:00:00+05:30",
+          "mainEntity": {
+            "@type": "Organization",
+            "@id": "https://www.sociapa.com/#organization",
+            "name": "Sociapa",
+            "alternateName": "Sociapa Brand Studio",
+            "description": "About Sociapa — At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. We have expertise in Digital Marketing, Social Media Marketing, Video Production and more.",
+            "foundingDate": "2017",
+            "url": "https://www.sociapa.com/",
+            "logo": "https://www.sociapa.com/logoSociapa.png",
+            "image": "https://sociapa.com/logoSociapa.png",
+            "knowsAbout": [
+              "Digital Marketing",
+              "Brand Strategy",
+              "Social Media Marketing",
+              "SEO AEO GEO",
+              "Video Production",
+              "Packaging Design",
+              "Influencer Marketing",
+              "Public Relations"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "BL-02, Sector 116",
+              "addressLocality": "Noida",
+              "addressRegion": "Uttar Pradesh",
+              "postalCode": "201306",
+              "addressCountry": "IN"
+            },
+            "sameAs": [
+              "https://www.facebook.com/sociapaa/",
+              "https://www.instagram.com/sociapa/",
+              "https://www.linkedin.com/company/sociapa/",
+              "https://twitter.com/sociapa",
+              "https://www.youtube.com/@Sociapa"
+            ]
+          }
+        })}</script>
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.sociapa.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://www.sociapa.com/about/"
+            }
+          ]
+        })}</script>
       </Helmet>
 
-      {/* ── 1. HERO BANNER ── */}
-      <section className="about-page-hero page-hero-section">
-        <div className="about-hero-glow" />
-
-        <div className="about-hero-container">
-          <div className="about-section-label">
-            <span className="about-label-dot"></span>
-            KNOW OUR STORY
-          </div>
-
-          <h1 className="about-hero-title">
-            Crafting <span className="about-hero-highlight">Bold Brand Stories</span> &amp; Digital Momentum
-          </h1>
-
-          <p className="about-hero-desc">
-            At <strong className="about-hero-bold">Sociapa</strong>, we shape clear brand narratives, distinct identities, and communication frameworks that resonate with today’s consumers and drive sustainable growth.
-          </p>
+      {/* ── FULL BLEED HERO BANNER ── */}
+      <section className="hero-banner-section serInsideBnr">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          About Sociapa - Digital Marketing & Creative Agency Noida
+        </h1>
+        <div className="row">
+          <picture>
+            <img
+              src={`${base}assets/images/services_banner/about/about.webp`}
+              alt="Crafting Bold Brand Stories & Digital Momentum - About Sociapa"
+              className="hero-banner-img responsive-img w-100"
+              width="1920"
+              height="700"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
       </section>
 
@@ -62,16 +134,16 @@ export default function AboutUs() {
               <span className="about-thinking-tag">WHO WE ARE</span>
 
               <h3 className="about-thinking-title">
-                Strategic Brand Building, Not Just Short-Term Campaigns
+                One Partner. Many Capabilities. Your Social Buddy.
               </h3>
 
               <p className="about-thinking-desc">
-                We deeply analyze a brand’s current position, category dynamics, cultural context, and audience mindset to construct a strong, future-proof foundation.
+                Sociapa is a full-service creative and <a href="/best-digital-marketing-services-india" className="seo-interlink">digital marketing agency</a> built for brands that strive to be remembered. With our footprint across Delhi NCR, Dubai, and London, we build brand success with <a href="/brand-strategy" className="seo-interlink">strategy</a>, creativity, technology, and cultural truth.
               </p>
 
               <div className="about-thinking-badge">
                 <span>⚡</span>
-                <span className="about-thinking-badge-text">Partnering with top brands since 2019</span>
+                <span className="about-thinking-badge-text">Startups · Scale-ups · Enterprises</span>
               </div>
             </div>
 
@@ -82,7 +154,7 @@ export default function AboutUs() {
                   🎯 Positioning &amp; Creative Strategy
                 </h4>
                 <p className="about-narrative-text">
-                  Our core strength lies in shaping clear brand narratives, distinct visual identities, and communication frameworks that stay consistent across all consumer touchpoints.
+                  We aim to hit the bull’s eye through clear brand narratives, unique visuals and communication frameworks that stay consistent and earn attention.
                 </p>
               </div>
 
@@ -91,7 +163,7 @@ export default function AboutUs() {
                   💡 High-Impact Execution
                 </h4>
                 <p className="about-narrative-text">
-                  From content ecosystems and digital films to performance creatives and always-on brand communication, we ensure every interaction builds momentum and long-term brand equity.
+                  From content ecosystems and digital films to performance creatives and always-on brand communication, we ensure every interaction conquers the playgrounds of digital presence and mainline marketing.
                 </p>
               </div>
 
@@ -100,7 +172,7 @@ export default function AboutUs() {
                   📈 Data-Led Digital Growth
                 </h4>
                 <p className="about-narrative-text">
-                  By combining deep strategic thinking, bold design, and data-backed digital execution, we help brands move forward with clarity, relevance, and market leadership.
+                  We lead conversations and build momentum for bigger businesses by combining deep strategic thinking, bold design, and data-backed digital execution.
                 </p>
               </div>
             </div>
@@ -140,9 +212,9 @@ export default function AboutUs() {
         <div className="about-mission-container">
           <div className="about-mission-grid">
             {/* Mission Card */}
-            <div 
+            <div
               className="about-mission-card"
-              style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.92) 100%), url(${base}images/mission-1.jpg)` }}
+              style={{ backgroundImage: `linear-gradient(180deg, rgba(149, 118, 118, 0.2) 0%, rgba(0,0,0,0.92) 100%), url(${base}images/mission-1.jpg)` }}
             >
               <div className="about-mission-badge">🚀 OUR MISSION</div>
 
@@ -156,7 +228,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision Card */}
-            <div 
+            <div
               className="about-mission-card"
               style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.92) 100%), url(${base}images/vision-1.jpg)` }}
             >
@@ -186,19 +258,63 @@ export default function AboutUs() {
 
           <div className="about-pillars-grid">
             {[
-              { img: 'QUALITATIVE-SERVICES.png', title: 'QUALITATIVE SERVICES', desc: 'Uncompromised quality standards in every execution.' },
-              { img: 'QUICK-TURN-AROUND-TIME.png', title: 'QUICK TURNAROUND', desc: 'Rapid sprint delivery with high precision.' },
-              { img: 'DEDICATED-PROJECT-MANAGER.png', title: 'DEDICATED PM', desc: 'Single point of contact for seamless communication.' },
-              { img: 'INDUSTRY-LED-PRACTICES.png', title: 'INDUSTRY PRACTICES', desc: 'State-of-the-art tools, tech, and workflows.' },
-              { img: 'AGENCY-CENTRIC-PROCESSES.png', title: 'AGENCY PROCESSES', desc: 'Structured, transparent, and scalable frameworks.' },
-              { img: 'SALABLE-OPERATIONS.png', title: 'SCALABLE OPERATIONS', desc: 'Built to adapt and expand alongside brand growth.' }
+              {
+                num: '01',
+                title: 'Qualitative Services',
+                desc: 'We set uncompromised parameters and rigorous quality benchmarks across every brand asset and campaign to achieve quality.',
+                tags: ['High Precision', 'Brand Governance', 'Zero-Defect QA'],
+                img: 'icons/ads-experience/Award-Winning Creatives.png'
+              },
+              {
+                num: '02',
+                title: 'Quick Turnaround',
+                desc: 'With leopard speed, we move ideas from our inbox to execution space without ever sacrificing design and strategy depth.',
+                tags: ['Agile Sprints', 'Time-To-Market', 'Rapid Execution'],
+                img: 'assets/images/services_icons/creative_designing/fast_turnaround.png'
+              },
+              {
+                num: '03',
+                title: 'Dedicated PM',
+                desc: 'We follow the “One Team, One Person to Call approach’’ by channelizing a direct point of contact for seamless, transparent project management and daily communication.',
+                tags: ['Single POC', 'Daily Updates', 'Real-Time Comms'],
+                img: 'icons/ads-experience/In-House-Video-Expertise.png'
+              },
+              {
+                num: '04',
+                title: 'Industry Practices',
+                desc: 'We strive to stay ahead of the curve with state-of-the-art marketing intelligence, cutting-edge creative tools, and forward-thinking industry standards.',
+                tags: ['Advanced Tech', 'AI Workflows', 'Modern Tools'],
+                img: 'icons/ads-experience/Optimisation.png'
+              },
+              {
+                num: '05',
+                title: 'Agency Processes',
+                desc: 'Great work calls for a good process. We have built structured, tested, and transparent SOP frameworks engineered for an effective cross-team collaboration.',
+                tags: ['Proven SOPs', 'Transparency', 'Frameworks'],
+                img: 'icons/ads-experience/Programmatic-DSPs.png'
+              },
+              {
+                num: '06',
+                title: 'Scalable Operations',
+                desc: 'We have flexible teams that are built to grow with countless dreams. With the best of capacity, we stand shoulder to shoulder with the brands for maximum digital footprint.',
+                tags: ['High Capacity', 'Brand Scaling', 'Flexible Teams'],
+                img: 'icons/ads-experience/Impact-Report.png'
+              }
             ].map((val, idx) => (
               <div key={idx} className="about-pillar-card">
-                <div className="about-pillar-icon-box">
-                  <img src={`${base}images/icons/${val.img}`} alt={val.title} className="about-pillar-icon-img" />
+                <div className="about-pillar-top-row">
+                  <div className="about-pillar-icon-box">
+                    <img src={`${base}${val.img}`} alt={val.title} className="about-pillar-icon-img" width="46" height="46" />
+                  </div>
+                  <span className="about-pillar-num">{val.num}</span>
                 </div>
                 <h4 className="about-pillar-heading">{val.title}</h4>
                 <p className="about-pillar-desc">{val.desc}</p>
+                <div className="about-pillar-tags">
+                  {val.tags.map((t, i) => (
+                    <span key={i} className="about-pillar-tag">{t}</span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -210,7 +326,7 @@ export default function AboutUs() {
         <div className="about-team-container">
           <div className="about-team-header">
             <span className="about-pillars-label">THE BRAINS BEHIND SOCIAPA</span>
-            
+
             <h2 className="about-hero-title">
               Meet Our <span className="about-hero-highlight">Leadership &amp; Team</span>
             </h2>
@@ -222,7 +338,7 @@ export default function AboutUs() {
 
           {/* Full Team Culture Photo */}
           <div className="about-team-photo-wrap">
-            <img src={`${base}images/sociapa-team-new.jpg`} alt="Sociapa Team" className="about-team-photo" />
+            <img src={`${base}images/sociapa-team-new.webp`} alt="Sociapa Team" className="about-team-photo" />
           </div>
 
           {/* Leadership Cards Grid */}
@@ -230,14 +346,14 @@ export default function AboutUs() {
             {/* CEO Card */}
             <div className="about-leadership-card">
               <Link to="/sociapas-press-release">
-                <img src={`${base}images/Ceo.png`} alt="Dhiraj Raj" className="about-leadership-img" />
+                <img src={`${base}images/Ceo.webp`} alt="Dhiraj Raj" className="about-leadership-img" />
               </Link>
             </div>
 
             {/* Associate Director Card */}
             <div className="about-leadership-card">
               <div>
-                <img src={`${base}images/A-D.png`} alt="Sonakshi" className="about-leadership-img" />
+                <img src={`${base}images/A-D.webp`} alt="Sonakshi" className="about-leadership-img" />
               </div>
             </div>
           </div>
@@ -264,6 +380,6 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

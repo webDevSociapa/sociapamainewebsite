@@ -1,0 +1,804 @@
+/* ═══════════════════════════════════════════════════════════════════
+   SebumPackagingFigmaDetail.css
+   Figma Node 4:2 — Exact 1:1 Ditto Reproduction
+   Typography: Classic Editorial Serif Headings with Red/Dark Dual Tone
+   Colors: #C8282A (Crimson Red), #111827 (Dark Charcoal), #E5500B (Sebüm Orange)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Base Container & Reset ── */
+.sebum-figma-case-study {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: inherit;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.sebum-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Screen Reader Single H1 for Strict Hierarchy ── */
+.sebum-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Motion & Reveal Keyframes ── */
+.sebum-motion-reveal {
+  animation: sebumFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes sebumFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sebum-motion-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Editorial Serif Headings (Matching Figma Exact Style) ── */
+.serif-red {
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.serif-dark {
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sebum-section-heading {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  text-align: center;
+  margin: 0 0 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.sebum-section-heading.align-left {
+  text-align: left;
+}
+
+.sebum-heading-underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.sebum-heading-underline.red {
+  background: #C8282A;
+}
+
+.sebum-heading-underline.align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ── 1. CATEGORY PILLS BAR (FIGMA TOP NAV) ── */
+.sebum-category-pills-bar {
+  padding: 24px 0 20px;
+  background: #FFFFFF;
+}
+
+.sebum-pills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sebum-cat-pill {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #FFF1F0;
+  color: #C8282A;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.sebum-cat-pill:hover {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.sebum-cat-pill.active {
+  background: #C8282A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(200, 40, 42, 0.35);
+}
+
+/* ── 2. HERO IMAGE BANNER ── */
+.sebum-hero-banner-container {
+  margin-bottom: 24px;
+}
+
+.sebum-hero-banner-frame {
+  width: 100%;
+  line-height: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #E5500B;
+}
+
+.sebum-hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 3. PROJECT OVERVIEW SECTION ── */
+.sebum-overview-section {
+  padding: 40px 0 50px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-overview-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.sebum-overview-title {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.sebum-overview-tagline {
+  font-size: 1.05rem;
+  color: #4B5563;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.sebum-overview-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
+}
+
+.sebum-meta-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sebum-meta-key {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #9CA3AF;
+  text-transform: capitalize;
+}
+
+.sebum-meta-val {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.5;
+}
+
+/* ── 4. ABOUT THE CLIENT SECTION ── */
+.sebum-about-section {
+  padding: 50px 0 60px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.sebum-about-heading {
+  font-family: inherit;
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.sebum-underline-word {
+  position: relative;
+  display: inline-block;
+}
+
+.sebum-underline-word::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2.5px;
+  background: #C8282A;
+  border-radius: 2px;
+}
+
+.sebum-about-right p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin: 0 0 18px;
+}
+
+.sebum-about-right p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── 5. THE CHALLENGE SECTION ── */
+.sebum-challenge-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-center-block {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sebum-challenge-visual-wrap {
+  max-width: 1100px;
+  margin: 36px auto 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.sebum-blueprint-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sebum-narrative-block {
+  max-width: 860px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.sebum-narrative-block p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin: 0 0 16px;
+}
+
+.sebum-narrative-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── 6. THE SOLUTION SECTION ── */
+.sebum-solution-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-solution-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.sebum-body-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-top: 24px;
+}
+
+.sebum-body-text p {
+  margin: 0 0 16px;
+}
+
+.sebum-strategy-subheading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 24px 0 12px;
+}
+
+.sebum-strategy-list {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 0 0 16px;
+}
+
+.sebum-strategy-list li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+.sebum-solution-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.sebum-solution-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 7. PRODUCT DISPLAY BANNER ── */
+.sebum-display-banner-section {
+  padding: 40px 0 50px;
+}
+
+.sebum-display-banner-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  background: #FEE4D7;
+}
+
+.sebum-display-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 8. COLOR PALETTE & TYPOGRAPHY SECTION ── */
+.sebum-palette-section {
+  padding: 60px 0 70px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-palette-sub {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #4B5563;
+  margin: 18px 0 0;
+}
+
+.sebum-typo-specimen {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px auto 48px;
+  user-select: none;
+}
+
+.sebum-typo-sans-black {
+  font-family: inherit;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+}
+
+.sebum-typo-serif-orange {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(3rem, 6.5vw, 5.2rem);
+  font-weight: 700;
+  color: #E5500B;
+  line-height: 1;
+  font-style: italic;
+}
+
+.sebum-typo-sans-ghost {
+  font-family: inherit;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 700;
+  color: #CBD5E1;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.sebum-swatches-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.sebum-swatch-card {
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.sebum-swatch-card:hover {
+  transform: translateY(-2px);
+}
+
+.sebum-swatch-card.orange-primary {
+  background: #E5500B;
+  color: #FFFFFF;
+}
+
+.sebum-swatch-card.orange-dark {
+  background: #BB3600;
+  color: #FFFFFF;
+}
+
+.sebum-swatch-card.white-swatch {
+  background: #FFFFFF;
+  color: #111827;
+  border: 1px solid #E5E7EB;
+}
+
+.sebum-swatch-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.sebum-swatch-hex {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* ── 9. LOGO WORDMARK & SIGNATURE DETAIL SECTION ── */
+.sebum-signature-section {
+  padding: 50px 0 60px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-wordmark-banner {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #E5500B;
+  box-shadow: 0 10px 30px rgba(229, 80, 11, 0.18);
+  text-align: center;
+  position: relative;
+}
+
+.sebum-wordmark-inner {
+  padding: 70px 24px 60px;
+}
+
+.sebum-wordmark-title {
+  display: block;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  line-height: 1;
+  position: relative;
+}
+
+.sebum-wordmark-reg {
+  font-size: 0.35em;
+  vertical-align: super;
+  margin-left: 4px;
+}
+
+.sebum-wordmark-sub {
+  display: block;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 14px;
+  letter-spacing: 0.5px;
+}
+
+.sebum-wordmark-bottom-strip {
+  width: 100%;
+  height: 16px;
+  background: #C8282A;
+}
+
+.sebum-signature-detail-block {
+  max-width: 760px;
+  margin: 32px auto 0;
+  text-align: center;
+}
+
+.sebum-detail-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 10px;
+}
+
+.sebum-detail-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin: 0;
+}
+
+/* ── 10, 11, 12. NARRATIVE SECTIONS (IDENTITY, PACKAGING, DIGITAL SHELF) ── */
+.sebum-narrative-section {
+  padding: 50px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-narrative-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── 13. THE FINAL OUTCOME SECTION ── */
+.sebum-outcome-section {
+  padding: 70px 0 80px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-outcome-text {
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-top: 24px;
+}
+
+.sebum-outcome-text p {
+  margin: 0 0 16px;
+}
+
+.sebum-outcome-highlight {
+  font-weight: 600;
+  color: #111827;
+  margin-top: 20px !important;
+}
+
+.sebum-outcome-visual-wrap {
+  max-width: 500px;
+  margin: 40px auto 50px;
+  text-align: center;
+}
+
+.sebum-outcome-product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sebum-skus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sebum-sku-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  background: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sebum-sku-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.sebum-sku-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sebum-action-buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 50px;
+}
+
+.sebum-btn-primary {
+  background: #C8282A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.sebum-btn-primary:hover {
+  background: #991B1B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 40, 42, 0.35);
+}
+
+.sebum-btn-icon {
+  font-size: 1rem;
+}
+
+.sebum-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #C8282A;
+  color: #C8282A;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.sebum-btn-secondary:hover {
+  background: #C8282A;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.sebum-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #D1D5DB;
+  color: #4B5563;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.sebum-btn-outline:hover {
+  border-color: #C8282A;
+  color: #C8282A;
+  transform: translateY(-2px);
+}
+
+/* ── 14. OTHER SERVICES SECTION ── */
+.sebum-other-services-section {
+  padding: 60px 0 40px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.sebum-other-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 36px auto 0;
+}
+
+.sebum-other-card {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.sebum-other-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.sebum-other-card.current {
+  opacity: 0.9;
+  cursor: default;
+}
+
+.sebum-other-card.current:hover {
+  transform: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.sebum-other-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── SEO INTERLINKS ── */
+.seo-interlink {
+  color: #C8282A !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 40, 42, 0.35);
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.seo-interlink:hover {
+  color: #991B1B !important;
+  text-decoration-color: #991B1B;
+}
+
+/* ── RESPONSIVE MEDIA QUERIES ── */
+@media (max-width: 1024px) {
+  .sebum-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .sebum-about-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .sebum-solution-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .sebum-swatches-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sebum-skus-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+  .sebum-other-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+  .sebum-overview-right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .sebum-swatches-grid {
+    grid-template-columns: 1fr;
+  }
+  .sebum-section-heading {
+    font-size: 1.8rem;
+  }
+  .sebum-action-buttons-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

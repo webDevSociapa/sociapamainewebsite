@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Package Box Base -->
+      <path d="M48 92 L128 48 L208 92 L128 136 Z" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <path d="M48 92 V172 L128 216 V136 Z" fill="#FFFFFF" stroke="#1A0508" stroke-width="10"/>
+      <path d="M208 92 V172 L128 216 V136 Z" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Red Ribbon across box -->
+      <path d="M88 70 L168 114" stroke="#C8102E" stroke-width="10"/>
+      <path d="M168 70 L88 114" stroke="#C8102E" stroke-width="10"/>
+      <line x1="88" y1="114" x2="88" y2="194" stroke="#C8102E" stroke-width="10"/>
+      <!-- Source File Folder Seal in Center -->
+      <circle cx="128" cy="92" r="16" fill="#C8102E" stroke="#FFFFFF" stroke-width="4"/>
+    </g>
+  </svg>

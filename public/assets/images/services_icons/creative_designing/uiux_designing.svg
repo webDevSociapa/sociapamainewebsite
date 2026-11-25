@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Browser Window Frame -->
+      <rect x="32" y="44" width="168" height="136" rx="14" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Browser Dots -->
+      <circle cx="56" cy="64" r="5" fill="#C8102E"/>
+      <circle cx="72" cy="64" r="5" fill="#1A0508"/>
+      <circle cx="88" cy="64" r="5" fill="#1A0508"/>
+      <line x1="32" y1="80" x2="200" y2="80" stroke="#1A0508" stroke-width="6"/>
+      <!-- UI Layout Blocks -->
+      <rect x="48" y="96" width="40" height="68" rx="6" fill="#FFFFFF" stroke="#1A0508" stroke-width="5"/>
+      <rect x="98" y="96" width="88" height="30" rx="6" fill="#C8102E"/>
+      <rect x="98" y="136" width="40" height="28" rx="4" fill="#FFFFFF" stroke="#1A0508" stroke-width="4"/>
+      <rect x="146" y="136" width="40" height="28" rx="4" fill="#FFFFFF" stroke="#1A0508" stroke-width="4"/>
+      <!-- Vector Cursor / Selection Tool -->
+      <g transform="translate(160, 140)">
+        <path d="M0 0 L0 52 L14 38 L30 64 L42 56 L26 30 L46 30 Z" fill="#C8102E" stroke="#FFFFFF" stroke-width="4"/>
+      </g>
+    </g>
+  </svg>

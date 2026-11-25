@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Moodboard Board Frame -->
+      <rect x="36" y="36" width="184" height="184" rx="18" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Photo Card 1 (Tilted Left) -->
+      <g transform="translate(56, 56)">
+        <rect x="0" y="0" width="64" height="68" rx="6" fill="#FFFFFF" stroke="#C8102E" stroke-width="6"/>
+        <circle cx="24" cy="24" r="8" fill="#FF3355"/>
+        <path d="M4 52 L24 34 L44 48 L60 38 V64 H4 Z" fill="#FFEBEF"/>
+      </g>
+      <!-- Color Palette Chips -->
+      <g transform="translate(136, 56)">
+        <rect x="0" y="0" width="64" height="40" rx="6" fill="#FFFFFF" stroke="#1A0508" stroke-width="5"/>
+        <circle cx="16" cy="20" r="8" fill="#C8102E"/>
+        <circle cx="36" cy="20" r="8" fill="#1A0508"/>
+        <circle cx="52" cy="20" r="5" fill="#FF3355"/>
+      </g>
+      <!-- Large Inspire Card Bottom -->
+      <rect x="56" y="140" width="144" height="60" rx="8" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+      <line x1="72" y1="162" x2="160" y2="162" stroke="#C8102E" stroke-width="6"/>
+      <line x1="72" y1="178" x2="130" y2="178" stroke="#1A0508" stroke-width="6"/>
+      <!-- Pin / Needle in Center -->
+      <circle cx="128" cy="118" r="8" fill="#C8102E" stroke="#1A0508" stroke-width="4"/>
+    </g>
+  </svg>

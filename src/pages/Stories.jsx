@@ -1,211 +1,163 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import './Stories.css';
-
-const posts = [
-  { link: 'https://www.instagram.com/p/Da22LCXoBI1/', label: 'Agency Life — But Make It Emoji', localImg: 'instagram/Da22LCXoBI1.jpg' },
-  { link: 'https://www.instagram.com/p/Da4saGYIKBP/', label: 'With Sociapa — Stay Afloat, Stay Visible', localImg: 'instagram/Da4saGYIKBP.jpg' },
-  { link: 'https://www.instagram.com/p/DbA-w4fkjCq/', label: 'Famous Dialogues of Team Sociapa', localImg: 'instagram/DbA-w4fkjCq.jpg' },
-  { link: 'https://www.instagram.com/p/DanMitKoBmQ/', label: 'Digital Growth Milestone', localImg: 'instagram/DanMitKoBmQ.jpg' },
-  { link: 'https://www.instagram.com/p/DafLOYeIDMO/', label: 'Creative Campaign Highlights', localImg: 'instagram/DafLOYeIDMO.jpg' },
-  { link: 'https://www.instagram.com/p/DaFZpeUEgyJ/', label: 'Brand Activation & Engagement', localImg: 'instagram/DaFZpeUEgyJ.jpg' },
-  { link: 'https://www.instagram.com/p/DaAkkfIEqXd/', label: 'Social Media Strategy Tips', localImg: 'instagram/DaAkkfIEqXd.jpg' },
-  { link: 'https://www.instagram.com/p/DZ1k30GmrDV/', label: 'Influencer Marketing Magic', localImg: 'instagram/DZ1k30GmrDV.jpg' },
-  { link: 'https://www.instagram.com/p/DZud_evmrld/', label: 'Packaging Design Case Study', localImg: 'instagram/DZud_evmrld.jpg' },
-  { link: 'https://www.instagram.com/p/DZm_u8SGuSx/', label: 'Performance Marketing Insights', localImg: 'instagram/DZm_u8SGuSx.jpg' },
-  { link: 'https://www.instagram.com/p/DZfMAdpGoUB/', label: 'Brand Storytelling & PR', localImg: 'instagram/DZfMAdpGoUB.jpg' },
-  { link: 'https://www.instagram.com/p/DZZ5h3vGgSX/', label: 'Sociapa Behind The Scenes', localImg: 'instagram/DZZ5h3vGgSX.jpg' }
-];
-
-
-function getPostId(url) {
-  const match = url.match(/\/p\/([^/]+)/);
-  return match ? match[1] : '';
-}
-
-/* Helper SVG for Instagram Icon */
-const IGIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" strokeWidth="2.2" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" strokeWidth="2.2" />
-    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-  </svg>
-);
 
 export default function Stories() {
   const base = import.meta.env.BASE_URL;
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // 1. Ensure platform.js is loaded
+    const scriptId = 'elfsight-platform-script';
+    let script = document.getElementById(scriptId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = scriptId;
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      document.body.appendChild(script);
+    } else if (window.ElfsightPlatform) {
+      try {
+        window.ElfsightPlatform.initialize();
+      } catch (e) {}
+    }
+
+    // 2. Safe cleanup for watermark link & owner panel only
+    const safeCleanup = () => {
+      document.querySelectorAll('a[href*="elfsight.com"], a[class*="eapps-link"]').forEach(el => {
+        el.style.setProperty('display', 'none', 'important');
+      });
+      document.querySelectorAll('[class*="WidgetAdminPanel"], [class*="WidgetOwnerPanel"]').forEach(el => {
+        el.style.setProperty('display', 'none', 'important');
+      });
+    };
+
+    safeCleanup();
+    const interval = setInterval(safeCleanup, 350);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
     <>
       <Helmet>
         <title>Instagram Stories &amp; Brand Highlights | Sociapa</title>
-        <meta name="description" content="Explore Sociapa's latest campaigns, influencer highlights, award moments, and behind-the-scenes stories on Instagram." />
-        <link rel="canonical" href="https://www.sociapa.com/stories" />
+        <meta
+          name="description"
+          content="Explore Sociapa's latest campaigns, influencer highlights, award moments, and behind-the-scenes stories on Instagram."
+        />
+        <link rel="canonical" href="https://sociapa.com/stories" />
+        <meta property="og:title" content="Instagram Stories & Brand Highlights | Sociapa" />
+        <meta
+          property="og:description"
+          content="Explore Sociapa's latest campaigns, influencer highlights, award moments, and behind-the-scenes stories on Instagram."
+        />
+        <meta property="og:url" content="https://sociapa.com/stories" />
       </Helmet>
 
-      {/* ── Hero Banner ── */}
-      <section className="stories-hero page-hero-section">
-        <div className="stories-hero-dots" />
-        <div className="stories-orb-1" />
-        <div className="stories-orb-2" />
+      <main className="stories-page-wrapper">
+        {/* ── 1. FULL BLEED HERO BANNER (Standard across all Sociapa Pages) ── */}
+        <section className="hero-banner-section serInsideBnr">
+          <div className="row">
+            <picture>
+              <source type="image/webp" srcSet={`${base}images/banners/stories/stories.webp`} />
+              <img
+                src={`${base}images/banners/stories/stories.webp`}
+                alt="Ideas Worth Following. Stories Worth Sharing — Sociapa Stories"
+                className="hero-banner-img responsive-img w-100"
+                width="1920"
+                height="700"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+        </section>
 
-        <div className="container stories-hero-container">
-          {/* Profile Card */}
-          <div className="stories-profile-card">
-            {/* Left: Avatar + Info */}
-            <div className="stories-profile-left">
-              {/* Avatar with Animated Story Ring */}
-              <div className="stories-avatar-wrapper">
-                <div className="stories-avatar-inner">
-                  <img
-                    src={`${base}logonew.webp`}
-                    alt="Sociapa Official"
-                    className="stories-avatar-img"
-                  />
-                </div>
-              </div>
+        {/* ── 2. Stories Intro Header Section with <h1> (Full Mobile Responsive & Rule-Compliant) ── */}
+        <section className="stories-intro-section" aria-label="Stories Header">
+          <div className="container stories-intro-container">
+            <nav className="stories-breadcrumbs" aria-label="Breadcrumbs">
+              <Link to="/">Home</Link>
+              <span className="breadcrumb-separator" aria-hidden="true">/</span>
+              <span className="breadcrumb-current">Stories</span>
+            </nav>
 
-              {/* Handle + bio */}
-              <div>
-                <div className="stories-handle-row">
-                  <span className="stories-handle-text">sociapa.official</span>
-                  {/* Verified badge */}
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" fill="#D20C0C"/>
-                    <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div className="stories-stats-row">
-                  {[
-                    { num: '1,124', label: 'Posts' },
-                    { num: '15.8K', label: 'Followers' },
-                    { num: '200', label: 'Following' }
-                  ].map((s, i) => (
-                    <div key={i} className="stories-stat-item">
-                      <div className="stories-stat-number">{s.num}</div>
-                      <div className="stories-stat-label">{s.label}</div>
-                    </div>
-                  ))}
-                </div>
-                <p className="stories-bio-text">
-                  🚀 Your Social Buddy | Digital Marketing Agency | Noida, India
-                </p>
-              </div>
+            <div className="stories-hero-badge">
+              <span className="stories-badge-dot" aria-hidden="true"></span>
+              <span>@sociapa.official</span>
             </div>
 
-            {/* Right: Instagram Action Button */}
-            <div className="stories-profile-right">
+            <h1 className="stories-hero-title">
+              Ideas Worth Following. Stories Worth Sharing — Sociapa Creative Agency Highlights
+            </h1>
+
+            <p className="stories-hero-desc">
+              Discover our daily agency hustle, viral brand campaigns in{' '}
+              <Link to="/best-social-media-marketing-agency-india" className="seo-interlink">
+                social media marketing
+              </Link>
+              , creator highlights in{' '}
+              <Link to="/influencer-marketing-services" className="seo-interlink">
+                influencer marketing
+              </Link>
+              , and behind-the-scenes{' '}
+              <Link to="/videos" className="seo-interlink">
+                video production
+              </Link>{' '}
+              straight from our official Instagram feed. Looking to grow your brand?{' '}
+              <Link to="/contact-us" className="seo-interlink">
+                Talk to our digital experts
+              </Link>
+              .
+            </p>
+
+            <div className="stories-hero-actions">
               <a
                 href="https://www.instagram.com/sociapa.official"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="stories-ig-btn"
+                className="stories-hero-ig-btn"
+                aria-label="Follow Sociapa on Instagram (opens in new tab)"
               >
-                <IGIcon /> Follow on Instagram
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                Follow on Instagram
               </a>
+              <span className="stories-hero-meta">
+                <span className="stories-meta-dot"></span>
+                Official Social Feed
+              </span>
             </div>
           </div>
+        </section>
 
-          {/* Section Label */}
-          <div className="stories-label-center">
-            <div className="stories-section-pill">
-              <IGIcon /> Latest Posts
+        {/* ── 3. Feed Section with Responsive Container ── */}
+        <section className="stories-feed-section" id="instagram-feed" aria-label="Sociapa Instagram Feed">
+          <div className="stories-inner-container">
+            <div className="stories-widget-wrapper">
+              <div className="elfsight-app-72b07bce-1829-4e7b-88dd-cd4c4543d783" data-elfsight-app-lazy></div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── Instagram Posts Grid ── */}
-      <section className="stories-grid-section">
-        <div className="container stories-grid-inner">
-
-          {/* Grid */}
-          <div className="stories-grid-container">
-            {posts.map((post, i) => (
-              <a
-                key={i}
-                href={post.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="stories-card"
-                title={post.label}
-              >
-                {/* Type Icon Top Left */}
-                <div className="stories-ig-type-icon">
-                  <IGIcon />
-                </div>
-
-                {/* Badge Top Right */}
-                <div className="stories-badge">
-                  #{i + 1}
-                </div>
-
-                <img
-                  src={post.localImg ? `${base}images/${post.localImg}` : `https://www.instagram.com/p/${getPostId(post.link)}/media/?size=l`}
-                  alt={post.label}
-                  className="stories-card-img"
-                  onError={e => {
-                    e.currentTarget.style.display = 'none';
-                    const fb = e.currentTarget.parentElement.querySelector('.stories-fallback');
-                    if (fb) fb.style.display = 'flex';
-                  }}
-                />
-
-                {/* Branded Fallback */}
-                <div className="stories-fallback">
-                  <img
-                    src={`${base}logonew.webp`}
-                    alt="Sociapa"
-                    className="stories-fallback-logo"
-                  />
-                  <div className="stories-fallback-title">
-                    {post.label}
-                  </div>
-                  <div className="stories-fallback-btn">
-                    <IGIcon /> View on Instagram
-                  </div>
-                </div>
-
-                {/* Hover overlay with label */}
-                <div className="stories-card-overlay">
-                  <div className="stories-card-caption">
-                    {post.label}
-                  </div>
-                  <div className="stories-card-cta-text">
-                    <IGIcon /> View on Instagram
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-
-          {/* ── CTA ── */}
-          <div className="stories-cta-banner">
-            <div className="stories-cta-glow" />
-            <div className="stories-cta-icon-box">
-              <IGIcon />
-            </div>
-            <h3 className="stories-cta-title">
-              Follow Our Instagram Journey
-            </h3>
-            <p className="stories-cta-desc">
-              Stay connected with Sociapa's latest campaigns, team stories, and marketing insights on Instagram.
-            </p>
-            <a
-              href="https://www.instagram.com/sociapa.official"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="stories-ig-btn stories-cta-btn-lg"
-            >
-              <IGIcon /> @sociapa.official — Follow Now
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </>
   );
 }

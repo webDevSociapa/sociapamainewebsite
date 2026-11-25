@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Clipboard -->
+      <rect x="52" y="44" width="136" height="176" rx="16" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Clip Top -->
+      <rect x="92" y="28" width="56" height="28" rx="8" fill="#1A0508" stroke="#1A0508" stroke-width="4"/>
+      <!-- Checklist Rows -->
+      <rect x="76" y="86" width="16" height="16" rx="4" fill="#C8102E"/>
+      <line x1="106" y1="94" x2="160" y2="94" stroke="#1A0508" stroke-width="6"/>
+      <rect x="76" y="118" width="16" height="16" rx="4" fill="#C8102E"/>
+      <line x1="106" y1="126" x2="150" y2="126" stroke="#1A0508" stroke-width="6"/>
+      <rect x="76" y="150" width="16" height="16" rx="4" fill="#C8102E"/>
+      <line x1="106" y1="158" x2="140" y2="158" stroke="#1A0508" stroke-width="6"/>
+      <!-- Magnifying Glass -->
+      <g transform="translate(160, 150)">
+        <circle cx="0" cy="0" r="34" fill="#FFFFFF" stroke="#C8102E" stroke-width="10"/>
+        <line x1="24" y1="24" x2="52" y2="52" stroke="#1A0508" stroke-width="12"/>
+        <circle cx="0" cy="0" r="14" fill="#FFEBEF"/>
+      </g>
+    </g>
+  </svg>

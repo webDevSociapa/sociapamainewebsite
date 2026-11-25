@@ -1,0 +1,119 @@
+/* Cookie Dialog — Sociapa GDPR Cookie Consent */
+#gdpr-cookie-message {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  max-width: 375px;
+  background-color: #e2e2e2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  margin-left: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Quicksand", sans-serif;
+  z-index: 99999;
+  box-sizing: border-box;
+  animation: gdprFadeIn 0.4s ease-out forwards;
+}
+
+#gdpr-cookie-message.gdpr-cookie-closing {
+  animation: gdprFadeOut 0.3s ease-in forwards;
+}
+
+#gdpr-cookie-message h4,
+#gdpr-cookie-message .gdpr-cookie-title {
+  color: #d20c0c;
+  font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+#gdpr-cookie-message p {
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+#gdpr-cookie-message .gdpr-cookie-action {
+  margin: 0;
+  text-align: right;
+}
+
+#gdpr-cookie-message button,
+#gdpr-cookie-message #gdpr-cookie-accept {
+  border: none;
+  background: #d20c0c;
+  color: #ffffff;
+  font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  outline: none;
+}
+
+#gdpr-cookie-message button:hover,
+#gdpr-cookie-message #gdpr-cookie-accept:hover {
+  background: #b00a0a;
+  color: #ffffff;
+}
+
+#gdpr-cookie-message button:active,
+#gdpr-cookie-message #gdpr-cookie-accept:active {
+  transform: scale(0.98);
+}
+
+@keyframes gdprFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gdprFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #gdpr-cookie-message {
+    right: 10px;
+    bottom: 10px;
+    margin-left: 10px;
+    max-width: calc(100% - 20px);
+    padding: 12px 14px 15px 14px;
+  }
+
+  #gdpr-cookie-message h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  #gdpr-cookie-message p {
+    font-size: 12px !important;
+    line-height: 1.45em;
+    margin-bottom: 12px;
+  }
+
+  #gdpr-cookie-message button,
+  #gdpr-cookie-message #gdpr-cookie-accept {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+}

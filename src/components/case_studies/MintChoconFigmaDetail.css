@@ -1,0 +1,680 @@
+/* ═══════════════════════════════════════════════════════════════════
+   MintChoconFigmaDetail.css
+   Figma Node 94:379 — Exact 1:1 Ditto Reproduction
+   Typography: Classic Editorial Serif Headings with Red/Dark Dual Tone
+   Colors: #C8282A (Crimson Red), #111827 (Charcoal/Dark), #FDF2F2 (Card Pink)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Base Container & Reset ── */
+.mint-figma-case-study {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: inherit;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.mint-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Screen Reader Single H1 for Strict Hierarchy ── */
+.mint-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Motion & Reveal Keyframes ── */
+.mint-motion-reveal {
+  animation: mintFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes mintFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mint-motion-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Editorial Serif Headings (Matching Figma Exact Style) ── */
+.serif-red {
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.serif-dark {
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Red Underlined Words matching Figma Headings exactly */
+.mint-red-underlined {
+  position: relative;
+  display: inline-block;
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.mint-red-underlined .mint-red-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -6px;
+  height: 3px;
+  background-color: #C8282A;
+  border-radius: 2px;
+}
+
+.mint-section-heading {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  text-align: center;
+  margin: 0 0 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.mint-section-heading.align-left {
+  text-align: left;
+}
+
+.mint-heading-underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.mint-heading-underline.red {
+  background: #C8282A;
+}
+
+.mint-heading-underline.black {
+  background: #111827;
+}
+
+.mint-heading-underline.align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ── 1. CATEGORY PILLS BAR (FIGMA SLICE 0) ── */
+.mint-category-pills-bar {
+  padding: 24px 0 20px;
+  background: #FFFFFF;
+}
+
+.mint-pills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mint-cat-pill {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #FFF1F0;
+  color: #C8282A;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.mint-cat-pill:hover {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.mint-cat-pill.active {
+  background: #C8282A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(200, 40, 42, 0.35);
+}
+
+/* ── 2. HERO IMAGE BANNER ── */
+.mint-hero-banner-container {
+  margin-bottom: 24px;
+}
+
+.mint-hero-banner-frame {
+  width: 100%;
+  line-height: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #98E4D6;
+}
+
+.mint-hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 3. TAG PILLS ROW (FIGMA SLICE 1) ── */
+.mint-tags-section {
+  padding: 20px 0 32px;
+}
+
+.mint-tags-pills-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mint-tag-pill {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 999px;
+  background: #FFF9F7;
+  border: 1.5px solid #C8282A;
+  color: #111827;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mint-tag-pill:hover {
+  background: #FEE2E2;
+  color: #991B1B;
+  transform: translateY(-1px);
+}
+
+/* ── 4. PROJECT OVERVIEW SECTION ── */
+.mint-overview-section {
+  padding: 40px 0 50px;
+  background: #FFFFFF;
+}
+
+.mint-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.mint-overview-title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.mint-overview-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.mint-meta-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mint-meta-key {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #888888;
+  text-transform: capitalize;
+}
+
+.mint-meta-val {
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.45;
+}
+
+/* ── 5. THE BRIEF (CENTERED) ── */
+.mint-brief-section {
+  padding: 48px 0 60px;
+  background: #FFFFFF;
+}
+
+.mint-center-block {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mint-body-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-top: 24px;
+}
+
+.mint-body-text p {
+  margin: 0 0 18px;
+}
+
+.mint-body-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── 6. THE BIG IDEA (2-COL) ── */
+.mint-big-idea-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-big-idea-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.mint-big-idea-visual {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mint-sketch-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 7. BRINGING THE CAMPAIGN TO LIFE (CENTERED) ── */
+.mint-bringing-life-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── 8. CELEBRITY-LED COMMUNICATION (2-COL) ── */
+.mint-celebrity-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-celebrity-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.mint-celebrity-visual {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.mint-janhvi-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 9. PACKAGING REVAMP ── */
+.mint-packaging-revamp-section {
+  padding: 60px 0 80px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-section-sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin: 20px auto 40px;
+  max-width: 800px;
+}
+
+.mint-staircase-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.mint-staircase-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 10. A MEMORABLE AUDIO IDENTITY ── */
+.mint-audio-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-audio-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 960px;
+  margin: 40px auto 0;
+}
+
+.mint-audio-text {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #374151;
+  margin: 0;
+}
+
+.mint-lettering-visual {
+  text-align: center;
+}
+
+.mint-lettering-img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* ── 11. INFLUENCER-LED ENGAGEMENT ── */
+.mint-influencer-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── 12. DIGITAL MEDIA AND AMPLIFICATION ── */
+.mint-digital-media-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── 13. THE RESULTS (6 BIG STAT CARDS) ── */
+.mint-results-section {
+  padding: 70px 0 80px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-results-sub {
+  font-size: 1.05rem;
+  color: #4B5563;
+  margin: 18px 0 44px;
+}
+
+.mint-results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.mint-result-card {
+  background: #FFF0F0;
+  border-radius: 14px;
+  padding: 44px 36px 36px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mint-result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(200, 40, 42, 0.1);
+}
+
+.mint-card-number {
+  display: block;
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  font-weight: 700;
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  line-height: 1;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+.mint-card-label {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #374151;
+  margin: 0;
+}
+
+.mint-card-label strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+.mint-disclaimer-box {
+  max-width: 1040px;
+  margin: 28px auto 0;
+  background: #F3F4F6;
+  border-radius: 10px;
+  padding: 16px 28px;
+  text-align: center;
+}
+
+.mint-disclaimer-box p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #6B7280;
+  margin: 0;
+}
+
+/* ── 14. THE TAKEAWAY ── */
+.mint-takeaway-section {
+  padding: 60px 0;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-action-buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.mint-btn-primary {
+  background: #C8282A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mint-btn-primary:hover {
+  background: #991B1B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 40, 42, 0.35);
+}
+
+.mint-btn-icon {
+  font-size: 1rem;
+}
+
+.mint-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #C8282A;
+  color: #C8282A;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mint-btn-secondary:hover {
+  background: #C8282A;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.mint-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #D1D5DB;
+  color: #4B5563;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mint-btn-outline:hover {
+  border-color: #C8282A;
+  color: #C8282A;
+  transform: translateY(-2px);
+}
+
+/* ── 15. OTHER SERVICES (3 EXACT FIGMA CARDS) ── */
+.mint-other-services-section {
+  padding: 60px 0 40px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.mint-other-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 36px auto 0;
+}
+
+.mint-other-card {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.mint-other-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.mint-other-card.current {
+  opacity: 0.9;
+  cursor: default;
+}
+
+.mint-other-card.current:hover {
+  transform: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.mint-other-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── SEO INTERLINKS ── */
+.seo-interlink {
+  color: #C8282A !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 40, 42, 0.35);
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.seo-interlink:hover {
+  color: #991B1B !important;
+  text-decoration-color: #991B1B;
+}
+
+/* ── RESPONSIVE MEDIA QUERIES ── */
+@media (max-width: 1024px) {
+  .mint-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .mint-big-idea-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .mint-celebrity-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .mint-audio-content-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mint-results-grid {
+    grid-template-columns: 1fr;
+  }
+  .mint-other-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+  .mint-overview-right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .mint-section-heading {
+    font-size: 1.8rem;
+  }
+  .mint-card-number {
+    font-size: 3rem;
+  }
+  .mint-action-buttons-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

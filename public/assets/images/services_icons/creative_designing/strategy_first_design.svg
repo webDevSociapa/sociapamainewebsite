@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Target Rings Background -->
+      <circle cx="128" cy="128" r="92" fill="#FFEBEF" stroke="#C8102E" stroke-width="8" stroke-dasharray="10 10"/>
+      <!-- Chess Knight Strategy Piece -->
+      <path d="M100 196 H156 L150 168 C150 168, 172 152, 172 116 C172 80, 148 64, 128 64 C116 64, 102 72, 94 88 C86 104, 76 116, 76 116 L94 126 C94 126, 90 144, 98 168 Z" fill="#1A0508" stroke="#1A0508" stroke-width="6"/>
+      <!-- Knight Eye & Mane Highlight -->
+      <circle cx="120" cy="96" r="5" fill="#FFFFFF"/>
+      <path d="M140 84 C148 92, 152 104, 150 120" stroke="#C8102E" stroke-width="6"/>
+      <!-- Pedestal Base -->
+      <rect x="88" y="196" width="80" height="16" rx="6" fill="#C8102E"/>
+    </g>
+  </svg>

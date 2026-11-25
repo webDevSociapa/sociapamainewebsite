@@ -31,16 +31,39 @@
 }
 
 @media (max-width: 768px) {
+  .seo-city-content {
+    padding: 16px;
+  }
   .seo-city-content h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .seo-city-content h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .seo-city-content p {
-    font-size: 16px;
+    font-size: 15px;
+    text-align: left;
   }
 }
+
+@media (max-width: 480px) {
+  .seo-city-content {
+    padding: 12px;
+  }
+  .seo-city-content h1 {
+    font-size: 22px;
+  }
+  .seo-city-content h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .seo-city-content h1 {
+    font-size: 20px;
+  }
+}
+
 
 .cityseo-not-found {
   min-height: 60vh;

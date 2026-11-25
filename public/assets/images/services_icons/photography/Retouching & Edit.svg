@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Digital Canvas Screen -->
+    <rect x="40" y="44" width="176" height="136" rx="14" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Adjustment Sliders inside canvas -->
+    <line x1="68" y1="80" x2="148" y2="80" stroke="#1A0508" stroke-width="5"/>
+    <circle cx="108" cy="80" r="10" fill="#D20C0C"/>
+    <line x1="68" y1="116" x2="148" y2="116" stroke="#1A0508" stroke-width="5"/>
+    <circle cx="132" cy="116" r="10" fill="#D20C0C"/>
+    <!-- Retouching Wand / Stylus -->
+    <line x1="140" y1="216" x2="204" y2="152" stroke="#1A0508" stroke-width="8"/>
+    <polygon points="204,152 216,140 220,156" fill="#D20C0C" stroke="#1A0508" stroke-width="4"/>
+    <!-- Magic Retouch Sparkles -->
+    <path d="M188 64 L192 76 L204 80 L192 84 L188 96 L184 84 L172 80 L184 76 Z" fill="#D20C0C"/>
+    <path d="M72 144 L74 150 L80 152 L74 154 L72 160 L70 154 L64 152 L70 150 Z" fill="#D20C0C"/>
+  </g>
+</svg>

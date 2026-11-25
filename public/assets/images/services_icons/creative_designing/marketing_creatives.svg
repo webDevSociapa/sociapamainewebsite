@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Target / Bullseye -->
+      <circle cx="116" cy="136" r="80" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <circle cx="116" cy="136" r="52" fill="#FFFFFF" stroke="#C8102E" stroke-width="8"/>
+      <circle cx="116" cy="136" r="26" fill="#C8102E"/>
+      <!-- Arrow Hitting Center Bullseye -->
+      <path d="M216 36 L124 128" stroke="#1A0508" stroke-width="10"/>
+      <path d="M216 36 L174 42 M216 36 L210 78" stroke="#1A0508" stroke-width="10"/>
+      <!-- Megaphone / Campaign Accent -->
+      <g transform="translate(170, 160)">
+        <path d="M0 20 L30 38 V-8 L0 10 Z" fill="#C8102E" stroke="#1A0508" stroke-width="6"/>
+        <path d="M0 10 H-18 V20 H0 Z" fill="#1A0508" stroke="#1A0508" stroke-width="4"/>
+        <path d="M38 4 C46 8, 46 22, 38 26" stroke="#C8102E" stroke-width="6"/>
+      </g>
+    </g>
+  </svg>

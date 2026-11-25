@@ -1,0 +1,766 @@
+/* ═══════════════════════════════════════════════════════════════════
+   BikanoPerformanceFigmaDetail.css
+   Figma Node 207:365 — Bikano Scaled Performance Marketing
+   Typography: Classic Editorial Serif Headings with Red/Dark Dual Tone
+   Colors: #C8282A (Bikano Crimson Red), #111827 (Dark Charcoal),
+           #FFF1F0 (Blush Cards), #FFFFFF (White)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Base Container & Reset ── */
+.bp-figma-case-study {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: inherit;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.bp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Screen Reader Single H1 for Strict SEO Hierarchy ── */
+.bp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Motion & Animation System ── */
+@keyframes bpFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bp-motion-reveal {
+  animation: bpFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bp-motion-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Editorial Serif Headings (Matching Figma Exact Style) ── */
+.bp-serif-red,
+.serif-red {
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.bp-serif-dark,
+.serif-dark {
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Red Underlined Words matching Figma Headings exactly */
+.bp-red-underlined {
+  position: relative;
+  display: inline-block;
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.bp-red-underlined .bp-red-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -6px;
+  height: 3px;
+  background-color: #C8282A;
+  border-radius: 2px;
+}
+
+.bp-section-heading {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  text-align: center;
+  margin: 0 0 16px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.bp-heading-underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.bp-heading-underline.red {
+  background: #C8282A;
+}
+
+.bp-center-header {
+  max-width: 860px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+/* ── 1. CATEGORY PILLS BAR (FIGMA TOP NAV) ── */
+.bp-category-pills-bar {
+  padding: 24px 0 20px;
+  background: #FFFFFF;
+}
+
+.bp-pills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bp-cat-pill {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #FFF1F0;
+  color: #C8282A;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.bp-cat-pill:hover {
+  background: #FEE2E2;
+  color: #991B1B;
+  transform: translateY(-1px);
+}
+
+.bp-cat-pill.active {
+  background: #C8282A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(200, 40, 42, 0.35);
+}
+
+/* ── 2. HERO BANNER SECTION ── */
+.bp-hero-section {
+  padding: 10px 0 40px;
+  background: #FFFFFF;
+}
+
+.bp-hero-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(200, 40, 42, 0.14);
+  background: #C8282A;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bp-hero-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 44px rgba(200, 40, 42, 0.22);
+}
+
+.bp-hero-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 3. PROJECT OVERVIEW SECTION ── */
+.bp-overview-section {
+  padding: 48px 0 36px;
+  background: #FFFFFF;
+}
+
+.bp-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.bp-overview-title {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bp-overview-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.bp-meta-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bp-meta-pair.bp-meta-services {
+  grid-column: 1 / -1;
+}
+
+.bp-meta-key {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #888888;
+  text-transform: capitalize;
+}
+
+.bp-meta-val {
+  font-size: 1.12rem;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.bp-meta-services .bp-meta-val {
+  font-size: 1.02rem;
+  font-weight: 400;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* ── 4. THE CHALLENGE SECTION ── */
+.bp-challenge-section {
+  padding: 48px 0 60px;
+  background: #FFFFFF;
+}
+
+.bp-challenge-narrative {
+  max-width: 820px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #111827;
+}
+
+.bp-challenge-narrative p {
+  margin: 0 0 16px;
+}
+
+.bp-challenge-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.bp-challenge-visual-wrap {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.bp-full-rounded-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 5. THE STRATEGY SECTION (2-COLUMN EXACT FIGMA MATCH) ── */
+.bp-strategy-section {
+  padding: 60px 0 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.bp-strategy-heading {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.bp-strategy-underline {
+  display: block;
+  width: 72px;
+  height: 3px;
+  background: #C8282A;
+  margin: 14px 0 28px 0;
+  border-radius: 2px;
+}
+
+.bp-strategy-narrative {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.bp-strategy-narrative p {
+  margin: 0 0 18px;
+}
+
+.bp-strategy-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.bp-strategy-visual {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  background: #FFFFFF;
+}
+
+.bp-strategy-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 6. THE SOLUTION SECTION (EXACT FIGMA MATCH) ── */
+.bp-solution-section {
+  padding: 60px 0 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-solution-main-heading {
+  margin-bottom: 48px;
+}
+
+.bp-solution-list {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bp-solution-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.bp-solution-item-title {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(1.65rem, 2.4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bp-solution-item-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1F2937;
+  margin: 0;
+  max-width: 1000px;
+}
+
+/* ── 7. CAMPAIGN PERFORMANCE SECTION (EXACT FIGMA MATCH) ── */
+.bp-performance-section {
+  padding: 60px 0 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-perf-header {
+  max-width: 1080px;
+  margin: 0 auto 36px;
+  text-align: left;
+}
+
+.bp-perf-heading {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bp-perf-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #1F2937;
+  margin: 0;
+}
+
+.bp-performance-visual-card {
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ── 8. GOOGLE ADS SECTION (EXACT FIGMA MATCH) ── */
+.bp-google-ads-section,
+.bp-efficiency-section {
+  padding: 60px 0 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-google-ads-narrative {
+  max-width: 860px;
+  margin: 18px auto 0;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #374151;
+}
+
+.bp-google-ads-narrative p {
+  margin: 0 0 8px;
+}
+
+.bp-google-ads-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.bp-placements-label {
+  font-weight: 500;
+  color: #111827;
+  font-size: 1.05rem;
+  margin-top: 6px !important;
+}
+
+.bp-efficiency-visual-card {
+  max-width: 1080px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ── 8. WHAT WORKED SECTION ── */
+.bp-what-worked-section {
+  padding: 60px 0 70px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-what-worked-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1080px;
+  margin: 36px auto 0;
+}
+
+.bp-worked-card {
+  display: grid;
+  grid-template-columns: 1.15fr 1.3fr;
+  align-items: center;
+  gap: 32px;
+  background: #FFF1F0;
+  border-radius: 14px;
+  padding: 24px 32px;
+  border: 1px solid #FFE4E4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bp-worked-card:hover {
+  transform: translateY(-2px);
+  border-color: #FECACA;
+  box-shadow: 0 6px 20px rgba(200, 40, 42, 0.08);
+}
+
+.bp-worked-left {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #C8282A;
+  line-height: 1.35;
+}
+
+.bp-worked-right {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #374151;
+}
+
+/* ── 9. THE FINAL OUTCOME SECTION ── */
+.bp-outcome-section {
+  padding: 60px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.bp-outcome-narrative {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: #374151;
+}
+
+.bp-outcome-narrative p {
+  margin: 0 0 18px;
+}
+
+.bp-takeaway-highlight {
+  background: #FFF9F9;
+  border-left: 4px solid #C8282A;
+  padding: 20px 28px;
+  border-radius: 0 12px 12px 0;
+  text-align: left;
+  margin-top: 28px !important;
+  color: #1F2937;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.bp-takeaway-highlight strong {
+  color: #C8282A;
+}
+
+/* ── Action CTAs ── */
+.bp-action-buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.bp-btn-primary {
+  background: #C8282A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(200, 40, 42, 0.25);
+}
+
+.bp-btn-primary:hover {
+  background: #991B1B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 40, 42, 0.35);
+}
+
+.bp-btn-icon {
+  font-size: 1rem;
+}
+
+.bp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #C8282A;
+  color: #C8282A;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.bp-btn-secondary:hover {
+  background: #C8282A;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.bp-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #D1D5DB;
+  color: #4B5563;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.bp-btn-outline:hover {
+  border-color: #C8282A;
+  color: #C8282A;
+  transform: translateY(-2px);
+}
+
+/* ── 10. OTHER SERVICES SECTION ── */
+.bp-other-services-section {
+  padding: 60px 0 40px;
+  border-top: 1px solid #F3F4F6;
+  background: #FFFFFF;
+}
+
+.bp-other-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 36px auto 0;
+}
+
+.bp-other-card {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.bp-other-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.bp-other-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── SEO Service Interlinks ── */
+.seo-interlink {
+  color: #C8282A !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 40, 42, 0.35);
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.seo-interlink:hover {
+  color: #991B1B !important;
+  text-decoration-color: #991B1B;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   RESPONSIVENESS / BREAKPOINTS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 992px) {
+  .bp-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bp-strategy-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .bp-worked-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .bp-other-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bp-container {
+    padding: 0 16px;
+  }
+
+  .bp-pills-wrapper {
+    gap: 8px;
+  }
+
+  .bp-cat-pill {
+    padding: 8px 16px;
+    font-size: 0.74rem;
+  }
+
+  .bp-overview-right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bp-worked-card {
+    padding: 18px 20px;
+  }
+
+  .bp-solution-list {
+    gap: 32px;
+  }
+
+  .bp-solution-item-title {
+    font-size: 1.45rem;
+    margin-bottom: 12px;
+  }
+
+  .bp-solution-item-desc {
+    font-size: 0.98rem;
+  }
+
+  .bp-perf-heading {
+    font-size: 1.65rem;
+  }
+
+  .bp-action-buttons-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bp-btn-primary,
+  .bp-btn-secondary,
+  .bp-btn-outline {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .bp-other-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 360px;
+  }
+}

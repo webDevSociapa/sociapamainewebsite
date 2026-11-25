@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 200" width="512" height="200">
+      <g transform="translate(20, 25)">
+        <!-- 3D Cube Mark in vibrant orange -->
+        <g transform="translate(0, 0)">
+          <rect width="150" height="150" rx="30" fill="#F36F21"/>
+          <!-- Isometric Box inside -->
+          <polygon points="75,28 120,54 75,80 30,54" fill="#FFFFFF"/>
+          <polygon points="30,54 75,80 75,124 30,98" fill="#FFE5D4"/>
+          <polygon points="120,54 75,80 75,124 120,98" fill="#F8A775"/>
+        </g>
+        <!-- Text -->
+        <g transform="translate(175, 95)">
+          <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="58" fill="#222222" letter-spacing="-1">Artios</text>
+          <text x="175" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="58" fill="#F36F21" letter-spacing="-0.5">CAD</text>
+        </g>
+      </g>
+    </svg>

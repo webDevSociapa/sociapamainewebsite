@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stack of Proof Photos -->
+    <rect x="42" y="58" width="112" height="112" rx="10" fill="#FFEBEF" stroke="#1A0508" stroke-width="6" transform="rotate(-8 42 58)"/>
+    <rect x="76" y="52" width="124" height="124" rx="10" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Photo Content -->
+    <polygon points="94,142 122,108 144,130 162,112 184,142" fill="#FFEBEF" stroke="#D20C0C" stroke-width="5"/>
+    <circle cx="114" cy="94" r="8" fill="#D20C0C"/>
+    <!-- Big Magnifying Glass Shortlisting Winner -->
+    <circle cx="160" cy="156" r="36" fill="#FFFFFF" stroke="#D20C0C" stroke-width="8"/>
+    <line x1="186" y1="182" x2="218" y2="214" stroke="#1A0508" stroke-width="10"/>
+    <polyline points="148,156 156,164 172,148" stroke="#D20C0C" stroke-width="6"/>
+  </g>
+</svg>

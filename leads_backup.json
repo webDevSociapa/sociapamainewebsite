@@ -1,0 +1,118 @@
+{
+    "timestamp": "2026-10-28T11:27:59+01:00",
+    "action": "test",
+    "data": []
+}
+{
+    "timestamp": "2026-10-28T11:28:54+01:00",
+    "action": "website-audit",
+    "data": []
+}
+{
+    "timestamp": "2026-10-28T11:29:17+01:00",
+    "action": "audit",
+    "data": {
+        "name": "Developer Team",
+        "email": "webdev@sociapa.com",
+        "phone": "9876543111",
+        "website": "https:\/\/sociapa.com"
+    }
+}
+{
+    "timestamp": "2026-10-28T11:51:30+01:00",
+    "action": "free-website-audit",
+    "data": {
+        "name": "Direct Test",
+        "email": "webdev@sociapa.com",
+        "phone": "9876543210",
+        "website": "https:\/\/sociapa.com",
+        "audit": "SEO"
+    }
+}
+{
+    "timestamp": "2026-10-28T11:56:01+01:00",
+    "action": "audit",
+    "data": {
+        "name": "Developer Team",
+        "email": "webdev@sociapa.com",
+        "website": "webdev@sociapa.com",
+        "mobile": "9876543111",
+        "audit": "SEO"
+    }
+}
+{
+    "timestamp": "2026-10-28T12:00:25+01:00",
+    "action": "audit",
+    "smtp_sent": true,
+    "data": {
+        "name": "Live SMTP Verification Lead",
+        "email": "webdev@sociapa.com",
+        "phone": "9876543210",
+        "website": "https:\/\/sociapa.com",
+        "audit": "SEO & Technical Speed"
+    }
+}
+{
+    "timestamp": "2026-10-28T12:32:20+01:00",
+    "action": "website-audit",
+    "smtp_sent": true,
+    "data": {
+        "name": "Amisha Gupta",
+        "email": "webdev@sociapa.com",
+        "phone": "9876543111",
+        "website": "https:\/\/sociapa.com",
+        "audit": "SEO & Technical Speed"
+    }
+}
+{
+    "timestamp": "2026-10-28T12:44:39+01:00",
+    "action": "influencer",
+    "smtp_sent": true,
+    "data": {
+        "full_name": "Developer Team [Brand]",
+        "email": "webdev@sociapa.com",
+        "phone": "99999999999",
+        "instagram": "Noida",
+        "category": "food",
+        "message": "hello"
+    }
+}
+{
+    "timestamp": "2026-11-23T07:49:26+01:00",
+    "action": "influencer",
+    "smtp_sent": true,
+    "data": {
+        "full_name": "Test booking [Brand]",
+        "email": "techie829@gmail.com",
+        "phone": "09818711511",
+        "instagram": "noida",
+        "category": "d",
+        "message": "hello testing here"
+    }
+}
+{
+    "timestamp": "2026-11-23T07:50:16+01:00",
+    "action": "career",
+    "smtp_sent": true,
+    "data": {
+        "name": "Techie",
+        "email": "techie829@gmail.com",
+        "phone": "09818711510",
+        "position": "General Application",
+        "experience": "3",
+        "portfolio": ""
+    }
+}
+{
+    "timestamp": "2026-11-23T07:51:34+01:00",
+    "action": "influencer",
+    "smtp_sent": true,
+    "data": {
+        "full_name": "Test booking [Brand]",
+        "email": "techie829@gmail.com",
+        "phone": "09818711511",
+        "instagram": "noida",
+        "category": "d",
+        "message": "test"
+    }
+}

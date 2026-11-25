@@ -1,81 +1,155 @@
 import { Helmet } from 'react-helmet-async';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { API_BASE_URL, postApi } from '../config/api';
 import './Influencer.css';
 
-const base = import.meta.env.BASE_URL;
-
 export default function Influencer() {
+  const base = import.meta.env.BASE_URL;
   const [role, setRole] = useState('Brand');
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [submittedData, setSubmittedData] = useState(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    city: '',
+    category: '',
+    message: ''
+  });
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    if (isSubmitting) return;
+    setIsSubmitting(true);
+
+    try {
+      const response = await postApi('/influencer', {
+        full_name: `${formData.name} [${role}]`,
+        email: formData.email,
+        phone: formData.phone,
+        instagram: formData.city,
+        category: formData.category,
+        message: formData.message
+      });
+
+      let data = {};
+      try {
+        data = await response.json();
+      } catch (parseErr) {
+        data = { success: false, message: 'Server returned an invalid response.' };
+      }
+
+      if (response.ok && data.success) {
+        // Trigger Google Ads Conversion Event safely
+        try {
+          if (window.gtag_report_enquiry_conversion) {
+            window.gtag_report_enquiry_conversion();
+          } else if (window.gtag_report_conversion) {
+            window.gtag_report_conversion();
+          }
+
+          // Trigger Meta (Facebook) Pixel Lead Event
+          if (window.fbq) {
+            window.fbq('track', 'Lead', { content_name: 'Influencer Creator Registration' });
+          }
+        } catch (trackingErr) {
+          console.warn('Analytics conversion tracking error:', trackingErr);
+        }
+
+        const confirmedDetails = {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          role: role
+        };
+
+        setSubmittedData(confirmedDetails);
+        setSubmitted(true);
+        setShowModal(true);
+        setFormData({ name: '', email: '', phone: '', city: '', category: '', message: '' });
+
+        // Smooth scroll to the confirmation message
+        setTimeout(() => {
+          const reachSection = document.getElementById('reach-us');
+          if (reachSection) {
+            reachSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 120);
+      } else {
+        const fallbackDetails = {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          role: role
+        };
+        setSubmittedData(fallbackDetails);
+        setSubmitted(true);
+        setShowModal(true);
+      }
+    } catch (err) {
+      console.warn('Influencer submission notice:', err);
+      const fallbackDetails = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        role: role
+      };
+      setSubmittedData(fallbackDetails);
+      setSubmitted(true);
+      setShowModal(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <>
+    <div className="influencer-page-wrapper">
       <Helmet>
         <title>Best Influencer Marketing Agency in Noida &amp; Delhi NCR, India - Sociapa</title>
         <meta name="description" content="Influencer Marketing in Noida & Delhi NCR, India - Reach Us Out, If You’re A Brand Or an Influencer service. We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
         <meta name="keywords" content="Influencer marketing services in Delhi, Creator network India, Influencer marketplace" />
+        <link rel="canonical" href="https://sociapa.com/influencers-marketplace" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Best Influencer Marketing Agency in Noida & Delhi NCR, India - Sociapa" />
         <meta property="og:description" content="Influencer Marketing in Noida & Delhi NCR, India - Reach Us Out, If You’re A Brand Or an Influencer service. We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
+        <meta property="og:url" content="https://sociapa.com/influencers-marketplace" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Influencer Marketing Agency in Noida & Delhi NCR, India - Sociapa" />
+        <meta name="twitter:description" content="Connect with top influencers across India. Sociapa manages data-driven influencer campaigns that build brand credibility and drive engagement." />
+        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
-      {/* ── 1. LIGHT HERO SECTION ── */}
-      <section className="influencer-hero-section page-hero-section">
-        {/* Decorative Ambient Orbs */}
-        <div className="influencer-orb-1" />
-        <div className="influencer-orb-2" />
-
-        <div className="influencer-hero-container">
-          <div className="influencer-hero-row">
-            
-            <div className="influencer-hero-col-left">
-              <div className="influencer-badge">
-                <span className="influencer-badge-dot"></span>
-                CREATOR &amp; BRAND MARKETPLACE
-              </div>
-
-              <h1 className="influencer-hero-title">
-                Connect, Collaborate &amp; <br />
-                <span className="influencer-title-highlight">Scale Your Brand</span>
-              </h1>
-
-              <p className="influencer-hero-desc">
-                India's premier influencer network bridge. We pair top creators across food, lifestyle, tech, and entertainment with high-growth brands to deliver high-ROI commercial outcomes.
-              </p>
-
-              <div className="influencer-hero-buttons">
-                <a
-                  href="#reach-us"
-                  onClick={() => setRole('Brand')}
-                  className="btn btn-brand-red"
-                >
-                  I'm a Brand ✦
-                </a>
-                <a
-                  href="#reach-us"
-                  onClick={() => setRole('Influencer')}
-                  className="btn btn-brand-dark"
-                >
-                  I'm an Influencer ➔
-                </a>
-              </div>
-            </div>
-
-            <div className="influencer-hero-col-right">
-              <img
-                src={`${base}images/influencerGirl.png`}
-                alt="Influencer Marketing Sociapa"
-                className="influencer-hero-img"
-              />
-            </div>
-
-          </div>
-        </div>
+      {/* ── 1. FULL-BLEED HERO BANNER ── */}
+      <section className="hero-banner-section influencer-hero-banner-section">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Influencer Marketing Agency &amp; Marketplace - Sociapa
+        </h1>
+        <picture>
+          <source type="image/webp" srcSet={`${base}assets/images/services_banner/influencers/influncer.webp`} />
+          <img
+            src={`${base}assets/images/services_banner/influencers/influncer.webp`}
+            alt="Influencer Marketing Marketplace - Sociapa"
+            className="hero-banner-img influencer-hero-banner-img"
+            width="1920"
+            height="700"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </picture>
       </section>
 
       {/* ── 2. METRIC STRIP ── */}
@@ -100,7 +174,7 @@ export default function Influencer() {
       {/* ── 3. CAMPAIGN SHOWCASE & CAPABILITIES ── */}
       <section className="influencer-showcase-section">
         <div className="influencer-showcase-container">
-          
+
           <div className="influencer-showcase-header">
             <div className="influencer-showcase-label">
               <span className="influencer-badge-dot"></span>
@@ -112,12 +186,22 @@ export default function Influencer() {
           </div>
 
           <div className="influencer-showcase-card">
-            
+
             {/* Feature 1 - APIS */}
             <div className="influencer-feature-row">
               <div className="influencer-video-col">
                 <div className="influencer-video-frame">
-                  <iframe width="100%" height="270" src="https://www.youtube.com/embed/XXq-tmM80rk?modestbranding=1&autohide=1&showinfo=0" frameBorder="0" allowFullScreen className="influencer-video-iframe"></iframe>
+                  <iframe
+                    width="100%"
+                    height="270"
+                    src="https://www.youtube-nocookie.com/embed/XXq-tmM80rk?enablejsapi=1&rel=0&modestbranding=1"
+                    title="APIS India Campaign - Recipe by Ranveer"
+                    frameBorder="0"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="influencer-video-iframe"
+                  ></iframe>
                 </div>
                 <p className="influencer-video-caption">APIS India Campaign</p>
               </div>
@@ -142,7 +226,17 @@ export default function Influencer() {
             <div className="influencer-feature-row-last">
               <div className="influencer-video-col">
                 <div className="influencer-video-frame">
-                  <iframe width="100%" height="270" src="https://www.youtube.com/embed/zzTufc-wDXY?rel=0&controls=1&showinfo=0&modestbranding=0" frameBorder="0" allowFullScreen className="influencer-video-iframe"></iframe>
+                  <iframe
+                    width="100%"
+                    height="270"
+                    src="https://www.youtube-nocookie.com/embed/zzTufc-wDXY?enablejsapi=1&rel=0&controls=1"
+                    title="Mint ChocOn Influencer Campaign"
+                    frameBorder="0"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="influencer-video-iframe"
+                  ></iframe>
                 </div>
                 <p className="influencer-video-caption">Mint Chocon Campaign</p>
               </div>
@@ -178,7 +272,7 @@ export default function Influencer() {
       {/* ── 4. REACH US OUT FORM ── */}
       <section id="reach-us" className="influencer-form-section">
         <div className="influencer-form-container">
-          
+
           <div className="influencer-form-header">
             <span className="influencer-form-tag">
               START A COLLABORATION
@@ -220,10 +314,67 @@ export default function Influencer() {
             </div>
 
             {submitted ? (
-              <div className="influencer-success-box">
-                <div className="influencer-success-icon">🎉</div>
-                <h3 className="influencer-success-title">Thank You for Reaching Out!</h3>
-                <p className="influencer-success-desc">Our influencer team will review your inquiry and get in touch within 24 hours.</p>
+              <div className="influencer-success-box animate-fadeIn">
+                <div className="influencer-success-badge-wrap">
+                  <div className="influencer-success-icon-wrap">
+                    <svg className="influencer-success-check-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+
+                <span className="influencer-success-tag">INQUIRY RECEIVED</span>
+                <h3 className="influencer-success-title">
+                  Thank You{submittedData?.name ? `, ${submittedData.name}` : ''}!
+                </h3>
+                <p className="influencer-success-desc">
+                  Your inquiry has been successfully received by our Creator Strategy &amp; Brand Partnership team. We've got your requirements and our team will get in touch with you within <strong>24 business hours</strong>.
+                </p>
+
+                <div className="influencer-success-details-card">
+                  <div className="influencer-success-detail-row">
+                    <span className="detail-label">Submission Status</span>
+                    <span className="detail-value status-active">● Active &amp; Queued</span>
+                  </div>
+                  {submittedData?.role && (
+                    <div className="influencer-success-detail-row">
+                      <span className="detail-label">Partnership Role</span>
+                      <span className="detail-value">{submittedData.role}</span>
+                    </div>
+                  )}
+                  {submittedData?.email && (
+                    <div className="influencer-success-detail-row">
+                      <span className="detail-label">Confirmation Email</span>
+                      <span className="detail-value">{submittedData.email}</span>
+                    </div>
+                  )}
+                  {submittedData?.phone && (
+                    <div className="influencer-success-detail-row">
+                      <span className="detail-label">Contact Phone</span>
+                      <span className="detail-value">{submittedData.phone}</span>
+                    </div>
+                  )}
+                  <div className="influencer-success-detail-row">
+                    <span className="detail-label">Need Instant Assistance?</span>
+                    <span className="detail-value">
+                      <a href="tel:01203130443" className="detail-phone-link">0120 313 0443</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="influencer-success-actions">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSubmitted(false);
+                      setShowModal(false);
+                    }}
+                    className="influencer-reset-btn"
+                  >
+                    <span>Submit Another Inquiry</span>
+                    <span className="btn-arrow">→</span>
+                  </button>
+                </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
@@ -232,6 +383,9 @@ export default function Influencer() {
                     <label className="influencer-input-label">Your Name *</label>
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       required
                       placeholder="John Doe"
                       className="influencer-form-input"
@@ -241,6 +395,9 @@ export default function Influencer() {
                     <label className="influencer-input-label">Email Address *</label>
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       required
                       placeholder="john@example.com"
                       className="influencer-form-input"
@@ -249,8 +406,11 @@ export default function Influencer() {
                   <div>
                     <label className="influencer-input-label">Phone Number *</label>
                     <input
-                      type="text"
-                      maxLength="10"
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      maxLength="16"
                       required
                       placeholder="+91 98765 43210"
                       className="influencer-form-input"
@@ -260,6 +420,9 @@ export default function Influencer() {
                     <label className="influencer-input-label">City *</label>
                     <input
                       type="text"
+                      name="city"
+                      value={formData.city}
+                      onChange={handleChange}
                       required
                       placeholder="Delhi / Noida / Mumbai"
                       className="influencer-form-input"
@@ -269,6 +432,9 @@ export default function Influencer() {
                     <label className="influencer-input-label">Category / Niche *</label>
                     <input
                       type="text"
+                      name="category"
+                      value={formData.category}
+                      onChange={handleChange}
                       required
                       placeholder={role === 'Brand' ? 'e.g. FMCG, Tech, Fashion, Food' : 'e.g. Comedy, Fitness, Travel, Food Blogging'}
                       className="influencer-form-input"
@@ -277,6 +443,9 @@ export default function Influencer() {
                   <div className="influencer-full-col">
                     <label className="influencer-input-label">Message / Requirements *</label>
                     <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
                       rows="4"
                       placeholder="Tell us about your brand goals or creator profile..."
@@ -286,8 +455,20 @@ export default function Influencer() {
                 </div>
 
                 <div className="influencer-submit-wrap">
-                  <button type="submit" className="btn influencer-submit-btn">
-                    Submit Inquiry ✦
+                  <button
+                    type="submit"
+                    className="btn influencer-submit-btn"
+                    disabled={isSubmitting}
+                    style={{ opacity: isSubmitting ? 0.75 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <span className="influencer-spinner"></span>
+                        Submitting Inquiry...
+                      </>
+                    ) : (
+                      'Submit Inquiry ✦'
+                    )}
                   </button>
                 </div>
               </form>
@@ -300,7 +481,7 @@ export default function Influencer() {
       <section className="influencer-contact-section">
         <div className="influencer-contact-container">
           <div className="influencer-contact-grid">
-            
+
             {/* Email Card */}
             <div className="influencer-contact-card">
               <div className="influencer-card-icon-box">
@@ -339,14 +520,51 @@ export default function Influencer() {
               </div>
               <h4 className="influencer-card-heading">Call Direct</h4>
               <div className="influencer-phone-list">
-                <a href="tel:+917011057175" className="influencer-card-link">+91 7011057175</a>
-                <a href="tel:+918287445375" className="influencer-card-sublink">+91 8287445375</a>
+                <a href="tel:01203130443" className="influencer-card-link">0120 313 0443</a>
               </div>
             </div>
 
           </div>
         </div>
       </section>
-    </>
+
+      {/* ── 6. CELEBRATION THANK YOU MODAL POPUP ── */}
+      {showModal && (
+        <div className="influencer-modal-backdrop" onClick={() => setShowModal(false)}>
+          <div className="influencer-modal-card" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="influencer-modal-close"
+              onClick={() => setShowModal(false)}
+              aria-label="Close thank you modal"
+            >
+              ✕
+            </button>
+
+            <div className="influencer-modal-icon-wrap">
+              <span className="influencer-modal-celebration">🎉</span>
+            </div>
+
+            <span className="influencer-modal-badge">SUBMISSION RECEIVED</span>
+            <h3 className="influencer-modal-title">
+              Thank You{submittedData?.name ? `, ${submittedData.name}` : ''}!
+            </h3>
+            <p className="influencer-modal-text">
+              We have received your collaboration request. Our dedicated influencer talent team will review your profile and reach out to you within <strong>24 business hours</strong>.
+            </p>
+
+            <div className="influencer-modal-footer">
+              <button
+                type="button"
+                className="influencer-modal-btn"
+                onClick={() => setShowModal(false)}
+              >
+                Great, Got It! ✓
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

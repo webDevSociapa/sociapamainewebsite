@@ -1,5 +1,52 @@
 export const blogsData = [
   {
+    "title": "462 Million Indians Watch Short-Form Video: What Brands Must Know in 2026",
+    "description": "India is now the world's largest short-form video market. Here's what the data says — and what every brand should be doing differently right now.",
+    "link": "short-form-video-india-2026",
+    "image": "462-Million-Indians-Watch-Short-Form-Video.png",
+    "localImage": "/sociapareact/images/blogs/462-Million-Indians-Watch-Short-Form-Video.png",
+    "isCircular": true
+  },
+  {
+    "title": "India's ₹2.78 Trillion Media Moment: What Every Brand Needs to Know in 2026",
+    "description": "Five cross-industry shifts from India's biggest media research reports that every marketer needs to act on — before their competitors do.",
+    "link": "india-media-market-2026",
+    "image": "Indias-278-Trillion-Media-Moment.jpeg",
+    "localImage": "/sociapareact/images/blogs/Indias-278-Trillion-Media-Moment.jpeg",
+    "isCircular": true
+  },
+  {
+    "title": "806 Million & Counting: Understanding India's Digital Consumer in 2026",
+    "description": "India has 806 million internet users spending 7.3 hours/day online. How Tier 2-4 cities, regional language consumption, and cross-device behaviour define the Indian digital consumer in 2026.",
+    "link": "india-digital-consumer-2026",
+    "image": "3rd.png",
+    "localImage": "/sociapareact/images/blogs/3rd.png",
+    "isCircular": true
+  },
+  {
+    "title": "India's Digital Ad Gold Rush: ₹71,621 Crore Market & What's Driving It in 2026",
+    "description": "India's digital advertising market hit ₹71,621 crore in 2025 at 17% CAGR. Mobile drives 78%, performance marketing dominates, and ₹98,034 crore by 2027 is now consensus. Here's the complete breakdown.",
+    "link": "india-digital-advertising-2026",
+    "image": "4th.png",
+    "localImage": "/sociapareact/images/blogs/4th.png",
+    "isCircular": true
+  },
+  {
+    "title": "Beyond Clicks: How AI, CTV & Retail Media Are Rewriting India's Ad Playbook 2026",
+    "description": "Generative AI adoption surged 204% in Indian marketing. CTV homes hit 40 million. Retail media grew 55.86%. Discover how India's smartest brands are winning with next-gen ad channels.",
+    "link": "ai-ctv-retail-media-india-2026",
+    "image": "5th.png",
+    "localImage": "/sociapareact/images/blogs/5th.png",
+    "isCircular": true
+  },
+  {
+    "title": "ChatGPT Ads in India: What They Are, How to Set Them Up, and Whether Your Brand Should Bother",
+    "description": "OpenAI has officially launched ads in India across Free and Go tiers, with self-serve Ads Manager opening up to businesses. Here is how it works, what it costs, step-by-step setup, and what FMCG brands need to know.",
+    "link": "chatgpt-ads-in-india",
+    "image": "chatgpt-ads-in-india-thumb.png",
+    "localImage": "/sociapareact/images/blog/chatgpt-ads-in-india-thumb.png"
+  },
+  {
     "title": "Social Media Trends India 2026 - The New Rules of Winning",
     "description": "This is your complete field guide to the 10 most important social media shifts shaping India in 2026 - from AI disruption to the offline renaissance, food virality to Gen Z's identity revolution.",
     "link": "new-rules-of-winning-on-social-media-in-india",

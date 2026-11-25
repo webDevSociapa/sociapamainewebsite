@@ -1,0 +1,1157 @@
+================================================================================
+SOCIAPA SERVICE-WISE CLIENT SECTIONS DATA (EXCEL v3 AUDIT & CROSS-CHECK)
+Source File: C:\xampp\htdocs\sociapareact\file\Sociapa_Service_Pages_Client_Sections_v3.xlsx
+Generated on: 23/10/2026, 11:02:16 am
+Total Services: 16
+================================================================================
+
+SUMMARY TABLE OF SERVICES, TESTIMONIALS & WORK CARDS
+--------------------------------------------------------------------------------
+No. | Service Name                  | Page URL Slug                    | Testimonials | Work Cards | Blank Links
+--------------------------------------------------------------------------------
+1   | Brand Identity Design         | /brand-identity-design           | 3            | 6          | 2
+2   | Packaging and Design          | /best-packaging-design-agency-india | 3            | 6          | 3
+3   | Brand Strategy                | /brand-strategy                  | 3            | 6          | 2
+4   | Go To Market                  | /go-to-market                    | 3            | 6          | 3
+5   | Website/App Development       | /best-web-development-agency-india | 3            | 6          | 0
+6   | SEO | AEO | GEO               | /seo-aeo-geo                     | 2            | 2          | 0
+7   | Social Media Marketing        | /best-social-media-marketing-agency-india | 3            | 6          | 1
+8   | Digital Marketing             | /best-digital-marketing-services-india | 3            | 6          | 2
+9   | Ad Experience                 | /pay-per-click-ppc-services-india | 3            | 6          | 1
+10  | Influencer Marketing          | /influencer-marketing-services   | 3            | 6          | 0
+11  | Aggregator Platform Service   | /aggregator-platform-service     | 3            | 6          | 0
+12  | Video Production              | /videos                          | 3            | 6          | 1
+13  | Photography                   | /best-photography-services       | 3            | 6          | 0
+14  | Content Development           | /content-designing               | 2            | 2          | 0
+15  | Creative Designing            | /creative-designing              | 2            | 3          | 0
+16  | Public Relation               | /best-pr-agency-india            | 1            | 1          | 0
+--------------------------------------------------------------------------------
+TOTAL: 16 Services | 43 Testimonials | 80 Work Cards | 15 Blank Links
+
+
+================================================================================
+DETAILED SERVICE-WISE BREAKDOWN (FOR CROSS-CHECKING WITH CODE & PRODUCTION)
+================================================================================
+
+################################################################################
+SERVICE #1: BRAND IDENTITY DESIGN
+Page URL: https://sociapa.com/brand-identity-design
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Vanesa Cosmetics (Premium Fragrance, B2B)
+  Designation : Creative Director, Sociapa
+  Team Quote  : "Fragrance is bought on feeling, even by a distributor. Our job was to make Vanesa feel premium before anyone opened a bottle, so every choice, from the logo to the type to the pack finish, was tested against one question: would a trade buyer want this on their shelf?"
+  Brand Story : Vanesa needed a fragrance identity that felt premium to distributors before a single bottle was opened. The new logo, packaging system and brand language give trade buyers a clear reason to stock it, and the brand now presents itself with the same confidence across catalogues, the website and the shelf.
+  Scope       : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital Also delivered for this brand: Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Habitat (Kitchenware, D2C)
+  Designation : Creative Director, Sociapa
+  Team Quote  : "Habitat came to us as an idea, not a brand. We built it from the name up, and our favourite test was simple: the logo had to look as good engraved on a knife handle as printed on a gift box."
+  Brand Story : Habitat began as a promise of better everyday kitchen tools and needed a brand to carry it. The identity was built from the ground up: a name people remember, a warm visual language, and a logo that works as well on a knife handle as on a gift box.
+  Scope       : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital Also delivered for this brand: Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Wello (Medical Retail Chain)
+  Designation : Creative Director, Sociapa
+  Team Quote  : "In healthcare, trust has to show before anyone speaks. We designed Wello to feel clean, calm and dependable, then carried that feeling across signage, packaging, the outlets and the website so every touchpoint says the same thing."
+  Brand Story : For a medical retail chain, trust has to show before a customer reaches the counter. Wello's identity was designed to feel clean, caring and reliable, and was carried consistently from the logo to signage, packaging and the website.
+  Scope       : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital Also delivered for this brand: Packaging and Design, Brand Strategy, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: La Americana
+  Category    : Bakery · Identity
+  Description : Complete brand revamp for Bonn Group's gourmet bread label, from a new logo to packaging and brand communication.
+  Tags        : Logo · Packaging · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : La Americana – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Influencer Marketing, Aggregator Platform Service, Video Production, Photography
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Apis India
+  Category    : Food · Identity
+  Description : Brand revamp for a leading honey and natural foods company, unifying honey, dates and a wider pantry under one identity.
+  Tags        : Logo · Revamp · Food
+  Link Status : ACTIVE LINK -> https://www.apisindia.com
+  Image Alt   : Apis India – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Habitat
+  Category    : Kitchenware · Identity
+  Description : New brand built from scratch for a premium kitchenware label: name, logo, packaging and brand language.
+  Tags        : Logo · Brand Creation · Lifestyle
+  Link Status : ACTIVE LINK -> https://habitat.co.in
+  Image Alt   : Habitat – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Vanesa Cosmetics
+  Category    : Fragrance · Identity
+  Description : Premium identity for a B2B fragrance brand, carried across packaging, communication and website.
+  Tags        : Logo · Packaging · Fragrance
+  Link Status : ACTIVE LINK -> https://www.vanesacosmetics.com
+  Image Alt   : Vanesa Cosmetics – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Wello
+  Category    : Healthcare · Identity
+  Description : End-to-end identity for a medical retail chain, extended to outlet design and the website.
+  Tags        : Logo · Retail · Healthcare
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Wello – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Dhavani Foundation
+  Category    : NGO & CSR · Identity
+  Description : Brand identity, communication material and website for an NGO and CSR foundation, built to present its work clearly to partners, donors and communities.
+  Tags        : Logo · NGO · CSR
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Dhavani Foundation – Brand Identity Design
+  Services    : Brand discovery and positioning inputs · Logo and wordmark design · Colour palette and typography · Brand guidelines for consistent use · Application across packaging, stationery and digital | Also delivered for this brand: Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #2: PACKAGING AND DESIGN
+Page URL: https://sociapa.com/best-packaging-design-agency-india
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Apis India (Honey & Natural Foods, Pan-India)
+  Designation : Packaging Design Lead, Sociapa
+  Team Quote  : "Apis had honey, dates, jams and more, and they had started to look like different companies. We built one pack architecture for the whole range, so a shopper recognises Apis instantly and still finds the right variant in a second."
+  Brand Story : With honey, dates, jams and more under one name, Apis needed packs that looked like one family without blurring the products. The redesigned range brings a consistent architecture across categories, so shoppers find the brand quickly and the right variant just as fast.
+  Scope       : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination Also delivered for this brand: Brand Identity Design, Brand Strategy, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Ketan's Good Masala (Non-Tobacco Mouth Freshener)
+  Designation : Packaging Design Lead, Sociapa
+  Team Quote  : "The whole story of Ketan's is that it contains no tobacco, so the pack had to say that from across the counter. We kept the promise front and centre and built bold colour around it to win attention in a very crowded display."
+  Brand Story : A non-tobacco mouth freshener has to say so at a glance. Ketan's packaging puts that promise up front with bold colour and clear messaging, built to stand out among crowded counter displays.
+  Scope       : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination Also delivered for this brand: Brand Identity Design, Brand Strategy, Website/App Development, Go To Market, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Unnati (FMCG, B2B & B2C)
+  Designation : Packaging Design Lead, Sociapa
+  Team Quote  : "Unnati sells to distributors and to shoppers, and those are two very different audiences. We designed packs that look reliable when stacked in a warehouse and inviting when picked up off the shelf."
+  Brand Story : Unnati sells to trade buyers and to shoppers, and the packaging had to work for both. The logo and packs were designed to look dependable in bulk orders and inviting on the retail shelf.
+  Scope       : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination Also delivered for this brand: Brand Identity Design
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Apis India
+  Category    : Food · Packaging
+  Description : A consistent pack architecture across honey, dates, jams and more, so every product reads as Apis.
+  Tags        : Packaging · Range · Food
+  Link Status : ACTIVE LINK -> https://www.apisindia.com
+  Image Alt   : Apis India – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design, Brand Strategy, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 2] Project: La Americana
+  Category    : Bakery · Packaging
+  Description : Premium packaging for gourmet breads that signals craft on a crowded bakery shelf.
+  Tags        : Packaging · Premium · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : La Americana – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Influencer Marketing, Aggregator Platform Service, Video Production, Photography
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Nutrasip
+  Category    : Beverage · Packaging
+  Description : Fresh, calm packaging for a green tea range in Lemon & Honey and Detox Kahwa variants.
+  Tags        : Packaging · Tea · Wellness
+  Link Status : ACTIVE LINK -> https://www.apisindia.com/en/our-brand/nutrasip
+  Image Alt   : Nutrasip – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Chancellor
+  Category    : Edible Oil · Packaging
+  Description : Shelf-ready packaging for a consumer edible oil brand, built to read clearly at a glance.
+  Tags        : Packaging · Shelf · Edible Oil
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Chancellor – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design, Brand Strategy, Website/App Development, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Ketan's Good Masala
+  Category    : Mouth Freshener · Packaging
+  Description : Bold packaging that puts the non-tobacco promise up front at the counter.
+  Tags        : Packaging · Counter · FMCG
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Ketan's Good Masala – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design, Brand Strategy, Website/App Development, Go To Market, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Unnati
+  Category    : FMCG · Packaging
+  Description : Logo and packs designed to work for both trade buyers and retail shoppers.
+  Tags        : Packaging · B2B · B2C
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Unnati – Packaging and Design
+  Services    : Pack architecture across the range · Structural and graphic design · Label and regulatory copy layout · Mock-ups and 3D renders · Print-ready artwork and printer coordination | Also delivered for this brand: Brand Identity Design
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #3: BRAND STRATEGY
+Page URL: https://sociapa.com/brand-strategy
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Kapil Anand Agro (Food Manufacturing, B2B)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "Kapil Anand Agro already made products for well-known food brands. What it lacked was its own story. We defined how it should speak to B2B buyers and what it stands for, and that strategy now shapes everything from the identity to the website."
+  Brand Story : As a manufacturer trusted by well-known food brands, Kapil Anand Agro had the capability but not the story. The brand strategy defined how it speaks to B2B buyers, what it stands for and how it is positioned, and that thinking now runs through its identity, website and communication.
+  Scope       : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development, Go To Market, Public Relation
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Patanjali Nutrela Nutrition (Nutrition & OTC, Patanjali Foods)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "Nutrela Nutrition speaks to millennials and young parents, an audience quite different from Patanjali's traditional one. We gave the range its own positioning and voice, modern and credible, and carried it into the website, social media and marketplaces."
+  Brand Story : Nutrela Nutrition is a range built for millennials and young parents, very different from Patanjali's traditional portfolio. The strategy gave it a distinct positioning and tone of voice, translated into its website, social media and marketplace presence.
+  Scope       : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan Also delivered for this brand: Website/App Development, Social Media Marketing, Aggregator Platform Service
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Vanesa Cosmetics (Premium Fragrance, B2B)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "Vanesa's growth lay with trade partners, not only retail. We mapped who those buyers are, what they care about and how to reach them, and built a B2B strategy that gives a premium fragrance brand a focused route to market."
+  Brand Story : Vanesa wanted to grow through trade partners rather than retail alone. A B2B strategy defined the buyer, the message and the channels, giving the premium fragrance brand a focused route to distributors and private-label partners.
+  Scope       : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Kapil Anand Agro
+  Category    : B2B · Strategy
+  Description : Positioning and brand communication for a private-label food manufacturer stepping out as a brand.
+  Tags        : Positioning · B2B · Food
+  Link Status : ACTIVE LINK -> https://kapilanandagro.com
+  Image Alt   : Kapil Anand Agro – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development, Go To Market, Public Relation
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Patanjali Nutrela Nutrition
+  Category    : Nutrition · Strategy
+  Description : Brand strategy and communication for Patanjali Foods' nutrition range for young India.
+  Tags        : Strategy · Communication · Nutrition
+  Link Status : ACTIVE LINK -> https://www.nutrelanutrition.com
+  Image Alt   : Patanjali Nutrela Nutrition – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Website/App Development, Social Media Marketing, Aggregator Platform Service
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Vanesa Cosmetics
+  Category    : Fragrance · Strategy
+  Description : B2B growth strategy for a premium fragrance brand selling through trade partners.
+  Tags        : B2B · Strategy · Fragrance
+  Link Status : ACTIVE LINK -> https://www.vanesacosmetics.com
+  Image Alt   : Vanesa Cosmetics – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Apis India
+  Category    : Food · Strategy
+  Description : Brand communication for a widening portfolio, keeping one voice across honey, dates and more.
+  Tags        : Communication · Portfolio · Food
+  Link Status : ACTIVE LINK -> https://www.apisindia.com
+  Image Alt   : Apis India – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Brand Identity Design, Packaging and Design, Go To Market, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Ketan's Good Masala
+  Category    : FMCG · Strategy
+  Description : Brand positioning built around a clear non-tobacco promise.
+  Tags        : Positioning · Launch · FMCG
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Ketan's Good Masala – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development, Go To Market, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Chancellor
+  Category    : Edible Oil · Strategy
+  Description : Brand communication for a new name in a category driven by habit.
+  Tags        : Communication · B2C · Edible Oil
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Chancellor – Brand Strategy
+  Services    : Market and competitor study · Audience and persona definition · Positioning and brand promise · Tone of voice and messaging framework · Communication roll-out plan | Also delivered for this brand: Brand Identity Design, Packaging and Design, Website/App Development, Social Media Marketing
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #4: GO TO MARKET
+Page URL: https://sociapa.com/go-to-market
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Himo Foods (FMCG, B2C)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "With Himo Foods we did something we always recommend: plan the market before designing the brand. We set the audience, channels and launch sequence first, then built the identity, packaging and website to deliver that plan."
+  Brand Story : Himo Foods started with the plan, not the logo. The go-to-market strategy set out the audience, channels and launch sequence first, and the brand identity, packaging and website were then built to deliver it.
+  Scope       : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Wello (Medical Retail Chain)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "Launching a medical retail chain means thinking about the store, the street and the screen at once. For Wello we brought outlet design, brand, website and the launch roadmap together, so every new outlet opens with a clear plan behind it."
+  Brand Story : Opening a medical retail chain needs more than a good-looking store. Wello's launch brought together brand, outlet design, website and a go-to-market roadmap, so every new outlet opens with a clear plan.
+  Scope       : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Mint ChocOn (Confectionery, Mahak Group)
+  Designation : Head of Brand Strategy, Sociapa
+  Team Quote  : "Mint outside, chocolate inside, and a line built for repeating: 'Mint Nahi Hint Hai'. We planned the launch across online, OTT and social so the idea reached young audiences wherever they were watching."
+  Brand Story : Mint on the outside, chocolate inside, and a line nobody forgets: 'Mint Nahi Hint Hai'. The launch plan took the new candy across online, OTT and social media, turning a product idea into a conversation.
+  Scope       : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review Also delivered for this brand: Digital Marketing, Social Media Marketing
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Himo Foods
+  Category    : FMCG · Launch
+  Description : Go-to-market plan first, followed by identity, packaging and website built to deliver it.
+  Tags        : GTM · Launch · FMCG
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Himo Foods – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Wello
+  Category    : Healthcare · Launch
+  Description : Launch roadmap for a medical retail chain, from brand and outlet design to market entry.
+  Tags        : GTM · Retail · Healthcare
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Wello – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Mint ChocOn
+  Category    : Confectionery · Launch
+  Description : Product launch across online, OTT and social media around 'Mint Nahi Hint Hai'.
+  Tags        : Launch · OTT · Social
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Mint ChocOn – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Digital Marketing, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Apis India
+  Category    : Food · GTM
+  Description : Go-to-market roadmap supporting a refreshed brand and a growing product range.
+  Tags        : GTM · Revamp · Food
+  Link Status : ACTIVE LINK -> https://www.apisindia.com
+  Image Alt   : Apis India – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+  [Card 5] Project: La Americana
+  Category    : Bakery · GTM
+  Description : Go-to-market strategy for a gourmet bread range entering premium retail.
+  Tags        : GTM · Premium · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : La Americana – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Social Media Marketing, Digital Marketing, Ad Experience, Influencer Marketing, Aggregator Platform Service, Video Production, Photography
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Kapil Anand Agro
+  Category    : B2B · GTM
+  Description : Market plan for a B2B manufacturer, backed by a new brand and PR.
+  Tags        : GTM · B2B · PR
+  Link Status : ACTIVE LINK -> https://kapilanandagro.com
+  Image Alt   : Kapil Anand Agro – Go To Market
+  Services    : Audience and channel selection · Distribution and pricing inputs · Launch sequence and calendar · Trade and consumer communication · Post-launch review | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development, Public Relation
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #5: WEBSITE/APP DEVELOPMENT
+Page URL: https://sociapa.com/best-web-development-agency-india
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Tennishub.in (Sports Equipment, D2C)
+  Designation : Technology Lead, Sociapa
+  Team Quote  : "For Tennishub.in the website is the shop, so every second of friction costs a sale. We rebuilt the store for speed and simple navigation, and we manage it day to day so players find the right racquet, string or shoe quickly."
+  Brand Story : For an online tennis store, the website is the shop. Tennishub.in got a faster, easier store, with day-to-day e-commerce management behind it so players find the right racquet, string or shoe without friction.
+  Scope       : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support Also delivered for this brand: Brand Identity Design, Aggregator Platform Service, SEO | AEO | GEO, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Habitat (Kitchenware, D2C)
+  Designation : Technology Lead, Sociapa
+  Team Quote  : "Habitat's site had to work as a showroom and a checkout at once. We designed it mobile-first, with product pages that show cookware and knives properly and a buying journey that suits gifting as well as everyday orders."
+  Brand Story : Habitat sells direct to home cooks, so the website had to be part showroom, part checkout. The store presents cookware, knives and gifting sets clearly and makes ordering simple on mobile.
+  Scope       : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Patanjali Nutrela Nutrition (Nutrition & OTC, Patanjali Foods)
+  Designation : Technology Lead, Sociapa
+  Team Quote  : "Nutrela Nutrition needed a home online that felt separate from the parent brand while carrying its trust. We built a site that explains protein, superfoods and supplements clearly and makes it easy to move from reading to buying."
+  Brand Story : A new nutrition range needed a home of its own online. The Nutrela Nutrition website presents protein, superfoods and supplements for young India, with product pages built to inform and convert.
+  Scope       : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support Also delivered for this brand: Brand Strategy, Social Media Marketing, Aggregator Platform Service
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Tennishub.in
+  Category    : Sports · E-commerce
+  Description : Website development and ongoing e-commerce management for an online tennis store.
+  Tags        : Website · E-commerce · D2C
+  Link Status : ACTIVE LINK -> https://www.tennishub.in
+  Image Alt   : Tennishub.in – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Identity Design, Aggregator Platform Service, SEO | AEO | GEO, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Habitat
+  Category    : Kitchenware · E-commerce
+  Description : Online store for a premium kitchenware brand, designed for mobile ordering and gifting.
+  Tags        : Website · D2C · Lifestyle
+  Link Status : ACTIVE LINK -> https://habitat.co.in
+  Image Alt   : Habitat – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Patanjali Nutrela Nutrition
+  Category    : Nutrition · Website
+  Description : A dedicated website for Patanjali Foods' nutrition range.
+  Tags        : Website · Nutrition · Brand
+  Link Status : ACTIVE LINK -> https://www.nutrelanutrition.com
+  Image Alt   : Patanjali Nutrela Nutrition – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Strategy, Social Media Marketing, Aggregator Platform Service
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Apis India
+  Category    : Food · Website
+  Description : New website presenting a wide natural-foods portfolio under one brand.
+  Tags        : Website · Corporate · Food
+  Link Status : ACTIVE LINK -> https://www.apisindia.com
+  Image Alt   : Apis India – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Vanesa Cosmetics
+  Category    : Fragrance · Website
+  Description : Website built to present a premium fragrance range to trade partners.
+  Tags        : Website · B2B · Fragrance
+  Link Status : ACTIVE LINK -> https://www.vanesacosmetics.com
+  Image Alt   : Vanesa Cosmetics – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Kapil Anand Agro
+  Category    : B2B · Website
+  Description : Corporate website showcasing manufacturing capability to B2B buyers.
+  Tags        : Website · B2B · Manufacturing
+  Link Status : ACTIVE LINK -> https://kapilanandagro.com
+  Image Alt   : Kapil Anand Agro – Website/App Development
+  Services    : Sitemap and UX planning · UI design for mobile and desktop · Development and CMS · E-commerce and payments where needed · Speed, security and launch support | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market, Public Relation
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #6: SEO | AEO | GEO
+Page URL: https://sociapa.com/seo-aeo-geo
+Total Testimonials (From Our Team): 2
+Total Work Cards (Our Work Portfolio): 2
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Tennishub.in (Sports Equipment, D2C)
+  Designation : Search Lead, Sociapa
+  Team Quote  : "People now look for gear on Google, on Instagram and by asking AI assistants. Our search work for Tennishub.in covers all three, so the store shows up for product searches and for the buying advice players ask for before they spend."
+  Brand Story : Players search for gear on Google, on social and now in AI assistants. Tennishub.in's SEO, AEO and GEO work keeps the store visible wherever that search happens, from product queries to buying advice.
+  Scope       : Technical SEO audit and fixes · Keyword and search-intent research · On-page and content optimisation · AEO for answer boxes and voice search · GEO for visibility in AI assistants Also delivered for this brand: Brand Identity Design, Website/App Development, Aggregator Platform Service, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Gyan Heritage School (School, Lucknow)
+  Designation : Search Lead, Sociapa
+  Team Quote  : "Parents choosing a school almost always start with a search. We built Gyan Heritage School's visibility around the questions families ask, so a parent looking for a value-based school in Lucknow finds it, understands it and gets in touch."
+  Brand Story : Parents researching schools start with a search. Gyan Heritage School's search visibility was built so families looking for a value-based school in Lucknow find it, understand it and enquire.
+  Scope       : Technical SEO audit and fixes · Keyword and search-intent research · On-page and content optimisation · AEO for answer boxes and voice search · GEO for visibility in AI assistants Also delivered for this brand: Social Media Marketing, Brand Strategy, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Tennishub.in
+  Category    : Sports · Search
+  Description : SEO, SMO, AEO and GEO for a D2C tennis store, covering search engines, social and AI assistants.
+  Tags        : SEO · AEO · GEO
+  Link Status : ACTIVE LINK -> https://www.tennishub.in
+  Image Alt   : Tennishub.in – SEO | AEO | GEO
+  Services    : Technical SEO audit and fixes · Keyword and search-intent research · On-page and content optimisation · AEO for answer boxes and voice search · GEO for visibility in AI assistants | Also delivered for this brand: Brand Identity Design, Website/App Development, Aggregator Platform Service, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Gyan Heritage School
+  Category    : Education · Search
+  Description : Search visibility for a new school in Lucknow, supporting admission enquiries.
+  Tags        : SEO · Education · Local
+  Link Status : ACTIVE LINK -> https://gyanheritageschool.org
+  Image Alt   : Gyan Heritage School – SEO | AEO | GEO
+  Services    : Technical SEO audit and fixes · Keyword and search-intent research · On-page and content optimisation · AEO for answer boxes and voice search · GEO for visibility in AI assistants | Also delivered for this brand: Social Media Marketing, Brand Strategy, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #7: SOCIAL MEDIA MARKETING
+Page URL: https://sociapa.com/best-social-media-marketing-agency-india
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Gyan Dairy (Dairy, Uttar Pradesh)
+  Designation : Social Media Lead, Sociapa
+  Team Quote  : "Gyan delivers milk every morning, and its social media works on the same rhythm. We keep the feed full of recipes, festive moments, creator content and short videos, so a home-grown UP dairy stays part of its customers' daily routine."
+  Brand Story : Gyan's social media runs every day, like its milk deliveries. Recipe content, festive moments, creator collaborations and short videos keep Uttar Pradesh's home-grown dairy part of its customers' daily routine.
+  Scope       : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Pansari Group (FMCG & Edible Oils)
+  Designation : Social Media Lead, Sociapa
+  Team Quote  : "Pansari's story runs from a 1940s grocery shop to kitchens in more than 40 countries, and it deserved to be told well. We bring that legacy to social with AI and CGI films and a steady calendar, and use the same channels to generate business leads."
+  Brand Story : Pansari's story runs from a 1940s grocery shop to kitchens in more than 40 countries. Its social media brings that legacy to life with AI and CGI films, an active content calendar and campaigns that also bring in business leads.
+  Scope       : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting Also delivered for this brand: Video Production, Ad Experience, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Tupperware (Kitchen & Lifestyle, India)
+  Designation : Social Media Lead, Sociapa
+  Team Quote  : "Everyone knows Tupperware; the job was to show a new generation what it does now. As the India range grew, we introduced it through recipe content, creator campaigns and AI-led videos built for how people scroll today."
+  Brand Story : As Tupperware widened its range in India, social media introduced it to a new generation of home cooks. Recipe content, creator campaigns and AI-led videos keep a household name fresh and relevant.
+  Scope       : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Gyan Dairy
+  Category    : Dairy · Social
+  Description : Always-on social media with recipes, festive content, creators and video for a leading UP dairy.
+  Tags        : Instagram · Facebook · YouTube
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Pansari Group
+  Category    : FMCG · Social
+  Description : Social media with AI and CGI films and lead-generation campaigns for a legacy FMCG group.
+  Tags        : Social · AI Video · Leads
+  Link Status : ACTIVE LINK -> https://pansari.co.in
+  Image Alt   : Pansari Group – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Video Production, Ad Experience, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Tupperware
+  Category    : Lifestyle · Social
+  Description : Social content and creator campaigns introducing Tupperware's wider India range.
+  Tags        : Social · Creators · Lifestyle
+  Link Status : ACTIVE LINK -> https://www.tupperwareindia.com
+  Image Alt   : Tupperware – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Madhusudan
+  Category    : Dairy · Social
+  Description : Social media for a dairy brand trusted since 1991, reaching a younger audience.
+  Tags        : Social · Recipes · Dairy
+  Link Status : ACTIVE LINK -> https://madhusudanworld.com
+  Image Alt   : Madhusudan – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Bonn Group
+  Category    : Bakery · Social
+  Description : One consistent social voice across a large bakery portfolio.
+  Tags        : Social · Video · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Bonn Group – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Chancellor
+  Category    : Edible Oil · Social
+  Description : Ongoing social media management for a consumer edible oil brand.
+  Tags        : Social · B2C · Edible Oil
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Chancellor – Social Media Marketing
+  Services    : Platform strategy and monthly content calendar · Posts, reels and stories · Community management · Festive and topical content · Monthly performance reporting | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #8: DIGITAL MARKETING
+Page URL: https://sociapa.com/best-digital-marketing-services-india
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Pansari Epicure (Food Service, HoReCa)
+  Designation : Head of Digital, Sociapa
+  Team Quote  : "Chefs and caterers don't buy the way households do. For Pansari Epicure we built a digital programme around professional kitchens: recipe-led content, chef collaborations, targeted paid media and lead generation for HoReCa buyers."
+  Brand Story : Chefs and caterers buy differently from households. Pansari Epicure's digital marketing speaks to professional kitchens through recipe-led content, chef collaborations, paid campaigns and lead generation designed for HoReCa buyers.
+  Scope       : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Mint ChocOn (Confectionery, Mahak Group)
+  Designation : Head of Digital, Sociapa
+  Team Quote  : "A new candy has days, not months, to be noticed. We ran Mint ChocOn's launch across online, OTT and social around one memorable idea, so the same message met the audience again and again until it stuck."
+  Brand Story : A new candy has to be discovered fast. Mint ChocOn's digital launch combined online, OTT and social campaigns around one memorable idea, so the product reached its young audience quickly and repeatedly.
+  Scope       : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation Also delivered for this brand: Go To Market, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: House of Veda (Organic Foods)
+  Designation : Head of Digital, Sociapa
+  Team Quote  : "Organic food is bought on trust, and trust is built slowly. Our digital work for House of Veda combines honest content, creator advocacy and paid reach, with the brand showing up consistently wherever its customers shop."
+  Brand Story : Organic food sells on trust. House of Veda's digital marketing builds that trust with honest content, paid reach, influencer advocacy and a consistent presence wherever its customers shop.
+  Scope       : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Pansari Epicure
+  Category    : HoReCa · Digital
+  Description : B2B digital marketing and lead generation for a food-service vertical.
+  Tags        : Leads · B2B · HoReCa
+  Link Status : ACTIVE LINK -> https://pansari.co.in/pansari-epicure/
+  Image Alt   : Pansari Epicure – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Mint ChocOn
+  Category    : Confectionery · Digital
+  Description : Online, OTT and social campaigns for a new candy launch.
+  Tags        : OTT · Online · Launch
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Mint ChocOn – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Go To Market, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: House of Veda
+  Category    : Organic · Digital
+  Description : Digital marketing that builds trust for an organic food brand.
+  Tags        : Content · Paid · Organic
+  Link Status : ACTIVE LINK -> https://houseofveda.com
+  Image Alt   : House of Veda – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Gyan Dairy
+  Category    : Dairy · Digital
+  Description : Integrated digital marketing with creative, content and online promotion.
+  Tags        : Integrated · Content · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Mahak Group
+  Category    : Confectionery · Digital
+  Description : AI and CGI creative, paid promotion and lead generation for a confectionery group.
+  Tags        : CGI · Paid · Leads
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Mahak Group – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Social Media Marketing, Video Production, Ad Experience
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Americana
+  Category    : Biscuits · Digital
+  Description : Digital brand building for a premium biscuit range.
+  Tags        : Social · Paid · Biscuits
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Americana – Digital Marketing
+  Services    : Integrated digital plan across channels · Paid media planning and buying · Content and creative production · Lead-generation funnels · Analytics and optimisation | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #9: AD EXPERIENCE
+Page URL: https://sociapa.com/pay-per-click-ppc-services-india
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Gyan Heritage School (School, Lucknow)
+  Designation : Performance Marketing Lead, Sociapa
+  Team Quote  : "School admissions run on a tight calendar, so every rupee of ad spend has a window. We planned Gyan Heritage School's campaigns around the admission season, reaching Lucknow parents at the moments they were deciding."
+  Brand Story : A new school's admission season is short and competitive. Paid campaigns were planned around it, reaching parents in Lucknow at the right moments and guiding them to enquire.
+  Scope       : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting Also delivered for this brand: Social Media Marketing, Brand Strategy, SEO | AEO | GEO, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Mahak Group (Confectionery & FMCG)
+  Designation : Performance Marketing Lead, Sociapa
+  Team Quote  : "Confectionery is an impulse buy, and the ads had to work the same way. For Mahak Group we pair short, thumb-stopping AI and CGI creatives with paid promotion and lead-generation campaigns."
+  Brand Story : The group's confectionery brands are bought on impulse, and its ads are built the same way: short, thumb-stopping AI and CGI creatives backed by paid promotion and lead-generation campaigns.
+  Scope       : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting Also delivered for this brand: Social Media Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Madhusudan (Dairy, Since 1991)
+  Designation : Performance Marketing Lead, Sociapa
+  Team Quote  : "Madhusudan has been trusted since 1991; our paid media is about making sure younger shoppers know it too. We run campaigns for its ghee, milk and paneer across social and quick-commerce platforms, close to the moment of purchase."
+  Brand Story : Madhusudan's paid media takes a dairy name trusted since 1991 to a new generation of shoppers, with campaigns that support its ghee, milk and paneer across social and quick-commerce platforms.
+  Scope       : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Gyan Heritage School
+  Category    : Education · Paid
+  Description : Admission-season paid campaigns for a new school in Lucknow.
+  Tags        : Meta Ads · Google Ads · Education
+  Link Status : ACTIVE LINK -> https://gyanheritageschool.org
+  Image Alt   : Gyan Heritage School – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Brand Strategy, SEO | AEO | GEO, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Mahak Group
+  Category    : Confectionery · Paid
+  Description : Paid promotion and lead generation with AI and CGI creatives.
+  Tags        : Paid · CGI · Leads
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Mahak Group – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Madhusudan
+  Category    : Dairy · Paid
+  Description : Paid media supporting ghee, milk and paneer across social and quick commerce.
+  Tags        : Paid · Quick Commerce · Dairy
+  Link Status : ACTIVE LINK -> https://madhusudanworld.com
+  Image Alt   : Madhusudan – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Pansari Group
+  Category    : FMCG · Paid
+  Description : Paid promotion and lead-generation campaigns for a legacy FMCG group.
+  Tags        : Paid · Leads · FMCG
+  Link Status : ACTIVE LINK -> https://pansari.co.in
+  Image Alt   : Pansari Group – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Gyan Dairy
+  Category    : Dairy · Paid
+  Description : Paid campaigns supporting an always-on dairy brand.
+  Tags        : Paid · Social · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Tupperware
+  Category    : Lifestyle · Paid
+  Description : Paid campaigns supporting Tupperware's range expansion in India.
+  Tags        : Paid · Social · Lifestyle
+  Link Status : ACTIVE LINK -> https://www.tupperwareindia.com
+  Image Alt   : Tupperware – Ad Experience
+  Services    : Campaign structure on Meta and Google · Audience targeting and retargeting · Ad creatives and copy · Budget pacing and bid management · Conversion tracking and reporting | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Aggregator Platform Service, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #10: INFLUENCER MARKETING
+Page URL: https://sociapa.com/influencer-marketing-services
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: House of Veda (Organic Foods)
+  Designation : Influencer Marketing Lead, Sociapa
+  Team Quote  : "For an organic brand, a recommendation from someone you follow beats any ad. We matched House of Veda with creators who cook with its staples for real, so every review builds credibility rather than just reach."
+  Brand Story : For an organic brand, a recommendation from someone you follow carries more weight than an ad. House of Veda's creator programme puts its staples in real kitchens, building credibility one honest review at a time.
+  Scope       : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: La Americana (Gourmet Bakery, Bonn Group)
+  Designation : Influencer Marketing Lead, Sociapa
+  Team Quote  : "Gourmet bread sells when you can almost smell it. We work with food creators who style, slice and serve La Americana's focaccia and speciality loaves, giving the range the appetising presence it deserves online."
+  Brand Story : Gourmet bread has to be seen to be craved. La Americana works with food creators who style, slice and serve its focaccia and speciality loaves, giving the range an appetising presence online.
+  Scope       : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Aggregator Platform Service, Video Production, Photography
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Madhusudan (Dairy, Since 1991)
+  Designation : Influencer Marketing Lead, Sociapa
+  Team Quote  : "Madhusudan's products belong in everyday cooking, so that is where our creators put them, from festive sweets to weekday meals. It is a natural way to reach younger households through voices they already trust."
+  Brand Story : Madhusudan's influencer partnerships bring its dairy products into everyday recipes, from festive sweets to daily meals, reaching younger households through voices they already trust.
+  Scope       : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: House of Veda
+  Category    : Organic · Creators
+  Description : Creator programme putting organic staples into real kitchens.
+  Tags        : Creators · Reviews · Organic
+  Link Status : ACTIVE LINK -> https://houseofveda.com
+  Image Alt   : House of Veda – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: La Americana
+  Category    : Bakery · Creators
+  Description : Food creators styling and serving gourmet breads.
+  Tags        : Creators · Food · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : La Americana – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Aggregator Platform Service, Video Production, Photography
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Madhusudan
+  Category    : Dairy · Creators
+  Description : Influencer partnerships bringing dairy into everyday recipes.
+  Tags        : Creators · Recipes · Dairy
+  Link Status : ACTIVE LINK -> https://madhusudanworld.com
+  Image Alt   : Madhusudan – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Gyan Dairy
+  Category    : Dairy · Creators
+  Description : Creator collaborations for a home-grown UP dairy.
+  Tags        : Creators · Regional · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Tupperware
+  Category    : Lifestyle · Creators
+  Description : Creator campaigns introducing Tupperware to a new generation of cooks.
+  Tags        : Creators · Kitchen · Lifestyle
+  Link Status : ACTIVE LINK -> https://www.tupperwareindia.com
+  Image Alt   : Tupperware – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Pansari Epicure
+  Category    : HoReCa · Creators
+  Description : Chef and influencer collaborations for a food-service brand.
+  Tags        : Chefs · B2B · HoReCa
+  Link Status : ACTIVE LINK -> https://pansari.co.in/pansari-epicure/
+  Image Alt   : Pansari Epicure – Influencer Marketing
+  Services    : Creator discovery and vetting · Briefs and content guidelines · Barter and paid collaborations · Content approvals and posting schedule · Reach and engagement tracking | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Photography, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #11: AGGREGATOR PLATFORM SERVICE
+Page URL: https://sociapa.com/aggregator-platform-service
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Gyan Dairy (Dairy, Uttar Pradesh)
+  Designation : E-commerce Lead, Sociapa
+  Team Quote  : "On a quick-commerce app the listing is the shelf, and milk is bought in seconds. We manage Gyan's listings, images and on-platform promotions so its products are easy to find and look their best at the point of purchase."
+  Brand Story : When customers order milk and paneer on quick-commerce apps, the listing is the shelf. Gyan's aggregator presence is managed so products are easy to find, well presented and supported by on-platform promotion.
+  Scope       : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Patanjali Nutrela Nutrition (Nutrition & OTC, Patanjali Foods)
+  Designation : E-commerce Lead, Sociapa
+  Team Quote  : "Supplement buyers read before they buy. We built Nutrela Nutrition's marketplace listings to answer their questions up front, and support them with promotions that bring the range in front of the right shoppers."
+  Brand Story : Nutrela Nutrition's protein and supplement range is listed and promoted across e-commerce platforms, with product content built to answer buyers' questions before they reach the cart.
+  Scope       : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring Also delivered for this brand: Website/App Development, Brand Strategy, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Bonn Group (Bakery & FMCG, Pan-India)
+  Designation : E-commerce Lead, Sociapa
+  Team Quote  : "Bonn has a very wide range, and on aggregator platforms that can easily become clutter. We keep its breads and bakery products consistent, well presented and visible across quick commerce and online grocery."
+  Brand Story : Bonn's breads and bakery range reach breakfast tables through quick-commerce and online grocery. Listings, content and promotions are managed to keep a large portfolio visible and consistent across platforms.
+  Scope       : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Gyan Dairy
+  Category    : Dairy · Quick Commerce
+  Description : Quick-commerce listings and on-platform promotion for daily dairy.
+  Tags        : Quick Commerce · Listings · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Patanjali Nutrela Nutrition
+  Category    : Nutrition · E-commerce
+  Description : E-commerce listing and promotion for a nutrition range.
+  Tags        : Marketplaces · Listings · Nutrition
+  Link Status : ACTIVE LINK -> https://www.nutrelanutrition.com
+  Image Alt   : Patanjali Nutrela Nutrition – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Website/App Development, Brand Strategy, Social Media Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Bonn Group
+  Category    : Bakery · Quick Commerce
+  Description : Aggregator presence for a large bakery portfolio.
+  Tags        : Quick Commerce · Bakery · FMCG
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Bonn Group – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Americana
+  Category    : Biscuits · Quick Commerce
+  Description : Marketplace visibility for a premium biscuit range.
+  Tags        : Marketplaces · Biscuits · FMCG
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Americana – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Madhusudan
+  Category    : Dairy · Quick Commerce
+  Description : Aggregator listings for ghee, milk and paneer.
+  Tags        : Quick Commerce · Dairy · Listings
+  Link Status : ACTIVE LINK -> https://madhusudanworld.com
+  Image Alt   : Madhusudan – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Influencer Marketing, Photography, Video Production
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Tennishub.in
+  Category    : Sports · E-commerce
+  Description : Ongoing e-commerce management for an online tennis store.
+  Tags        : E-commerce · D2C · Sports
+  Link Status : ACTIVE LINK -> https://www.tennishub.in
+  Image Alt   : Tennishub.in – Aggregator Platform Service
+  Services    : Listings on quick-commerce apps and marketplaces · Product images and content · Catalogue and pricing hygiene · On-platform ads and promotions · Ratings and reviews monitoring | Also delivered for this brand: Brand Identity Design, Website/App Development, SEO | AEO | GEO, Social Media Marketing
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #12: VIDEO PRODUCTION
+Page URL: https://sociapa.com/videos
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Pansari Group (FMCG & Edible Oils)
+  Designation : Head of Video Production, Sociapa
+  Team Quote  : "Pansari has a legacy story, and we chose to tell it in a modern way. Our AI and CGI films take viewers from the origins of its oils to the kitchens they reach, built for social and paid campaigns alike."
+  Brand Story : Pansari's films use AI and CGI to tell a legacy story in a modern way, from the origins of its oils to the kitchens they reach, created for social media and paid campaigns.
+  Scope       : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats Also delivered for this brand: Social Media Marketing, Ad Experience, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Cash Gold Elaichi (Mouth Freshener)
+  Designation : Head of Video Production, Sociapa
+  Team Quote  : "We moved Cash Gold from the counter to the screen. A steady stream of videos and digital assets now carries the brand across YouTube and social, designed for repeat viewing and quick recall."
+  Brand Story : Cash Gold moved from the counter to the screen. A steady stream of video and digital assets carries the brand across YouTube and social media, built for repeat viewing and recall.
+  Scope       : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats Also delivered for this brand: Creative Designing, Social Media Marketing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Gyandhara (Cattle Feed, North India)
+  Designation : Head of Video Production, Sociapa
+  Team Quote  : "Explaining cattle nutrition to dairy farmers works best when they can see it. Our films for Gyandhara turn feed science into short, simple visual stories that farmers recognise from their own sheds."
+  Brand Story : Explaining cattle nutrition to dairy farmers works best on video. Gyandhara's films turn feed science into simple, visual stories that farmers can relate to.
+  Scope       : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Pansari Group
+  Category    : FMCG · AI & CGI
+  Description : AI and CGI films telling a legacy FMCG story.
+  Tags        : AI Video · CGI · FMCG
+  Link Status : ACTIVE LINK -> https://pansari.co.in
+  Image Alt   : Pansari Group – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Social Media Marketing, Ad Experience, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Cash Gold Elaichi
+  Category    : FMCG · YouTube
+  Description : Video and digital assets for YouTube and social campaigns.
+  Tags        : YouTube · Campaigns · FMCG
+  Link Status : ACTIVE LINK -> https://psfoods.in/cash-gold/
+  Image Alt   : Cash Gold Elaichi – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Creative Designing, Social Media Marketing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Gyandhara
+  Category    : Agri · Video
+  Description : Farmer-focused films explaining cattle nutrition.
+  Tags        : Video · Farmers · Agri
+  Link Status : ACTIVE LINK -> https://gyandhara.com
+  Image Alt   : Gyandhara – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Mahak Group
+  Category    : Confectionery · CGI
+  Description : CGI and AI videos for confectionery brands.
+  Tags        : CGI · AI Video · Confectionery
+  Link Status : BLANK LINK (Excel instructs: hide "View Project" button)
+  Image Alt   : Mahak Group – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Social Media Marketing, Ad Experience, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Gyan Dairy
+  Category    : Dairy · Video
+  Description : Video production and AI films for an always-on dairy brand.
+  Tags        : Video · AI · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Content Development, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Bonn Group
+  Category    : Bakery · Video
+  Description : Video content across a large bakery portfolio.
+  Tags        : Video · YouTube · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Bonn Group – Video Production
+  Services    : Concept and scripting · Shoot planning and production · AI and CGI video creation · Editing for reels, YouTube and ads · Platform-ready formats | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #13: PHOTOGRAPHY
+Page URL: https://sociapa.com/best-photography-services
+Total Testimonials (From Our Team): 3
+Total Work Cards (Our Work Portfolio): 6
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: La Americana (Gourmet Bakery, Bonn Group)
+  Designation : Photography Lead, Sociapa
+  Team Quote  : "A gourmet loaf deserves to be shot like a dish, not a product. Our recipe shoots for La Americana style the breads the way they should be served, and give the brand an image library for social, ads and packs."
+  Brand Story : La Americana's recipe shoots style its gourmet breads the way they deserve to be served, giving the brand a library of appetising images for social media, ads and packaging.
+  Scope       : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Influencer Marketing, Aggregator Platform Service, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Pansari Epicure (Food Service, HoReCa)
+  Designation : Photography Lead, Sociapa
+  Team Quote  : "Chefs want to see an ingredient at work, not on a white background. We shot Pansari Epicure's range in professional kitchens and finished plates, so buyers can picture it on their own menus."
+  Brand Story : Pansari Epicure's food photography shows its ingredients in professional kitchens and finished dishes, helping chefs and caterers picture the product in their own menus.
+  Scope       : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Brand: Tupperware (Kitchen & Lifestyle, India)
+  Designation : Photography Lead, Sociapa
+  Team Quote  : "Tupperware lives in real kitchens, so that is where we shoot it. Our recipe and product photography shows storage, cookware and bottles in everyday use, giving each launch fresh imagery for social, ads and marketplaces."
+  Brand Story : Tupperware's recipe and product shoots show its storage, cookware and bottles in real kitchens, giving every launch fresh imagery for social, ads and marketplaces.
+  Scope       : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: La Americana
+  Category    : Bakery · Food Photography
+  Description : Recipe shoots styling gourmet breads for social, ads and packs.
+  Tags        : Recipe Shoot · Food · Bakery
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : La Americana – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Go To Market, Social Media Marketing, Digital Marketing, Ad Experience, Influencer Marketing, Aggregator Platform Service, Video Production
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Pansari Epicure
+  Category    : HoReCa · Food Photography
+  Description : Food photography for a professional-kitchen audience.
+  Tags        : Food · Chefs · HoReCa
+  Link Status : ACTIVE LINK -> https://pansari.co.in/pansari-epicure/
+  Image Alt   : Pansari Epicure – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Tupperware
+  Category    : Lifestyle · Product Photography
+  Description : Recipe and product shoots in real kitchens.
+  Tags        : Product · Recipe · Lifestyle
+  Link Status : ACTIVE LINK -> https://www.tupperwareindia.com
+  Image Alt   : Tupperware – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+  [Card 4] Project: Americana
+  Category    : Biscuits · Food Photography
+  Description : Tea-time recipe shoots for premium biscuits.
+  Tags        : Recipe Shoot · Biscuits · FMCG
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Americana – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 5] Project: Madhusudan
+  Category    : Dairy · Food Photography
+  Description : Recipe photography for ghee, milk and paneer.
+  Tags        : Recipe Shoot · Dairy · Food
+  Link Status : ACTIVE LINK -> https://madhusudanworld.com
+  Image Alt   : Madhusudan – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+  [Card 6] Project: Bonn Group
+  Category    : Bakery · Food Photography
+  Description : Recipe shoots across Bonn's bread and bakery range.
+  Tags        : Recipe Shoot · Bakery · FMCG
+  Link Status : ACTIVE LINK -> https://bonn.in
+  Image Alt   : Bonn Group – Photography
+  Services    : Shoot concepts and mood boards · Food and product styling · Recipe and lifestyle shoots · Retouching and colour grading · Image library for social, ads and packs | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Video Production
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #14: CONTENT DEVELOPMENT
+Page URL: https://sociapa.com/content-designing
+Total Testimonials (From Our Team): 2
+Total Work Cards (Our Work Portfolio): 2
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Gyan Dairy (Dairy, Uttar Pradesh)
+  Designation : Content Head, Sociapa
+  Team Quote  : "Gyan's voice is local, warm and practical, and we write to match. Our content covers its whole calendar, from recipes and festive posts to product stories and promotions, so the brand sounds the same everywhere."
+  Brand Story : Gyan's content covers the full brand calendar: recipes, festive posts, product stories and online promotions, written and designed to feel local, warm and consistent.
+  Scope       : Content strategy and calendar · Copywriting for web and social · Recipe and product content · Articles and long-form content · Review and approval workflow Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: BIS (Government Body)
+  Designation : Content Head, Sociapa
+  Team Quote  : "Standards affect daily life, but they are rarely explained simply. For the Bureau of Indian Standards we developed content for the website and social media that keeps complex information clear and accessible."
+  Brand Story : Standards touch everyday life, and the content had to make that clear. Creative content was developed for the Bureau of Indian Standards' website and social channels, keeping complex information simple and accessible.
+  Scope       : Content strategy and calendar · Copywriting for web and social · Recipe and product content · Articles and long-form content · Review and approval workflow Also delivered for this brand: Creative Designing
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Gyan Dairy
+  Category    : Dairy · Content
+  Description : Creative and content across the full brand calendar.
+  Tags        : Content · Recipes · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Content Development
+  Services    : Content strategy and calendar · Copywriting for web and social · Recipe and product content · Articles and long-form content · Review and approval workflow | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Creative Designing, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 2] Project: BIS
+  Category    : Government · Content
+  Description : Content for the Bureau of Indian Standards' website and social media.
+  Tags        : Content · Website · Government
+  Link Status : ACTIVE LINK -> https://www.bis.gov.in
+  Image Alt   : BIS – Content Development
+  Services    : Content strategy and calendar · Copywriting for web and social · Recipe and product content · Articles and long-form content · Review and approval workflow | Also delivered for this brand: Creative Designing
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #15: CREATIVE DESIGNING
+Page URL: https://sociapa.com/creative-designing
+Total Testimonials (From Our Team): 2
+Total Work Cards (Our Work Portfolio): 3
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: BIS (Government Body)
+  Designation : Creative Director, Sociapa
+  Team Quote  : "Designing for a government body means clarity first. Our creatives for the Bureau of Indian Standards present official information cleanly and consistently across its website and social channels."
+  Brand Story : The Bureau of Indian Standards needed clear, consistent creatives for its website and social media. The designs present official information in a clean, accessible visual style.
+  Scope       : Social media creatives · Campaign key visuals · Website banners and graphics · Adaptations across formats · Brand-consistent design templates Also delivered for this brand: Content Development
+  ----------------------------------------------------------------------------
+  [Card 2] Brand: Cash Gold Elaichi (Mouth Freshener)
+  Designation : Creative Director, Sociapa
+  Team Quote  : "Cash Gold needed a look that holds together across dozens of posts and videos. We built a creative library that keeps every campaign and everyday post recognisably on-brand."
+  Brand Story : Cash Gold's creative library gives the brand a consistent look across social media and YouTube, with assets designed for campaigns and everyday posts.
+  Scope       : Social media creatives · Campaign key visuals · Website banners and graphics · Adaptations across formats · Brand-consistent design templates Also delivered for this brand: Social Media Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: BIS
+  Category    : Government · Creative
+  Description : Creatives for the Bureau of Indian Standards' website and social media.
+  Tags        : Creative · Website · Social
+  Link Status : ACTIVE LINK -> https://www.bis.gov.in
+  Image Alt   : BIS – Creative Designing
+  Services    : Social media creatives · Campaign key visuals · Website banners and graphics · Adaptations across formats · Brand-consistent design templates | Also delivered for this brand: Content Development
+  ----------------------------------------------------------------------------
+  [Card 2] Project: Cash Gold Elaichi
+  Category    : FMCG · Creative
+  Description : A creative asset library for social and YouTube campaigns.
+  Tags        : Creative · Assets · FMCG
+  Link Status : ACTIVE LINK -> https://psfoods.in/cash-gold/
+  Image Alt   : Cash Gold Elaichi – Creative Designing
+  Services    : Social media creatives · Campaign key visuals · Website banners and graphics · Adaptations across formats · Brand-consistent design templates | Also delivered for this brand: Social Media Marketing, Video Production, Digital Marketing
+  ----------------------------------------------------------------------------
+  [Card 3] Project: Gyan Dairy
+  Category    : Dairy · Creative
+  Description : Everyday creative for social, promotions and packaging.
+  Tags        : Creative · Social · Dairy
+  Link Status : ACTIVE LINK -> https://www.gyandairy.com
+  Image Alt   : Gyan Dairy – Creative Designing
+  Services    : Social media creatives · Campaign key visuals · Website banners and graphics · Adaptations across formats · Brand-consistent design templates | Also delivered for this brand: Social Media Marketing, Brand Strategy, Packaging and Design, Ad Experience, Aggregator Platform Service, Influencer Marketing, Photography, Video Production, Content Development, Digital Marketing
+  ----------------------------------------------------------------------------
+
+
+################################################################################
+SERVICE #16: PUBLIC RELATION
+Page URL: https://sociapa.com/best-pr-agency-india
+Total Testimonials (From Our Team): 1
+Total Work Cards (Our Work Portfolio): 1
+################################################################################
+
+--- [SECTION A] BEHIND THE WORK (TESTIMONIALS / FROM OUR TEAM) ---
+
+  [Card 1] Brand: Kapil Anand Agro (Food Manufacturing, B2B)
+  Designation : PR Lead, Sociapa
+  Team Quote  : "Kapil Anand Agro had spent years making products for other brands; PR was its chance to step forward. We took its story to the trade press alongside the new brand and market plan, building credibility with future partners."
+  Brand Story : As a B2B manufacturer stepping into the spotlight, Kapil Anand Agro used PR to tell its story to the trade. Press outreach supported its new brand and go-to-market plan, building credibility with potential partners.
+  Scope       : Story angles and press releases · Media outreach · Trade and business publication features · Interview coordination · Coverage tracking Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development, Go To Market
+  ----------------------------------------------------------------------------
+
+--- [SECTION B] OUR WORK (PORTFOLIO CARDS) ---
+
+  [Card 1] Project: Kapil Anand Agro
+  Category    : B2B · PR
+  Description : Trade PR supporting a manufacturer's new brand and market entry.
+  Tags        : PR · B2B · Media
+  Link Status : ACTIVE LINK -> https://kapilanandagro.com
+  Image Alt   : Kapil Anand Agro – Public Relation
+  Services    : Story angles and press releases · Media outreach · Trade and business publication features · Interview coordination · Coverage tracking | Also delivered for this brand: Brand Identity Design, Packaging and Design, Brand Strategy, Website/App Development, Go To Market
+  ----------------------------------------------------------------------------
+
+

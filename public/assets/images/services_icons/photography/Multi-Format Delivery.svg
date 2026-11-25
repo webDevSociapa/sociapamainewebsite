@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Desktop Monitor -->
+    <rect x="36" y="44" width="144" height="100" rx="10" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <line x1="108" y1="144" x2="108" y2="176" stroke="#1A0508" stroke-width="8"/>
+    <line x1="80" y1="176" x2="136" y2="176" stroke="#1A0508" stroke-width="8"/>
+    <!-- Image Landscape on Screen -->
+    <polygon points="54,124 84,94 104,114 124,88 154,124" fill="#FFEBEF" stroke="#D20C0C" stroke-width="5"/>
+    <!-- Overlapping Smartphone (Mobile format) -->
+    <rect x="144" y="96" width="76" height="124" rx="14" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <rect x="156" y="112" width="52" height="88" rx="6" fill="#FFEBEF"/>
+    <circle cx="182" cy="208" r="4" fill="#D20C0C"/>
+    <!-- Formats Tags -->
+    <circle cx="68" cy="74" r="8" fill="#D20C0C"/>
+    <circle cx="182" cy="136" r="8" fill="#D20C0C"/>
+  </g>
+</svg>

@@ -1,39 +1,39 @@
-﻿[
+[
     {
         "category":  "new-fmcg",
-        "image":  "images/nutrela-clt.png"
+        "image":  "images/figma_nutrela.png"
     },
     {
         "category":  "new-fmcg",
-        "image":  "images/nutrela-logo.png"
+        "image":  "images/figma_nutrela_nutrition.png"
     },
     {
         "category":  "new-fmcg",
-        "image":  "images/pat-Sports.png"
+        "image":  "images/figma_nutrela_sports.png"
     },
     {
         "category":  "new-fmcg",
-        "image":  "images/madhusudan.png"
+        "image":  "images/figma_madhusudan.png"
     },
     {
         "category":  "new-fmcg",
-        "image":  "images/apisClt.png"
+        "image":  "images/figma_apis.png"
+    },
+    {
+        "category":  "new-fmcg",
+        "image":  "images/figma_house_of_veda.png"
+    },
+    {
+        "category":  "new-fmcg",
+        "image":  "images/figma_la_americana.png"
+    },
+    {
+        "category":  "new-fmcg",
+        "image":  "images/figma_americana.png"
     },
     {
         "category":  "new-fmcg",
         "image":  "images/bonnClt.png"
-    },
-    {
-        "category":  "new-fmcg",
-        "image":  "images/houseVeda200.png"
-    },
-    {
-        "category":  "new-fmcg",
-        "image":  "images/laClt.png"
-    },
-    {
-        "category":  "new-fmcg",
-        "image":  "images/AmericanaLogo.png"
     },
     {
         "category":  "new-fmcg",

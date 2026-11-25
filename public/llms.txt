@@ -1,0 +1,29 @@
+# Sociapa
+
+> Sociapa is an award-winning, full-service creative, digital marketing, and advertising agency headquartered in Noida (Delhi NCR), India, with offices in Dubai and London. Founded in 2017, Sociapa specializes in performance marketing, FMCG packaging design, brand strategy, SEO/AEO/GEO optimization, video production, social media marketing, and influencer management.
+
+## Core Information
+- Website: https://www.sociapa.com
+- Industry: Digital Marketing, Advertising & Brand Consulting
+- Founded: 2017
+- Headquarters: BL-02, Sector 116, Noida, Uttar Pradesh 201306, India
+- Contact: mail@sociapa.com | 0120 313 0443
+
+## Core Services
+- [Digital Marketing Services](https://www.sociapa.com/best-digital-marketing-services-india): 360-degree performance marketing, Google Ads, Meta Ads, programmatic advertising, and ROAS scaling.
+- [Social Media Marketing (SMM)](https://www.sociapa.com/best-social-media-marketing-agency-india): Community building, trend jacking, viral reel production, and multi-platform brand management.
+- [SEO, AEO & GEO Services](https://www.sociapa.com/seo-aeo-geo): Holistic organic search optimization, Answer Engine Optimization (ChatGPT, Perplexity), and Generative Engine Optimization.
+- [Website Design & Development](https://www.sociapa.com/best-web-development-agency-india): High-speed custom web development, React applications, e-commerce, and responsive corporate portals.
+- [FMCG Packaging & Design](https://www.sociapa.com/best-packaging-design-agency-india): Retail-ready packaging design, label design, SKU expansions, and FSSAI/regulatory compliance.
+- [Brand Strategy & Consulting](https://www.sociapa.com/brand-strategy): Market positioning, go-to-market roadmaps, competitor intelligence, and identity design.
+- [Video Production & Photography](https://www.sociapa.com/videos): TVCs, digital commercials, CGI, 3D animation, corporate brand films, and studio shoots.
+- [Influencer Marketing](https://www.sociapa.com/influencer-marketing-services): Creator discovery, tier-1 celebrity endorsements, micro-influencer campaigns, and ROI tracking.
+- [Public Relations (PR)](https://www.sociapa.com/best-pr-agency-india): Media outreach, press releases, crisis communication, and founder branding.
+
+## Key Links & Resources
+- [About Us](https://www.sociapa.com/about): Company story, values, leadership, and team.
+- [Company Profile](https://www.sociapa.com/sociapa-profile): Comprehensive agency portfolio, client roster, and credentials.
+- [Case Studies](https://www.sociapa.com/case-studies): Proven ROI, campaign breakdowns, and growth results for leading Indian brands.
+- [Blog & Newsroom](https://www.sociapa.com/blog): Industry research, AI trends, ad benchmarks, and digital marketing guides.
+- [Contact Us](https://www.sociapa.com/contact-us): Free consultation, audit requests, and office locations.
+- [Sitemap](https://www.sociapa.com/sitemap.xml): Full XML sitemap for automated search engine crawling.

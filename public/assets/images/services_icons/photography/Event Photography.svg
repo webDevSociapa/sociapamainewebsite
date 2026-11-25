@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stage Backdrop / Arch -->
+    <path d="M44 212 V84 C44 48, 212 48, 212 84 V212" stroke="#1A0508" stroke-width="8" fill="#FFEBEF"/>
+    <!-- Camera Body in Center -->
+    <rect x="76" y="112" width="104" height="74" rx="12" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <circle cx="128" cy="149" r="24" fill="#FFEBEF" stroke="#D20C0C" stroke-width="7"/>
+    <!-- Big Flash Bulb on Top -->
+    <path d="M112 112 L120 94 H136 L144 112" fill="#D20C0C" stroke="#1A0508" stroke-width="6"/>
+    <circle cx="128" cy="84" r="14" fill="#D20C0C"/>
+    <!-- Flash Burst Rays -->
+    <line x1="128" y1="56" x2="128" y2="44" stroke="#D20C0C" stroke-width="6"/>
+    <line x1="102" y1="64" x2="94" y2="54" stroke="#D20C0C" stroke-width="6"/>
+    <line x1="154" y1="64" x2="162" y2="54" stroke="#D20C0C" stroke-width="6"/>
+    <!-- VIP Red Carpet Base -->
+    <polygon points="32,216 224,216 196,200 60,200" fill="#D20C0C" stroke="#1A0508" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Slider Tracks -->
+      <line x1="56" y1="76" x2="200" y2="76" stroke="#1A0508" stroke-width="8"/>
+      <circle cx="100" cy="76" r="18" fill="#C8102E" stroke="#FFFFFF" stroke-width="6"/>
+
+      <line x1="56" y1="136" x2="200" y2="136" stroke="#1A0508" stroke-width="8"/>
+      <circle cx="160" cy="136" r="18" fill="#C8102E" stroke="#FFFFFF" stroke-width="6"/>
+
+      <line x1="56" y1="196" x2="200" y2="196" stroke="#1A0508" stroke-width="8"/>
+      <circle cx="120" cy="196" r="18" fill="#C8102E" stroke="#FFFFFF" stroke-width="6"/>
+
+      <!-- Track Fill Highlights -->
+      <line x1="56" y1="76" x2="100" y2="76" stroke="#C8102E" stroke-width="8"/>
+      <line x1="56" y1="136" x2="160" y2="136" stroke="#C8102E" stroke-width="8"/>
+      <line x1="56" y1="196" x2="120" y2="196" stroke="#C8102E" stroke-width="8"/>
+    </g>
+  </svg>

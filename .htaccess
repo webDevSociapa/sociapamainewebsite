@@ -1,0 +1,110 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /sociapareact/
+
+  # 1. Admin & Admin API - pass through to Laravel in admin/ directory
+  RewriteCond %{REQUEST_URI} ^/sociapareact/admin [NC]
+  RewriteRule ^ - [L]
+
+  # ------------------------------------------------------------------------------
+  # Permanent 301 Redirects for Legacy URLs (Preserves Google Link Equity)
+  # ------------------------------------------------------------------------------
+  RewriteRule ^digital-marketing(\.php)?/?$ best-digital-marketing-services-india [R=301,L,NC]
+  RewriteRule ^social-media-marketing-services(\.php)?/?$ best-social-media-marketing-agency-india [R=301,L,NC]
+  RewriteRule ^services-web-development(\.php)?/?$ best-web-development-agency-india [R=301,L,NC]
+  RewriteRule ^best-seo-agency-india(\.php)?/?$ seo-aeo-geo [R=301,L,NC]
+  RewriteRule ^packaging(\.php)?/?$ best-packaging-design-agency-india [R=301,L,NC]
+  RewriteRule ^How-Packaging-can-influence(\.php)?/?$ best-packaging-design-agency-india [R=301,L,NC]
+  RewriteRule ^photography(\.php)?/?$ best-photography-services [R=301,L,NC]
+  RewriteRule ^press-release(\.php)?/?$ best-pr-agency-india [R=301,L,NC]
+  RewriteRule ^pr(\.php)?/?$ best-pr-agency-india [R=301,L,NC]
+  RewriteRule ^portfolio(\.php)?/?$ sociapa-profile [R=301,L,NC]
+  RewriteRule ^(profile/)?Company-Profile(\.pdf)?/?$ sociapa-profile [R=301,L,NC]
+  RewriteRule ^(pdf/)?Company-Profile(\.pdf)?/?$ sociapa-profile [R=301,L,NC]
+  RewriteRule ^services(\.php)?/?$ our-services [R=301,L,NC]
+  RewriteRule ^registration-services(\.php)?/?$ gst-company-registration-services [R=301,L,NC]
+  RewriteRule ^contact(\.php)?/?$ contact-us [R=301,L,NC]
+  RewriteRule ^careers?(\.php)?/?$ career [R=301,L,NC]
+  RewriteRule ^audit(\.php)?/?$ free-website-audit [R=301,L,NC]
+  RewriteRule ^influencers?(\.php)?/?$ influencer-marketing-services [R=301,L,NC]
+  RewriteRule ^influencer-marketing(\.php)?/?$ influencer-marketing-services [R=301,L,NC]
+  RewriteRule ^creator-vs-influencer(\.php)?/?$ influencer-marketing-services [R=301,L,NC]
+  RewriteRule ^pay-per-click-advertising(\.php)?/?$ pay-per-click-ppc-services-india [R=301,L,NC]
+  RewriteRule ^email-marketing(\.php)?/?$ email-marketing-services [R=301,L,NC]
+  RewriteRule ^the-power-of-polygon-targeting-in-modern-marketing(\.php)?/?$ polygon [R=301,L,NC]
+  RewriteRule ^exploring-geofance(\.php)?/?$ geofencing [R=301,L,NC]
+  RewriteRule ^geofencing\.php$ geofencing [R=301,L,NC]
+  RewriteRule ^polygon\.php$ polygon [R=301,L,NC]
+  RewriteRule ^influencer-need\.php$ influencer-need [R=301,L,NC]
+  RewriteRule ^services-app-development\.php$ services-app-development [R=301,L,NC]
+  RewriteRule ^ad-experiences(\.php)?/?$ pay-per-click-ppc-services-india [R=301,L,NC]
+  RewriteRule ^10-Best-Video-Campaigns-Of-The-Decade(\.php)?/?$ videos [R=301,L,NC]
+  RewriteRule ^awards?(\.php)?/?$ best-creative-and-digital-agency-award [R=301,L,NC]
+
+  # City Variations
+  RewriteRule ^pr-agency-in-coimbatore(\.php)?/?$ pr-agency-in-coimbatore-india [R=301,L,NC]
+  RewriteRule ^pr-agency-in-dehradun(\.php)?/?$ pr-agency-in-dehradun-india [R=301,L,NC]
+  RewriteRule ^public-relations-agency-delhi(\.php)?/?$ pr-agency-in-delhi-india [R=301,L,NC]
+  RewriteRule ^digital-marketing-agency-in-prayagraj-india(\.php)?/?$ digital-marketing-agency-in-allahabad-india [R=301,L,NC]
+  RewriteRule ^seo-agency-in-amritser-india(\.php)?/?$ seo-agency-in-amritsar-india [R=301,L,NC]
+
+  # Pass through existing files and scripts in root (like api.php)
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # 2. Serve dist/index.html for root requests
+  RewriteRule ^$ dist/index.html [L]
+  RewriteRule ^index\.html$ dist/index.html [L]
+
+  # 3. If file exists inside dist/, serve it from dist/
+  RewriteCond %{DOCUMENT_ROOT}/sociapareact/dist/$1 -f
+  RewriteRule ^(.*)$ dist/$1 [L]
+
+  # 4. React SPA Router fallback: send all other requests to dist/index.html
+  RewriteRule ^(.*)$ dist/index.html [L]
+</IfModule>
+
+# Gzip / Deflate Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff2 font/woff application/font-woff2
+</IfModule>
+
+# Caching & Expiry
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Prevent browser caching of index.html so changes are seen immediately
+  <FilesMatch "^index\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # Cache JS, CSS, Fonts, Images, Videos heavily
+  <FilesMatch "\.(js|css|webp|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|eot|mp4|webm|pdf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Security & Origin headers
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

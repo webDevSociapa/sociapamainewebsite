@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Serving Platter -->
+    <ellipse cx="128" cy="196" rx="92" ry="22" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Food Cloche Dome -->
+    <path d="M56 190 C56 114, 200 114, 200 190 Z" fill="#FFFFFF" stroke="#D20C0C" stroke-width="8"/>
+    <!-- Cloche Handle -->
+    <circle cx="128" cy="98" r="14" fill="#D20C0C" stroke="#1A0508" stroke-width="6"/>
+    <line x1="128" y1="112" x2="128" y2="124" stroke="#1A0508" stroke-width="6"/>
+    <!-- Fork & Knife Accents -->
+    <path d="M32 90 v70 M24 90 v30 c0 8 16 8 16 0 v-30" stroke="#1A0508" stroke-width="6"/>
+    <path d="M224 90 v70 M224 90 c-12 0 -16 20 -16 40 h16" stroke="#1A0508" stroke-width="6"/>
+    <!-- Delicious Aroma Steam -->
+    <path d="M104 68 C98 56, 110 44, 104 32" stroke="#D20C0C" stroke-width="5"/>
+    <path d="M128 64 C122 52, 134 40, 128 28" stroke="#D20C0C" stroke-width="5"/>
+    <path d="M152 68 C146 56, 158 44, 152 32" stroke="#D20C0C" stroke-width="5"/>
+  </g>
+</svg>

@@ -1,0 +1,528 @@
+/* ==========================================================================
+   Influencer Need Page Scoped Styles - Sociapa
+   ========================================================================== */
+
+.influencer-need-page {
+  --inf-red: #d20c0c;
+  --inf-red-dark: #8b0000;
+  --inf-red-light: #ff4d4d;
+  --inf-red-pale: #fff2f2;
+  --inf-dark: #0f172a;
+  --inf-gray: #64748b;
+  --inf-light: #f8fafc;
+  --inf-white: #ffffff;
+  --inf-border: #e2e8f0;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  color: #1e293b;
+  line-height: 1.6;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Banner Image & Hero Section */
+.influencer-need-page .hero-banner-section {
+  width: 100% !important;
+  max-width: 100vw !important;
+  position: relative !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  background: transparent !important;
+}
+
+.influencer-need-page .hero-banner-section picture {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.influencer-need-page .hero-banner-img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .influencer-need-page .hero-banner-section {
+    margin-top: 56px !important;
+  }
+}
+
+/* Page Intro Header */
+.influencer-need-page .page-intro-section {
+  background: linear-gradient(180deg, #ffffff 0%, #fff7f7 100%);
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.influencer-need-page .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.influencer-need-page .badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff2f2;
+  border: 1px solid rgba(210, 12, 12, 0.2);
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+
+.influencer-need-page .badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #d20c0c;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(210, 12, 12, 0.6);
+  animation: infPulse 2s infinite;
+}
+
+@keyframes infPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.influencer-need-page .main-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.influencer-need-page .main-title .highlight-text {
+  color: #d20c0c;
+}
+
+.influencer-need-page .intro-lead {
+  font-size: 1.15rem;
+  color: #475569;
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.influencer-need-page .hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.influencer-need-page .btn-primary-inf {
+  background: #d20c0c;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(210, 12, 12, 0.25);
+  cursor: pointer;
+  border: none;
+}
+
+.influencer-need-page .btn-primary-inf:hover {
+  background: #b50a0a;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(210, 12, 12, 0.35);
+  color: #ffffff;
+}
+
+.influencer-need-page .btn-secondary-inf {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.influencer-need-page .btn-secondary-inf:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  transform: translateY(-2px);
+  color: #0f172a;
+}
+
+/* Stats Bar */
+.influencer-need-page .stats-bar-inf {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 2.5rem 1.5rem;
+}
+
+.influencer-need-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.influencer-need-page .stat-val {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: #ff4d4d;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.influencer-need-page .stat-lbl {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .influencer-need-page .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Form Section */
+.influencer-need-page .form-section {
+  padding: 5rem 1.5rem;
+  background: #ffffff;
+}
+
+.influencer-need-page .form-card-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 3rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .influencer-need-page .form-card-container {
+    padding: 1.75rem;
+  }
+}
+
+.influencer-need-page .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .influencer-need-page .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.influencer-need-page .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.influencer-need-page .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.influencer-need-page .form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.influencer-need-page .form-input,
+.influencer-need-page .form-select,
+.influencer-need-page .form-textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1e293b;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.influencer-need-page .form-input:focus,
+.influencer-need-page .form-select:focus,
+.influencer-need-page .form-textarea:focus {
+  outline: none;
+  border-color: #d20c0c;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(210, 12, 12, 0.12);
+}
+
+.influencer-need-page .form-success-banner {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Content Sections */
+.influencer-need-page .content-section {
+  padding: 5rem 1.5rem;
+}
+
+.influencer-need-page .bg-light {
+  background: #f8fafc;
+}
+
+.influencer-need-page .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.influencer-need-page .section-tag {
+  display: inline-block;
+  color: #d20c0c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.influencer-need-page .section-heading {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.influencer-need-page .section-desc {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Creator Tiers Grid */
+.influencer-need-page .tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.influencer-need-page .tier-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.25rem 1.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.influencer-need-page .tier-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(210, 12, 12, 0.3);
+  box-shadow: 0 20px 30px -10px rgba(210, 12, 12, 0.12);
+}
+
+.influencer-need-page .tier-badge {
+  display: inline-block;
+  background: #fff2f2;
+  color: #d20c0c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.influencer-need-page .tier-card h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.influencer-need-page .tier-followers {
+  color: #d20c0c;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.influencer-need-page .tier-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  flex-grow: 1;
+}
+
+/* Workflow Grid */
+.influencer-need-page .workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.influencer-need-page .workflow-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2.25rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.influencer-need-page .workflow-card:hover {
+  border-color: #d20c0c;
+}
+
+.influencer-need-page .workflow-num {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(210, 12, 12, 0.15);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.influencer-need-page .workflow-card h3 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.influencer-need-page .workflow-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* FAQ Accordion */
+.influencer-need-page .faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.influencer-need-page .faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.influencer-need-page .faq-item.active {
+  border-color: #d20c0c;
+  box-shadow: 0 4px 12px rgba(210, 12, 12, 0.08);
+}
+
+.influencer-need-page .faq-trigger {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  gap: 1rem;
+}
+
+.influencer-need-page .faq-icon {
+  font-size: 1.4rem;
+  color: #d20c0c;
+  transition: transform 0.3s ease;
+}
+
+.influencer-need-page .faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.influencer-need-page .faq-body {
+  padding: 0 1.5rem 1.25rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Bottom CTA Banner */
+.influencer-need-page .bottom-cta-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.influencer-need-page .bottom-cta-banner h2 {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.influencer-need-page .bottom-cta-banner p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  line-height: 1.65;
+}
+
+/* Service Interlink styling */
+.influencer-need-page a.seo-interlink {
+  color: #d20c0c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.influencer-need-page a.seo-interlink:hover {
+  color: #8b0000;
+}

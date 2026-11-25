@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(36, 36)">
+        <!-- 3D Box Mockup -->
+        <polygon points="220,50 380,120 220,190 60,120" fill="#FFEBEF" stroke="#1A0508" stroke-width="14"/>
+        <polygon points="60,120 220,190 220,380 60,310" fill="#FFFFFF" stroke="#1A0508" stroke-width="14"/>
+        <polygon points="380,120 220,190 220,380 380,310" fill="#FFE5E9" stroke="#1A0508" stroke-width="14"/>
+        <!-- Red Package Tape / Seal -->
+        <polygon points="190,63 250,90 250,203 190,176" fill="#C8102E"/>
+        <!-- 3D Rotation Orbit Axis -->
+        <path d="M80 380 C140 430, 300 430, 360 380" stroke="#C8102E" stroke-width="12" stroke-dasharray="16,10"/>
+        <polygon points="375,370 365,395 345,375" fill="#C8102E"/>
+      </g>
+    </svg>

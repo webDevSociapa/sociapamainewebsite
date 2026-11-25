@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 570" width="380" height="570">
+    <!-- 5 official Figma shapes, transparent background -->
+    <path fill="#1ABCFE" d="M190 285 A95 95 0 1 1 380 285 A95 95 0 0 1 190 285 Z"/>
+    <path fill="#0ACF83" d="M0 475 A95 95 0 0 1 95 380 H190 V475 A95 95 0 1 1 0 475 Z"/>
+    <path fill="#FF7262" d="M0 285 A95 95 0 0 1 95 190 H190 V380 H95 A95 95 0 0 1 0 285 Z"/>
+    <path fill="#F24E1E" d="M0 95 A95 95 0 0 1 95 0 H190 V190 H95 A95 95 0 0 1 0 95 Z"/>
+    <path fill="#A259FF" d="M190 0 H285 A95 95 0 1 1 285 190 H190 Z"/>
+  </svg>

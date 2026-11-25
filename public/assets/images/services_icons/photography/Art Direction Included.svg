@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Artist Palette -->
+    <path d="M128 36 C76 36, 36 76, 36 128 C36 180, 80 220, 128 220 C144 220, 156 208, 156 192 C156 182, 150 174, 144 166 C138 158, 134 148, 134 138 C134 116, 152 98, 174 98 H188 C206 98, 220 112, 220 128 C220 76, 180 36, 128 36 Z" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Paint Dab Dots -->
+    <circle cx="76" cy="116" r="14" fill="#D20C0C"/>
+    <circle cx="106" cy="74" r="14" fill="#1A0508"/>
+    <circle cx="156" cy="68" r="14" fill="#D20C0C"/>
+    <!-- Director's Palette Thumbhole -->
+    <ellipse cx="184" cy="154" rx="12" ry="16" fill="#FFFFFF" stroke="#1A0508" stroke-width="6"/>
+    <!-- Artist Paintbrush -->
+    <line x1="188" y1="188" x2="228" y2="228" stroke="#1A0508" stroke-width="8"/>
+    <polygon points="188,188 176,192 184,180" fill="#D20C0C"/>
+  </g>
+</svg>

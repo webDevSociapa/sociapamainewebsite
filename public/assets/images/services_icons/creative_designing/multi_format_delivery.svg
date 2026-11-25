@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Back Format Card (PDF/PSD) -->
+      <rect x="80" y="44" width="108" height="144" rx="12" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+      <!-- Middle Format Card (AI) -->
+      <rect x="62" y="64" width="108" height="144" rx="12" fill="#FFFFFF" stroke="#C8102E" stroke-width="8"/>
+      <text x="116" y="112" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#C8102E" text-anchor="middle">AI</text>
+      <!-- Front Format Card (SVG/PNG) -->
+      <rect x="44" y="84" width="108" height="144" rx="12" fill="#FFEBEF" stroke="#1A0508" stroke-width="8"/>
+      <text x="98" y="132" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="26" fill="#1A0508" text-anchor="middle">SVG</text>
+      <line x1="64" y1="156" x2="132" y2="156" stroke="#C8102E" stroke-width="5"/>
+      <line x1="64" y1="172" x2="114" y2="172" stroke="#1A0508" stroke-width="5"/>
+      <!-- Download / Export Arrow Badge -->
+      <g transform="translate(180, 170)">
+        <circle cx="0" cy="0" r="26" fill="#C8102E"/>
+        <path d="M0 -12 V12 M-8 4 L0 12 L8 4" stroke="#FFFFFF" stroke-width="6"/>
+      </g>
+    </g>
+  </svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Stopwatch Dial -->
+      <circle cx="128" cy="136" r="80" fill="#FFEBEF" stroke="#1A0508" stroke-width="10"/>
+      <!-- Stopwatch Top Buttons -->
+      <line x1="128" y1="44" x2="128" y2="56" stroke="#1A0508" stroke-width="12"/>
+      <rect x="112" y="32" width="32" height="12" rx="4" fill="#1A0508"/>
+      <line x1="184" y1="72" x2="174" y2="82" stroke="#1A0508" stroke-width="8"/>
+      <!-- Lightning Bolt Speed in Dial -->
+      <path d="M136 76 L96 136 H132 L120 196 L164 128 H128 Z" fill="#C8102E" stroke="#C8102E" stroke-width="4"/>
+    </g>
+  </svg>

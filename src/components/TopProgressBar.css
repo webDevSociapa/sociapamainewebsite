@@ -1,0 +1,35 @@
+/* Top Loading Progress Bar - Sociapa Brand Red */
+.top-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c10306 0%, #ff3b30 50%, #c10306 100%);
+  box-shadow: 0 0 10px rgba(193, 3, 6, 0.7), 0 0 5px rgba(255, 59, 48, 0.5);
+  z-index: 999999;
+  pointer-events: none;
+  animation: progressPulse 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transform-origin: 0% 50%;
+}
+
+@keyframes progressPulse {
+  0% {
+    transform: scaleX(0.08);
+  }
+  50% {
+    transform: scaleX(0.72);
+  }
+  100% {
+    transform: scaleX(0.96);
+  }
+}
+
+.page-route-loader {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}

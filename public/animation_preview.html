@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/sociapareact/logonew.webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sociapa — Animated Preview (Real Header, Video Hero & Footer Unaltered)</title>
+
+  <!-- Authentic Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Sociapa Production Core Stylesheet -->
+  <link rel="stylesheet" href="/sociapareact/assets/index-DVE8FELC.css" />
+  <link rel="stylesheet" href="assets/index-DVE8FELC.css" />
+
+  <!-- Smooth Animation Enhancement Stylesheet (Applied to sections below Hero only) -->
+  <style>
+    /* ═══════════════════════════════════════════════════════════════
+       SMOOTH ANIMATIONS LAYER (APPLIED TO SECTIONS BELOW HERO ONLY)
+       ═══════════════════════════════════════════════════════════════ */
+    :root {
+      --anim-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --anim-speed: 1;
+    }
+
+    /* Top Kinetic Reading Depth Progress Bar */
+    #page-scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3.5px;
+      width: 0%;
+      background: linear-gradient(90deg, #c10306, #ff2a2d, #ff6b7d);
+      box-shadow: 0 0 10px rgba(255, 42, 45, 0.7);
+      z-index: 99999;
+      pointer-events: none;
+      transition: width 0.08s ease-out;
+    }
+
+    /* Enhanced Scroll Reveals for Content Below Hero */
+    .animate-on-scroll {
+      opacity: 0 !important;
+      transform: translateY(32px) !important;
+      transition: opacity calc(0.75s * var(--anim-speed)) var(--anim-ease-out),
+                  transform calc(0.75s * var(--anim-speed)) var(--anim-ease-out) !important;
+      will-change: opacity, transform !important;
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    /* Stagger Delays */
+    .animate-on-scroll.delay-1 { transition-delay: calc(0.08s * var(--anim-speed)) !important; }
+    .animate-on-scroll.delay-2 { transition-delay: calc(0.16s * var(--anim-speed)) !important; }
+    .animate-on-scroll.delay-3 { transition-delay: calc(0.24s * var(--anim-speed)) !important; }
+    .animate-on-scroll.delay-4 { transition-delay: calc(0.32s * var(--anim-speed)) !important; }
+
+    /* ── 1. STATS SECTION HOVER & REVEAL ── */
+    .stat-item {
+      transition: transform 0.4s var(--anim-ease-out),
+                  box-shadow 0.4s var(--anim-ease-out),
+                  background 0.4s ease,
+                  border-color 0.4s ease !important;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-8px) scale(1.02) !important;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .stat-number {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ── 2. SERVICES SECTION SMOOTH HOVER & ZOOM ── */
+    .service-card-real {
+      position: relative !important;
+      overflow: hidden !important;
+      transition: transform 0.45s var(--anim-ease-out),
+                  box-shadow 0.45s var(--anim-ease-out),
+                  border-color 0.45s ease !important;
+    }
+
+    /* Smooth Image Zoom on Hover inside Card */
+    .service-card-real::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.65s var(--anim-ease-out) !important;
+      z-index: 1;
+    }
+
+    .service-card-real:hover::before {
+      transform: scale(1.08) !important;
+    }
+
+    .service-card-real .overlay-real {
+      position: relative;
+      z-index: 2;
+      transition: background 0.4s ease !important;
+    }
+
+    .service-card-real:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 20px 48px rgba(193, 3, 6, 0.28), 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+      border-color: rgba(193, 3, 6, 0.45) !important;
+    }
+
+    .service-card-real .home-svc-btn {
+      transition: all 0.35s var(--anim-ease-out) !important;
+    }
+
+    .service-card-real:hover .home-svc-btn {
+      transform: translateX(4px) !important;
+      box-shadow: 0 8px 22px rgba(193, 3, 6, 0.6) !important;
+    }
+
+    /* ── 3. PROJECTS / WORK SECTION HOVER ANIMATIONS ── */
+    .projects-creative-card,
+    .projects-website-card,
+    .projects-logo-card,
+    .projects-packaging-card {
+      transition: transform 0.4s var(--anim-ease-out),
+                  box-shadow 0.4s var(--anim-ease-out),
+                  border-color 0.4s ease !important;
+      border-radius: 16px !important;
+      overflow: hidden !important;
+    }
+
+    .projects-creative-card:hover,
+    .projects-website-card:hover,
+    .projects-packaging-card:hover {
+      transform: translateY(-6px) scale(1.02) !important;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14) !important;
+    }
+
+    .projects-logo-card:hover {
+      transform: translateY(-4px) scale(1.05) !important;
+      box-shadow: 0 12px 28px rgba(193, 3, 6, 0.12) !important;
+      border-color: rgba(193, 3, 6, 0.3) !important;
+    }
+
+    /* ── 4. CLIENTS GRID HOVER ANIMATIONS ── */
+    .client-card {
+      transition: transform 0.35s var(--anim-ease-out),
+                  box-shadow 0.35s var(--anim-ease-out),
+                  border-color 0.35s ease !important;
+    }
+
+    .client-card:hover {
+      transform: translateY(-6px) scale(1.03) !important;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08) !important;
+      border-color: rgba(193, 3, 6, 0.25) !important;
+    }
+
+    /* ── 5. PLATFORM PARTNERS HOVER ANIMATIONS ── */
+    .partner-card {
+      transition: transform 0.35s var(--anim-ease-out),
+                  box-shadow 0.35s var(--anim-ease-out) !important;
+    }
+
+    .partner-card:hover {
+      transform: translateY(-6px) scale(1.04) !important;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.09) !important;
+    }
+
+    /* ── 6. AWARDS SECTION (3D TROPHY SHIMMER) ── */
+    .home-award-showcase-card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s var(--anim-ease-out),
+                  box-shadow 0.5s var(--anim-ease-out) !important;
+      border-radius: 20px;
+    }
+
+    .home-award-showcase-card:hover {
+      transform: translateY(-8px) rotate(-0.5deg) scale(1.01) !important;
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.16) !important;
+    }
+
+    /* Golden Shimmer Sweep across Award Photo on Hover */
+    .home-award-trophy-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -130%;
+      width: 70%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.28), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.85s ease;
+      pointer-events: none;
+    }
+
+    .home-award-showcase-card:hover .home-award-trophy-wrap::after {
+      left: 150%;
+    }
+
+    .trophy-sparkle {
+      display: inline-block;
+      animation: sparkle-pulse 2.2s infinite ease-in-out;
+    }
+
+    @keyframes sparkle-pulse {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.25) rotate(12deg); }
+    }
+
+    /* ── 7. ECOSYSTEM VERTICALS HOVER ANIMATIONS ── */
+    .ecosystem-card {
+      transition: transform 0.4s var(--anim-ease-out),
+                  box-shadow 0.4s var(--anim-ease-out),
+                  border-color 0.4s ease,
+                  background 0.4s ease !important;
+    }
+
+    .ecosystem-card:hover {
+      transform: translateY(-8px) scale(1.01) !important;
+      box-shadow: 0 20px 42px rgba(193, 3, 6, 0.12) !important;
+      border-color: rgba(193, 3, 6, 0.35) !important;
+    }
+
+    .ecosystem-card:hover .ecosystem-external-badge svg {
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+
+    /* ── 8. CASE STUDIES HOVER ANIMATIONS ── */
+    .home-case-study-card {
+      transition: transform 0.4s var(--anim-ease-out),
+                  box-shadow 0.4s var(--anim-ease-out) !important;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .home-case-study-card:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 22px 46px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .home-case-study-card img {
+      transition: transform 0.65s var(--anim-ease-out) !important;
+    }
+
+    .home-case-study-card:hover img {
+      transform: scale(1.07) !important;
+    }
+
+    /* ── 9. BLOG CARDS HOVER ANIMATIONS ── */
+    .home-blog-card {
+      transition: transform 0.4s var(--anim-ease-out),
+                  box-shadow 0.4s var(--anim-ease-out),
+                  border-color 0.4s ease !important;
+      border-radius: 20px;
+    }
+
+    .home-blog-card:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 22px 46px rgba(193, 3, 6, 0.12) !important;
+      border-color: rgba(193, 3, 6, 0.3) !important;
+    }
+
+    .home-blog-card:hover .home-blog-img {
+      transform: scale(1.08) !important;
+    }
+
+    .home-blog-card:hover .home-blog-read-btn svg {
+      transform: translateX(6px) !important;
+    }
+
+    .home-blog-read-btn svg {
+      transition: transform 0.3s ease !important;
+    }
+
+    /* ── 10. TESTIMONIALS SLIDER RIBBON ── */
+    .testimonials-slider-track {
+      animation: continuous-slide 32s linear infinite !important;
+    }
+
+    .testimonials-slider-track:hover {
+      animation-play-state: paused !important;
+    }
+
+    @keyframes continuous-slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .testimonial-slide-card {
+      transition: transform 0.35s var(--anim-ease-out),
+                  box-shadow 0.35s var(--anim-ease-out) !important;
+    }
+
+    .testimonial-slide-card:hover {
+      transform: translateY(-6px) scale(1.02) !important;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.14) !important;
+    }
+
+    /* ── 11. CTA BANNER AMBIENT BREATHING ORBS ── */
+    .cta-orb-1 {
+      animation: orb-pulse-1 7s ease-in-out infinite alternate !important;
+    }
+
+    .cta-orb-2 {
+      animation: orb-pulse-2 8.5s ease-in-out infinite alternate !important;
+    }
+
+    @keyframes orb-pulse-1 {
+      0% { transform: scale(0.9) translate(0, 0); opacity: 0.35; }
+      100% { transform: scale(1.2) translate(30px, -20px); opacity: 0.65; }
+    }
+
+    @keyframes orb-pulse-2 {
+      0% { transform: scale(0.85) translate(0, 0); opacity: 0.3; }
+      100% { transform: scale(1.25) translate(-30px, 20px); opacity: 0.6; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       INTERACTIVE PREVIEW HUD CONTROLLER (FLOATING)
+       ═══════════════════════════════════════════════════════════════ */
+    .anim-hud-panel {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 99998;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 18px;
+      padding: 10px 16px;
+      color: #ffffff;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      font-family: var(--font-body, sans-serif);
+    }
+
+    .anim-hud-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(193, 3, 6, 0.28);
+      border: 1px solid rgba(193, 3, 6, 0.5);
+      color: #ff8285;
+      padding: 4px 10px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.6px;
+    }
+
+    .anim-hud-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ff334b;
+      box-shadow: 0 0 8px #ff334b;
+      animation: hud-dot-pulse 1.8s infinite;
+    }
+
+    @keyframes hud-dot-pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    .anim-hud-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 13px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      border-radius: 9px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .anim-hud-btn:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    .anim-hud-btn.primary {
+      background: linear-gradient(135deg, #c10306, #e60000);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 14px rgba(193, 3, 6, 0.4);
+    }
+
+    .anim-hud-btn.primary:hover {
+      background: linear-gradient(135deg, #e60000, #ff1a1a);
+    }
+
+    .anim-hud-select {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      padding: 6px 10px;
+      border-radius: 9px;
+      font-size: 12px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .anim-hud-select option {
+      background: #0f172a;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Reading Depth Progress Indicator -->
+  <div id="page-scroll-progress"></div>
+
+  <!-- Interactive Demo HUD Controller -->
+  <div class="anim-hud-panel" id="anim-hud">
+    <div class="anim-hud-badge">
+      <span class="anim-hud-dot"></span>
+      ANIMATION PREVIEW
+    </div>
+    
+    <button class="anim-hud-btn primary" id="btn-auto-tour" title="Sit back and watch smooth scroll preview from top to bottom">
+      <span>▶</span> Auto Tour
+    </button>
+
+    <button class="anim-hud-btn" id="btn-replay" title="Replay all animations">
+      <span>↻</span> Replay
+    </button>
+
+    <select class="anim-hud-select" id="speed-select" title="Animation timing speed">
+      <option value="1">Speed: Normal (1x)</option>
+      <option value="1.8">Speed: Slow-Mo (0.5x)</option>
+      <option value="0.6">Speed: Snappy (1.5x)</option>
+    </select>
+
+    <select class="anim-hud-select" id="jump-select" title="Jump to section">
+      <option value="">Jump to Section...</option>
+      <option value="#stats-sec">1. Stats Counter</option>
+      <option value="#services-sec">2. Growth Services</option>
+      <option value="#projects-sec">3. Featured Work</option>
+      <option value="#clients-sec">4. Clients Grid</option>
+      <option value="#partners-sec">5. Platform Partners</option>
+      <option value="#awards-sec">6. Awards 2026</option>
+      <option value="#ecosystem-sec">7. Ecosystem Verticals</option>
+      <option value="#casestudies-sec">8. Case Studies</option>
+      <option value="#blog-sec">9. Sociapa Blog</option>
+      <option value="#testimonials-sec">10. Client Reviews</option>
+      <option value="#cta-sec">11. CTA Banner</option>
+    </select>
+  </div>
+
+  <div id="root">
+    <!-- ═══════════════════════════════════════════════════════════════
+         EXACT ORIGINAL NAVBAR (UNCHANGED)
+         ═══════════════════════════════════════════════════════════════ -->
+    <nav class="navbar" id="site-navbar">
+      <div class="container navbar-inner">
+        <a href="/sociapareact/" class="navbar-logo-link">
+          <img src="/sociapareact/logonew.webp" alt="Sociapa — Your Social Buddy" class="navbar-logo" width="220" height="65" fetchpriority="high" decoding="async" />
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="nav-links">
+          <a href="/sociapareact/about">About Us</a>
+          <a href="/sociapareact/our-services">Services</a>
+          <a href="/sociapareact/influencers-marketplace">Influencer</a>
+          <a href="/sociapareact/blog">Blog</a>
+          <a href="/sociapareact/career">Career</a>
+          <a href="/sociapareact/free-website-audit">Audit</a>
+          <a href="/sociapareact/stories">Stories</a>
+          <a href="/sociapareact/contact-us">Contact Us</a>
+          <a href="/sociapareact/calendar-2026">Calendar 2026</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('open'); document.getElementById('mobile-nav-panel').classList.toggle('open');">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay (Exact Original) -->
+    <div class="mobile-nav" id="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="/sociapareact/">
+          <img src="/sociapareact/logonew.webp" alt="Sociapa" class="navbar-logo" width="180" height="53" />
+        </a>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="/sociapareact/about">About Us</a>
+        <a href="/sociapareact/our-services">Services</a>
+        <a href="/sociapareact/influencers-marketplace">Influencer</a>
+        <a href="/sociapareact/blog">Blog</a>
+        <a href="/sociapareact/career">Career</a>
+        <a href="/sociapareact/free-website-audit">Audit</a>
+        <a href="/sociapareact/stories">Stories</a>
+        <a href="/sociapareact/contact-us">Contact Us</a>
+        <a href="/sociapareact/calendar-2026">Calendar 2026</a>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         EXACT ORIGINAL VIDEO BANNER HERO (UNCHANGED)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="home-hero-section">
+      <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
+        Best Digital Marketing &amp; Advertising Agency in Noida &amp; Delhi NCR - Sociapa
+      </h1>
+      <img
+        src="/sociapareact/images/hero-video-poster.webp"
+        alt="Sociapa Digital Marketing & Advertising Agency"
+        class="home-hero-poster-img"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+        decoding="async"
+      />
+      <!-- Video rendered exactly as in Home.jsx -->
+      <video
+        class="home-banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        width="1920"
+        height="1080"
+        aria-hidden="true"
+      >
+        <source src="/sociapareact/video/socialVideo.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         1. STATS SECTION (ENHANCED LIVE COUNTER & HOVER LIFT)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="stats-section" id="stats-sec">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <div class="stat-number">
+              <span class="animated-counter" data-target="100" data-suffix="+">0+</span>
+            </div>
+            <div class="stat-label">Clients</div>
+          </div>
+
+          <div class="stat-item animate-on-scroll delay-1">
+            <div class="stat-number">
+              <span class="animated-counter" data-target="8" data-suffix="+">0+</span>
+            </div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+
+          <div class="stat-item animate-on-scroll delay-2">
+            <div class="stat-number">
+              <span class="animated-counter" data-target="500" data-suffix="+">0+</span>
+            </div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         2. SERVICES SECTION ("WHAT WE DO BEST" - 20 REAL SERVICE CARDS)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="services-section section-pad home-services-section" id="services-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll home-services-header">
+          <div class="home-services-label">
+            <span class="home-services-label-dot"></span>
+            WHAT WE DO BEST
+          </div>
+          <h2 class="home-services-title">
+            A Complete <span class="home-services-title-red">Ecosystem</span> of Growth Services
+          </h2>
+          <p class="home-services-desc">
+            From brand strategy to performance marketing — everything your business needs to dominate the digital landscape.
+          </p>
+        </div>
+
+        <div class="services-grid home-services-grid">
+          <!-- 1. Ad Experience -->
+          <a href="/sociapareact/pay-per-click-ppc-services-india" class="service-card-real animate-on-scroll delay-1" style="background-image: url('/sociapareact/images/services/Ad-Experience.jpg')">
+            <span class="home-svc-badge">PAID PERFORMANCE</span>
+            <div class="overlay-real">
+              <h3>Ad Experience</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 2. Aggregator Platform Service -->
+          <a href="/sociapareact/aggregator-platform-service" class="service-card-real animate-on-scroll delay-2" style="background-image: url('/sociapareact/images/services/Aggregator-Platform-Service.jpg')">
+            <span class="home-svc-badge">E-COMMERCE & B2B</span>
+            <div class="overlay-real">
+              <h3>Aggregator Platform Service</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 3. Brand Identity Design -->
+          <a href="/sociapareact/brand-identity-design" class="service-card-real animate-on-scroll delay-3" style="background-image: url('/sociapareact/images/services/brand-identity-design.jpeg')">
+            <span class="home-svc-badge">BRANDING & DESIGN</span>
+            <div class="overlay-real">
+              <h3>Brand Identity Design</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 4. Brand Strategy -->
+          <a href="/sociapareact/brand-strategy" class="service-card-real animate-on-scroll delay-4" style="background-image: url('/sociapareact/images/services/brand-service.jpeg')">
+            <span class="home-svc-badge">STRATEGY & ARCHITECTURE</span>
+            <div class="overlay-real">
+              <h3>Brand Strategy</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 5. Consultation & Idea -->
+          <a href="/sociapareact/consultation-idea" class="service-card-real animate-on-scroll delay-1" style="background-image: url('/sociapareact/images/services/Consultation-&-Ideas.jpg')">
+            <span class="home-svc-badge">STRATEGY & ADVISORY</span>
+            <div class="overlay-real">
+              <h3>Consultation &amp; Idea</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 6. Content Development -->
+          <a href="/sociapareact/content-designing" class="service-card-real animate-on-scroll delay-2" style="background-image: url('/sociapareact/images/services/Content-Development.jpg')">
+            <span class="home-svc-badge">STRATEGY & COPY</span>
+            <div class="overlay-real">
+              <h3>Content Development</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 7. Creative Designing -->
+          <a href="/sociapareact/creative-designing" class="service-card-real animate-on-scroll delay-3" style="background-image: url('/sociapareact/images/services/Creative-Designing.jpg')">
+            <span class="home-svc-badge">VISUAL SYSTEM</span>
+            <div class="overlay-real">
+              <h3>Creative Designing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 8. Digital Marketing -->
+          <a href="/sociapareact/best-digital-marketing-services-india" class="service-card-real animate-on-scroll delay-4" style="background-image: url('/sociapareact/images/services/Digital-Marketing.jpg')">
+            <span class="home-svc-badge">PERFORMANCE MARKETING</span>
+            <div class="overlay-real">
+              <h3>Digital Marketing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 9. Email Marketing -->
+          <a href="/sociapareact/email-marketing-services" class="service-card-real animate-on-scroll delay-1" style="background-image: url('/sociapareact/images/services/Email-Marketing.jpg')">
+            <span class="home-svc-badge">RETENTION & CRO</span>
+            <div class="overlay-real">
+              <h3>Email Marketing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 10. Go To Market -->
+          <a href="/sociapareact/go-to-market" class="service-card-real animate-on-scroll delay-2" style="background-image: url('/sociapareact/images/services/go to-market-services.jpeg')">
+            <span class="home-svc-badge">LAUNCH & GROWTH</span>
+            <div class="overlay-real">
+              <h3>Go To Market</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 11. Influencer Marketing -->
+          <a href="/sociapareact/influencer-marketing-services" class="service-card-real animate-on-scroll delay-3" style="background-image: url('/sociapareact/images/services/Influencer-Marketing.jpg')">
+            <span class="home-svc-badge">CREATOR COLLABS</span>
+            <div class="overlay-real">
+              <h3>Influencer Marketing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 12. Packaging and Design -->
+          <a href="/sociapareact/best-packaging-design-agency-india" class="service-card-real animate-on-scroll delay-4" style="background-image: url('/sociapareact/images/services/Packaging-and-Design.jpg')">
+            <span class="home-svc-badge">PACKAGING DESIGN</span>
+            <div class="overlay-real">
+              <h3>Packaging and Design</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 13. Photography -->
+          <a href="/sociapareact/best-photography-services" class="service-card-real animate-on-scroll delay-1" style="background-image: url('/sociapareact/images/services/Photography.jpg')">
+            <span class="home-svc-badge">STUDIO & PRODUCT</span>
+            <div class="overlay-real">
+              <h3>Photography</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 14. Product Unboxing -->
+          <a href="/sociapareact/product-unboxing-experience" class="service-card-real animate-on-scroll delay-2" style="background-image: url('/sociapareact/images/services/product-unboxing-service.jpeg')">
+            <span class="home-svc-badge">UNBOXING DESIGN</span>
+            <div class="overlay-real">
+              <h3>Product Unboxing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 15. Public Relation -->
+          <a href="/sociapareact/best-pr-agency-india" class="service-card-real animate-on-scroll delay-3" style="background-image: url('/sociapareact/images/services/Public-Relation.jpg')">
+            <span class="home-svc-badge">CREDIBILITY & PRESS</span>
+            <div class="overlay-real">
+              <h3>Public Relation</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 16. Registration Services -->
+          <a href="/sociapareact/gst-company-registration-services" class="service-card-real animate-on-scroll delay-4" style="background-image: url('/sociapareact/images/services/Registration-Services.jpg')">
+            <span class="home-svc-badge">LEGAL & COMPLIANCE</span>
+            <div class="overlay-real">
+              <h3>Registration Services</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 17. SEO | AEO | GEO -->
+          <a href="/sociapareact/seo-aeo-geo" class="service-card-real animate-on-scroll delay-1" style="background-image: url('/sociapareact/images/services/seo-aeo-geo-services.jpeg')">
+            <span class="home-svc-badge">SEARCH OPTIMIZATION</span>
+            <div class="overlay-real">
+              <h3>SEO | AEO | GEO</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 18. Social Media Marketing -->
+          <a href="/sociapareact/best-social-media-marketing-agency-india" class="service-card-real animate-on-scroll delay-2" style="background-image: url('/sociapareact/images/services/Social-Media-Marketing.jpg')">
+            <span class="home-svc-badge">COMMUNITY & VIRAL</span>
+            <div class="overlay-real">
+              <h3>Social Media Marketing</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 19. Video Production -->
+          <a href="/sociapareact/videos" class="service-card-real animate-on-scroll delay-3" style="background-image: url('/sociapareact/images/services/Video-Production.jpg')">
+            <span class="home-svc-badge">COMMERCIAL & REELS</span>
+            <div class="overlay-real">
+              <h3>Video Production</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+
+          <!-- 20. Website/App Development -->
+          <a href="/sociapareact/best-web-development-agency-india" class="service-card-real animate-on-scroll delay-4" style="background-image: url('/sociapareact/images/services/Website-App-Development.jpg')">
+            <span class="home-svc-badge">TECH & EXPERIENCE</span>
+            <div class="overlay-real">
+              <h3>Website/App Development</h3>
+              <div class="btn waves-effect waves-light rounded-5 serviceBtn home-svc-btn">
+                View More ➔
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         3. FEATURED WORK & CREATIVE SHOWCASE (PROJECTS TAB)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section-pad projects-section" id="projects-sec">
+      <div class="container projects-container">
+        <!-- Section Header -->
+        <div class="projects-header animate-on-scroll">
+          <div class="projects-label">
+            <span class="projects-label-dot"></span>
+            FEATURED PORTFOLIO
+          </div>
+          <h2 class="projects-title">
+            Featured Work &amp; <span class="projects-title-red">Creative Showcase</span>
+          </h2>
+          <p class="projects-desc">
+            We combine strategic brand storytelling with cutting-edge design to build market leaders across India.
+          </p>
+        </div>
+
+        <!-- Tab Chips -->
+        <div class="projects-tab-bar animate-on-scroll delay-1">
+          <div class="projects-tab-list">
+            <button class="projects-tab-chip active" onclick="switchProjectTab('creatives', this)">Creatives</button>
+            <button class="projects-tab-chip" onclick="switchProjectTab('logos', this)">Logos</button>
+            <button class="projects-tab-chip" onclick="switchProjectTab('websites', this)">Website</button>
+            <button class="projects-tab-chip" onclick="switchProjectTab('packaging', this)">Packaging</button>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="projects-gallery-container animate-on-scroll delay-2">
+          <!-- Creatives Panel -->
+          <div id="tab-pane-creatives" class="projects-grid-creatives" style="display: grid;">
+            <div class="projects-creative-card">
+              <img src="/sociapareact/images/creatives/americana.webp" alt="Americana Project" class="projects-creative-img" width="380" height="380" loading="lazy" />
+            </div>
+            <div class="projects-creative-card">
+              <img src="/sociapareact/images/creatives/bonn.webp" alt="Bonn Project" class="projects-creative-img" width="380" height="380" loading="lazy" />
+            </div>
+            <div class="projects-creative-card">
+              <img src="/sociapareact/images/creatives/9am.webp" alt="9am Project" class="projects-creative-img" width="380" height="380" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Logos Panel -->
+          <div id="tab-pane-logos" class="projects-grid-logos" style="display: none;">
+            <div class="projects-logo-card"><img src="/sociapareact/images/apisLogo.png" alt="Apis" class="projects-logo-img" /></div>
+            <div class="projects-logo-card"><img src="/sociapareact/images/KGS-logo.png" alt="KGS" class="projects-logo-img" /></div>
+            <div class="projects-logo-card"><img src="/sociapareact/images/Habitat-logo.png" alt="Habitat" class="projects-logo-img" /></div>
+            <div class="projects-logo-card"><img src="/sociapareact/images/Wello-logo.png" alt="Wello" class="projects-logo-img" /></div>
+            <div class="projects-logo-card"><img src="/sociapareact/images/DSIS-logo.png" alt="DSIS" class="projects-logo-img" /></div>
+            <div class="projects-logo-card"><img src="/sociapareact/images/sunstellar-logo.png" alt="Sunstellar" class="projects-logo-img" /></div>
+          </div>
+
+          <!-- Websites Panel -->
+          <div id="tab-pane-websites" class="projects-grid-websites" style="display: none;">
+            <div class="projects-website-card"><img src="/sociapareact/images/onfleekBnr.png" alt="Onfleek" class="projects-website-img" /></div>
+            <div class="projects-website-card"><img src="/sociapareact/images/phoneBnr.png" alt="Phone Project" class="projects-website-img" /></div>
+            <div class="projects-website-card"><img src="/sociapareact/images/moospringBnr.png" alt="MooSpring" class="projects-website-img" /></div>
+          </div>
+
+          <!-- Packaging Panel -->
+          <div id="tab-pane-packaging" class="projects-grid-packaging" style="display: none;">
+            <div class="projects-packaging-card"><img src="/sociapareact/images/organic-honey-pck.png" alt="Organic Honey" class="projects-packaging-img" /></div>
+            <div class="projects-packaging-card"><img src="/sociapareact/images/la-bread.png" alt="La Bread" class="projects-packaging-img" /></div>
+            <div class="projects-packaging-card"><img src="/sociapareact/images/raj-pckg.png" alt="Raj Packaging" class="projects-packaging-img" /></div>
+            <div class="projects-packaging-card"><img src="/sociapareact/images/apis-muesli.png" alt="Apis Muesli" class="projects-packaging-img" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         4. KNOW OUR CLIENTS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section-pad bg-light" id="clients-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2 class="text-red poppins-semibold mb-2 clients-title">
+            Know Our <span class="text-black">Clients</span>
+          </h2>
+          <p class="mx-auto clients-desc">
+            These are our giants, our strengthening bond is a testament to the success that we have helped them achieve. At sociapa we believe in modern marketing, creative ideas and big hearts.
+          </p>
+        </div>
+
+        <div class="client-tabs-container animate-on-scroll delay-1">
+          <div class="custom-tabs flex-wrap justify-center">
+            <button class="tab-btn active">FMCG/FMCD</button>
+            <button class="tab-btn">DECOR</button>
+            <button class="tab-btn">SERVICES</button>
+            <button class="tab-btn">CORPORATE</button>
+            <button class="tab-btn">EDUCATION</button>
+            <button class="tab-btn">LIFESTYLE</button>
+            <button class="tab-btn">SPORTS</button>
+          </div>
+        </div>
+
+        <div class="client-grid-wrapper mt-5 animate-on-scroll delay-2">
+          <div class="fade-in-up clients-grid-flex">
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/nutrela-clt.png" alt="Nutrela" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/pat-Sports.png" alt="Patanjali" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/madhusudan.png" alt="Madhusudan" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/apisClt.png" alt="Apis" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/bonnClt.png" alt="Bonn" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/houseVeda200.png" alt="House Veda" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/myday200.png" alt="My Day" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/kashmirWadi200.png" alt="Kashmir Wadi" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/pansari200.png" alt="Pansari" class="client-card-img" /></div></div></div>
+            <div class="client-card"><div class="client-card-inner"><div class="client-logo-layer client-logo-first"><img src="/sociapareact/images/bakerClt.png" alt="Baker" class="client-card-img" /></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         5. PLATFORM PARTNERS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section-pad bg-white" id="partners-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2 class="text-red poppins-semibold mb-2 partners-title">
+            Proudly Trusted by Our <span class="text-black">Platform Partners</span>
+          </h2>
+          <p class="mx-auto partners-desc">
+            We collaborate with leading advertising and marketing platforms to deliver impactful digital growth solutions.
+          </p>
+        </div>
+
+        <div class="partners-grid animate-on-scroll delay-1">
+          <div class="partner-card glass-card center-flex partner-card-box">
+            <img src="/sociapareact/images/ads/meta.webp" alt="Meta" class="partner-card-img" width="200" height="80" loading="lazy" />
+          </div>
+          <div class="partner-card glass-card center-flex partner-card-box">
+            <img src="/sociapareact/images/ads/amazon-ads.webp" alt="Amazon Ads" class="partner-card-img" width="200" height="80" loading="lazy" />
+          </div>
+          <div class="partner-card glass-card center-flex partner-card-box">
+            <img src="/sociapareact/images/ads/marketing.webp" alt="LinkedIn Marketing" class="partner-card-img" width="200" height="80" loading="lazy" />
+          </div>
+          <div class="partner-card glass-card center-flex partner-card-box">
+            <img src="/sociapareact/images/ads/jiostar.webp" alt="Jio Hotstar" class="partner-card-img" width="200" height="80" loading="lazy" />
+          </div>
+          <div class="partner-card glass-card center-flex partner-card-box">
+            <img src="/sociapareact/images/ads/spotify.webp" alt="Spotify Ads" class="partner-card-img" width="200" height="80" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         6. AWARDS & CERTIFICATION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="awards-section section-pad bg-light" id="awards-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <span class="section-label">Recognition</span>
+          <h2>Awards <span class="text-red">&amp; Certification</span></h2>
+        </div>
+
+        <div class="awards-split animate-on-scroll delay-1 home-awards-split">
+          <div class="awards-image-col home-awards-img-col">
+            <div class="home-award-showcase-card">
+              <div class="home-award-trophy-wrap">
+                <img
+                  src="/sociapareact/images/outlook-business-achievers-award-2026.webp"
+                  alt="Outlook Business Achievers Awards 2026 — Innovative Digital & Creative Agency of the Year — Sociapa"
+                  class="home-awards-img"
+                  width="582"
+                  height="732"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="home-award-trophy-badge">
+                  <span class="trophy-sparkle">🏆</span>
+                  <span>2026 National Award Winner</span>
+                </span>
+              </div>
+              <div class="home-award-card-meta">
+                <span class="home-award-edition">10th Edition · Outlook Business Spotlight</span>
+                <strong class="home-award-category">Innovative Digital &amp; Creative Agency of the Year</strong>
+              </div>
+            </div>
+          </div>
+          
+          <div class="awards-text-col home-awards-text-col">
+            <div class="home-awards-pill">
+              <span class="home-awards-pill-icon">★</span>
+              <span>Outlook Business Spotlight · 2026 Winner</span>
+            </div>
+            <h3 class="home-awards-heading">
+              This is where your Marketing Brilliance begins
+            </h3>
+            <p class="home-awards-text">
+              Sociapa is honored as the <strong>Innovative Digital &amp; Creative Agency of the Year</strong> at the prestigious Outlook Business Achievers Awards 2026. Regardless of what sector you’re in or what services you offer, your company’s brand identity is critical to its success.
+            </p>
+            <p class="home-awards-text">
+              Clients, customers, prospects, and even workers may be dubious or unclear of what your firm does and represents if it does not have a strong brand reputation. You don’t have to spend a lot of money on branding but you need the right marketing to make them aware.
+            </p>
+            <a href="/sociapareact/best-creative-and-digital-agency-award" class="btn btn-primary home-awards-btn">
+              Read More ✦
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         7. ECOSYSTEM VERTICALS
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section-pad ecosystem-section" id="ecosystem-sec">
+      <div class="container ecosystem-container">
+        <div class="ecosystem-header animate-on-scroll">
+          <div class="ecosystem-label">
+            <span class="ecosystem-label-dot"></span>
+            CONNECTED NETWORK
+          </div>
+          <h2 class="ecosystem-title">
+            Our Specialized <span class="ecosystem-title-red">Ecosystem</span> Verticals
+          </h2>
+          <p class="ecosystem-desc">
+            Five specialized business verticals, one connected vision — driving growth from digital strategy to on-ground experience.
+          </p>
+        </div>
+
+        <div class="ecosystem-grid animate-on-scroll delay-1">
+          <a href="https://sociapanews.com" target="_blank" rel="noreferrer" class="ecosystem-item-link">
+            <div class="ecosystem-card">
+              <div class="ecosystem-tag-wrap">
+                <span class="ecosystem-tag">MEDIA &amp; PRESS</span>
+                <span class="ecosystem-external-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg></span>
+              </div>
+              <div class="ecosystem-logo-frame">
+                <img src="/sociapareact/images/eco-system/sociapa-news.png" alt="Sociapa News" class="ecosystem-logo-img" />
+              </div>
+              <p class="ecosystem-card-desc">Breaking industry stories, trending culture, marketing insights, and digital-first journalism.</p>
+            </div>
+          </a>
+
+          <a href="https://sociapainfluencer.com" target="_blank" rel="noreferrer" class="ecosystem-item-link">
+            <div class="ecosystem-card">
+              <div class="ecosystem-tag-wrap">
+                <span class="ecosystem-tag">CREATOR NETWORK</span>
+                <span class="ecosystem-external-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg></span>
+              </div>
+              <div class="ecosystem-logo-frame">
+                <img src="/sociapareact/images/eco-system/Influencer-new-Logo-light.png" alt="Sociapa Influencer" class="ecosystem-logo-img" />
+              </div>
+              <p class="ecosystem-card-desc">Top-tier creator management, brand collaborations, viral campaigns, and influencer strategy.</p>
+            </div>
+          </a>
+
+          <a href="https://followus.link" target="_blank" rel="noreferrer" class="ecosystem-item-link">
+            <div class="ecosystem-card">
+              <div class="ecosystem-tag-wrap">
+                <span class="ecosystem-tag">SMART PLATFORM</span>
+                <span class="ecosystem-external-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg></span>
+              </div>
+              <div class="ecosystem-logo-frame">
+                <img src="/sociapareact/images/eco-system/follow-us-logo.webp" alt="FollowUs" class="ecosystem-logo-img" />
+              </div>
+              <p class="ecosystem-card-desc">Next-gen link-in-bio platform engineered for creators, brands, and digital entrepreneurs.</p>
+            </div>
+          </a>
+
+          <a href="https://sociapabrandstudio.com/" target="_blank" rel="noreferrer" class="ecosystem-item-link">
+            <div class="ecosystem-card">
+              <div class="ecosystem-tag-wrap">
+                <span class="ecosystem-tag">CREATIVE AGENCY</span>
+                <span class="ecosystem-external-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg></span>
+              </div>
+              <div class="ecosystem-logo-frame">
+                <img src="/sociapareact/images/eco-system/brand-studio.png" alt="Brand Studio" class="ecosystem-logo-img" />
+              </div>
+              <p class="ecosystem-card-desc">Full-service brand architecture, packaging design, video production, and high-ROI campaigns.</p>
+            </div>
+          </a>
+
+          <a href="https://www.onfleekindia.com/" target="_blank" rel="noreferrer" class="ecosystem-item-link">
+            <div class="ecosystem-card">
+              <div class="ecosystem-tag-wrap">
+                <span class="ecosystem-tag">EVENTS</span>
+                <span class="ecosystem-external-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg></span>
+              </div>
+              <div class="ecosystem-logo-frame">
+                <img src="/sociapareact/images/eco-system/onfleek-logo.png" alt="Onfleek" class="ecosystem-logo-img" />
+              </div>
+              <p class="ecosystem-card-desc">On-ground BTL activations, corporate events, trade exhibitions, and brand experiences.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         8. CASE STUDIES SHOWCASE
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section section-pad bg-light home-case-studies-section" id="casestudies-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll center-align mb-5 case-studies-header">
+          <span class="section-label">PROVEN RESULTS</span>
+          <h2>Featured <span class="text-red">Case Studies</span></h2>
+          <p class="mx-auto" style="max-width: 600px; color: #6B7280;">
+            Explore our high-impact campaigns driving viral reach, brand positioning, and explosive commercial growth.
+          </p>
+        </div>
+
+        <div class="case-studies-wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div class="home-case-study-card animate-on-scroll">
+            <img src="/sociapareact/images/case-studies-apis.webp" alt="Apis Case Study" style="width: 100%; height: 210px; object-fit: cover;" />
+            <div style="padding: 20px; background: #fff;">
+              <span style="font-size: 11px; font-weight: 700; color: #c10306;">FMCG &amp; RETAIL</span>
+              <h3 style="font-size: 18px; font-weight: 700; margin: 8px 0;">Apis - Influencer Phase 1 Case Study</h3>
+              <p style="font-size: 13px; color: #64748b;">2.0M+ reach achieved featuring Ranveer Brar, Zakir Khan &amp; top food creators.</p>
+            </div>
+          </div>
+
+          <div class="home-case-study-card animate-on-scroll delay-1">
+            <img src="/sociapareact/images/case-studies-gyan.webp" alt="Gyan Case Study" style="width: 100%; height: 210px; object-fit: cover;" />
+            <div style="padding: 20px; background: #fff;">
+              <span style="font-size: 11px; font-weight: 700; color: #c10306;">FMCG &amp; RETAIL</span>
+              <h3 style="font-size: 18px; font-weight: 700; margin: 8px 0;">Gyan x Sociapa</h3>
+              <p style="font-size: 13px; color: #64748b;">Reimagining milk packaging &amp; visual identity across product variants.</p>
+            </div>
+          </div>
+
+          <div class="home-case-study-card animate-on-scroll delay-2">
+            <img src="/sociapareact/images/case-studies-bonn.webp" alt="Bonn Case Study" style="width: 100%; height: 210px; object-fit: cover;" />
+            <div style="padding: 20px; background: #fff;">
+              <span style="font-size: 11px; font-weight: 700; color: #c10306;">FMCG &amp; RETAIL</span>
+              <h3 style="font-size: 18px; font-weight: 700; margin: 8px 0;">Sociapa_Bonn Social Media Launch</h3>
+              <p style="font-size: 13px; color: #64748b;">Social media launch campaign for India's First Desi Twist Bread.</p>
+            </div>
+          </div>
+
+          <div class="home-case-study-card animate-on-scroll delay-3">
+            <img src="/sociapareact/images/case-studies-nutrela.webp" alt="Nutrela Case Study" style="width: 100%; height: 210px; object-fit: cover;" />
+            <div style="padding: 20px; background: #fff;">
+              <span style="font-size: 11px; font-weight: 700; color: #c10306;">FMCG &amp; RETAIL</span>
+              <h3 style="font-size: 18px; font-weight: 700; margin: 8px 0;">Sociapa_Nutrela Case Study</h3>
+              <p style="font-size: 13px; color: #64748b;">Integrated campaign with Shilpa Shetty, mynutrela.com &amp; Trendsetter Award 2025.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         9. BLOG SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="blog-section home-blog-section" id="blog-sec">
+      <div class="container">
+        <div class="section-title animate-on-scroll home-blog-header">
+          <div class="home-blog-label">
+            <span class="home-blog-label-dot"></span>
+            INSIGHTS &amp; ARTICLES
+          </div>
+          <h2 class="home-blog-title">
+            Latest from the <span class="home-blog-title-red">Sociapa Blog</span>
+          </h2>
+          <p class="home-blog-desc">
+            Industry insights, marketing trends, and actionable strategies for brand growth.
+          </p>
+        </div>
+
+        <div class="blog-grid home-blog-grid">
+          <a href="/sociapareact/chatgpt-ads-in-india" class="blog-card home-blog-card animate-on-scroll">
+            <div class="home-blog-img-frame">
+              <div class="home-blog-img-glow"></div>
+              <img src="/sociapareact/images/blog/chatgpt-ads-in-india-thumb.png" alt="ChatGPT Ads in India" class="home-blog-img" width="400" height="250" loading="lazy" />
+              <span class="home-blog-cat-tag">AI</span>
+            </div>
+            <div class="home-blog-body">
+              <h3 class="home-blog-heading">ChatGPT Ads in India: Complete Guide</h3>
+              <p class="home-blog-excerpt">OpenAI has launched ChatGPT Ads in India. Discover context hints targeting, INR pricing, Ads Manager, and brand strategies.</p>
+              <div class="home-blog-footer">
+                <div class="blog-read-more home-blog-read-btn">
+                  <span>Read Article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="/sociapareact/why-seo-is-essential-for-your-d2c-websites-success" class="blog-card home-blog-card animate-on-scroll delay-1">
+            <div class="home-blog-img-frame">
+              <div class="home-blog-img-glow"></div>
+              <img src="/sociapareact/images/blog/Essential-for-Your-D2C-Website-thumb.png" alt="Why SEO Is Essential" class="home-blog-img" width="400" height="250" loading="lazy" />
+              <span class="home-blog-cat-tag">SEO</span>
+            </div>
+            <div class="home-blog-body">
+              <h3 class="home-blog-heading">Why SEO Is Essential For Your D2C Website</h3>
+              <p class="home-blog-excerpt">Learn how organic search optimization drives sustained traffic, conversions, and D2C brand equity.</p>
+              <div class="home-blog-footer">
+                <div class="blog-read-more home-blog-read-btn">
+                  <span>Read Article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="/sociapareact/mixed-realit-in-ads-ushering-in-a-new-era-of-immersive-experiences" class="blog-card home-blog-card animate-on-scroll delay-2">
+            <div class="home-blog-img-frame">
+              <div class="home-blog-img-glow"></div>
+              <img src="/sociapareact/images/blog/usharing-thumb.png" alt="Mixed Reality In Advertising" class="home-blog-img" width="400" height="250" loading="lazy" />
+              <span class="home-blog-cat-tag">Marketing</span>
+            </div>
+            <div class="home-blog-body">
+              <h3 class="home-blog-heading">Mixed Reality In Advertising</h3>
+              <p class="home-blog-excerpt">Discover immersive 3D, AR, spatial computing, and next-gen interactive brand marketing experiences.</p>
+              <div class="home-blog-footer">
+                <div class="blog-read-more home-blog-read-btn">
+                  <span>Read Article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="/sociapareact/turning-customer" class="blog-card home-blog-card animate-on-scroll delay-3">
+            <div class="home-blog-img-frame">
+              <div class="home-blog-img-glow"></div>
+              <img src="/sociapareact/images/blog/turning-customer-thumb.jpg" alt="Turn Customers Into Creators" class="home-blog-img" width="400" height="250" loading="lazy" />
+              <span class="home-blog-cat-tag">Content</span>
+            </div>
+            <div class="home-blog-body">
+              <h3 class="home-blog-heading">Turn Customers Into Content Creators</h3>
+              <p class="home-blog-excerpt">Build authentic user-generated content, viral community engagement, and brand advocate programs.</p>
+              <div class="home-blog-footer">
+                <div class="blog-read-more home-blog-read-btn">
+                  <span>Read Article</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="center-flex mt-5 animate-on-scroll delay-2 home-blog-view-all-wrap">
+          <a href="/sociapareact/blog" class="btn btn-outline home-blog-view-all-btn">
+            View All Articles ✦
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         10. TESTIMONIALS SECTION
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="section bg-light testimonials-section" id="testimonials-sec" style="overflow: hidden; padding: 80px 0;">
+      <div class="container" style="max-width: 100%; padding: 0;">
+        <div class="section-title testimonials-heading-wrap animate-on-scroll" style="text-align: center; margin-bottom: 50px; padding: 0 20px;">
+          <div class="testimonials-label" style="display: inline-flex; align-items: center; gap: 8px; background: #fee2e2; color: #d20c0c; padding: 6px 16px; borderRadius: 30px; font-size: 12px; font-weight: 700; letterSpacing: 1px; textTransform: uppercase; margin-bottom: 16px;">
+            <span class="testimonials-label-dot" style="width: 6px; height: 6px; background: #d20c0c; border-radius: 50%;"></span>
+            CLIENT REVIEWS &amp; FEEDBACK
+          </div>
+          <h2 class="testimonials-title" style="font-size: 2.5rem; font-weight: 800; color: #111827; margin: 0 0 16px 0;">
+            What Our <span class="testimonials-title-red" style="color: #d20c0c;">Clients Say</span>
+          </h2>
+          <p class="testimonials-desc" style="color: #6B7280; font-size: 1.05rem; max-width: 640px; margin: 0 auto; line-height: 1.6;">
+            Real appreciation posts and feedback from brand managers, executives, and leaders working with Sociapa.
+          </p>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-slider-track">
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review.webp" alt="Client Review 1" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review2.webp" alt="Client Review 2" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review3.webp" alt="Client Review 3" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review4.webp" alt="Client Review 4" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <!-- Duplicated for continuous looping -->
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review.webp" alt="Client Review 1" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review2.webp" alt="Client Review 2" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review3.webp" alt="Client Review 3" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+            <div class="testimonial-slide-card"><img src="/sociapareact/images/review4.webp" alt="Client Review 4" class="testimonial-slide-img" width="380" height="516" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         11. CTA BANNER (WITH ANIMATED BREATHING ORBS)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="cta-section" id="cta-sec">
+      <div class="cta-orb-1"></div>
+      <div class="cta-orb-2"></div>
+      <div class="container cta-content animate-on-scroll">
+        <h2>Ready to Transform Your Brand?</h2>
+        <p>
+          Let's build something extraordinary together. Get a free strategy session
+          with India's most awarded digital marketing team.
+        </p>
+        <div class="cta-buttons animate-on-scroll delay-2 home-cta-btns-wrap">
+          <a href="/sociapareact/contact-us" class="btn btn-light home-cta-btn-primary">
+            Get Started Now ✦
+          </a>
+          <a href="/sociapareact/free-website-audit" class="btn btn-outline home-cta-btn-outline">
+            Get Free Audit
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         EXACT ORIGINAL FOOTER (UNCHANGED)
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer class="sf footer" itemscope itemtype="https://schema.org/LocalBusiness">
+      <meta itemprop="name" content="Sociapa" />
+      <meta itemprop="url" content="https://www.sociapa.com" />
+      <meta itemprop="telephone" content="+917082801075" />
+      <meta itemprop="email" content="mail@sociapa.com" />
+
+      <div class="sf-about-wrap">
+        <div class="sf-about footer-about">
+          <div class="sf-about__content footer-about-text">
+            <div class="sf-about__label footer-about-label">About Sociapa</div>
+            <p>
+              <strong>Sociapa</strong> is a full-service creative digital marketing agency headquartered in{" "}
+              <strong>Delhi NCR, India</strong>, with offices in <strong>Dubai, UAE</strong> and{" "}
+              <strong>London, UK</strong>. We partner with startups, scale-ups, and established enterprises across FMCG, F&amp;B, fashion, real estate, healthcare, and technology sectors to build powerful brands and drive measurable digital growth. Our capabilities span{" "}
+              <strong>brand identity design</strong>, <strong>packaging design</strong>,{" "}
+              <strong>brand strategy &amp; positioning</strong>, <strong>performance marketing</strong>{" "}
+              (Meta &amp; Google Ads), <strong>social media management</strong>,{" "}
+              <strong>search engine optimisation (SEO)</strong>,{" "}
+              <strong>answer engine optimisation (AEO)</strong>,{" "}
+              <strong>generative engine optimisation (GEO)</strong>,{" "}
+              <strong>photography &amp; videography</strong>, <strong>PR &amp; media relations</strong>,{" "}
+              <strong>influencer marketing</strong>, <strong>website development</strong>,{" "}
+              <strong>app development</strong>, and <strong>content marketing</strong> — all under one roof.
+            </p>
+          </div>
+          <div class="sf-about__google">
+            <a href="https://www.google.com/partners/agency?id=9183309111" target="_blank" rel="noopener noreferrer" title="Sociapa - Official Google Partner Agency">
+              <img src="/sociapareact/images/PartnerBadgeClickable.svg" alt="Google Partner Agency Badge" width="145" height="140" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sf-grid-wrap">
+        <div class="sf-grid footer-grid">
+          <div class="sf-logo-wrap footer-brand">
+            <img src="/sociapareact/logonew.webp" alt="Sociapa Creative Agency" width="180" height="53" class="sf-logo-img" />
+            <p class="sf-tagline footer-tagline">
+              An eminent creative digital marketing agency in Delhi NCR. Strategy-led. Design-obsessed. Results-driven.
+            </p>
+            <div class="sf-social footer-social">
+              <a href="https://www.facebook.com/sociapa" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+              </a>
+              <a href="https://www.instagram.com/sociapa.official" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+              </a>
+              <a href="https://www.youtube.com/@sociapa" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/sociapa" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+              </a>
+            </div>
+            <div class="sf-contact footer-contact">
+              <a href="mailto:mail@sociapa.com" class="sf-contact-item">
+                <span class="sf-contact-badge">✉</span>
+                <span class="sf-contact-val">mail@sociapa.com</span>
+              </a>
+              <a href="tel:01203130443" class="sf-contact-item">
+                <span class="sf-contact-badge">📞</span>
+                <span class="sf-contact-val">0120 313 0443</span>
+              </a>
+              <a href="https://maps.google.com/?q=BL-02+Sector+116+Noida+India" target="_blank" class="sf-contact-item">
+                <span class="sf-contact-badge">📍</span>
+                <span class="sf-contact-val">BL-02, Sector 116, Noida, India</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="sf-col footer-col">
+            <h4>Brand &amp; Design</h4>
+            <ul>
+              <li><a href="/sociapareact/brand-identity-design" class="footer-link-item">Brand Identity Design</a></li>
+              <li><a href="/sociapareact/brand-strategy" class="footer-link-item">Brand Strategy &amp; Positioning</a></li>
+              <li><a href="/sociapareact/best-packaging-design-agency-india" class="footer-link-item">Packaging &amp; Label Design</a></li>
+              <li><a href="/sociapareact/creative-designing" class="footer-link-item">Creative Designing</a></li>
+              <li><a href="/sociapareact/go-to-market" class="footer-link-item">Go-To-Market Strategy</a></li>
+            </ul>
+          </div>
+
+          <div class="sf-col footer-col">
+            <h4>Digital Marketing</h4>
+            <ul>
+              <li><a href="/sociapareact/best-social-media-marketing-agency-india" class="footer-link-item">Social Media Marketing</a></li>
+              <li><a href="/sociapareact/seo-aeo-geo" class="footer-link-item">Search Engine Optimisation (SEO)</a></li>
+              <li><a href="/sociapareact/pay-per-click-ppc-services-india" class="footer-link-item">Meta &amp; Google Ads</a></li>
+              <li><a href="/sociapareact/influencer-marketing-services" class="footer-link-item">Influencer Marketing</a></li>
+              <li><a href="/sociapareact/videos" class="footer-link-item">Video Production &amp; Editing</a></li>
+            </ul>
+          </div>
+
+          <div class="sf-col footer-col">
+            <h4>Company &amp; Resources</h4>
+            <ul>
+              <li><a href="/sociapareact/about" class="footer-link-item">About Sociapa</a></li>
+              <li><a href="/sociapareact/case-studies" class="footer-link-item">Case Studies</a></li>
+              <li><a href="/sociapareact/blog" class="footer-link-item">Insights &amp; Blog</a></li>
+              <li><a href="/sociapareact/best-creative-and-digital-agency-award" class="footer-link-item">Awards &amp; Recognition</a></li>
+              <li><a href="/sociapareact/contact-us" class="footer-link-item">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sf-bottom-wrap">
+        <div class="sf-bottom footer-bottom">
+          <span class="sf-copyright">
+            © 2019-2026 Sociapa. All rights reserved. Creative Digital Marketing Agency — Noida · Delhi NCR · Dubai · London
+          </span>
+          <div class="sf-bottom-links footer-bottom-links">
+            <a href="/sociapareact/privacy-policy">Privacy Policy</a>
+            <a href="/sociapareact/terms-condition">Terms &amp; Condition</a>
+            <a href="/sociapareact/sitemap">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INTERACTIVE ANIMATION SCRIPT ENGINE
+       ═══════════════════════════════════════════════════════════════ -->
+  <script>
+    (function () {
+      // 1. Reading Depth Progress Bar
+      const progressBar = document.getElementById('page-scroll-progress');
+      const navbar = document.getElementById('site-navbar');
+
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const pct = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = pct + '%';
+
+        if (scrollTop > 40) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      }, { passive: true });
+
+      // 2. Intersection Observer for Scroll Reveals
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+
+            // Trigger counter animation if inside
+            const counters = entry.target.querySelectorAll('.animated-counter');
+            counters.forEach(c => runCounter(c));
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      function initScrollReveals() {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+      }
+
+      // 3. Smooth Counter Animation with Cubic Easing
+      function runCounter(el) {
+        if (el.dataset.done === 'true') return;
+        el.dataset.done = 'true';
+
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1200;
+        let start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          const val = Math.floor(ease * target);
+          el.textContent = val + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = target + suffix;
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      // 4. Project Tab Switcher
+      window.switchProjectTab = function (tabName, btn) {
+        document.querySelectorAll('.projects-tab-chip').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        ['creatives', 'logos', 'websites', 'packaging'].forEach(t => {
+          const pane = document.getElementById('tab-pane-' + t);
+          if (pane) {
+            pane.style.display = (t === tabName) ? 'grid' : 'none';
+          }
+        });
+      };
+
+      // 5. Interactive HUD Speed & Jump Controller
+      const speedSelect = document.getElementById('speed-select');
+      speedSelect.addEventListener('change', (e) => {
+        document.documentElement.style.setProperty('--anim-speed', e.target.value);
+      });
+
+      const jumpSelect = document.getElementById('jump-select');
+      jumpSelect.addEventListener('change', (e) => {
+        if (e.target.value) {
+          const target = document.querySelector(e.target.value);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+
+      const replayBtn = document.getElementById('btn-replay');
+      replayBtn.addEventListener('click', () => {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          el.classList.remove('visible');
+          const counter = el.querySelector('.animated-counter');
+          if (counter) {
+            counter.dataset.done = 'false';
+            counter.textContent = '0' + (counter.dataset.suffix || '');
+          }
+        });
+
+        setTimeout(() => {
+          document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              el.classList.add('visible');
+              const counter = el.querySelector('.animated-counter');
+              if (counter) runCounter(counter);
+            }
+          });
+        }, 120);
+      });
+
+      // 6. Smooth Auto-Tour Playback
+      const autoTourBtn = document.getElementById('btn-auto-tour');
+      let touring = false;
+      let tourId = null;
+
+      autoTourBtn.addEventListener('click', () => {
+        if (!touring) {
+          touring = true;
+          autoTourBtn.innerHTML = '<span>⏸</span> Pause Tour';
+          autoTourBtn.classList.add('primary');
+
+          if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(tourLoop, 800);
+            return;
+          }
+          tourLoop();
+        } else {
+          stopTour();
+        }
+      });
+
+      function stopTour() {
+        touring = false;
+        autoTourBtn.innerHTML = '<span>▶</span> Auto Tour';
+        if (tourId) cancelAnimationFrame(tourId);
+      }
+
+      function tourLoop() {
+        if (!touring) return;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        if (window.scrollY < max) {
+          window.scrollBy(0, 2);
+          tourId = requestAnimationFrame(tourLoop);
+        } else {
+          stopTour();
+        }
+      }
+
+      window.addEventListener('wheel', () => { if (touring) stopTour(); }, { passive: true });
+      window.addEventListener('touchstart', () => { if (touring) stopTour(); }, { passive: true });
+
+      initScrollReveals();
+    })();
+  </script>
+</body>
+
+</html>

@@ -20,3 +20,15 @@ logs/
 
 # Scratch & temporary scripts
 scratch/
+
+# Archives & Large Bundles
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# Test and temporary files
+test_*
+test-*.json
+*.cjs
+

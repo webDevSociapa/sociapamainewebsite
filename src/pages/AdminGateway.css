@@ -1,0 +1,140 @@
+.admin-gateway-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1a0508 100%);
+  padding: 60px 20px;
+}
+
+.admin-gateway-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.admin-badge {
+  display: inline-block;
+  background: rgba(210, 12, 12, 0.15);
+  color: #ff4d4d;
+  border: 1px solid rgba(210, 12, 12, 0.3);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.admin-gateway-card h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.admin-gateway-card h1 span {
+  color: #d20c0c;
+}
+
+.admin-desc {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.creds-box {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.creds-title {
+  color: #e2e8f0;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.creds-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.creds-row:last-child {
+  margin-bottom: 0;
+}
+
+.creds-row code {
+  background: #1e293b;
+  color: #ff4d4d;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.admin-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.action-box .note {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .admin-gateway-card {
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-gateway-container {
+    padding: 40px 14px;
+  }
+  .admin-gateway-card {
+    padding: 24px 16px;
+    border-radius: 14px;
+  }
+  .admin-gateway-card h1 {
+    font-size: 22px;
+  }
+  .creds-box {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .admin-gateway-card {
+    padding: 18px 12px;
+  }
+  .creds-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+

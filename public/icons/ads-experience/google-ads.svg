@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 180" width="440" height="180">
+      <g transform="translate(25, 20)">
+        <path fill="#FBBC04" d="M72 18 L32 88 C25 99 30 114 41 120 C52 127 67 122 73 111 L114 41 C120 30 116 16 104 9 C93 2 79 7 72 18 Z"/>
+        <path fill="#4285F4" d="M17 111 L58 41 C64 30 79 26 90 32 C101 39 106 54 99 65 L58 135 C52 146 37 150 26 144 C15 137 10 122 17 111 Z"/>
+        <circle fill="#34A853" cx="28" cy="128" r="22"/>
+        <g transform="translate(145, 68)">
+          <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="46" fill="#3C4043" letter-spacing="-0.5">Google</text>
+          <text x="0" y="48" font-family="Arial, sans-serif" font-weight="bold" font-size="46" fill="#3C4043" letter-spacing="-0.5">Ads</text>
+        </g>
+      </g>
+    </svg>

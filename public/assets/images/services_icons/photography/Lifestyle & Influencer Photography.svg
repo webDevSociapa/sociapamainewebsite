@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Smartphone Frame -->
+    <rect x="66" y="32" width="124" height="192" rx="20" fill="#FFFFFF" stroke="#1A0508" stroke-width="8"/>
+    <!-- Screen Viewfinder -->
+    <rect x="78" y="52" width="100" height="152" rx="10" fill="#FFEBEF"/>
+    <!-- Floating Social Heart Reaction Badge -->
+    <path d="M128 136 C128 136, 102 114, 102 96 C102 86, 110 78, 120 78 C125 78, 128 82, 128 82 C128 82, 131 78, 136 78 C146 78, 154 86, 154 96 C154 114, 128 136, 128 136 Z" fill="#D20C0C" stroke="#1A0508" stroke-width="4"/>
+    <!-- Shutter Button Circle -->
+    <circle cx="128" cy="180" r="12" fill="#FFFFFF" stroke="#D20C0C" stroke-width="4"/>
+    <!-- Cool Sunglasses Accent / Lifestyle Element -->
+    <path d="M96 150 h24 a10 10 0 0 1 -24 0 Z" fill="#1A0508"/>
+    <path d="M136 150 h24 a10 10 0 0 1 -24 0 Z" fill="#1A0508"/>
+    <line x1="120" y1="150" x2="136" y2="150" stroke="#1A0508" stroke-width="3"/>
+  </g>
+</svg>

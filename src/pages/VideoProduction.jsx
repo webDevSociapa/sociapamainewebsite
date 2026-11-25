@@ -1,372 +1,589 @@
 import React, { useState, useEffect } from 'react';
+import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
+import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
+import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
+import { serviceClientSectionsData } from '../data/serviceClientSectionsData';
 import { Helmet } from 'react-helmet-async';
 import './VideoProduction.css';
 
-
 const faqsData = [
   {
-    "q": "What video production services does Sociapa offer?",
-    "a": "<p>We provide TV commercials, ad films, corporate films, digital films, web series, social media videos, interview programs, training videos, documentaries, animated videos, testimonial shoots, chat shows, and explainer videos. From concept development and scripting to filming, editing, animation, and final delivery, our team manages the complete production process.</p>"
+    q: "1. What video production services does Sociapa Brand Studio offer?",
+    a: "<p>We provide end-to-end video production services, including TV commercials (TVCs), corporate brand films, product videos, CGI, animation, motion graphics, <a href='/best-social-media-marketing-agency-india' class='seo-interlink'>social media content</a>, <a href='/best-photography-services' class='seo-interlink'>product photography</a>, lifestyle photography, and post-production.</p>"
   },
   {
-    "q": "Why is video content important for businesses?",
-    "a": "<p>Video is one of the most engaging forms of communication. It helps businesses increase brand awareness, explain products and services, build trust with customers, improve engagement, and communicate messages more effectively across digital and traditional marketing channels.</p>"
+    q: "2. Do you handle the entire video production process?",
+    a: "<p>Yes. Our team manages the complete production process, including concept development, creative briefs, scriptwriting, storyboarding, location scouting, talent casting, production planning, filming, editing, colour grading, sound design, and final delivery.</p>"
   },
   {
-    "q": "Which type of video is best for my business?",
-    "a": "<p>The ideal video depends on your business goals. Corporate films build credibility, ad films increase brand awareness, explainer videos simplify complex products or services, testimonial videos build trust, and short-form social media videos boost engagement and reach.</p>"
+    q: "3. Do you produce content for social media platforms?",
+    a: "<p>Yes. We create platform-specific content for Instagram Reels, YouTube Shorts, and digital channels, seamlessly integrated with our <a href='/influencer-marketing-services' class='seo-interlink'>influencer marketing</a> and <a href='/best-social-media-marketing-agency-india' class='seo-interlink'>social media marketing</a> campaigns for maximum engagement.</p>"
   },
   {
-    "q": "Can video marketing help generate leads and sales?",
-    "a": "<p>Yes. Professionally produced videos can increase online visibility, capture audience attention, strengthen brand trust, improve engagement, and encourage viewers to take action, ultimately helping generate more qualified leads and conversions.</p>"
+    q: "4. Do you offer professional product photography?",
+    a: "<p>Yes. We provide studio and lifestyle <a href='/best-photography-services' class='seo-interlink'>product photography</a> for e-commerce, print catalogues, <a href='/product-unboxing-experience' class='seo-interlink'>unboxing experiences</a>, and digital ads, including hero images, detail shots, and 360-degree product angles.</p>"
   },
   {
-    "q": "How can ad films help my brand?",
-    "a": "<p>Ad films communicate your brand message through compelling storytelling and high-quality visuals. They improve brand recall, create emotional connections with audiences, and help businesses stand out in competitive markets across both digital and traditional media.</p>"
+    q: "5. Can you create animated videos and motion graphics?",
+    a: "<p>Yes. We produce 2D motion graphics, animated explainer videos, logo animations, CGI videos, and social media motion assets that enhance brand storytelling and audience engagement.</p>"
   },
   {
-    "q": "Can ad films be used on digital platforms?",
-    "a": "<p>Absolutely. Ad films can be optimised for television, YouTube, websites, Instagram Reels, Facebook, LinkedIn, OTT platforms, and paid digital advertising campaigns, ensuring maximum reach from a single production.</p>"
+    q: "6. What formats will my videos be delivered in?",
+    a: "<p>All videos are delivered in platform-optimized formats and aspect ratios, including 16:9 (landscape), 9:16 (vertical), and 1:1 (square), making them ready for websites, social media, digital advertising, e-commerce, Amazon, and broadcast.</p>"
   },
   {
-    "q": "What is a corporate film?",
-    "a": "<p>A corporate film is a professionally produced video that showcases a company's story, values, products, services, achievements, culture, and operations. It is commonly used for branding, investor presentations, recruitment, training, and corporate communications.</p>"
+    q: "7. Will I receive the original footage and high-resolution files?",
+    a: "<p>Yes. High-resolution photography is delivered in print-ready 300 DPI and web-optimized formats, and a full archive of unedited video footage is available on request for future edits and content creation.</p>"
   },
   {
-    "q": "Can short-form videos improve engagement?",
-    "a": "<p>Yes. Short-form videos are highly effective for increasing reach, audience retention, and engagement on platforms like Instagram Reels, YouTube Shorts, and Facebook. They deliver quick, impactful messages that encourage viewers to interact and share.</p>"
+    q: "8. Is the music used in the videos copyright compliant?",
+    a: "<p>Yes. Every video includes properly licensed background music and professional sound design, ensuring your content is copyright compliant and safe for commercial use across digital and social media platforms.</p>"
   },
   {
-    "q": "What is the difference between 2D and 3D animation?",
-    "a": "<p>2D animation uses flat illustrations and motion graphics to explain concepts in a simple, engaging way. 3D animation creates realistic depth, textures, and lifelike visual experiences, making it ideal for product visualisation, architecture, manufacturing, and premium brand storytelling.</p>"
+    q: "9. How many revisions are included before final delivery?",
+    a: "<p>Every project includes a final video review and revision round to ensure the content aligns with your creative brief, brand guidelines, and campaign objectives before delivery.</p>"
   },
   {
-    "q": "Why choose Sociapa for video production services?",
-    "a": "<p>Sociapa combines creative storytelling, strategic planning, professional production, in-house editing and animation, and marketing expertise to produce high-quality videos that strengthen brand presence, engage audiences, and deliver measurable business results.</p>"
+    q: "10. Why choose Sociapa Brand Studio for video production?",
+    a: "<p>Sociapa Brand Studio combines <a href='/brand-strategy' class='seo-interlink'>creative brand strategy</a>, professional film production, <a href='/best-photography-services' class='seo-interlink'>commercial photography</a>, and post-production under one roof, delivering visual content that scales across digital channels and quick commerce platforms.</p>"
   }
 ];
 
+const videoCategories = [
+  {
+    title: "Corporate Video",
+    videos: [
+      { id: "PWXwi-gLxPw", title: "Corporate Video Showcase", cat: "Corporate Video" },
+      { id: "oDbXKLAENdg", title: "Corporate Storyline Film", cat: "Corporate Video" },
+      { id: "pTTixnB9RY8", title: "Corporate Brand Narrative", cat: "Corporate Video" }
+    ]
+  },
+  {
+    title: "TVC Commercial",
+    videos: [
+      { id: "E39Nx8KkluI", title: "National Television Commercial", cat: "TVC Commercial" },
+      { id: "jGzI0AxamGA", title: "Brand Television Spot", cat: "TVC Commercial" },
+      { id: "L_GmKBoFkZA", title: "Commercial Ad Film", cat: "TVC Commercial" }
+    ]
+  },
+  {
+    title: "Campaigns and Events",
+    videos: [
+      { id: "XNHDjnJ9vxg", title: "Brand Campaign Film", cat: "Campaigns and Events" },
+      { id: "Rpr2_CAO2m8", title: "Event Launch Coverage", cat: "Campaigns and Events" }
+    ]
+  },
+  {
+    title: "Brand Launch Videos",
+    videos: [
+      { id: "DbUKkXJXaDs", title: "Category Launch Film", cat: "Brand Launch Videos" },
+      { id: "mI5Zp0KheXY", title: "D2C Brand Launch", cat: "Brand Launch Videos" },
+      { id: "gy9Nu8xlI70", title: "New Product Unveiling", cat: "Brand Launch Videos" },
+      { id: "TCGIogTKpQ0", title: "Flagship Product Video", cat: "Brand Launch Videos" },
+      { id: "iHRoGdHatvk", title: "Brand Announcement Film", cat: "Brand Launch Videos" },
+      { id: "rlapMRSesvg", title: "Consumer Launch Teaser", cat: "Brand Launch Videos" },
+      { id: "5jxXQjzm0bo", title: "Hero Product Showcase", cat: "Brand Launch Videos" },
+      { id: "jO6RGPWdMfY", title: "Brand Experience Video", cat: "Brand Launch Videos" },
+      { id: "Bq7Uiab5drU", title: "Product Feature Film", cat: "Brand Launch Videos" }
+    ]
+  },
+  {
+    title: "AI Videos",
+    videos: [
+      { id: "olqoDRpjiIA", title: "AI Generated Visual Film", cat: "AI Videos" },
+      { id: "BFVRJkLEJEk", title: "AI Concept Creative", cat: "AI Videos" },
+      { id: "BU1i2VGsmFQ", title: "AI Lifestyle Synthesis", cat: "AI Videos" },
+      { id: "QsEBnn7ci80", title: "AI Product Narrative", cat: "AI Videos" },
+      { id: "FwAgWkCANjs", title: "AI Cinematic Ad", cat: "AI Videos" },
+      { id: "R8buQR-xGaI", title: "Generative Brand Asset", cat: "AI Videos" },
+      { id: "PPuA0IFC05A", title: "AI Futuristic Visual", cat: "AI Videos" },
+      { id: "at3ZtLYuK8E", title: "AI Environment Design", cat: "AI Videos" },
+      { id: "ONRrPu0S3AE", title: "AI Social Visual", cat: "AI Videos" }
+    ]
+  },
+  {
+    title: "CGI Videos",
+    videos: [
+      { id: "mZMdgewS9NU", title: "3D Product Animation", cat: "CGI Videos" },
+      { id: "TBef8MO0N2c", title: "Photorealistic 3D Render", cat: "CGI Videos" },
+      { id: "dAEhRYy88gg", title: "CGI Packaging Experience", cat: "CGI Videos" },
+      { id: "8G2aZmxLUcM", title: "3D Motion Design Film", cat: "CGI Videos" },
+      { id: "UvmKmOHEc2w", title: "CGI Simulation Visual", cat: "CGI Videos" },
+      { id: "DSxZMN4ENqs", title: "CGI VFX Commercial", cat: "CGI Videos" }
+    ]
+  },
+  {
+    title: "Product Recipes Videos",
+    videos: [
+      { id: "XDzOMTZy_n0", title: "Chef-Led Recipe Series", cat: "Product Recipes Videos" },
+      { id: "MX081uRRqdg", title: "Culinary Brand Film", cat: "Product Recipes Videos" },
+      { id: "LGdPK6YiGSA", title: "Gourmet Storytelling Video", cat: "Product Recipes Videos" },
+      { id: "t6GsJk6wkJQ", title: "FMCG Recipe Content", cat: "Product Recipes Videos" },
+      { id: "uJQIkwTK3zk", title: "Aesthetic Food Styling Reel", cat: "Product Recipes Videos" }
+    ]
+  }
+];
 
 export default function VideoProduction() {
-    const [openFaq, setOpenFaq] = useState(null);
-    const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  const [openFaq, setOpenFaq] = useState(null);
+  const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
+  const base = import.meta.env.BASE_URL || '/';
 
-    return (
-        <>
-            
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="video-production-page">
       <Helmet>
-        <title>Best Video Marketing Services in Noida | Videography Services – Sociapa</title>
-        <meta name="description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
-        <meta name="keywords" content="Video Production" />
-        <link rel="canonical" href="https://www.sociapa.com/video/" />
-        <meta property="og:title" content="Video Production | SOCIAPA" />
-        <meta property="og:description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
-        <meta property="og:url" content="https://www.sociapa.com/video/" />
+        <title>Video Production & Photography Agency India | Sociapa Brand Studio</title>
+        <meta
+          name="description"
+          content="Sociapa Brand Studio provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
+        />
+        <meta
+          name="keywords"
+          content="video production agency India, corporate video maker, TVC ad film production, product photography, CGI video agency, food styling shoots"
+        />
+        <link rel="canonical" href="https://sociapa.com/videos" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Sociapa Brand Studio" />
+        <meta property="og:title" content="Video Production & Photography Agency India | Sociapa Brand Studio" />
+        <meta
+          property="og:description"
+          content="Sociapa Brand Studio provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
+        />
+        <meta property="og:url" content="https://sociapa.com/videos" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqsData.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": (faq.a || '').replace(/<[^>]*>/g, '')
+            }
+          }))
+        })}</script>
+        {/* VideoObject Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "Sociapa Brand Studio – Video Production Showreel",
+          "description": "Sociapa Brand Studio's full video production capabilities — including TV commercials, corporate brand films, CGI animations, AI videos, recipe content, and product photography for India's leading brands.",
+          "thumbnailUrl": "https://img.youtube.com/vi/PWXwi-gLxPw/maxresdefault.jpg",
+          "uploadDate": "2026-01-01T08:00:00+05:30",
+          "duration": "PT3M",
+          "contentUrl": "https://www.youtube.com/watch?v=PWXwi-gLxPw",
+          "embedUrl": "https://www.youtube.com/embed/PWXwi-gLxPw",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Sociapa",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sociapa.com/logoSociapa.png"
+            }
+          }
+        })}</script>
+        {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.sociapa.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://www.sociapa.com/our-services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Video Production & Photography Agency India",
+              "item": "https://www.sociapa.com/videos"
+            }
+          ]
+        })}</script>
       </Helmet>
-<div className="serInsideBnr">
-    <div className="row">
-      <picture>
-        
-        <source
+
+      {/* Hero Banner Section */}
+      <section className="hero-banner-section">
+        <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
+          Corporate Video Production &amp; Commercial Brand Films Agency - Sociapa
+        </h1>
+        <picture>
+          <source
             media="(max-width: 767px)"
-            srcset="/sociapareact/images/video-production-service-banner-mobile.jpeg" />
+            srcSet={`${base}assets/images/services_banner/video_photography/video.webp`}
+          />
+          <img
+            src={`${base}assets/images/services_banner/video_photography/video.webp`}
+            alt="Video Production & Photography - Sociapa Brand Studio"
+            className="hero-banner-img"
+            decoding="async"
+            loading="eager"
+            fetchpriority="high"
+            width="1920"
+            height="700"
+          />
+        </picture>
+      </section>
 
-        
-        <img src="/sociapareact/images/video-production-service-banner.jpeg" alt="video production" className="responsive-img w-100" />
-    </picture>
+      {/* Portfolio Highlight / Production Scope */}
+            {/* Portfolio / Our Work Section */}
+      <ServiceOurWorkSection
+        work={serviceClientSectionsData['video-production']?.work}
+      />
+
+      {/* Complete Video Showcase Section */}
+      <section className="projects-svc">
+        <div className="inner">
+          <span className="proj-eyebrow">Complete Portfolio</span>
+          <h2 className="proj-h2">
+            Our Complete <em>Video Showcase</em>
+          </h2>
+          <p className="proj-sub">
+            Explore our extensive video production portfolio across corporate films, TVCs, CGI animations, recipe content, and brand launches.
+          </p>
+
+          {videoCategories.map((category, catIdx) => (
+            <div key={catIdx} className="proj-category">
+              <div className="proj-cat-title">{category.title}</div>
+              <div className="proj-grid">
+                {category.videos.map((vid, vidIdx) => (
+                  <a
+                    key={vidIdx}
+                    href={`https://www.youtube.com/watch?v=${vid.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="proj-card"
+                  >
+                    <img
+                      className="proj-thumb"
+                      src={`https://img.youtube.com/vi/${vid.id}/hqdefault.jpg`}
+                      alt={`${vid.title} - ${category.title}`}
+                      loading="lazy"
+                    />
+                    <div className="proj-overlay"></div>
+                    <div className="proj-play">
+                      <div className="play-btn">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="proj-card-content">
+                      <div className="proj-card-cat">{vid.cat}</div>
+                      <div className="proj-card-title">{vid.title} &rarr;</div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* What's Included / Sub-services Section */}
+      <section id="sub-services" className="what">
+        <div className="inner">
+          <div className="what-header">
+            <span className="eyebrow">What's Included</span>
+            <h2 className="sec">
+              Our Video Production &amp; Photography <em>Services</em>
+            </h2>
+            <p className="sec-sub" style={{ textAlign: 'center', margin: '0 auto', maxWidth: '720px' }}>
+              In a world where consumers decide within seconds whether your brand deserves their attention, premium visual content is essential. Sociapa Brand Studio creates high-quality brand films, product photography, lifestyle imagery, and social media content that capture attention, strengthen brand perception, and inspire action across every platform.
+            </p>
+          </div>
+          <div className="sub-grid">
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/tvc_and_brand_films.webp`}
+                  alt="TVC & Brand Films"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>TVC &amp; Brand Films</h3>
+                <p>
+                  Full-service brand film and television commercial production, including concept development, scriptwriting, production planning, on-location filming, and post-production, delivering broadcast-quality visual content that strengthens brand storytelling and audience engagement.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/product_photography.webp`}
+                  alt="Product Photography"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>Product Photography</h3>
+                <p>
+                  Professional studio and lifestyle product photography optimized for e-commerce listings, print catalogues, digital advertising, and marketplaces, including hero images, detail shots, multiple product angles, and high-resolution visuals designed to increase engagement and conversions.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/lifestyle_and_campaign_photography.webp`}
+                  alt="Lifestyle & Campaign Photography"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>Lifestyle &amp; Campaign Photography</h3>
+                <p>
+                  Campaign photography with professional models, curated props, and premium locations, bringing your brand story to life through aspirational visuals for websites, social media, digital advertising, print campaigns, and marketing collateral.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/social_media_reels_and_short_form_video.webp`}
+                  alt="Social Media Reels & Short-Form Video"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>Social Media Reels &amp; Short-Form Video</h3>
+                <p>
+                  Short-form video production for Instagram Reels, YouTube Shorts, and TikTok, including concept development, scripting, filming, and editing using platform-specific best practices to maximize organic reach, audience engagement, and content performance.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/ai_enhanced_photography.webp`}
+                  alt="AI-Enhanced Photography"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>AI-Enhanced Photography</h3>
+                <p>
+                  Photorealistic AI-generated lifestyle environments and backgrounds combined with studio product photography — cost-effective scene variety at scale.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+
+            <div className="sub-card">
+              <div className="sub-card-img">
+                <img
+                  src={`${base}assets/images/services_banner/video_photography_cards/motion_graphics_and_animation.webp`}
+                  alt="Motion Graphics & Animation"
+                />
+              </div>
+              <div className="sub-card-body">
+                <h3>Motion Graphics &amp; Animation</h3>
+                <p>
+                  2D motion graphics, animated explainer videos, logo animations, and social media motion design that bring your brand identity to life through engaging visuals, dynamic storytelling, and platform-ready animated content.
+                </p>
+                <a href="#cta" className="sub-link">Explore &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Deliverables Section */}
+      <section className="deliver">
+        <div className="inner">
+          <div className="deliver-text">
+            <span className="eyebrow">What You Get</span>
+            <h2>Deliverables That Drive <em>Real Outcomes</em></h2>
+            <p>
+              Every project concludes with production-ready, fully documented deliverables designed for immediate use, not files that sit unused. From final creative assets to organized source files and platform-ready formats, you receive everything needed to launch, publish, and scale your brand with confidence.
+            </p>
+          </div>
+          <div className="deliver-list">
+            <div className="deliver-item">
+              <div className="d-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                  <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                  <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h4>Final Edited Video Files</h4>
+                <p>
+                  All video deliverables are optimized in multiple formats and aspect ratios, including 16:9 (landscape), 9:16 (vertical), and 1:1 (square), ensuring seamless performance across television, websites, YouTube, Instagram, Facebook, LinkedIn, and every major digital platform.
+                </p>
+              </div>
+            </div>
+
+            <div className="deliver-item">
+              <div className="d-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <div>
+                <h4>High-Resolution Photography</h4>
+                <p>
+                  High-resolution photography delivered in print-ready 300 DPI and web-optimized formats, with professionally edited images shared through a secure cloud gallery and full commercial usage rights for digital, print, and marketing applications.
+                </p>
+              </div>
+            </div>
+
+            <div className="deliver-item">
+              <div className="d-icon">🎬</div>
+              <div>
+                <h4>Raw Footage Archive</h4>
+                <p>
+                  Full archive of unedited footage available on request, giving you access to original video files for future edits, social media content, marketing campaigns, and long-term content creation.
+                </p>
+              </div>
+            </div>
+
+            <div className="deliver-item">
+              <div className="d-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h4>Licensed Music &amp; Sound Design</h4>
+                <p>
+                  All video deliverables include properly licensed background music and professional sound design, ensuring copyright-compliant content that is ready for social media, digital marketing, websites, and commercial use.
+                </p>
+              </div>
+            </div>
+
+            <div className="deliver-item">
+              <div className="d-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4>Platform-Specific Exports</h4>
+                <p>
+                  Every video is delivered in platform-optimized formats for Instagram, Facebook, YouTube, LinkedIn, Amazon, and broadcast, ensuring seamless publishing across all channels with no additional editing or re-exporting required.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="process-svc">
+        <div className="inner">
+          <span className="proc-eyebrow">How We Work</span>
+          <h2 className="proc-h2">Our Video Production &amp; Photography Process</h2>
+          <p className="proc-sub">
+            A structured, research-driven process that ensures every creative and strategic decision is backed by insights, with every deliverable designed to achieve measurable business and marketing results.
+          </p>
+          <div className="proc-steps">
+            <div className="proc-step">
+              <div className="proc-n">01</div>
+              <h4>Creative Development</h4>
+              <p>Concept development, creative briefs, scriptwriting, storyboard creation, shot planning, and location and talent scouting, all strategically aligned with your brand identity, marketing objectives, and campaign goals.</p>
+            </div>
+            <div className="proc-step">
+              <div className="proc-n">02</div>
+              <h4>Pre-Production</h4>
+              <p>Final script approval, location booking, talent casting, wardrobe and prop sourcing, equipment coordination, and detailed shoot scheduling to ensure a seamless and efficient production process.</p>
+            </div>
+            <div className="proc-step">
+              <div className="proc-n">03</div>
+              <h4>Production</h4>
+              <p>Professional production led by our in-house crew, including a cinematographer, art director, lighting specialists, and production coordinator, ensuring a seamless shoot and premium-quality visual content from start to finish.</p>
+            </div>
+            <div className="proc-step">
+              <div className="proc-n">04</div>
+              <h4>Post-Production</h4>
+              <p>Professional post-production services including video editing, colour grading, sound design, motion graphics, licensed background music, and subtitle creation, delivering polished, platform-ready content tailored to your creative brief and marketing objectives.</p>
+            </div>
+            <div className="proc-step">
+              <div className="proc-n">05</div>
+              <h4>Review &amp; Delivery</h4>
+              <p>Final video review, revision rounds, and delivery of all approved assets in platform-optimized formats and specifications, ensuring your content is ready for websites, social media, digital advertising, e-commerce, broadcast, and every major marketing channel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq-svc">
+        <div className="inner">
+          <div className="faq-header">
+            <span className="eyebrow" style={{ textAlign: 'center', display: 'block' }}>Video Production &amp; Photography FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know before starting your video production &amp; photography project with Sociapa Brand Studio.</p>
+          </div>
+
+          <div className="faq-list">
+            {faqsData.map((faq, idx) => (
+              <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
+                <div className="faq-q" onClick={() => toggleFaq(idx)}>
+                  {faq.q}
+                  <span className="faq-icon">{openFaq === idx ? '−' : '+'}</span>
+                </div>
+                <div className="faq-a">
+                  <p dangerouslySetInnerHTML={{ __html: faq.a }}></p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+            {/* Behind the Work Section */}
+      <ServiceBehindWorkSection
+        testimonials={serviceClientSectionsData['video-production']?.testimonials}
+      />
+
+      {/* Featured Case Studies Slider */}
+      <ServiceCaseStudiesSlider />
+
+      {/* CTA Section */}
+      <section className="cta-svc">
+        <span className="eyebrow" style={{ display: 'block', marginBottom: '16px' }}>Ready to Begin?</span>
+        <h2>Let's Build Your <em>Video Production &amp; Photography</em></h2>
+        <p>Tell us about your brand and we'll get back with a tailored approach within 24 hours.</p>
+        <div className="cta-row">
+          <a href="mailto:mail@sociapa.com" className="btn-cta-red">Start a Project</a>
+          <a
+            href="https://wa.me/918287445375"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-cta-out"
+          >
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
     </div>
-</div>
-  <section className="videoproduction-hero">
-  <div className="videoproduction-hero-inner">
-    <div>
-      <div className="videoproduction-hero-badge">🎬 TVC · Corporate Films · Music Videos · Animation · Documentary · Reels</div>
-      <h1>Video Production That <em>Moves People & Moves Markets</em></h1>
-      <p className="videoproduction-hero-desc">Professional video production for brands, including TV commercials, social media videos, product films, and digital campaigns that deliver measurable impact. </p>
-      <div className="videoproduction-hero-btns">
-        <a href="/contact" className="btn-primary">Start My Video Project</a>
-        <a href="#portfolio" className="btn-outline">View Our Showreel</a>
-      </div>
-    </div>
-    <div className="videoproduction-hero-visual">
-      <img src="/sociapareact/images/video-production-left.jpeg" alt="video-production-left-img" className="videoproduction-hero-img" />
-    </div>
-  </div>
-</section>
-
-<div className="stats-bar">
-  <div className="stats-inner">
-    <div><span className="stat-num">500+</span><div className="stat-lbl">Videos Produced</div></div>
-    <div><span className="stat-num">100M+</span><div className="stat-lbl">Total Views Generated</div></div>
-    <div><span className="stat-num">15+</span><div className="stat-lbl">Production Crew Members</div></div>
-    <div><span className="stat-num">8+</span><div className="stat-lbl">Years in Production</div></div>
-  </div>
-</div>
-
-<section className="services-section">
-  <div className="section-inner">
-    <span className="section-tag">Video Services</span>
-    <h2 className="section-title">End-to-End Video Production for Every Format</h2>
-    <p className="section-sub">We produce everything from TV commercials and brand films to social media reels, delivering high-quality videos for every marketing channel. </p>
-    <div className="services-grid">
-      <div className="svc-card">
-        <div className="svc-icon">📺</div>
-        <h3>TVC – Television Commercials</h3>
-        <p>High-quality TV commercial production, from scripting and casting to filming, editing, VFX, colour grading, and broadcast-ready delivery. </p>
-        <div className="service-tags"><span>30-Sec TVC</span><span>60-Sec Spot</span><span>Broadcast Master</span><span>VFX Finishing</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🏢</div>
-        <h3>Corporate & Brand Films</h3>
-        <p>Professional corporate films and brand documentaries that showcase your company, strengthen brand credibility, and support marketing, sales, and employer branding. </p>
-        <div className="service-tags"><span>Brand Documentary</span><span>Corporate Profile</span><span>Investor Film</span><span>2–5 Minutes</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🎵</div>
-        <h3>Music Video Production</h3>
-        <p>Creative music video production with concept development, filming, choreography, and post-production for YouTube, streaming platforms, and digital campaigns. </p>
-        <div className="service-tags"><span>Concept Design</span><span>Artist Direction</span><span>Location Filming</span><span>Music Video Edit</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🎨</div>
-        <h3>Animation & Motion Graphics</h3>
-        <p>2D and 3D animation, motion graphics, and explainer videos produced in-house for digital marketing, social media, advertising, and brand communication. </p>
-        <div className="service-tags"><span>2D Animation</span><span>3D Product Viz</span><span>Motion Graphics</span><span>Character Animation</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🎞️</div>
-        <h3>Documentary Films</h3>
-        <p>Documentary films that showcase brand stories, founder journeys, company heritage, and social impact for digital platforms, events, and broadcast. </p>
-        <div className="service-tags"><span>Brand Heritage</span><span>Impact Documentary</span><span>Founder Story</span><span>15–30 Minutes</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">⭐</div>
-        <h3>Testimonial & Interview Videos</h3>
-        <p>Professional customer testimonial and interview videos that build trust, strengthen brand credibility, and improve marketing performance. </p>
-        <div className="service-tags"><span>Customer Stories</span><span>Expert Interviews</span><span>Case Studies</span><span>B-Roll Shoots</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">📱</div>
-        <h3>Social Media Reels & Short-Form</h3>
-        <p>High-performing Instagram Reels, YouTube Shorts, and Facebook videos designed to capture attention, increase engagement, and maximise social media reach. </p>
-        <div className="service-tags"><span>Instagram Reels</span><span>YouTube Shorts</span><span>15–60 Sec</span><span>Hook-Optimised</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">💡</div>
-        <h3>Explainer Videos</h3>
-        <p>Clear and engaging explainer videos that simplify products, services, and processes through live-action, animation, whiteboard, or mixed-media formats. </p>
-        <div className="service-tags"><span>Product Explainer</span><span>SaaS Demo</span><span>Whiteboard</span><span>Animated Explainer</span></div>
-      </div>
-      <div className="svc-card">
-        <div className="svc-icon">🎉</div>
-        <h3>Event Videography</h3>
-        <p>Professional event video production for product launches, brand activations, conferences, and corporate events, with cinematic highlight reels and social media edits. </p>
-        <div className="service-tags"><span>Product Launch</span><span>Brand Activation</span><span>Highlight Reel</span><span>Multi-Cam Setup</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="tools-section">
-  <div className="section-inner">
-    <span className="section-tag">Production Stack</span>
-    <h2 className="section-title">Cinema-Grade Equipment & Post-Production Suite</h2>
-    <p className="section-sub">Professional production equipment and advanced editing tools deliver high-quality videos for every budget. </p>
-    <div className="tools-grid">
-      <div className="tool-chip"><span className="tool-icon">🎥</span>Sony FX3 Cinema</div>
-      <div className="tool-chip"><span className="tool-icon">🎥</span>Canon EOS R5</div>
-      <div className="tool-chip"><span className="tool-icon">🎥</span>RED Camera</div>
-      <div className="tool-chip"><span className="tool-icon">🚁</span>DJI Drone</div>
-      <div className="tool-chip"><span className="tool-icon">💡</span>LED Lighting Rigs</div>
-      <div className="tool-chip"><span className="tool-icon">🎙️</span>Rode & Sennheiser Audio</div>
-      <div className="tool-chip"><span className="tool-icon">🎬</span>Adobe Premiere Pro</div>
-      <div className="tool-chip"><span className="tool-icon">✨</span>After Effects</div>
-      <div className="tool-chip"><span className="tool-icon">🎨</span>DaVinci Resolve</div>
-      <div className="tool-chip"><span className="tool-icon">🔊</span>Adobe Audition</div>
-      <div className="tool-chip"><span className="tool-icon">🖥️</span>Cinema 4D</div>
-      <div className="tool-chip"><span className="tool-icon">🏠</span>In-House Edit Suite</div>
-    </div>
-  </div>
-</section>
-
-<section className="portfolio-section">
-  <div className="section-inner">
-    <span className="section-tag">Our Work</span>
-    <h2 className="section-title">Videos That Built Brands & Broke Records</h2>
-    <p className="section-sub">Video production portfolio featuring FMCG, travel, healthcare, beauty, and consumer brands. </p>
-    <div className="portfolio-grid">
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">🌾</span></div>
-        <div className="port-info">
-          <div className="port-tag">Brand Film · 3 Min</div>
-          <h4>Pansari Group – Origin Story</h4>
-          <p>Cinematic brand documentary showcasing 40 years of heritage, produced for TV, websites, and investor presentations, achieving 2M views in 30 days.</p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">✈️</span></div>
-        <div className="port-info">
-          <div className="port-tag">TVC · 30-Sec Spot</div>
-          <h4>Kesari Tours – Summer Campaign</h4>
-          <p>National TV commercial produced from script to broadcast with location filming, VFX, and delivery across multiple TV channels. </p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">🍞</span></div>
-        <div className="port-info">
-          <div className="port-tag">Social Reels · Series</div>
-          <h4>Bonn Breads – Freshness Series</h4>
-          <p>Instagram Reel series with platform-optimised edits, generating 8M organic views in just 90 days.</p>
-        </div>
-      </div>
-      <div className="port-card">
-        <div className="port-img"><span className="ph-icon">💊</span></div>
-        <div className="port-info">
-          <div className="port-tag">Animation · Explainer</div>
-          <h4>APIS India – Product Explainer</h4>
-          <p>2D animated explainer video simplifying a complex pharmaceutical product, generating 1.4M views across digital platforms. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="process-section">
-  <div className="section-inner">
-    <span className="section-tag">Our Process</span>
-    <h2 className="section-title">From Script to Screen — A Structured Production Journey</h2>
-    <p className="section-sub">A clear 6-stage production process with defined milestones, approval gates, and on-time delivery for every project.</p>
-    <div className="process-grid">
-      <div className="process-step"><div className="step-num">1</div><h4>Creative Brief</h4><p>Objectives, audience, platform, duration, tone, and budget defined together</p></div>
-      <div className="process-step"><div className="step-num">2</div><h4>Script & Storyboard</h4><p>Written script and visual storyboard presented for client approval before production begins</p></div>
-      <div className="process-step"><div className="step-num">3</div><h4>Pre-Production</h4><p>Location scouting, casting, props sourcing, shot list, and crew scheduling finalised</p></div>
-      <div className="process-step"><div className="step-num">4</div><h4>Production Shoot</h4><p>Professional shoot with director, DOP, and full crew — single or multi-day production</p></div>
-      <div className="process-step"><div className="step-num">5</div><h4>Post-Production</h4><p>Edit, colour grade, VFX, motion graphics, voiceover, music licensing, and sound mix</p></div>
-      <div className="process-step"><div className="step-num">6</div><h4>Final Delivery</h4><p>Platform-optimised exports for broadcast, YouTube, Instagram, LinkedIn, and web</p></div>
-    </div>
-  </div>
-</section>
-
-<section className="why-section">
-  <div className="section-inner">
-    <span className="section-tag section-tag-white">Why Sociapa Video</span>
-    <h2 className="section-title">Where Creative Vision Meets Technical Excellence</h2>
-    <p className="section-sub">We create story-driven videos that engage audiences, strengthen brands, and deliver measurable business results. </p>
-    <div className="why-grid">
-    
-        <div className="why-card">
-            <div className="w-icon">✍️</div>
-            <h4>Story-First Scripting</h4>
-            <p>Every great video starts with a strong script, crafted to capture attention instantly and keep viewers engaged until the final frame.</p>
-        </div>
-
-        <div className="why-card">
-            <div className="w-icon">🎬</div>
-            <h4>Cinema-Grade Production</h4>
-            <p>Professional cameras, drone cinematography, studio lighting, and high-quality audio deliver premium video production for every project.</p>
-        </div>
-
-        <div className="why-card">
-            <div className="w-icon">✨</div>
-            <h4>In-House Animation</h4>
-            <p>2D and 3D animation, motion graphics, and product visualisation produced in-house for faster delivery and consistent quality.</p>
-        </div>
-
-        <div className="why-card">
-            <div className="w-icon">⚡</div>
-            <h4>Fast Post-Production</h4>
-            <p>First video cut delivered within 5 business days, with structured revision rounds for fast, high-quality project delivery.</p>
-        </div>
-
-        <div className="why-card">
-            <div className="w-icon">📱</div>
-            <h4>Multi-Platform Delivery</h4>
-            <p>Videos optimised for TV, YouTube, Instagram Reels, LinkedIn, OTT, and websites, delivering maximum reach from a single production.</p>
-        </div>
-
-        <div className="why-card">
-            <div className="w-icon">📊</div>
-            <h4>Performance-Driven Production</h4>
-            <p>Every video is optimised for platform performance with strong hooks, ideal pacing, engaging thumbnails, and audience-focused storytelling.</p>
-        </div>
-
-    </div>
-  </div>
-</section>
-
-<section className="testi-section">
-  <div className="section-inner">
-    <span className="section-tag">Client Stories</span>
-    <h2 className="section-title">Brands Whose Stories We've Brought to Life</h2>
-    <div className="testi-grid">
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"Our brand film has clocked over 2 million views and is now the centrepiece of every investor presentation. Sociapa captured the soul of 40 years of Pansari Group in just 3 minutes."</blockquote>
-        <div className="testi-author"><div className="avatar">PG</div><div><strong>Rohit Agarwal</strong><span>Brand Head, Pansari Group</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"15 Reels that collectively hit 8 million views in 90 days. The hook design, pacing, and platform optimisation is what separates Sociapa from every other production company we've worked with."</blockquote>
-        <div className="testi-author"><div className="avatar">BB</div><div><strong>Manish Kapoor</strong><span>Marketing Director, Bonn Breads</span></div></div>
-      </div>
-      <div className="testi-card">
-        <div className="stars">★★★★★</div>
-        <blockquote>"Our TVC was produced script-to-broadcast in under 3 weeks. The quality rivals production houses charging five times the price — and the process was completely stress-free."</blockquote>
-        <div className="testi-author"><div className="avatar">KT</div><div><strong>Anand Desai</strong><span>Digital Head, Kesari Tours</span></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="faq-section">
-  <div className="section-inner">
-    <span className="section-tag">FAQ</span>
-    <h2 className="section-title">Video Production <span className="text-brand-red">Questions Answered</span></h2>
-    <p className="section-sub">Everything you need to know before starting your video production project with Sociapa.</p>
-    <div className="faq-list">
-    {faqsData.map((faq, idx) => (
-      <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
-        <div className="faq-q" onClick={() => toggleFaq(idx)}>
-          {faq.q}
-          <span className="faq-icon">{openFaq === idx ? '-' : '+'}</span>
-        </div>
-        <div className="faq-a" dangerouslySetInnerHTML={{ __html: faq.a }}></div>
-      </div>
-    ))}
-  </div>
-  </div>
-</section>
-
-<section className="cta-section">
-  <div className="section-inner section-inner-narrow">
-    <h2>Ready to Tell Your Brand Story on Screen?</h2>
-    <p>Share your video brief and receive a production proposal with creative concept, timeline, and budget estimate within 24 hours.</p>
-    <a href="/contact" className="btn-primary">Get a Video Production Quote</a>
-  </div>
-</section>
-
-<section className="videoSS">
-  <div className="container">
-    <div className="row">
-      <div className="col l3 m6 s12">
-      <iframe width="100%" src="https://www.youtube.com/embed/GR2-qxLjqL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div className="col l3 m6 s12">
-      <iframe width="100%" src="https://www.youtube.com/embed/LI5EgoFusf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div className="col l3 m6 s12">
-      <iframe width="100%" src="https://www.youtube.com/embed/MekjO_fowVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div className="col l3 m6 s12">
-      <iframe width="100%" src="https://www.youtube.com/embed/WTY5prAe008" title="YouTube video player" frameborder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-    
-        </>
-    );
+  );
 }

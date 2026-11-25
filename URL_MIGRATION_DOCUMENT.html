@@ -1,0 +1,2158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sociapa - URL Structure & Migration Report</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 8mm 8mm;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #dc2626;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+  .title-area h1 {
+    margin: 0 0 2px 0;
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 800;
+  }
+  .title-area p {
+    margin: 0;
+    color: #64748b;
+    font-size: 10.5px;
+    font-weight: 500;
+  }
+  .badge-brand {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 10.5px;
+    border: 1px solid #fecaca;
+  }
+  .summary-cards {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .card {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    border-left: 3px solid #0284c7;
+  }
+  .card .card-val {
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+  .card .card-label {
+    font-size: 8.5px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5px;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  th {
+    background: #0f172a;
+    color: #f8fafc;
+    font-weight: 700;
+    text-align: left;
+    padding: 6px 8px;
+    border: 1px solid #0f172a;
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 4.5px 8px;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+    word-break: break-all;
+  }
+  tbody tr:nth-child(even) {
+    background: #f8fafc;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .badge-redirect {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+  }
+  .badge-clean {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+  }
+  .badge-tier1 {
+    background: #e0e7ff;
+    color: #3730a3;
+    border: 1px solid #c7d2fe;
+  }
+  .badge-city {
+    background: #f3e8ff;
+    color: #6b21a8;
+    border: 1px solid #e9d5ff;
+  }
+  .badge-blog {
+    background: #e0f2fe;
+    color: #075985;
+    border: 1px solid #bae6fd;
+  }
+  .url-old {
+    color: #b91c1c;
+    font-family: "Consolas", monospace;
+    font-size: 9px;
+  }
+  .url-new {
+    color: #047857;
+    font-weight: 700;
+    font-family: "Consolas", monospace;
+    font-size: 9px;
+  }
+  .footer-note {
+    margin-top: 10px;
+    font-size: 8.5px;
+    color: #64748b;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title-area">
+    <h1>SOCIAPA &bull; Full URL Structure &amp; Migration Report</h1>
+    <p>Complete Mapping of Current Live URLs vs Upcoming Clean React URLs (Total: 325 URLs)</p>
+  </div>
+  <div class="badge-brand">PRODUCTION READY</div>
+</div>
+
+<div class="summary-cards">
+  <div class="card" style="border-left-color: #dc2626;">
+    <div class="card-val">325</div>
+    <div class="card-label">Total Website URLs</div>
+  </div>
+  <div class="card" style="border-left-color: #0284c7;">
+    <div class="card-val">38</div>
+    <div class="card-label">Core &amp; Services</div>
+  </div>
+  <div class="card" style="border-left-color: #059669;">
+    <div class="card-val">31</div>
+    <div class="card-label">Blog Posts</div>
+  </div>
+  <div class="card" style="border-left-color: #4f46e5;">
+    <div class="card-val">66</div>
+    <div class="card-label">Tier-1 City Hubs</div>
+  </div>
+  <div class="card" style="border-left-color: #9333ea;">
+    <div class="card-val">190</div>
+    <div class="card-label">Pan-India Cities</div>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 35px; text-align: center;">#</th>
+      <th style="width: 44%;">Current Live URL (sociapa.com)</th>
+      <th style="width: 44%;">Upcoming Clean URL (sociapa.com)</th>
+      <th style="width: 12%; text-align: center;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">1</td>
+      <td class="url-old">https://sociapa.com/</td>
+      <td class="url-new">https://www.sociapa.com/</td>
+      <td style="text-align: center;"><span class="badge badge-clean">Homepage</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">2</td>
+      <td class="url-old">https://sociapa.com/about.php</td>
+      <td class="url-new">https://www.sociapa.com/about</td>
+      <td style="text-align: center;"><span class="badge badge-clean">Clean Route</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">3</td>
+      <td class="url-old">https://sociapa.com/services.php</td>
+      <td class="url-new">https://www.sociapa.com/our-services</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">4</td>
+      <td class="url-old">https://sociapa.com/contact.php</td>
+      <td class="url-new">https://www.sociapa.com/contact-us</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">5</td>
+      <td class="url-old">https://sociapa.com/portfolio.php</td>
+      <td class="url-new">https://www.sociapa.com/sociapa-profile</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">6</td>
+      <td class="url-old">https://sociapa.com/blog.php</td>
+      <td class="url-new">https://www.sociapa.com/blog</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">7</td>
+      <td class="url-old">https://sociapa.com/career.php</td>
+      <td class="url-new">https://www.sociapa.com/career</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">8</td>
+      <td class="url-old">https://sociapa.com/case-studies.php</td>
+      <td class="url-new">https://www.sociapa.com/case-studies</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">9</td>
+      <td class="url-old">https://sociapa.com/stories.php</td>
+      <td class="url-new">https://www.sociapa.com/stories</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">10</td>
+      <td class="url-old">https://sociapa.com/influencers.php</td>
+      <td class="url-new">https://www.sociapa.com/influencers-marketplace</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">11</td>
+      <td class="url-old">https://sociapa.com/audit.php</td>
+      <td class="url-new">https://www.sociapa.com/free-website-audit</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">12</td>
+      <td class="url-old">https://sociapa.com/awards.php</td>
+      <td class="url-new">https://www.sociapa.com/best-creative-and-digital-agency-award</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">13</td>
+      <td class="url-old">https://sociapa.com/press-release.php</td>
+      <td class="url-new">https://www.sociapa.com/sociapas-press-release</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">14</td>
+      <td class="url-old">https://sociapa.com/privacy-policy.php</td>
+      <td class="url-new">https://www.sociapa.com/privacy-policy</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">15</td>
+      <td class="url-old">https://sociapa.com/terms-condition.php</td>
+      <td class="url-new">https://www.sociapa.com/terms-condition</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">16</td>
+      <td class="url-old">https://sociapa.com/sitemap.php</td>
+      <td class="url-new">https://www.sociapa.com/sitemap</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">17</td>
+      <td class="url-old">https://sociapa.com/2026.php</td>
+      <td class="url-new">https://www.sociapa.com/2026</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">18</td>
+      <td class="url-old">https://sociapa.com/calendar-2026.php</td>
+      <td class="url-new">https://www.sociapa.com/calendar-2026</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">19</td>
+      <td class="url-old">https://sociapa.com/digital-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/best-digital-marketing-services-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">20</td>
+      <td class="url-old">https://sociapa.com/best-seo-agency-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">21</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-services.php</td>
+      <td class="url-new">https://www.sociapa.com/best-social-media-marketing-agency-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">22</td>
+      <td class="url-old">https://sociapa.com/services-web-development.php</td>
+      <td class="url-new">https://www.sociapa.com/best-web-development-agency-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">23</td>
+      <td class="url-old">https://sociapa.com/pay-per-click-advertising.php</td>
+      <td class="url-new">https://www.sociapa.com/pay-per-click-ppc-services-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">24</td>
+      <td class="url-old">https://sociapa.com/packaging.php</td>
+      <td class="url-new">https://www.sociapa.com/best-packaging-design-agency-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">25</td>
+      <td class="url-old">https://sociapa.com/photography.php</td>
+      <td class="url-new">https://www.sociapa.com/best-photography-services</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">26</td>
+      <td class="url-old">https://sociapa.com/pr.php</td>
+      <td class="url-new">https://www.sociapa.com/best-pr-agency-india</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">27</td>
+      <td class="url-old">https://sociapa.com/influencer-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/influencer-marketing-services</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">28</td>
+      <td class="url-old">https://sociapa.com/email-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/email-marketing-services</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">29</td>
+      <td class="url-old">https://sociapa.com/registration-services.php</td>
+      <td class="url-new">https://www.sociapa.com/gst-company-registration-services</td>
+      <td style="text-align: center;"><span class="badge badge-redirect">301 Redirect</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">30</td>
+      <td class="url-old">https://sociapa.com/brand-identity-design.php</td>
+      <td class="url-new">https://www.sociapa.com/brand-identity-design</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">31</td>
+      <td class="url-old">https://sociapa.com/brand-strategy.php</td>
+      <td class="url-new">https://www.sociapa.com/brand-strategy</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">32</td>
+      <td class="url-old">https://sociapa.com/consultation-idea.php</td>
+      <td class="url-new">https://www.sociapa.com/consultation-idea</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">33</td>
+      <td class="url-old">https://sociapa.com/content-designing.php</td>
+      <td class="url-new">https://www.sociapa.com/content-designing</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">34</td>
+      <td class="url-old">https://sociapa.com/creative-designing.php</td>
+      <td class="url-new">https://www.sociapa.com/creative-designing</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">35</td>
+      <td class="url-old">https://sociapa.com/go-to-market.php</td>
+      <td class="url-new">https://www.sociapa.com/go-to-market</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">36</td>
+      <td class="url-old">https://sociapa.com/product-unboxing-experience.php</td>
+      <td class="url-new">https://www.sociapa.com/product-unboxing-experience</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">37</td>
+      <td class="url-old">https://sociapa.com/videos.php</td>
+      <td class="url-new">https://www.sociapa.com/videos</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">38</td>
+      <td class="url-old">https://sociapa.com/aggregator-platform-service.php</td>
+      <td class="url-new">https://www.sociapa.com/aggregator-platform-service</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">39</td>
+      <td class="url-old">https://sociapa.com/chatgpt-ads-in-india.php</td>
+      <td class="url-new">https://www.sociapa.com/chatgpt-ads-in-india</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">40</td>
+      <td class="url-old">https://sociapa.com/new-rules-of-winning-on-social-media-in-india.php</td>
+      <td class="url-new">https://www.sociapa.com/new-rules-of-winning-on-social-media-in-india</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">41</td>
+      <td class="url-old">https://sociapa.com/google-ads-vs-meta-ads-in-2026.php</td>
+      <td class="url-new">https://www.sociapa.com/google-ads-vs-meta-ads-in-2026</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">42</td>
+      <td class="url-old">https://sociapa.com/asci-ai-advertising-guidelines-2026.php</td>
+      <td class="url-new">https://www.sociapa.com/asci-ai-advertising-guidelines-2026</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">43</td>
+      <td class="url-old">https://sociapa.com/what-google-ads-and-facebook-ads-dont-cover.php</td>
+      <td class="url-new">https://www.sociapa.com/what-google-ads-and-facebook-ads-dont-cover</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">44</td>
+      <td class="url-old">https://sociapa.com/why-seo-is-essential-for-your-d2c-websites-success.php</td>
+      <td class="url-new">https://www.sociapa.com/why-seo-is-essential-for-your-d2c-websites-success</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">45</td>
+      <td class="url-old">https://sociapa.com/mixed-realit-in-ads-ushering-in-a-new-era-of-immersive-experiences.php</td>
+      <td class="url-new">https://www.sociapa.com/mixed-realit-in-ads-ushering-in-a-new-era-of-immersive-experiences</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">46</td>
+      <td class="url-old">https://sociapa.com/turning-customer.php</td>
+      <td class="url-new">https://www.sociapa.com/turning-customer</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">47</td>
+      <td class="url-old">https://sociapa.com/experiential-marketing-blog.php</td>
+      <td class="url-new">https://www.sociapa.com/experiential-marketing-blog</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">48</td>
+      <td class="url-old">https://sociapa.com/exploring-geofance.php</td>
+      <td class="url-new">https://www.sociapa.com/exploring-geofance</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">49</td>
+      <td class="url-old">https://sociapa.com/navigating-the-digital.php</td>
+      <td class="url-new">https://www.sociapa.com/navigating-the-digital</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">50</td>
+      <td class="url-old">https://sociapa.com/the-power-of-polygon-targeting-in-modern-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/the-power-of-polygon-targeting-in-modern-marketing</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">51</td>
+      <td class="url-old">https://sociapa.com/putting-talent-first-in-influencer-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/putting-talent-first-in-influencer-marketing</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">52</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-opportunities-for-business-growth.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-opportunities-for-business-growth</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">53</td>
+      <td class="url-old">https://sociapa.com/creator-vs-influencer.php</td>
+      <td class="url-new">https://www.sociapa.com/creator-vs-influencer</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">54</td>
+      <td class="url-old">https://sociapa.com/8-content-marketing-trends.php</td>
+      <td class="url-new">https://www.sociapa.com/8-content-marketing-trends</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">55</td>
+      <td class="url-old">https://sociapa.com/the-best-digital-marketing-services-you-should-use.php</td>
+      <td class="url-new">https://www.sociapa.com/the-best-digital-marketing-services-you-should-use</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">56</td>
+      <td class="url-old">https://sociapa.com/how-analytics-improve-your-digital-marketing-plan.php</td>
+      <td class="url-new">https://www.sociapa.com/how-analytics-improve-your-digital-marketing-plan</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">57</td>
+      <td class="url-old">https://sociapa.com/Seven-top-social-media-trends.php</td>
+      <td class="url-new">https://www.sociapa.com/Seven-top-social-media-trends</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">58</td>
+      <td class="url-old">https://sociapa.com/five-commandments-of-marketing.php</td>
+      <td class="url-new">https://www.sociapa.com/five-commandments-of-marketing</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">59</td>
+      <td class="url-old">https://sociapa.com/Cutting-edge-of-AI.php</td>
+      <td class="url-new">https://www.sociapa.com/Cutting-edge-of-AI</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">60</td>
+      <td class="url-old">https://sociapa.com/10-Great-Taglines-of-all-time.php</td>
+      <td class="url-new">https://www.sociapa.com/10-Great-Taglines-of-all-time</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">61</td>
+      <td class="url-old">https://sociapa.com/10-Best-Video-Campaigns-Of-The-Decade.php</td>
+      <td class="url-new">https://www.sociapa.com/10-Best-Video-Campaigns-Of-The-Decade</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">62</td>
+      <td class="url-old">https://sociapa.com/Twitter-Advertising-Product-Suite.php</td>
+      <td class="url-new">https://www.sociapa.com/Twitter-Advertising-Product-Suite</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">63</td>
+      <td class="url-old">https://sociapa.com/How-Packaging-can-influence.php</td>
+      <td class="url-new">https://www.sociapa.com/How-Packaging-can-influence</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">64</td>
+      <td class="url-old">https://sociapa.com/ORM-as-an-Integral-Part.php</td>
+      <td class="url-new">https://www.sociapa.com/ORM-as-an-Integral-Part</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">65</td>
+      <td class="url-old">https://sociapa.com/Evolution-of-Big-Brands.php</td>
+      <td class="url-new">https://www.sociapa.com/Evolution-of-Big-Brands</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">66</td>
+      <td class="url-old">https://sociapa.com/Steps-To-Build-Your-Brands-On-Social-Media.php</td>
+      <td class="url-new">https://www.sociapa.com/Steps-To-Build-Your-Brands-On-Social-Media</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">67</td>
+      <td class="url-old">https://sociapa.com/Influencer-Marketing-as-a-Significant-Branding-Strategy.php</td>
+      <td class="url-new">https://www.sociapa.com/Influencer-Marketing-as-a-Significant-Branding-Strategy</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">68</td>
+      <td class="url-old">https://sociapa.com/SMHolidays-that-need-to-be-a-part-of-your-brand-strategy.php</td>
+      <td class="url-new">https://www.sociapa.com/SMHolidays-that-need-to-be-a-part-of-your-brand-strategy</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">69</td>
+      <td class="url-old">https://sociapa.com/Marketing-Era-Digital-Traditional.php</td>
+      <td class="url-new">https://www.sociapa.com/Marketing-Era-Digital-Traditional</td>
+      <td style="text-align: center;"><span class="badge badge-blog">Blog Post</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">70</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-allahabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-allahabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">71</td>
+      <td class="url-old">https://sociapa.com/branding-agency-in-agra-india.php</td>
+      <td class="url-new">https://www.sociapa.com/branding-agency-in-agra-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">72</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-agra-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-agra-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">73</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-ahmedabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-ahmedabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">74</td>
+      <td class="url-old">https://sociapa.com/business-process-consultation.php</td>
+      <td class="url-new">https://www.sociapa.com/business-process-consultation</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">75</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-bhubaneswar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-bhubaneswar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">76</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-bangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-bangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">77</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-bhopal-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-bhopal-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">78</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-amritsar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-amritsar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">79</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-aurangabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-aurangabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">80</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-coimbatore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-coimbatore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">81</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-delhi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-delhi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">82</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-dehradun-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-dehradun-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">83</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-chandigarh-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-chandigarh-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">84</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-chennai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-chennai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">85</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-guwahati-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-guwahati-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">86</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-goa-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-goa-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">87</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-ghaziabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-ghaziabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">88</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-faridabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-faridabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">89</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-gurgaon-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-gurgaon-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">90</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-hyderabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-hyderabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">91</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-jabalpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-jabalpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">92</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-jaipur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-jaipur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">93</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-jalandhar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-jalandhar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">94</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-indore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-indore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">95</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-kolkata-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-kolkata-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">96</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-kochi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-kochi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">97</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-jodhpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-jodhpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">98</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-kanpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-kanpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">99</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-jamshedpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-jamshedpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">100</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-ludhiana-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-ludhiana-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">101</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-kota-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-kota-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">102</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-lucknow-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-lucknow-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">103</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-madurai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-madurai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">104</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-mangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-mangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">105</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-noida-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-noida-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">106</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-mumbai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-mumbai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">107</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-nagpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-nagpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">108</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-nasik-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-nasik-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">109</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-patiala-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-patiala-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">110</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-vadodara-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-vadodara-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">111</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-surat-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-surat-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">112</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-punjab-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-punjab-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">113</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-pune-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-pune-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">114</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-trivandrum-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-trivandrum-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">115</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-varanasi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-varanasi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">116</td>
+      <td class="url-old">https://sociapa.com/digital-marketing-agency-in-visakhapatnam-india.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing-agency-in-visakhapatnam-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">117</td>
+      <td class="url-old">https://sociapa.com/influencer-need.php</td>
+      <td class="url-new">https://www.sociapa.com/influencer-need</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">118</td>
+      <td class="url-old">https://sociapa.com/geofencing.php</td>
+      <td class="url-new">https://www.sociapa.com/geofencing</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">119</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-allahabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-allahabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">120</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-agra-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-agra-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">121</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-ahmedabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-ahmedabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">122</td>
+      <td class="url-old">https://sociapa.com/polygon.php</td>
+      <td class="url-new">https://www.sociapa.com/polygon</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">123</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-amritsar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-amritsar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">124</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-aurangabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-aurangabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">125</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-chandigarh-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-chandigarh-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">126</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-bhubaneswar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-bhubaneswar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">127</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-bhopal-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-bhopal-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">128</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-bangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-bangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">129</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-chennai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-chennai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">130</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-coimbatore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-coimbatore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">131</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-dehradun-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-dehradun-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">132</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-delhi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-delhi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">133</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-faridabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-faridabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">134</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-ghaziabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-ghaziabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">135</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-gurgaon-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-gurgaon-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">136</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-hyderabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-hyderabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">137</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-guwahati-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-guwahati-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">138</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-goa-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-goa-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">139</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-jamshedpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-jamshedpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">140</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-jabalpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-jabalpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">141</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-indore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-indore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">142</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-jalandhar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-jalandhar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">143</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-jaipur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-jaipur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">144</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-kota-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-kota-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">145</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-kochi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-kochi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">146</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-jodhpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-jodhpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">147</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-kolkata-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-kolkata-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">148</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-kanpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-kanpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">149</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-mangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-mangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">150</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-lucknow-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-lucknow-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">151</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-mumbai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-mumbai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">152</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-madurai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-madurai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">153</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-ludhiana-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-ludhiana-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">154</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-noida-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-noida-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">155</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-pune-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-pune-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">156</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-patiala-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-patiala-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">157</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-nagpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-nagpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">158</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-nasik-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-nasik-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">159</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-vadodara-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-vadodara-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">160</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-punjab-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-punjab-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">161</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-varanasi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-varanasi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">162</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-trivandrum-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-trivandrum-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">163</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-surat-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-surat-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">164</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-amritser-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-amritser-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">165</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-ahmedabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-ahmedabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">166</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-allahabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-allahabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">167</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-agra-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-agra-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">168</td>
+      <td class="url-old">https://sociapa.com/pr-agency-in-visakhapatnam-india.php</td>
+      <td class="url-new">https://www.sociapa.com/pr-agency-in-visakhapatnam-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">169</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-chandigarh-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-chandigarh-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">170</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-bangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-bangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">171</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-aurangabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-aurangabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">172</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-bhubaneswar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-bhubaneswar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">173</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-bhopal-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-bhopal-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">174</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-coimbatore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-coimbatore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">175</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-delhi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-delhi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">176</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-dehradun-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-dehradun-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">177</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-chennai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-chennai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">178</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-faridabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-faridabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">179</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-hyderabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-hyderabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">180</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-guwahati-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-guwahati-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">181</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-gurgaon-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-gurgaon-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">182</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-ghaziabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-ghaziabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">183</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-goa-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-goa-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">184</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-jabalpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-jabalpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">185</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-jalandhar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-jalandhar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">186</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-indore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-indore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">187</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-jaipur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-jaipur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">188</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-jamshedpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-jamshedpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">189</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-kanpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-kanpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">190</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-kolkata-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-kolkata-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">191</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-jodhpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-jodhpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">192</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-kota-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-kota-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">193</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-kochi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-kochi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">194</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-mangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-mangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">195</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-lucknow-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-lucknow-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">196</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-mumbai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-mumbai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">197</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-ludhiana-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-ludhiana-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">198</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-madurai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-madurai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">199</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-nasik-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-nasik-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">200</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-noida-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-noida-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">201</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-pune-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-pune-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">202</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-patiala-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-patiala-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">203</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-nagpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-nagpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">204</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-punjab-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-punjab-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">205</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-varanasi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-varanasi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">206</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-trivandrum-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-trivandrum-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">207</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-vadodara-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-vadodara-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">208</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-surat-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-surat-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">209</td>
+      <td class="url-old">https://sociapa.com/seo-agency-in-visakhapatnam-india.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-agency-in-visakhapatnam-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">210</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-agra-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-agra-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">211</td>
+      <td class="url-old">https://sociapa.com/services-app-development.php</td>
+      <td class="url-new">https://www.sociapa.com/services-app-development</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">212</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-allahabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-allahabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">213</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-ahmedabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-ahmedabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">214</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-amritsar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-amritsar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">215</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-bhopal-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-bhopal-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">216</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-bangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-bangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">217</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-aurangabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-aurangabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">218</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-bhubaneswar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-bhubaneswar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">219</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-delhi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-delhi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">220</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-dehradun-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-dehradun-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">221</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-chandigarh-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-chandigarh-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">222</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-coimbatore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-coimbatore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">223</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-chennai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-chennai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">224</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-goa-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-goa-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">225</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-ghaziabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-ghaziabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">226</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-guwahati-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-guwahati-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">227</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-gurgaon-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-gurgaon-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">228</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-faridabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-faridabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">229</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-jabalpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-jabalpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">230</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-jaipur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-jaipur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">231</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-jalandhar-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-jalandhar-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">232</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-indore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-indore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">233</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-hyderabad-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-hyderabad-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">234</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-kolkata-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-kolkata-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">235</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-kochi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-kochi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">236</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-jodhpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-jodhpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">237</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-kanpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-kanpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">238</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-jamshedpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-jamshedpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">239</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-ludhiana-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-ludhiana-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">240</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-madurai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-madurai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">241</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-lucknow-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-lucknow-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">242</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-mangalore-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-mangalore-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">243</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-kota-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-kota-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">244</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-patiala-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-patiala-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">245</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-nasik-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-nasik-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">246</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-noida-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-noida-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">247</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-nagpur-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-nagpur-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">248</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-mumbai-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-mumbai-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">249</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-punjab-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-punjab-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">250</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-pune-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-pune-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">251</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-trivandrum-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-trivandrum-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">252</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-vadodara-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-vadodara-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">253</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-surat-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-surat-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">254</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-visakhapatnam-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-visakhapatnam-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">255</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing-agency-in-varanasi-india.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing-agency-in-varanasi-india</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">256</td>
+      <td class="url-old">https://sociapa.com/advertisement.php</td>
+      <td class="url-new">https://www.sociapa.com/advertisement</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">257</td>
+      <td class="url-old">https://sociapa.com/blog-view.php</td>
+      <td class="url-new">https://www.sociapa.com/blog-view</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">258</td>
+      <td class="url-old">https://sociapa.com/pay-per-click-advertising.php</td>
+      <td class="url-new">https://www.sociapa.com/pay-per-click-advertising</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">259</td>
+      <td class="url-old">https://sociapa.com/webp_convert.php</td>
+      <td class="url-new">https://www.sociapa.com/webp_convert</td>
+      <td style="text-align: center;"><span class="badge badge-city">City SEO</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">260</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">261</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">262</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">263</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">264</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">265</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">266</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">267</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">268</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">269</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">270</td>
+      <td class="url-old">https://sociapa.com/digital-marketing/best-digital-marketing-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/digital-marketing/best-digital-marketing-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">271</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">272</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">273</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">274</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">275</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">276</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">277</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">278</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">279</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">280</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">281</td>
+      <td class="url-old">https://sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/packaging-and-design/best-packaging-and-design-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">282</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">283</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">284</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">285</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">286</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">287</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">288</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">289</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">290</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">291</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">292</td>
+      <td class="url-old">https://sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/social-media-marketing/best-social-media-marketing-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">293</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">294</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">295</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">296</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">297</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">298</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">299</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">300</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">301</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">302</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">303</td>
+      <td class="url-old">https://sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/seo-aeo-geo/best-seo-aeo-geo-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">304</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">305</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">306</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">307</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">308</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">309</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">310</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">311</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">312</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">313</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">314</td>
+      <td class="url-old">https://sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/website-design-and-development/best-website-design-and-development-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">315</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-delhi.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-delhi</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">316</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-noida.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-noida</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">317</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-gurgaon.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-gurgaon</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">318</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-faridabad.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-faridabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">319</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-ghaziabad.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-ghaziabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">320</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-jaipur.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-jaipur</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">321</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-bengaluru.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-bengaluru</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">322</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-mumbai.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-mumbai</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">323</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-hyderabad.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-hyderabad</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">324</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-kolkata.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-kolkata</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+    <tr>
+      <td style="text-align: center; color: #64748b; font-weight: 700;">325</td>
+      <td class="url-old">https://sociapa.com/video-production/best-video-production-agency-in-lucknow.php</td>
+      <td class="url-new">https://www.sociapa.com/video-production/best-video-production-agency-in-lucknow</td>
+      <td style="text-align: center;"><span class="badge badge-tier1">Tier-1 Hub</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footer-note">
+  Generated for Sociapa Digital Agency &bull; All 325 URLs mapped &bull; Configured with 301 Permanent Redirects to preserve 100% SEO Authority
+</div>
+
+</body>
+</html>

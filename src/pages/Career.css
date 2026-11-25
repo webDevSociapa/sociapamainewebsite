@@ -1,51 +1,51 @@
-/* Career.css - Clean, Professional External Stylesheet (#D20C0C Brand Standard) */
-
-.career-hero-section {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 130px;
-  padding-bottom: 60px;
-  background: linear-gradient(180deg, #ffffff 0%, #FAFAFC 100%);
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+.career-page {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  color: var(--text-body, #4b5563);
 }
 
-.career-hero-container {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
+.career-page h1,
+.career-page h2,
+.career-page h3,
+.career-page h4,
+.career-page h5,
+.career-page h6,
+.career-page .section-title h2,
+.career-page .career-job-title,
+.career-page .career-perk-title {
+  font-family: var(--font-heading, 'Outfit', sans-serif) !important;
 }
 
-.career-label {
-  margin-bottom: 16px;
-  display: inline-flex;
-  animation: float 4s ease-in-out infinite;
+.career-page p,
+.career-page .section-title p,
+.career-page .career-perk-desc {
+  font-family: var(--font-body, 'Inter', sans-serif) !important;
 }
 
-.career-hero-title {
-  max-width: 900px;
-  margin: 0 auto 16px auto;
-  font-size: clamp(2.5rem, 5.5vw, 4rem);
+/* Hero Banner - Standard Full-Bleed Layout */
+.career-hero-banner {
+  margin-top: 0;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  display: block !important;
+  position: relative !important;
+  background: transparent !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
 }
 
-.career-hero-desc {
-  margin: 0 auto 36px auto;
-  font-size: 1.15rem;
-  color: #4A4A68;
-  max-width: 650px;
+@media (max-width: 991px) {
+  .career-hero-banner {
+    margin-top: 56px !important;
+  }
 }
 
-.career-hero-btns {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+@media (max-width: 768px) {
+  .career-hero-banner {
+    margin-top: 56px !important;
+  }
 }
 
 .career-btn-explore {
@@ -424,6 +424,46 @@
 @media(max-width: 768px) {
   .career-modal-grid-2col {
     grid-template-columns: 1fr;
+  }
+
+  .career-perks-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .career-perk-card {
+    padding: 28px 20px;
+  }
+}
+
+@media(max-width: 480px) {
+  .career-modal-card {
+    padding: 24px 16px;
+    max-width: 94vw;
+  }
+
+  .career-job-card {
+    padding: 20px 16px;
+  }
+
+  .career-perk-card {
+    padding: 20px 14px;
+  }
+
+  .career-perk-icon-box {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+}
+
+@media(max-width: 360px) {
+  .career-job-card {
+    padding: 16px 12px;
+  }
+
+  .career-modal-card {
+    padding: 20px 12px;
   }
 }
 

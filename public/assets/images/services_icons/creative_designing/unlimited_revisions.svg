@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Infinite Loop Arrows / Cycle -->
+      <path d="M72 128 C72 100, 96 84, 128 128 C160 172, 184 156, 184 128 C184 100, 160 84, 128 128 C96 172, 72 156, 72 128 Z" stroke="#C8102E" stroke-width="14"/>
+      <!-- Cycle Arrowhead 1 -->
+      <path d="M168 84 L192 84 L192 108" stroke="#1A0508" stroke-width="8"/>
+      <!-- Cycle Arrowhead 2 -->
+      <path d="M88 172 L64 172 L64 148" stroke="#1A0508" stroke-width="8"/>
+      <!-- Pen Tool Tip in Center -->
+      <g transform="translate(128, 128)">
+        <circle cx="0" cy="0" r="16" fill="#1A0508"/>
+        <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+      </g>
+    </g>
+  </svg>

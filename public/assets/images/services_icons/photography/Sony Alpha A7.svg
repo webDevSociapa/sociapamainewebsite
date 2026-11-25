@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(36, 36)">
+        <!-- Mirrorless Camera Body -->
+        <rect x="30" y="110" width="380" height="260" rx="24" fill="#FFEBEF" stroke="#1A0508" stroke-width="14"/>
+        <!-- Pentaprism / Viewfinder Top -->
+        <polygon points="150,110 180,60 260,60 290,110" fill="#FFEBEF" stroke="#1A0508" stroke-width="14"/>
+        <!-- Mode Dials & Buttons -->
+        <rect x="60" y="80" width="45" height="30" rx="6" fill="#1A0508"/>
+        <rect x="325" y="80" width="55" height="30" rx="6" fill="#1A0508"/>
+        <circle cx="352" cy="65" r="12" fill="#C8102E"/>
+        <!-- Lens Mount Ring (Sony Orange / Red accent) -->
+        <circle cx="220" cy="240" r="110" fill="#FFFFFF" stroke="#1A0508" stroke-width="14"/>
+        <circle cx="220" cy="240" r="88" stroke="#C8102E" stroke-width="12"/>
+        <circle cx="220" cy="240" r="54" fill="#1A0508"/>
+        <circle cx="205" cy="225" r="16" fill="#FFFFFF" opacity="0.8"/>
+        <!-- Sony Alpha Greek Letter Symbol in Red -->
+        <path d="M70 170 C90 140, 110 190, 80 200 C60 190, 80 150, 110 170" stroke="#C8102E" stroke-width="8"/>
+      </g>
+    </svg>

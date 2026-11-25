@@ -1,0 +1,671 @@
+/* ═══════════════════════════════════════════════════════════════════
+   ApisInfluencerFigmaDetail.css
+   Figma Node 87:105 — Exact 1:1 Ditto Reproduction
+   Typography: Classic Editorial Serif Headings with Red/Dark Dual Tone
+   Colors: #C8282A (Crimson Red), #111827 (Charcoal/Dark), #FFF0F0 (Card Pink)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Base Container & Reset ── */
+.apis-figma-case-study {
+  background: #FFFFFF;
+  color: #1F2937;
+  font-family: inherit;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+.apis-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Editorial Serif Headings (Matching Figma Exact Style) ── */
+.serif-red {
+  color: #C8282A;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.serif-dark {
+  color: #111827;
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.apis-section-heading {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  text-align: center;
+  margin: 0 0 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.apis-section-heading.align-left {
+  text-align: left;
+}
+
+.apis-heading-underline {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.apis-heading-underline.red {
+  background: #C8282A;
+}
+
+.apis-heading-underline.black {
+  background: #111827;
+}
+
+.apis-heading-underline.align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.apis-center-block {
+  max-width: 860px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.apis-body-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #374151;
+}
+
+.apis-body-text p {
+  margin: 0 0 18px;
+}
+
+.apis-body-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── 1. CATEGORY PILLS BAR (FIGMA SLICE 0) ── */
+.apis-category-pills-bar {
+  padding: 24px 0 20px;
+  background: #FFFFFF;
+}
+
+.apis-pills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.apis-cat-pill {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #FFF1F0;
+  color: #C8282A;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.apis-cat-pill:hover {
+  background: #FEE2E2;
+  color: #991B1B;
+  transform: translateY(-1px);
+}
+
+.apis-cat-pill.active {
+  background: #C8282A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(200, 40, 42, 0.28);
+}
+
+/* ── 2. HERO SECTION: BOTTLE CARD + EDITORIAL HEADLINE (FIGMA SLICE 0) ── */
+.apis-hero-section {
+  padding: 20px 0 50px;
+  background: #FFFFFF;
+}
+
+.apis-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.apis-hero-visual-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+}
+
+.apis-hero-bottle-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.apis-hero-heading-col {
+  padding-left: 10px;
+}
+
+.apis-hero-headline {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(2rem, 3.6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: #C8282A;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ── 3. TAG PILLS ROW (FIGMA SLICE 1) ── */
+.apis-tags-section {
+  padding: 20px 0 40px;
+  background: #FFFFFF;
+}
+
+.apis-tags-pills-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.apis-tag-pill {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 999px;
+  background: #FFF1F0;
+  border: 1px solid #C8282A;
+  color: #111827;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* ── 4. PROJECT OVERVIEW SECTION (FIGMA SLICE 1) ── */
+.apis-overview-section {
+  padding: 30px 0 60px;
+  border-top: 1px solid #F3F4F6;
+  background: #FFFFFF;
+}
+
+.apis-overview-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.apis-overview-title {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.apis-overview-tagline {
+  font-size: 1.05rem;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.apis-overview-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 36px;
+}
+
+.apis-meta-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.apis-meta-key {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.apis-meta-val {
+  font-size: 1.05rem;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ── 5. THE BRIEF (FIGMA SLICE 1 & 2) ── */
+.apis-brief-section {
+  padding: 70px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.apis-recipe-visual-frame {
+  margin-top: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.apis-recipe-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 6. THE APPROACH (FIGMA SLICE 2 & 3) ── */
+.apis-approach-section {
+  padding: 70px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.apis-approach-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.apis-approach-card {
+  background: #FFF0F0;
+  border-radius: 16px;
+  padding: 36px 30px;
+  box-shadow: 0 4px 18px rgba(200, 40, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.apis-approach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(200, 40, 42, 0.1);
+}
+
+.apis-approach-card-title {
+  color: #C8282A;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.apis-approach-card-desc {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #374151;
+  margin: 0;
+}
+
+/* ── 7. CREATOR PARTNERSHIPS (FIGMA SLICE 3 & 4) ── */
+.apis-partnerships-section {
+  padding: 70px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.apis-partnerships-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.apis-carousel-nav-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.apis-nav-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #C8282A;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.apis-nav-arrow:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.apis-partnerships-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.apis-phone-mockup-col {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+}
+
+.apis-phone-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.apis-creators-content-col {
+  padding-left: 10px;
+}
+
+.apis-creators-subtitle {
+  font-family: 'Playfair Display', 'Cinzel', 'Georgia', serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 700;
+  color: #C8282A;
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+.apis-sub-underline {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #C8282A;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.apis-creators-desc {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #374151;
+  margin: 20px 0 32px;
+}
+
+.apis-creators-thumbs-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.apis-creator-thumb-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+}
+
+.apis-creator-thumb-card:hover {
+  transform: translateY(-4px);
+}
+
+.apis-thumb-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 8. BEYOND INDIVIDUAL CREATORS (FIGMA SLICE 4) ── */
+.apis-beyond-section {
+  padding: 60px 0;
+  background: #FFFFFF;
+}
+
+.apis-beyond-card {
+  background: #FFF0F0;
+  border-radius: 24px;
+  padding: 56px 48px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(200, 40, 42, 0.05);
+}
+
+.apis-beyond-text-col .apis-section-heading {
+  margin-bottom: 24px;
+}
+
+.apis-beyond-visual-col {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.apis-pr-times-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── 9. THE RESULTS (FIGMA SLICE 5) ── */
+.apis-results-section {
+  padding: 70px 0 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.apis-results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.apis-results-card-col {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(200, 40, 42, 0.16);
+}
+
+.apis-stat-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.apis-results-content-col {
+  padding-left: 10px;
+}
+
+.apis-results-content-col .apis-section-heading {
+  margin-bottom: 24px;
+}
+
+/* ── 10. THE TAKEAWAY (FIGMA SLICE 5) ── */
+.apis-takeaway-section {
+  padding: 70px 0 40px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── 11. VISUAL COLLAGE / GALLERY (FIGMA SLICE 5 & 6) ── */
+.apis-gallery-section {
+  padding: 20px 0 70px;
+  background: #FFFFFF;
+}
+
+.apis-gallery-mosaic {
+  display: grid;
+  grid-template-columns: 2.1fr 0.9fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.apis-gallery-left-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.22fr;
+  gap: 20px;
+}
+
+.apis-gallery-tile {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease;
+}
+
+.apis-gallery-tile:hover,
+.apis-gallery-tall-tile:hover {
+  transform: translateY(-4px);
+}
+
+.apis-tile-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.apis-gallery-tall-tile {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease;
+}
+
+.apis-tall-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── 12. OTHER SERVICES (FIGMA SLICE 6 & 7) ── */
+.apis-other-services-section {
+  padding: 80px 0 40px;
+  background: #FFFFFF;
+  border-top: 1px solid #F3F4F6;
+}
+
+.apis-other-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.apis-other-card {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  text-decoration: none;
+  background: #FFFFFF;
+}
+
+.apis-other-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.apis-other-card.current {
+  cursor: default;
+  border: 2px solid #C8282A;
+}
+
+.apis-other-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── SEO Service Interlinks ── */
+.apis-figma-case-study a.seo-interlink {
+  color: #C8282A;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.apis-figma-case-study a.seo-interlink:hover {
+  color: #991B1B;
+}
+
+/* ── Responsive Media Queries ── */
+@media (max-width: 992px) {
+  .apis-hero-grid,
+  .apis-overview-grid,
+  .apis-partnerships-grid,
+  .apis-beyond-card,
+  .apis-results-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .apis-creators-content-col,
+  .apis-hero-heading-col,
+  .apis-results-content-col {
+    padding-left: 0;
+  }
+
+  .apis-approach-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .apis-gallery-mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .apis-gallery-tall-tile {
+    max-height: 400px;
+  }
+
+  .apis-other-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .apis-container {
+    padding: 0 16px;
+  }
+
+  .apis-section-heading {
+    font-size: 1.75rem;
+  }
+
+  .apis-overview-right {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .apis-creators-thumbs-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .apis-gallery-left-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apis-beyond-card {
+    padding: 32px 20px;
+  }
+}
+

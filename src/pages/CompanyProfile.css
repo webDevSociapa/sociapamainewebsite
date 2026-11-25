@@ -1,15 +1,93 @@
 .company-profile-wrapper {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
   height: 100vh;
-  padding-top: 75px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow: hidden;
   background: #0a0a0a;
+  z-index: 99999;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .company-profile-iframe {
   width: 100%;
-  height: calc(100vh - 75px);
+  height: 100%;
   border: none;
   display: block;
 }
+
+.company-profile-back-btn {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  z-index: 100000;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(20, 20, 20, 0.85);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  line-height: 1.2;
+}
+
+.company-profile-back-btn:hover {
+  background: #d20c0c;
+  border-color: #d20c0c;
+  color: #ffffff;
+  transform: translateX(-1px);
+}
+
+@media (max-width: 768px) {
+  .company-profile-back-btn {
+    top: 8px;
+    left: 8px;
+    padding: 6px 10px;
+    font-size: 11px;
+    gap: 4px;
+    min-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-profile-back-btn {
+    top: 6px;
+    left: 6px;
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .company-profile-back-btn {
+    top: 4px;
+    left: 4px;
+    padding: 4px 6px;
+    font-size: 9.5px;
+  }
+}
+

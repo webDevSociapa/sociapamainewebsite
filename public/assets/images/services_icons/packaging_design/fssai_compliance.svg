@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 240" width="512" height="240">
+      <g transform="translate(25, 30)">
+        <!-- Top Green Leaf -->
+        <path d="M420 20 C420 5 440 0 445 0 C450 15 440 35 425 40 Z" fill="#2E7D32"/>
+        <circle cx="415" cy="40" r="5" fill="#8D6E63"/>
+        <!-- Orange Top Rule -->
+        <rect x="70" y="55" width="370" height="10" rx="5" fill="#F47920"/>
+        <!-- "fssai" stylized typography -->
+        <text x="5" y="165" font-family="Arial, sans-serif" font-style="italic" font-weight="900" font-size="140" fill="#1A237E" letter-spacing="-3">fssai</text>
+      </g>
+    </svg>

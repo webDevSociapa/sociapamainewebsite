@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 380" preserveAspectRatio="xMidYMid slice" fill="none">
+  <rect width="1440" height="380" fill="#bc2317"/>
+  <!-- Left Concentric Swirl Rings -->
+  <circle cx="160" cy="190" r="110" stroke="rgba(0, 0, 0, 0.11)" stroke-width="48"/>
+  <circle cx="160" cy="190" r="220" stroke="rgba(0, 0, 0, 0.12)" stroke-width="56"/>
+  <circle cx="160" cy="190" r="340" stroke="rgba(0, 0, 0, 0.13)" stroke-width="64"/>
+  <circle cx="160" cy="190" r="480" stroke="rgba(0, 0, 0, 0.11)" stroke-width="72"/>
+  <circle cx="160" cy="190" r="640" stroke="rgba(0, 0, 0, 0.08)" stroke-width="84"/>
+
+  <!-- Right Concentric Swirl Rings -->
+  <circle cx="1260" cy="210" r="120" stroke="rgba(0, 0, 0, 0.11)" stroke-width="50"/>
+  <circle cx="1260" cy="210" r="240" stroke="rgba(0, 0, 0, 0.12)" stroke-width="60"/>
+  <circle cx="1260" cy="210" r="380" stroke="rgba(0, 0, 0, 0.13)" stroke-width="70"/>
+  <circle cx="1260" cy="210" r="540" stroke="rgba(0, 0, 0, 0.11)" stroke-width="80"/>
+  <circle cx="1260" cy="210" r="720" stroke="rgba(0, 0, 0, 0.08)" stroke-width="92"/>
+</svg>

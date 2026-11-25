@@ -34,3 +34,52 @@
   font-size: 1.1rem;
   border-radius: 30px;
 }
+
+@media (max-width: 768px) {
+  .cal2026-hero-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 70vh;
+  }
+  .cal2026-glass-card {
+    padding: 36px 20px !important;
+    border-radius: 24px;
+    width: 100%;
+  }
+  .cal2026-h1 {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+  .cal2026-desc {
+    font-size: 1rem;
+    margin-bottom: 30px !important;
+  }
+  .cal2026-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cal2026-hero-section {
+    padding-top: 85px;
+  }
+  .cal2026-glass-card {
+    padding: 28px 16px !important;
+    border-radius: 20px;
+  }
+  .cal2026-h1 {
+    font-size: 1.8rem;
+  }
+  .cal2026-sub {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cal2026-h1 {
+    font-size: 1.6rem;
+  }
+}
+

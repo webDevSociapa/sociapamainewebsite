@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 76" width="480" height="152">
+    <defs>
+      <linearGradient id="schemaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A30000" />
+        <stop offset="100%" stop-color="#7A0000" />
+      </linearGradient>
+      <filter id="schemaShadow" x="-5%" y="-10%" width="110%" height="130%">
+        <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2" />
+      </filter>
+    </defs>
+    <rect x="3" y="3" width="234" height="70" rx="10" fill="url(#schemaGrad)" stroke="#5A0000" stroke-width="2" filter="url(#schemaShadow)" />
+    <!-- Crisp bold text schema.org -->
+    <text x="120" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="36" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">schema.org</text>
+  </svg>
