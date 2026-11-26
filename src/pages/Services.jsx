@@ -143,9 +143,9 @@ export default function Services() {
             { id: 'BRANDING', label: 'Branding & Strategy' },
             { id: 'DIGITAL', label: 'Digital & Performance' },
             { id: 'CREATIVE', label: 'Creative & Production' },
+            { id: 'PR', label: 'Public Relations' },
             { id: 'INFLUENCER', label: 'Influencer Marketing' },
-            { id: 'REGISTRATION', label: 'Registration Services' },
-            { id: 'PR', label: 'Public Relations' }
+            { id: 'REGISTRATION', label: 'Registration Services' }
           ].map(tab => (
             <button
               key={tab.id}
