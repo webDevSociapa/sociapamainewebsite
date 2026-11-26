@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
@@ -409,7 +410,10 @@ export default function AggregatorPlatform() {
   </div>
 </section>
 
-<section className="cta-section">
+{/* Our Other Services Carousel */}
+      <OtherServicesSlider />
+
+      <section className="cta-section">
   <div className="section-inner section-inner-narrow">
     <h2>Ready to Dominate Your Category on Indian Marketplaces?</h2>
     <p>Get a free marketplace audit covering your listing quality, advertising efficiency, and growth opportunity across Amazon, Flipkart, and Q-commerce platforms.</p>

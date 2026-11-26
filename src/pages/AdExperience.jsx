@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
@@ -415,7 +416,10 @@ export default function AdExperience() {
   </div>
 </section>
 
-<section id="cta">
+{/* Our Other Services Carousel */}
+      <OtherServicesSlider />
+
+      <section id="cta">
   <h2>Ready to <span>Engineer Better Ads?</span></h2>
   <p>Tell us your campaign objectives and we'll design an ad experience strategy that makes your brand impossible to ignore.</p>
   <div className="cta-buttons">

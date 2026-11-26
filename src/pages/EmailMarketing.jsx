@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './EmailMarketing.css';
@@ -148,7 +149,10 @@ export default function EmailMarketing() {
                 </div>
             </section>
 
-            {/* Call to Action Section */}
+            {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
+
+      {/* Call to Action Section */}
             <section className="cta-section">
                 <div className="section-inner">
                     <h2>Ready to Grow Your Email List?</h2>

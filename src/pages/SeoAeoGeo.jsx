@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
@@ -690,6 +691,9 @@ export default function SeoAeoGeo() {
           ))}
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
       </div>
     </>
   );

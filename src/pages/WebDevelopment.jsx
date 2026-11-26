@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
@@ -815,6 +816,9 @@ export default function WebDevelopment() {
           </div>
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       {/* CTA Section */}
       <section id="cta">

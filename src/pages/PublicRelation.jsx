@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
@@ -659,7 +660,10 @@ export default function PublicRelation() {
   </div>
 </section>
 
-<section className="cta-section">
+{/* Our Other Services Carousel */}
+      <OtherServicesSlider />
+
+      <section className="cta-section">
   <div className="section-inner section-inner-narrow">
     <h2>Ready to Build a Brand the Media Talks About?</h2>
     <p>Get a free PR audit and a media opportunity assessment for your brand—no press release required.</p>

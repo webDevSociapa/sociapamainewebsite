@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
@@ -527,6 +528,9 @@ export default function SocialMediaMarketing() {
           </div>
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       <section className="cta-section">
         <div className="section-inner section-inner-narrow">

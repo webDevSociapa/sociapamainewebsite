@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
@@ -568,6 +569,9 @@ export default function CreativeDesigning() {
           </div>
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       {/* CTA Section */}
       <section className="cta-section">

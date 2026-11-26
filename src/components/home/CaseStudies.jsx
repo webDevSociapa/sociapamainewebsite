@@ -8,45 +8,45 @@ export default function CaseStudies() {
   const caseStudies = [
     {
       num: '01',
-      img: 'images/case_study/apis_figma_hero.png',
-      category: 'Influencer Activation • 2021',
-      title: 'APIS',
-      tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
-      desc: '2.0M+ reach featuring Chef Ranveer Brar, Zakir Khan & top food creators across high-engagement festive campaigns.',
-      link: '/case-studies/influencer-campaign',
-    },
-    {
-      num: '02',
       img: 'images/case_study/figma_card_02_sebum.png',
       category: 'Influencer Activation • 2021',
-      title: 'PACKAGING',
+      title: 'PACKAGING CAMPAIGN',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: 'Modern clinical skincare packaging, vector dieline architecture & brand identity system engineered for Sebum Dermatics.',
       link: '/case-studies/packaging',
     },
     {
-      num: '03',
+      num: '02',
       img: 'images/case_study/figma_card_03_janhvi.png',
       category: 'Influencer Activation • 2021',
-      title: 'PACKAGING',
+      title: 'PRODUCT LAUNCH CAMPAIGN',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: '15M+ impressions & viral national product launch starring Bollywood star Janhvi Kapoor (#MintNahiHintHai).',
       link: '/case-studies/product-launch',
     },
     {
-      num: '04',
+      num: '03',
       img: 'images/case_study/figma_card_04_french_essence.png',
       category: 'Influencer Activation • 2021',
-      title: 'DIGITAL',
+      title: 'DIGITAL CAMPAIGN',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: 'High-fashion tabletop photography, luxury fragrance repositioning & 180% surge in direct e-commerce orders.',
       link: '/case-studies/digital',
     },
     {
+      num: '04',
+      img: 'images/case_study/apis_figma_hero.png',
+      category: 'Influencer Activation • 2021',
+      title: 'INFLUENCER CAMPAIGN',
+      tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
+      desc: '2.0M+ reach featuring Chef Ranveer Brar, Zakir Khan & top food creators across high-engagement festive campaigns.',
+      link: '/case-studies/influencer-campaign',
+    },
+    {
       num: '05',
       img: 'images/case_study/figma_card_05_bikano.png',
       category: 'Influencer Activation • 2021',
-      title: 'PERFORMANCE',
+      title: 'PERFORMANCE MARKETING',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: 'Hyper-targeted festive video distribution, quick-commerce namkeen combos & 4.6x verified return on ad spend.',
       link: '/case-studies/performance',
@@ -55,7 +55,7 @@ export default function CaseStudies() {
       num: '06',
       img: 'images/case_study/figma_card_06_tupperware.png',
       category: 'Influencer Activation • 2021',
-      title: 'INFLUENCER TUPPERWARE',
+      title: 'INFLUENCER PR CAMPAIGN',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: '975K+ views across 10 creator UGC videos turning festive shopping into relatable household storytelling.',
       link: '/case-studies/tupperware',
@@ -122,24 +122,13 @@ export default function CaseStudies() {
                         </h3>
                       </div>
 
-                      {/* Red button on active/hovered card */}
+                      {/* View Project button */}
                       <Link 
                         to={cs.link} 
-                        className={`cs-fig-project-btn ${isActive ? 'cs-fig-project-btn-show' : ''}`}
+                        className="cs-fig-project-btn cs-fig-project-btn-show"
                       >
                         View Project →
                       </Link>
-                    </div>
-
-                    {/* Tags & Description */}
-                    <div className={`cs-fig-details ${isActive ? 'cs-fig-details-active' : ''}`}>
-                      <div className="cs-fig-tags">
-                        {cs.tags.map((tag, j) => (
-                          <span key={j} className="cs-fig-tag">{tag}</span>
-                        ))}
-                      </div>
-
-                      <p className="cs-fig-card-desc">{cs.desc}</p>
                     </div>
                   </div>
                 </div>

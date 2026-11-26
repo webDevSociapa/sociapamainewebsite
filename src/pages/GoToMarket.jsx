@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
@@ -547,6 +548,9 @@ export default function GoToMarket() {
           ))}
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       {/* CTA Section */}
       <section id="cta">

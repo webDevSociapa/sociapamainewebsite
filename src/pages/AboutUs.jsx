@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Counter from '../components/Counter';
 import './AboutUs.css';
 
 export default function AboutUs() {
@@ -185,23 +186,31 @@ export default function AboutUs() {
         <div className="about-metrics-container">
           <div className="about-metrics-grid">
             <div className="about-metric-item">
-              <div className="about-metric-val">100+</div>
+              <div className="about-metric-val">
+                <Counter end={100} suffix="+" />
+              </div>
               <div className="about-metric-label">CLIENTS EMPOWERED</div>
             </div>
 
             <div className="about-metric-item-bordered">
-              <div className="about-metric-val">8+</div>
+              <div className="about-metric-val">
+                <Counter end={8} suffix="+" />
+              </div>
               <div className="about-metric-label">YEARS OF EXCELLENCE</div>
             </div>
 
             <div className="about-metric-item-rightborder">
-              <div className="about-metric-val">500+</div>
+              <div className="about-metric-val">
+                <Counter end={500} suffix="+" />
+              </div>
               <div className="about-metric-label">PROJECTS DELIVERED</div>
             </div>
 
             <div className="about-metric-item">
-              <div className="about-metric-val">60+</div>
-              <div className="about-metric-label">IN-HOUSE STRATEGISTS</div>
+              <div className="about-metric-val">
+                <Counter end={75} suffix="+" />
+              </div>
+              <div className="about-metric-label">IN-HOUSE TEAM</div>
             </div>
           </div>
         </div>

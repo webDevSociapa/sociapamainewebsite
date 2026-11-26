@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
 import { Helmet } from 'react-helmet-async';
 import './ProductUnboxing.css';
@@ -583,6 +584,9 @@ export default function ProductUnboxing() {
           ))}
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       {/* CTA Section */}
       <section id="cta">

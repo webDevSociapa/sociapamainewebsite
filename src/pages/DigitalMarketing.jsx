@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
@@ -561,7 +562,10 @@ export default function DigitalMarketing() {
       </div>
     </section>
 
-    <section id="cta">
+    {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
+
+      <section id="cta">
       <h2>Ready to <span>Dominate Search?</span></h2>
       <p>Tell us your goals and we'll build a custom digital marketing strategy — no fluff, just a clear plan to grow your brand online.</p>
       <div className="cta-buttons">

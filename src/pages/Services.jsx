@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import Counter from '../components/Counter';
 import './Services.css';
 
 const allServicesData = [
@@ -200,18 +201,31 @@ export default function Services() {
       <section className="services-stats-bar">
         <div className="services-stats-grid">
           <div className="services-stat-item">
-            <div className="services-stat-num">100+</div>
+            <div className="services-stat-num">
+              <Counter end={100} suffix="+" />
+            </div>
             <div className="services-stat-label">CLIENTS</div>
           </div>
           <div className="services-stat-divider" />
           <div className="services-stat-item">
-            <div className="services-stat-num">8+</div>
+            <div className="services-stat-num">
+              <Counter end={8} suffix="+" />
+            </div>
             <div className="services-stat-label">YEARS OF EXPERIENCE</div>
           </div>
           <div className="services-stat-divider" />
           <div className="services-stat-item">
-            <div className="services-stat-num">500+</div>
+            <div className="services-stat-num">
+              <Counter end={500} suffix="+" />
+            </div>
             <div className="services-stat-label">PROJECTS</div>
+          </div>
+          <div className="services-stat-divider" />
+          <div className="services-stat-item">
+            <div className="services-stat-num">
+              <Counter end={75} suffix="+" />
+            </div>
+            <div className="services-stat-label">IN-HOUSE TEAM</div>
           </div>
         </div>
       </section>

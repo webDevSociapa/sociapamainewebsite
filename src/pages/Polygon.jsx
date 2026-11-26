@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './Polygon.css';
@@ -394,6 +395,9 @@ export default function Polygon() {
           </div>
         </div>
       </section>
+
+      {/* Our Other Services Carousel */}
+      <OtherServicesSlider />
 
       {/* Bottom CTA Banner */}
       <section className="bottom-cta-banner">

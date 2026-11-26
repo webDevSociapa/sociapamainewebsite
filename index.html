@@ -84,6 +84,9 @@
       line-gap-override: 0%;
       size-adjust: 102%;
     }
+    html {
+      scrollbar-gutter: stable;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -100,10 +103,24 @@
       right: 0;
       height: 90px;
       z-index: 1000;
+      pointer-events: none;
+    }
+    .critical-shell-header-inner {
+      width: 100%;
+      max-width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
-      padding: 0 24px;
-      pointer-events: none;
+    }
+    .critical-shell-logo {
+      height: 76px;
+      width: auto;
+      aspect-ratio: 220 / 65;
+      object-fit: contain;
+      display: block;
     }
     .critical-shell-hero {
       width: 100%;
@@ -115,14 +132,25 @@
     @media (max-width: 991px) {
       .critical-shell-header {
         height: 56px;
-        padding: 0 16px;
       }
-      .critical-shell-header img {
+      .critical-shell-header-inner {
+        max-width: 960px;
+        padding: 0 20px;
+      }
+      .critical-shell-logo {
+        height: 65px;
+        max-height: 65px;
         transform: scale(0.68);
         transform-origin: left center;
       }
       .critical-shell-hero {
         margin-top: 56px;
+      }
+    }
+    @media (max-width: 768px) {
+      .critical-shell-header-inner {
+        max-width: 100%;
+        padding: 0 16px;
       }
     }
   </style>
@@ -370,7 +398,9 @@
   <div id="root">
     <!-- Pre-rendered Critical App Shell: Preserves 100% stable layout & immediate LCP before React boots -->
     <div class="critical-shell-header">
-      <img src="/logonew.webp" alt="Sociapa" width="220" height="65" fetchpriority="high" style="height:65px;width:auto;aspect-ratio:220/65;display:block;" />
+      <div class="critical-shell-header-inner">
+        <img src="/logonew.webp" alt="Sociapa" class="critical-shell-logo" width="220" height="65" fetchpriority="high" />
+      </div>
     </div>
     <div class="critical-shell-hero">
       <img src="/images/hero-video-poster.webp" alt="Sociapa Digital Marketing Agency" width="1920" height="1080" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:16/9;" />
