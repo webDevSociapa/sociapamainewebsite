@@ -51,21 +51,15 @@ export default function Geofencing() {
   return (
     <div className="geofencing-page">
       <Helmet>
-        <title>Geofencing Advertising & Location-Based Marketing Agency - Sociapa</title>
-        <meta
-          name="description"
-          content="Scale local customer acquisition with high-precision geofencing advertising from Sociapa. Deliver location-triggered mobile ads, conquer competitor locations, and track verified store visits."
-        />
+        <title>GeoFencing | SOCIAPA</title>
+        <meta name="description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta
           name="keywords"
           content="Geofencing Advertising, Location-Based Marketing, Geofence Ads, Proximity Marketing India, Store Footfall Attribution, Hyperlocal Ads, Competitor Conquesting"
         />
         <link rel="canonical" href="https://sociapa.com/geofencing" />
-        <meta property="og:title" content="Geofencing Advertising & Location-Based Marketing Agency - Sociapa" />
-        <meta
-          property="og:description"
-          content="Target customers with laser-precise geofencing advertising. Drive foot traffic, reach nearby shoppers, and trigger location-based mobile ads with measurable footfall attribution."
-        />
+        <meta property="og:title" content="GeoFencing | SOCIAPA" />
+        <meta property="og:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta property="og:url" content="https://sociapa.com/geofencing" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
@@ -74,11 +68,8 @@ export default function Geofencing() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Geofencing Advertising & Location-Based Marketing - Sociapa" />
-        <meta
-          name="twitter:description"
-          content="Scale local customer acquisition with high-precision geofencing advertising from Sociapa. Deliver location-triggered mobile ads and track verified store visits."
-        />
+        <meta name="twitter:title" content="GeoFencing | SOCIAPA" />
+        <meta name="twitter:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta name="twitter:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
 
         {/* Structured Data: FAQPage */}
@@ -191,7 +182,7 @@ export default function Geofencing() {
           <div className="geo-grid">
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Polygon-Geo-Fencing-Ads.png`} alt="Competitor Conquesting" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Polygon-Geo-Fencing-Ads.png`} alt="Competitor Conquesting" width="32" height="32" loading="lazy" />
               </div>
               <h3>Competitor Conquesting</h3>
               <p>
@@ -206,7 +197,7 @@ export default function Geofencing() {
 
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Audience-Brief.png`} alt="Event & Expo Targeting" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Audience-Brief.png`} alt="Event & Expo Targeting" width="32" height="32" loading="lazy" />
               </div>
               <h3>Event &amp; Trade Show Targeting</h3>
               <p>
@@ -221,7 +212,7 @@ export default function Geofencing() {
 
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Real-Time-Optimisation.png`} alt="Store Footfall Boost" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Real-Time-Optimisation.png`} alt="Store Footfall Boost" width="32" height="32" loading="lazy" />
               </div>
               <h3>Retail &amp; Restaurant Footfall</h3>
               <p>
@@ -236,7 +227,7 @@ export default function Geofencing() {
 
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Full-Funnel-Coverage.png`} alt="Cross-Device Retargeting" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Full-Funnel-Coverage.png`} alt="Cross-Device Retargeting" width="32" height="32" loading="lazy" />
               </div>
               <h3>Cross-Device Retargeting</h3>
               <p>
@@ -251,7 +242,7 @@ export default function Geofencing() {
 
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Impact-Report.png`} alt="Verified Footfall Attribution" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Impact-Report.png`} alt="Verified Footfall Attribution" width="32" height="32" loading="lazy" />
               </div>
               <h3>Verified Footfall Attribution</h3>
               <p>
@@ -266,7 +257,7 @@ export default function Geofencing() {
 
             <div className="geo-card">
               <div className="geo-card-icon">
-                <img src={`${base}icons/ads-experience/Dynamic-Carousel-Ads.png`} alt="Polygon Custom Geometry" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Dynamic-Carousel-Ads.png`} alt="Polygon Custom Geometry" width="32" height="32" loading="lazy" />
               </div>
               <h3>Polygon Boundary Precision</h3>
               <p>

@@ -55,21 +55,15 @@ export default function WebDevelopment() {
   return (
     <>
       <Helmet>
-        <title>Best Web Development Agency in India | React, WordPress & E-Commerce - Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa is the Best Web Development Agency in India offering high-performance React web apps, Shopify e-commerce, custom WordPress development, and UX design in Noida, Delhi NCR & India."
-        />
+        <title>Growth-Focused Website design &amp; development Service in Noida &amp; Delhi NCR, India- Sociapa</title>
+        <meta name="description" content="Looking for the Best Web Design Company in Noida & Delhi NCR with Strong Web Development Services. We build websites that are designed to grow your business.We at Sociapa offering cost effective & Customized Website design that suits your business need." />
         <meta
           name="keywords"
           content="Best Web Development Agency in India, Web Development Company Noida, Web Design Agency Delhi NCR, React JS Development, Shopify E-Commerce Agency, WordPress Website Development"
         />
         <link rel="canonical" href="https://sociapa.com/best-web-development-agency-india" />
-        <meta property="og:title" content="Best Web Development Agency in India | React, WordPress & E-Commerce - Sociapa" />
-        <meta
-          property="og:description"
-          content="Build fast, conversion-optimised websites with Sociapa - India's top web design & development agency. Custom web applications, e-commerce stores, and enterprise portals."
-        />
+        <meta property="og:title" content="Growth-Focused Website design & development Service in Noida & Delhi NCR, India- Sociapa" />
+        <meta property="og:description" content="Looking for the Best Web Design Company in Noida & Delhi NCR with Strong Web Development Services. We build websites that are designed to grow your business.We at Sociapa offering cost effective & Customized Website design that suits your business need." />
         <meta property="og:url" content="https://sociapa.com/best-web-development-agency-india" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -79,8 +73,8 @@ export default function WebDevelopment() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Best Web Development Agency in India - Sociapa" />
-        <meta name="twitter:description" content="Build fast, conversion-optimised websites with Sociapa - India's top web design & development agency. Custom web applications, e-commerce stores, and enterprise portals." />
+        <meta name="twitter:title" content="Growth-Focused Website design & development Service in Noida & Delhi NCR, India- Sociapa" />
+        <meta name="twitter:description" content="Looking for the Best Web Design Company in Noida & Delhi NCR with Strong Web Development Services. We build websites that are designed to grow your business.We at Sociapa offering cost effective & Customized Website design that suits your business need." />
         <meta name="twitter:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -161,6 +155,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Corporate & Enterprise Websites</h3>
@@ -183,6 +178,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>E-Commerce Store Development</h3>
@@ -205,6 +201,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Custom React & Full-Stack Apps</h3>
@@ -227,6 +224,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>UI/UX & Mobile-First Web Design</h3>
@@ -249,6 +247,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>WordPress & CMS Solutions</h3>
@@ -271,6 +270,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>SEO-First Technical Architecture</h3>
@@ -308,6 +308,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>React.js</span>
@@ -320,6 +321,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>Next.js</span>
@@ -332,6 +334,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>Node.js</span>
@@ -344,6 +347,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>WordPress</span>
@@ -356,6 +360,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>Shopify</span>
@@ -368,6 +373,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>PHP / Laravel</span>
@@ -380,6 +386,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>HTML5 / CSS3</span>
@@ -392,6 +399,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>Tailwind / Figma</span>
@@ -404,6 +412,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>MySQL / MongoDB</span>
@@ -416,6 +425,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </span>
             <span>Cloud &amp; Hosting</span>
@@ -445,6 +455,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Frontend Architects</h3>
@@ -459,6 +470,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Backend &amp; CMS Specialists</h3>
@@ -473,6 +485,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>QA &amp; Performance Leads</h3>
@@ -490,6 +503,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <div className="role">Full-Stack Lead</div>
@@ -509,6 +523,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <div className="role">Lead UI/UX Designer</div>
@@ -527,6 +542,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <div className="role">Shopify Expert</div>
@@ -545,6 +561,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <div className="role">WordPress Engineer</div>
@@ -563,6 +580,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <div className="role">Performance Specialist</div>
@@ -596,6 +614,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Discovery</h3>
@@ -609,6 +628,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>UI/UX Design</h3>
@@ -622,6 +642,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Development</h3>
@@ -635,6 +656,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Testing &amp; QA</h3>
@@ -648,6 +670,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Speed &amp; SEO</h3>
@@ -661,6 +684,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Deployment</h3>
@@ -695,6 +719,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Sub-2 Second Loading Speeds</h3>
@@ -710,6 +735,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Conversion-Rate Optimised</h3>
@@ -725,6 +751,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>100% Mobile Responsive</h3>
@@ -740,6 +767,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Fortified Security Protocols</h3>
@@ -755,6 +783,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>SEO-First Codebase</h3>
@@ -770,6 +799,7 @@ export default function WebDevelopment() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Dedicated Tech Support</h3>

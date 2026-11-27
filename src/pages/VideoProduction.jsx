@@ -137,11 +137,8 @@ export default function VideoProduction() {
   return (
     <div className="video-production-page">
       <Helmet>
-        <title>Video Production &amp; Photography Agency India | Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
-        />
+        <title>Best Video Marketing Services in Noida | Videography Services – Sociapa</title>
+        <meta name="description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
         <meta
           name="keywords"
           content="video production agency India, corporate video maker, TVC ad film production, product photography, CGI video agency, food styling shoots"
@@ -150,19 +147,16 @@ export default function VideoProduction() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Video Production &amp; Photography Agency India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands."
-        />
+        <meta property="og:title" content="Video Production | SOCIAPA" />
+        <meta property="og:description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
         <meta property="og:url" content="https://sociapa.com/videos" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Video Production &amp; Photography Agency India | Sociapa" />
-        <meta name="twitter:description" content="Sociapa provides top-tier video production, TV commercials, brand films, CGI videos, recipe shoots, and photography for India's leading brands." />
+        <meta name="twitter:title" content="Video Production | SOCIAPA" />
+        <meta name="twitter:description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -192,7 +186,7 @@ export default function VideoProduction() {
             "name": "Sociapa",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.sociapa.com/logoSociapa.png"
+              "url": "https://sociapa.com/logoSociapa.png"
             }
           }
         })}</script>
@@ -205,19 +199,19 @@ export default function VideoProduction() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.sociapa.com/"
+              "item": "https://sociapa.com/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Services",
-              "item": "https://www.sociapa.com/our-services"
+              "item": "https://sociapa.com/our-services"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Video Production & Photography Agency India",
-              "item": "https://www.sociapa.com/videos"
+              "item": "https://sociapa.com/videos"
             }
           ]
         })}</script>
@@ -319,6 +313,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/tvc_and_brand_films.webp`}
                   alt="TVC & Brand Films"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">
@@ -335,6 +330,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/product_photography.webp`}
                   alt="Product Photography"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">
@@ -351,6 +347,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/lifestyle_and_campaign_photography.webp`}
                   alt="Lifestyle & Campaign Photography"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">
@@ -367,6 +364,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/social_media_reels_and_short_form_video.webp`}
                   alt="Social Media Reels & Short-Form Video"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">
@@ -383,6 +381,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/ai_enhanced_photography.webp`}
                   alt="AI-Enhanced Photography"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">
@@ -399,6 +398,7 @@ export default function VideoProduction() {
                 <img
                   src={`${base}assets/images/services_banner/video_photography_cards/motion_graphics_and_animation.webp`}
                   alt="Motion Graphics & Animation"
+                  loading="lazy"
                 />
               </div>
               <div className="sub-card-body">

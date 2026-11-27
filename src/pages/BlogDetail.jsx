@@ -2,10 +2,40 @@ import { useEffect, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import blogsDetailData from '../data/blogsDetailData.json';
+import legacySeoMeta from '../data/legacySeoMeta.json';
 import { blogsData } from '../data/blogsData';
 import './BlogDetail.css';
 
+/** Prefix root-relative asset/link URLs with Vite BASE_URL when served from a subpath (e.g. local XAMPP). */
+function resolveAssetUrl(url, base) {
+  if (!url || !base || base === '/' || /^(?:https?:)?\/\//i.test(url) || url.startsWith('data:')) {
+    return url;
+  }
+  const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+  const baseFolder = normalizedBase.replace(/^\/+/, '');
+  const clean = url.replace(/^\/+/, '');
+  if (baseFolder && clean.startsWith(baseFolder)) {
+    return `/${clean}`;
+  }
+  return `${normalizedBase}${clean}`;
+}
+
+/** Rewrite root-relative src/href/url() references in static HTML fragments for non-root base paths. */
+function rewriteHtmlBaseUrls(html, base) {
+  if (!html || !base || base === '/') return html;
+  const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+  const baseNoTrailing = normalizedBase.slice(0, -1);
+  const baseEscaped = baseNoTrailing.replace(/^\/+/, '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const rootAttrRe = new RegExp(`(\\b(?:src|href|poster|data-src|srcset)=["'])\\/(?!\\/)(?!${baseEscaped}(?:\\/|$))`, 'gi');
+  const cssUrlRe = new RegExp(`(url\\(\\s*['"]?)\\/(?!\\/)(?!${baseEscaped}(?:\\/|$))`, 'gi');
+  return html
+    .replace(rootAttrRe, `$1${baseNoTrailing}/`)
+    .replace(cssUrlRe, `$1${baseNoTrailing}/`)
+    .replace(/<img\b(?![^>]*\bloading\s*=)/gi, '<img loading="lazy"');
+}
+
 export default function BlogDetail() {
+  const base = import.meta.env.BASE_URL;
   const params = useParams();
   const rawSlug = params.slug || params.blogSlug || window.location.pathname.split('/').filter(Boolean).pop();
   const cleanSlug = rawSlug ? rawSlug.toLowerCase().replace(/^\//, '').replace(/\.php$/, '') : '';
@@ -29,22 +59,24 @@ export default function BlogDetail() {
       b => b.link && b.link.toLowerCase().replace(/^\//, '').replace(/\.php$/, '') === cleanSlug
     );
 
-    let title = (detail && detail.seo && detail.seo.title) || (summary ? summary.title : 'Sociapa Blog Insights');
-    let desc = (detail && detail.seo && detail.seo.metaDescription) || (summary ? summary.description : 'Read industry insights and digital marketing strategies from Sociapa experts.');
-    let img = (detail && detail.seo && detail.seo.ogImage) || (summary ? (summary.localImage || summary.image) : '');
+    const legacy = legacySeoMeta[cleanSlug] || legacySeoMeta[cleanSlug.toLowerCase()];
+    let title = (legacy && legacy.title) || (detail && detail.meta_title) || (detail && detail.seo && detail.seo.title) || (summary ? summary.title : 'Sociapa Blog Insights');
+    let desc = (legacy && legacy.description) || (detail && detail.meta_description) || (detail && detail.seo && detail.seo.metaDescription) || (summary ? summary.description : 'Read industry insights and digital marketing strategies from Sociapa experts.');
+    let rawImg = (detail && detail.seo && detail.seo.ogImage) || (summary ? (summary.localImage || summary.image) : '');
+    let img = resolveAssetUrl(rawImg, base);
 
     if (detail && detail.html) {
-      setHtmlContent(detail.html);
+      setHtmlContent(rewriteHtmlBaseUrls(detail.html, base));
     } else if (summary) {
       setHtmlContent(`
-        <div className="blogViewSec" style="max-width: 900px; margin: 0 auto; padding: 40px 24px;">
+        <div class="blogViewSec" style="max-width: 900px; margin: 0 auto; padding: 40px 24px;">
           <h1 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; color: #1a1a1a;">${summary.title}</h1>
-          ${img ? `<div style="margin: 24px 0; border-radius: 12px; overflow: hidden;"><img src="${img}" alt="${summary.title}" style="width: 100%; height: auto; display: block;" /></div>` : ''}
+          ${img ? `<div style="margin: 24px 0; border-radius: 12px; overflow: hidden;"><img src="${img}" alt="${summary.title}" loading="lazy" style="width: 100%; height: auto; display: block;" /></div>` : ''}
           <p style="font-size: 1.15rem; line-height: 1.8; color: #444; margin-bottom: 30px;">${summary.description}</p>
-          <div className="cta-box" style="background: #FFF0F2; border: 1px solid #FFD4D8; border-radius: 16px; padding: 32px; text-align: center;">
+          <div class="cta-box" style="background: #FFF0F2; border: 1px solid #FFD4D8; border-radius: 16px; padding: 32px; text-align: center;">
             <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 12px; color: #D20C0C;">Ready to Transform Your Digital Growth?</h2>
             <p style="color: #4A4A68; margin-bottom: 20px;">Connect with Sociapa specialists for a custom strategy session.</p>
-            <a href="${import.meta.env.BASE_URL}contact-us" style="display: inline-block; background: #D20C0C; color: #ffffff; padding: 12px 28px; border-radius: 50px; font-weight: 700; text-decoration: none;">Get Started →</a>
+            <a href="${base}contact-us" style="display: inline-block; background: #D20C0C; color: #ffffff; padding: 12px 28px; border-radius: 50px; font-weight: 700; text-decoration: none;">Get Started →</a>
           </div>
         </div>
       `);
@@ -52,7 +84,7 @@ export default function BlogDetail() {
 
     setMetaInfo({ title, desc, img });
     window.scrollTo(0, 0);
-  }, [cleanSlug]);
+  }, [cleanSlug, base]);
 
   useEffect(() => {
     if (!htmlContent) return;

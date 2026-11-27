@@ -85,11 +85,11 @@ export default function Blog() {
   return (
     <div className="blog-page-wrapper">
       <Helmet>
-        <title>Read about Latest News, Strategies &amp; Articles - Sociapa</title>
-        <meta name="description" content="Read blogs, news, guidelines, trends and articles about digital marketing, branding, web development, SEO, influencer marketing &amp; social media marketing - Sociapa.com" />
+        <title>Blog - Digital Marketing ideas, news &amp; stories - Sociapa</title>
+        <meta name="description" content="Looking for a strategy, idea, news and success stories for brand or business. Explore us - Sociapa" />
         <link rel="canonical" href="https://sociapa.com/blog" />
-        <meta property="og:title" content="Read about Latest News, Strategies & Articles - Sociapa" />
-        <meta property="og:description" content="Read blogs, news, guidelines, trends and articles about digital marketing, branding, web development, SEO, influencer marketing & social media marketing - Sociapa.com" />
+        <meta property="og:title" content="Blog - Digital Marketing ideas, news & stories - Sociapa" />
+        <meta property="og:description" content="Looking for a strategy, idea, news and success stories for brand or business. Explore us - Sociapa" />
         <meta property="og:url" content="https://sociapa.com/blog" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -99,8 +99,8 @@ export default function Blog() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Digital Marketing Blog &amp; Insights - Sociapa" />
-        <meta name="twitter:description" content="Read blogs, news, guidelines, trends and articles about digital marketing, branding, web development, SEO, influencer marketing & social media marketing - Sociapa.com" />
+        <meta name="twitter:title" content="Blog - Digital Marketing ideas, news & stories - Sociapa" />
+        <meta name="twitter:description" content="Looking for a strategy, idea, news and success stories for brand or business. Explore us - Sociapa" />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
@@ -189,6 +189,7 @@ export default function Blog() {
                     src={getBlogImage(featuredBlog)}
                     alt={featuredBlog.title}
                     className={`blog-featured-img ${isCircularBlog(featuredBlog) ? 'img-circular' : ''}`}
+                    loading="lazy"
                     onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = `${base}images/blog/sociapa-News.jpg`; }}
                   />
                   <div className="blog-featured-overlay-badge">

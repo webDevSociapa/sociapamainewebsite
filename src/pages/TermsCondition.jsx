@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import './LegalPages.css';
 
@@ -8,7 +8,7 @@ export default function TermsCondition() {
     return (
         <>
             <Helmet>
-                <title>Terms & Condition | SOCIAPA</title>
+                <title>Terms &amp; Condition | SOCIAPA</title>
                 <meta name="description" content="terms-condition — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
                 <meta name="keywords" content="Digital Marketing" />
                 <link rel="canonical" href="https://sociapa.com/terms-condition" />
@@ -23,7 +23,7 @@ export default function TermsCondition() {
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@sociapa" />
-                <meta name="twitter:title" content="Terms &amp; Conditions - SOCIAPA" />
+                <meta name="twitter:title" content="terms-condition— SOCIAPA" />
                 <meta name="twitter:description" content="terms-condition — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
                 <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
             </Helmet>

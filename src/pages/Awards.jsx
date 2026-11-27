@@ -31,12 +31,12 @@ export default function Awards() {
   return (
     <>
       <Helmet>
-        <title>Awards &amp; Media Features - Best Digital Marketing Firm | Sociapa</title>
-        <meta name="description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
+        <title>Best Digital Marketing Firm In Noida &amp; Delhi NCR, India -Sociapa</title>
+        <meta name="description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability & creating a solid foundation for your business." />
         <meta name="keywords" content="Digital Marketing" />
         <link rel="canonical" href="https://sociapa.com/best-creative-and-digital-agency-award" />
-        <meta property="og:title" content="Best Digital Marketing Firm In Noida &amp; Delhi NCR, India -Sociapa" />
-        <meta property="og:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
+        <meta property="og:title" content="Best Digital Marketing Firm In Noida & Delhi NCR, India -Sociapa" />
+        <meta property="og:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability & creating a solid foundation for your business." />
         <meta property="og:url" content="https://sociapa.com/best-creative-and-digital-agency-award" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -46,8 +46,8 @@ export default function Awards() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Best Creative and Digital Agency Award - Sociapa" />
-        <meta name="twitter:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability &amp; creating a solid foundation for your business." />
+        <meta name="twitter:title" content="Best Digital Marketing Firm In Noida & Delhi NCR, India -Sociapa" />
+        <meta name="twitter:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability & creating a solid foundation for your business." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
@@ -90,6 +90,7 @@ export default function Awards() {
                 src={`${base}images/outlook-business-achievers-award-2026.webp`}
                 alt="Outlook Business Spotlight Achievers Awards 2026 — Innovative Digital & Creative Agency of the Year — Sociapa"
                 className="awards-featured-img"
+                loading="lazy"
               />
             </div>
             <div className="awards-featured-content">
@@ -133,6 +134,7 @@ export default function Awards() {
                       src={`${base}images/${item.img}`}
                       alt={item.alt}
                       className="award-card-img"
+                      loading="lazy"
                     />
                     {/* Category badge */}
                     <div className="award-card-badge">
@@ -274,6 +276,7 @@ export default function Awards() {
                   src={`${base}images/${selectedAward.img}`}
                   alt={selectedAward.alt}
                   className="award-modal-img"
+                  loading="lazy"
                 />
                 <div className="award-modal-badge">{selectedAward.tag}</div>
               </div>

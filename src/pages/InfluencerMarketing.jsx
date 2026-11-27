@@ -76,14 +76,14 @@ export default function InfluencerMarketing() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Influencer-Marketing.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Influencer-Marketing.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Influencer Marketing Services in India - Sociapa" />
+        <meta name="twitter:title" content="Top Influencer Marketing Company in Noida & Delhi NCR, India – Sociapa" />
         <meta name="twitter:description" content="Influencer Agency Delhi - Sociapa is among the top influencer marketing companies in Noida. Sociapa makes it possible for you to positively and appropriately connect with your target audience. Build your brand by working with creators, bloggers, and social media influencers." />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Influencer-Marketing.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Influencer-Marketing.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -97,7 +97,7 @@ export default function InfluencerMarketing() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Influencer Marketing Services India | Sociapa","item":"https://www.sociapa.com/influencer-marketing-services"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Influencer Marketing Services India | Sociapa","item":"https://sociapa.com/influencer-marketing-services"}]})}</script>
       </Helmet>
       <div className="influencer-marketing-page">
         <div className="serInsideBnr">
@@ -136,6 +136,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Influencer Discovery & Vetting</h3>
@@ -150,6 +151,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Campaign Strategy</h3>
@@ -164,6 +166,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Creator Outreach & Negotiations</h3>
@@ -178,6 +181,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Content Review & Approval</h3>
@@ -192,6 +196,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Performance Tracking & Reporting</h3>
@@ -206,6 +211,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Brand Ambassador Programmes</h3>
@@ -230,6 +236,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Nano (1K–10K)</span>
@@ -242,6 +249,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Micro (10K–100K)</span>
@@ -254,6 +262,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Mid-Tier (100K–500K)</span>
@@ -266,6 +275,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Macro (500K–1M)</span>
@@ -278,6 +288,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Celebrity (1M+)</span>
@@ -290,6 +301,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Food & Lifestyle</span>
@@ -302,6 +314,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Beauty & Fashion</span>
@@ -314,6 +327,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Health & Fitness</span>
@@ -326,6 +340,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Travel & Tourism</span>
@@ -338,6 +353,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Home & Décor</span>
@@ -365,6 +381,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Campaign Brief</h4>
@@ -378,6 +395,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Influencer Shortlist</h4>
@@ -391,6 +409,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Outreach & Onboarding</h4>
@@ -404,6 +423,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Content Review</h4>
@@ -417,6 +437,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Publish & Monitor</h4>
@@ -430,6 +451,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Analytics & Debrief</h4>
@@ -453,6 +475,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Vetted Creator Network</h4>
@@ -467,6 +490,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Creative Direction & Briefing</h4>
@@ -481,6 +505,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Fast Campaign Turnaround</h4>
@@ -495,6 +520,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Legal & Compliance</h4>
@@ -509,6 +535,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Performance-Linked Reporting</h4>
@@ -522,6 +549,7 @@ export default function InfluencerMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Long-Term Creator Relationships</h4>
@@ -572,16 +600,16 @@ export default function InfluencerMarketing() {
         <div className="container">
           <div className="row">
             <div className="col s3 center">
-              <img src={`${base}images/juhi400.png`} alt="Influencer" className="responsive-img" />
+              <img src={`${base}images/juhi400.png`} alt="Influencer" className="responsive-img" loading="lazy" />
             </div>
             <div className="col s3 center">
-              <img src={`${base}images/khurana400.jpg`} alt="Influencer" className="responsive-img w-100" />
+              <img src={`${base}images/khurana400.jpg`} alt="Influencer" className="responsive-img w-100" loading="lazy" />
             </div>
             <div className="col s3 center">
-              <img src={`${base}images/yem400.jpg`} alt="Influencer" className="responsive-img" />
+              <img src={`${base}images/yem400.jpg`} alt="Influencer" className="responsive-img" loading="lazy" />
             </div>
             <div className="col s3 center">
-              <img src={`${base}images/raksha400.jpg`} alt="Influencer" className="responsive-img" />
+              <img src={`${base}images/raksha400.jpg`} alt="Influencer" className="responsive-img" loading="lazy" />
             </div>
           </div>
         </div>

@@ -15,19 +15,19 @@ export default function AboutUs() {
     <div className="about-page-wrapper">
       <Helmet>
         <title>Know more about our digital marketing services in Noida &amp; Delhi NCR - Sociapa</title>
-        <meta name="description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. We have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
+        <meta name="description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. we have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
         <link rel="canonical" href="https://sociapa.com/about" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Know more about our digital marketing services in Noida & Delhi NCR - Sociapa" />
-        <meta property="og:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business." />
+        <meta property="og:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. we have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
         <meta property="og:url" content="https://sociapa.com/about" />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Know more about our digital marketing services in Noida & Delhi NCR - Sociapa" />
-        <meta name="twitter:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business." />
+        <meta name="twitter:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. we have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         {/* ProfilePage Schema - Required by SOCIAPA (1).docx */}
         <script type="application/ld+json">{JSON.stringify({
@@ -37,13 +37,13 @@ export default function AboutUs() {
           "dateModified": "2026-01-01T00:00:00+05:30",
           "mainEntity": {
             "@type": "Organization",
-            "@id": "https://www.sociapa.com/#organization",
+            "@id": "https://sociapa.com/#organization",
             "name": "Sociapa",
             "alternateName": "SOCIAPA",
             "description": "About Sociapa — At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. We have expertise in Digital Marketing, Social Media Marketing, Video Production and more.",
             "foundingDate": "2017",
-            "url": "https://www.sociapa.com/",
-            "logo": "https://www.sociapa.com/logoSociapa.png",
+            "url": "https://sociapa.com/",
+            "logo": "https://sociapa.com/logoSociapa.png",
             "image": "https://sociapa.com/logoSociapa.png",
             "knowsAbout": [
               "Digital Marketing",
@@ -81,13 +81,13 @@ export default function AboutUs() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.sociapa.com/"
+              "item": "https://sociapa.com/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "About Us",
-              "item": "https://www.sociapa.com/about/"
+              "item": "https://sociapa.com/about/"
             }
           ]
         })}</script>
@@ -313,7 +313,7 @@ export default function AboutUs() {
               <div key={idx} className="about-pillar-card">
                 <div className="about-pillar-top-row">
                   <div className="about-pillar-icon-box">
-                    <img src={`${base}${val.img}`} alt={val.title} className="about-pillar-icon-img" width="46" height="46" />
+                    <img src={`${base}${val.img}`} alt={val.title} className="about-pillar-icon-img" width="46" height="46" loading="lazy" />
                   </div>
                   <span className="about-pillar-num">{val.num}</span>
                 </div>
@@ -347,7 +347,7 @@ export default function AboutUs() {
 
           {/* Full Team Culture Photo */}
           <div className="about-team-photo-wrap">
-            <img src={`${base}images/sociapa-team-new.webp`} alt="Sociapa Team" className="about-team-photo" />
+            <img src={`${base}images/sociapa-team-new.webp`} alt="Sociapa Team" className="about-team-photo" loading="lazy" />
           </div>
 
           {/* Leadership Cards Grid */}
@@ -355,14 +355,14 @@ export default function AboutUs() {
             {/* CEO Card */}
             <div className="about-leadership-card">
               <Link to="/sociapas-press-release">
-                <img src={`${base}images/Ceo.webp`} alt="Dhiraj Raj" className="about-leadership-img" />
+                <img src={`${base}images/Ceo.webp`} alt="Dhiraj Raj" className="about-leadership-img" loading="lazy" />
               </Link>
             </div>
 
             {/* Associate Director Card */}
             <div className="about-leadership-card">
               <div>
-                <img src={`${base}images/A-D.webp`} alt="Sonakshi" className="about-leadership-img" />
+                <img src={`${base}images/A-D.webp`} alt="Sonakshi" className="about-leadership-img" loading="lazy" />
               </div>
             </div>
           </div>

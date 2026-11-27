@@ -51,11 +51,8 @@ export default function ProductUnboxing() {
   return (
     <div className="product-unboxing-page">
       <Helmet>
-        <title>Product Unboxing Experience Services India | D2C Packaging Design | Sociapa</title>
-        <meta
-          name="description"
-          content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
-        />
+        <title>Product Unboxing Experience Services India | Product Launch &amp; Creator Kits | Sociapa</title>
+        <meta name="description" content="Create memorable first impressions with Sociapa" />
         <meta
           name="keywords"
           content="product unboxing experience India, unboxing packaging design, custom mailer box design, D2C unboxing agency, rigid box packaging"
@@ -65,10 +62,7 @@ export default function ProductUnboxing() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:title" content="Product Unboxing Experience Services India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C & FMCG brands."
-        />
+        <meta property="og:description" content="Turn every product delivery into a memorable brand experience with custom unboxing design, influencer PR kits, premium packaging, branded inserts, and creator-ready product presentation from Sociapa." />
         <meta property="og:url" content="https://sociapa.com/product-unboxing-experience" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
@@ -76,7 +70,7 @@ export default function ProductUnboxing() {
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Product Unboxing Experience Services India | Sociapa" />
-        <meta name="twitter:description" content="Create viral, share-worthy product unboxing experiences with Sociapa. We design premium packaging, custom mailers, rigid boxes, inserts, and unboxing moments for D2C &amp; FMCG brands." />
+        <meta name="twitter:description" content="Turn every product delivery into a memorable brand experience with custom unboxing design, influencer PR kits, premium packaging, branded inserts, and creator-ready product presentation from Sociapa." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -155,6 +149,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/material_and_shape_identification.png`}
                 alt="Material & Shape Identification"
+                loading="lazy"
               />
             </div>
             <h3>Material &amp; Shape Identification</h3>
@@ -174,6 +169,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/outer_box_and_mailer_design.png`}
                 alt="Outer Box & Mailer Design"
+                loading="lazy"
               />
             </div>
             <h3>Outer Box &amp; Mailer Design</h3>
@@ -193,6 +189,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/virality_in_packaging_design.png`}
                 alt="Virality in Packaging Design"
+                loading="lazy"
               />
             </div>
             <h3>Virality in Packaging Design</h3>
@@ -212,6 +209,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/inner_packaging_and_inserts.png`}
                 alt="Inner Packaging & Inserts"
+                loading="lazy"
               />
             </div>
             <h3>Inner Packaging &amp; Inserts</h3>
@@ -231,6 +229,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/thank_you_cards_and_personalisation.png`}
                 alt="Thank-You Cards & Personalisation"
+                loading="lazy"
               />
             </div>
             <h3>Thank-You Cards &amp; Personalisation</h3>
@@ -250,6 +249,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/sustainable_unboxing_design.png`}
                 alt="Sustainable Unboxing Design"
+                loading="lazy"
               />
             </div>
             <h3>Sustainable Unboxing Design</h3>
@@ -285,6 +285,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/rigid_box.png`}
                 alt="Rigid Box"
+                loading="lazy"
               />
             </span>
             <span>Rigid Box</span>
@@ -295,6 +296,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/custom_mailer.png`}
                 alt="Custom Mailer"
+                loading="lazy"
               />
             </span>
             <span>Custom Mailer</span>
@@ -305,6 +307,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/tissue_paper.png`}
                 alt="Tissue Paper"
+                loading="lazy"
               />
             </span>
             <span>Tissue Paper</span>
@@ -315,6 +318,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/thank_you_cards_and_personalisation.png`}
                 alt="Thank-You Card"
+                loading="lazy"
               />
             </span>
             <span>Thank-You Card</span>
@@ -325,6 +329,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/branded_sticker.png`}
                 alt="Branded Sticker"
+                loading="lazy"
               />
             </span>
             <span>Branded Sticker</span>
@@ -335,6 +340,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/shredded_fill.png`}
                 alt="Shredded Fill"
+                loading="lazy"
               />
             </span>
             <span>Shredded Fill</span>
@@ -345,6 +351,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/spot_uv_print.png`}
                 alt="Spot UV Print"
+                loading="lazy"
               />
             </span>
             <span>Spot UV Print</span>
@@ -355,6 +362,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/kraft_paper.png`}
                 alt="Kraft Paper"
+                loading="lazy"
               />
             </span>
             <span>Kraft Paper</span>
@@ -365,6 +373,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/qr_code_cards.png`}
                 alt="QR Code Cards"
+                loading="lazy"
               />
             </span>
             <span>QR Code Cards</span>
@@ -375,6 +384,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/hang_tags.png`}
                 alt="Hang Tags"
+                loading="lazy"
               />
             </span>
             <span>Hang Tags</span>
@@ -398,6 +408,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/strategy_session.png`}
                 alt="Strategy Session"
+                loading="lazy"
               />
             </div>
             <h4>Strategy Session</h4>
@@ -411,6 +422,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/material_research.png`}
                 alt="Material Research"
+                loading="lazy"
               />
             </div>
             <h4>Material Research</h4>
@@ -424,6 +436,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/experience_design.png`}
                 alt="Experience Design"
+                loading="lazy"
               />
             </div>
             <h4>Experience Design</h4>
@@ -437,6 +450,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/prototype_and_testing.png`}
                 alt="Prototype & Testing"
+                loading="lazy"
               />
             </div>
             <h4>Prototype &amp; Testing</h4>
@@ -450,6 +464,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/production_launch.png`}
                 alt="Production Launch"
+                loading="lazy"
               />
             </div>
             <h4>Production Launch</h4>
@@ -479,6 +494,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/viral_first_design_thinking.png`}
                 alt="Viral-First Design Thinking"
+                loading="lazy"
               />
             </div>
             <h3>Viral-First Design Thinking</h3>
@@ -492,6 +508,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/full_journey_design.png`}
                 alt="Full-Journey Design"
+                loading="lazy"
               />
             </div>
             <h3>Full-Journey Design</h3>
@@ -505,6 +522,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/budget_conscious_solutions.png`}
                 alt="Budget-Conscious Solutions"
+                loading="lazy"
               />
             </div>
             <h3>Budget-Conscious Solutions</h3>
@@ -518,6 +536,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/repeat_purchase_triggers.png`}
                 alt="Repeat Purchase Triggers"
+                loading="lazy"
               />
             </div>
             <h3>Repeat Purchase Triggers</h3>
@@ -531,6 +550,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/sustainability_expertise.png`}
                 alt="Sustainability Expertise"
+                loading="lazy"
               />
             </div>
             <h3>Sustainability Expertise</h3>
@@ -544,6 +564,7 @@ export default function ProductUnboxing() {
               <img
                 src={`${base}assets/images/services_icons/unboxing_experience/d2c_brand_specialists.png`}
                 alt="D2C Brand Specialists"
+                loading="lazy"
               />
             </div>
             <h3>D2C Brand Specialists</h3>

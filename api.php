@@ -81,13 +81,64 @@ $htmlBody = "
 </html>";
 
 /**
+ * Load SMTP credentials from environment or untracked .env file.
+ */
+function loadSociapaSmtpConfig(): array {
+    $env = [];
+    $candidates = [
+        __DIR__ . '/.env',
+        dirname(__DIR__) . '/.env',
+        dirname(__DIR__, 2) . '/.env',
+        __DIR__ . '/admin/.env',
+        dirname(__DIR__) . '/admin/.env',
+    ];
+    foreach ($candidates as $file) {
+        if (!is_readable($file)) continue;
+        $lines = @file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        if (!$lines) continue;
+        foreach ($lines as $line) {
+            $trimmed = trim($line);
+            if ($trimmed === '' || $trimmed[0] === '#' || strpos($trimmed, '=') === false) continue;
+            [$k, $v] = explode('=', $trimmed, 2);
+            $k = trim($k);
+            $v = trim($v, " \t\n\r\0\x0B\"'");
+            if ($k !== '' && !isset($env[$k])) {
+                $env[$k] = $v;
+            }
+        }
+    }
+    $get = function(string $primary, string $fallback = '', string $default = '') use ($env): string {
+        $val = getenv($primary);
+        if ($val !== false && $val !== '') return (string)$val;
+        if (!empty($env[$primary])) return $env[$primary];
+        if ($fallback !== '') {
+            $fVal = getenv($fallback);
+            if ($fVal !== false && $fVal !== '') return (string)$fVal;
+            if (!empty($env[$fallback])) return $env[$fallback];
+        }
+        return $default;
+    };
+    return [
+        'host' => $get('SMTP_HOST', 'MAIL_HOST', 'smtp.gmail.com'),
+        'port' => (int)$get('SMTP_PORT', 'MAIL_PORT', '465'),
+        'user' => $get('SMTP_USER', 'MAIL_USERNAME', 'webdev@sociapa.com'),
+        'pass' => $get('SMTP_PASS', 'MAIL_PASSWORD', ''),
+    ];
+}
+
+/**
  * Direct SSL SMTP socket sender (Gmail SMTP)
  */
 function sendDirectSmtp(array $recipients, string $subject, string $htmlContent, string $replyEmail = '', string $replyName = ''): bool {
-    $host = 'smtp.gmail.com';
-    $port = 465;
-    $user = 'webdev@sociapa.com';
-    $pass = 'czwwxybqwipigmjw';
+    $cfg  = loadSociapaSmtpConfig();
+    $host = $cfg['host'];
+    $port = $cfg['port'] ?: 465;
+    $user = $cfg['user'];
+    $pass = $cfg['pass'];
+
+    if (empty($user) || empty($pass)) {
+        return false;
+    }
 
     $context = stream_context_create([
         'ssl' => [

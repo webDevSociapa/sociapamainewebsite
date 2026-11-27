@@ -62,11 +62,8 @@ export default function BrandIdentityDesign() {
   return (
     <div className="brand-identity-design-page brand-identity-page">
       <Helmet>
-        <title>Brand Identity Design Agency India | Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience."
-        />
+        <title>Brand Identity Design Services India | Sociapa – Create a Memorable Brand Identity</title>
+        <meta name="description" content="Sociapa provides professional brand identity design services in India, including logo design, visual identity, typography, color palette, brand guidelines, stationery, and complete branding solutions for startups and businesses." />
         <meta
           name="keywords"
           content="brand strategy agency India, brand identity design, packaging design agency, go to market strategy, D2C branding agency, FMCG brand design"
@@ -75,19 +72,16 @@ export default function BrandIdentityDesign() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Brand Identity Design Agency India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience."
-        />
+        <meta property="og:title" content="Brand Identity Design Services India | Sociapa – Create a Memorable Brand Identity" />
+        <meta property="og:description" content="Build a memorable brand with Sociapa" />
         <meta property="og:url" content="https://sociapa.com/brand-identity-design" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Brand Identity Design Agency India | Sociapa" />
-        <meta name="twitter:description" content="Sociapa is India's full-service brand &amp; creative agency — Brand Strategy, Brand Identity Design, Packaging Design, Go-To-Market Strategy, Video Production &amp; Photography, and Unboxing Experience." />
+        <meta name="twitter:title" content="Brand Identity Design Services India | Sociapa – Create a Memorable Brand Identity" />
+        <meta name="twitter:description" content="Build a memorable brand with Sociapa" />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -163,6 +157,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/mood_board_design.png`}
                 alt="Mood Board Design"
+                loading="lazy"
               />
             </div>
             <h3>Mood Board Design</h3>
@@ -182,6 +177,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/colour_palette_and_typography.png`}
                 alt="Colour Palette & Typography"
+                loading="lazy"
               />
             </div>
             <h3>Colour Palette &amp; Typography</h3>
@@ -201,6 +197,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/logo_design.png`}
                 alt="Logo Design"
+                loading="lazy"
               />
             </div>
             <h3>Logo Design</h3>
@@ -220,6 +217,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/brand_guidelines.png`}
                 alt="Brand Guidelines"
+                loading="lazy"
               />
             </div>
             <h3>Brand Guidelines</h3>
@@ -239,6 +237,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/mascot_design.png`}
                 alt="Mascot Design"
+                loading="lazy"
               />
             </div>
             <h3>Mascot Design</h3>
@@ -258,6 +257,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/visual_identity_system.png`}
                 alt="Visual Identity System"
+                loading="lazy"
               />
             </div>
             <h3>Visual Identity System</h3>
@@ -290,6 +290,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/adobe_illustrator.png`}
                 alt="Adobe Illustrator"
+                loading="lazy"
               />
             </span>
             <span>Adobe Illustrator</span>
@@ -299,6 +300,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/adobe_indesign.png`}
                 alt="Adobe InDesign"
+                loading="lazy"
               />
             </span>
             <span>Adobe InDesign</span>
@@ -308,6 +310,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/figma.png`}
                 alt="Figma"
+                loading="lazy"
               />
             </span>
             <span>Figma</span>
@@ -317,6 +320,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/affinity_designer.png`}
                 alt="Affinity Designer"
+                loading="lazy"
               />
             </span>
             <span>Affinity Designer</span>
@@ -326,6 +330,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/procreate.png`}
                 alt="Procreate"
+                loading="lazy"
               />
             </span>
             <span>Procreate</span>
@@ -335,6 +340,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/pantone.png`}
                 alt="Coolors / Pantone"
+                loading="lazy"
               />
             </span>
             <span>Coolors / Pantone</span>
@@ -344,6 +350,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/adpbe_fonts.png`}
                 alt="Adobe Fonts"
+                loading="lazy"
               />
             </span>
             <span>Adobe Fonts</span>
@@ -353,6 +360,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/brand_folder.png`}
                 alt="Brand Folder"
+                loading="lazy"
               />
             </span>
             <span>Brand Folder</span>
@@ -362,6 +370,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/notion_brand_docs.png`}
                 alt="Notion (Brand Docs)"
+                loading="lazy"
               />
             </span>
             <span>Notion (Brand Docs)</span>
@@ -388,6 +397,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/discovery.png`}
                 alt="Discovery"
+                loading="lazy"
               />
             </div>
             <h4>Discovery</h4>
@@ -398,6 +408,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/moodboard.png`}
                 alt="Mood Board"
+                loading="lazy"
               />
             </div>
             <h4>Mood Board</h4>
@@ -408,6 +419,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/concept_design.png`}
                 alt="Concept Design"
+                loading="lazy"
               />
             </div>
             <h4>Concept Design</h4>
@@ -418,6 +430,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/refinement.png`}
                 alt="Refinement"
+                loading="lazy"
               />
             </div>
             <h4>Refinement</h4>
@@ -428,6 +441,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_identity_design/brand_guidelines_2.png`}
                 alt="Brand Guidelines"
+                loading="lazy"
               />
             </div>
             <h4>Brand Guidelines</h4>
@@ -452,6 +466,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/strategy_led_design.png`}
                 alt="Strategy-Led Design"
+                loading="lazy"
               />
             </div>
             <h3>Strategy-Led Design</h3>
@@ -462,6 +477,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/160_plus_identity_projects.png`}
                 alt="160+ Identity Projects"
+                loading="lazy"
               />
             </div>
             <h3>160+ Identity Projects</h3>
@@ -472,6 +488,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/print_and_digital_ready.png`}
                 alt="Print & Digital Ready"
+                loading="lazy"
               />
             </div>
             <h3>Print &amp; Digital Ready</h3>
@@ -482,6 +499,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/fast_turnaround.png`}
                 alt="Fast Turnaround"
+                loading="lazy"
               />
             </div>
             <h3>Fast Turnaround</h3>
@@ -492,6 +510,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/comprehensive_deliverables.png`}
                 alt="Comprehensive Deliverables"
+                loading="lazy"
               />
             </div>
             <h3>Comprehensive Deliverables</h3>
@@ -502,6 +521,7 @@ export default function BrandIdentityDesign() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/full_ip_ownership.png`}
                 alt="Full IP Ownership"
+                loading="lazy"
               />
             </div>
             <h3>Full IP Ownership</h3>

@@ -4,19 +4,19 @@ import './CompanyProfile.css'
 
 export default function CompanyProfile() {
   const base = import.meta.env.BASE_URL || '/';
-  const profileUrl = `${base}sociapa-profile/index.html`;
+  const profileUrl = `${base}profile-embed/index.html`;
 
   return (
     <>
       <Helmet>
         <title>Sociapa – Brand &amp; Creative Portfolio 2026 | Digital Marketing Agency India</title>
-        <meta name="description" content="Sociapa is India's award-winning one-stop brand &amp; creative agency — digital marketing, social media, brand strategy, packaging design, photography, videography, SEO · AEO · GEO and PR services. 100+ brands. 7+ years. Explore our 2026 portfolio." />
+        <meta name="description" content="Full-service brand &amp; creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
         <link rel="canonical" href="https://sociapa.com/sociapa-profile" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sociapa Brand &amp; Creative Portfolio 2026 | Digital Marketing Agency India" />
-        <meta property="og:description" content="Full-service brand &amp; creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
+        <meta property="og:title" content="Sociapa Brand & Creative Portfolio 2026 | Digital Marketing Agency India" />
+        <meta property="og:description" content="Full-service brand & creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
         <meta property="og:url" content="https://sociapa.com/sociapa-profile" />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
@@ -24,8 +24,8 @@ export default function CompanyProfile() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Sociapa Brand &amp; Creative Portfolio 2026 | Digital Marketing Agency India" />
-        <meta name="twitter:description" content="Full-service brand &amp; creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
+        <meta name="twitter:title" content="Sociapa Brand & Creative Portfolio 2026 | Digital Marketing Agency India" />
+        <meta name="twitter:description" content="Full-service brand & creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         {/* High-priority preload for Slide 1 (<0.5s instant paint) & predictive prefetch */}
         <link rel="preload" as="image" href={`${base}images/profile_slides/slide_1.jpg`} fetchpriority="high" />
@@ -81,13 +81,13 @@ export default function CompanyProfile() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.sociapa.com/"
+              "item": "https://sociapa.com/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Sociapa Company Profile",
-              "item": "https://www.sociapa.com/sociapa-profile"
+              "item": "https://sociapa.com/sociapa-profile"
             }
           ]
         })}</script>

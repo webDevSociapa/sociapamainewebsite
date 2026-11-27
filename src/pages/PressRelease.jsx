@@ -147,17 +147,11 @@ export default function PressRelease() {
     <>
       <Helmet>
         <title>Recent News &amp; Press Release - Sociapa Newsroom</title>
-        <meta
-          name="description"
-          content="Sociapa is where your Marketing Brilliance begins. Here we provide the latest stories regarding our services, clients, account mandates, and business achievements."
-        />
+        <meta name="description" content="Sociapa is where your Marketing Brilliance begins. Here we provides the latest stories regarding our services, cients and businesses." />
         <meta name="keywords" content="Sociapa Press Release, Digital Marketing News, Client Mandate, PR Agency India, Media Coverage" />
         <link rel="canonical" href="https://sociapa.com/sociapas-press-release" />
-        <meta property="og:title" content="Recent News &amp; Press Release - Sociapa Newsroom" />
-        <meta
-          property="og:description"
-          content="Sociapa is where your Marketing Brilliance begins. Here we provide the latest stories regarding our services, clients, account mandates, and business achievements."
-        />
+        <meta property="og:title" content="Recent News & Press Release - Sociapa Newsroom" />
+        <meta property="og:description" content="Sociapa is where your Marketing Brilliance begins. Here we provides the latest stories regarding our services, cients and businesses." />
         <meta property="og:url" content="https://sociapa.com/sociapas-press-release" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -167,11 +161,8 @@ export default function PressRelease() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Recent News &amp; Press Release - Sociapa Newsroom" />
-        <meta
-          name="twitter:description"
-          content="Sociapa is where your Marketing Brilliance begins. Here we provide the latest stories regarding our services, clients, account mandates, and business achievements."
-        />
+        <meta name="twitter:title" content="Recent News & Press Release - Sociapa Newsroom" />
+        <meta name="twitter:description" content="Sociapa is where your Marketing Brilliance begins. Here we provides the latest stories regarding our services, cients and businesses." />
         <meta name="twitter:image" content="https://sociapa.com/images/sociapa-outlook-business-800x400.jpg" />
       </Helmet>
 
@@ -221,6 +212,7 @@ export default function PressRelease() {
                 <img
                   src={`${base}images/sociapa-outlook-business-800x400.jpg`}
                   alt="Sociapa - Outlook Business Spotlight Achievers Awards 2026"
+                  loading="lazy"
                 />
                 <div className="pr-featured-img-badge">
                   Featured Recognition 2026

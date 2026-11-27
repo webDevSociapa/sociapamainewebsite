@@ -21,14 +21,14 @@ export default function EmailMarketing() {
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:site_name" content="SOCIAPA" />
-                <meta property="og:image" content="https://www.sociapa.com/images/services/Email-Marketing.jpg" />
+                <meta property="og:image" content="https://sociapa.com/images/services/Email-Marketing.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@sociapa" />
-                <meta name="twitter:title" content="Email Marketing Services in India - Sociapa" />
+                <meta name="twitter:title" content="Bulk Email Marketing Service in Noida & Delhi NCR, India - Sociapa" />
                 <meta name="twitter:description" content="Sociapa is the best email marketing agency in Noida & Delhi NCR - Create, send, and analyse email marketing campaigns with ease.we can assist you in growing your email list and producing high-quality content that engages and converts your target audience." />
-                <meta name="twitter:image" content="https://www.sociapa.com/images/services/Email-Marketing.jpg" />
+                <meta name="twitter:image" content="https://sociapa.com/images/services/Email-Marketing.jpg" />
             </Helmet>
 
             {/* Hero Banner Section */}
@@ -70,6 +70,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Personalize the Message</h3>
@@ -84,6 +85,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Low Costs</h3>
@@ -98,6 +100,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Reach Engaged Audience</h3>
@@ -112,6 +115,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Drive Revenue</h3>
@@ -126,6 +130,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Flexibility</h3>
@@ -140,6 +145,7 @@ export default function EmailMarketing() {
                                     width="60"
                                     height="60"
                                     style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                                    loading="lazy"
                                 />
                             </div>
                             <h3>Reach a Global Audience</h3>

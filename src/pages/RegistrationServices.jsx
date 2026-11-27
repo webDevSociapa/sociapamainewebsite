@@ -63,23 +63,23 @@ export default function RegistrationServices() {
 
       <Helmet>
         <title>GST, MSME, TRADEMARK and FSSAI Registration Services in Noida &amp; Delhi NCR, India - Sociapa</title>
-        <meta name="description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process  Sociapa, will assist you in every step . Get 100% support and expert assistance." />
+        <meta name="description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process Sociapa, will assist you in every step . Get 100% support and expert assistance." />
         <meta name="keywords" content="Registration Services" />
         <link rel="canonical" href="https://sociapa.com/gst-company-registration-services" />
         <meta property="og:title" content="GST, MSME, TRADEMARK and FSSAI Registration Services in Noida & Delhi NCR, India - Sociapa" />
-        <meta property="og:description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process  Sociapa, will assist you in every step . Get 100% support and expert assistance." />
+        <meta property="og:description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process Sociapa, will assist you in every step . Get 100% support and expert assistance." />
         <meta property="og:url" content="https://sociapa.com/gst-company-registration-services" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Registration-Services.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Registration-Services.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="GST, MSME, Trademark Registration Services - Sociapa" />
-        <meta name="twitter:description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process  Sociapa, will assist you in every step . Get 100% support and expert assistance." />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Registration-Services.jpg" />
+        <meta name="twitter:title" content="GST, MSME, TRADEMARK and FSSAI Registration Services in Noida & Delhi NCR, India - Sociapa" />
+        <meta name="twitter:description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process Sociapa, will assist you in every step . Get 100% support and expert assistance." />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Registration-Services.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -93,7 +93,7 @@ export default function RegistrationServices() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"GST Company Registration Services India | Sociapa","item":"https://www.sociapa.com/gst-company-registration-services"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"GST Company Registration Services India | Sociapa","item":"https://sociapa.com/gst-company-registration-services"}]})}</script>
       </Helmet>
       <div className="serInsideBnr">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
@@ -150,6 +150,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">01</span>
@@ -182,6 +183,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">02</span>
@@ -214,6 +216,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">03</span>
@@ -246,6 +249,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">04</span>
@@ -278,6 +282,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">05</span>
@@ -310,6 +315,7 @@ export default function RegistrationServices() {
                     width="60"
                     height="60"
                     style={{ width: '56px', height: '56px', objectFit: 'contain' }}
+                    loading="lazy"
                   />
                 </div>
                 <span className="svc-card-step">06</span>
@@ -351,6 +357,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Trademark (IPO)</span>
@@ -363,6 +370,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>FSSAI License</span>
@@ -375,6 +383,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>GST Registration</span>
@@ -387,6 +396,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Company (MCA)</span>
@@ -399,6 +409,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>ISO Certification</span>
@@ -411,6 +422,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>MSME / Udyam</span>
@@ -423,6 +435,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Import Export Code</span>
@@ -435,6 +448,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Shops & Est. Act</span>
@@ -447,6 +461,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Copyright</span>
@@ -459,6 +474,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>BIS Certification</span>
@@ -476,7 +492,7 @@ export default function RegistrationServices() {
           <div className="portfolio-grid">
             <div className="port-card">
               <div className="port-img">
-                <img src={`${base}images/pansari200.png`} alt="Pansari Group" className="portfolio-logo" />
+                <img src={`${base}images/pansari200.png`} alt="Pansari Group" className="portfolio-logo" loading="lazy" />
               </div>
               <div className="port-info">
                 <div className="port-tag">Trademark + FSSAI</div>
@@ -486,7 +502,7 @@ export default function RegistrationServices() {
             </div>
             <div className="port-card">
               <div className="port-img">
-                <img src={`${base}images/bonnClt.png`} alt="Bonn Breads" className="portfolio-logo" />
+                <img src={`${base}images/bonnClt.png`} alt="Bonn Breads" className="portfolio-logo" loading="lazy" />
               </div>
               <div className="port-info">
                 <div className="port-tag">FSSAI + ISO 22000</div>
@@ -496,7 +512,7 @@ export default function RegistrationServices() {
             </div>
             <div className="port-card">
               <div className="port-img">
-                <img src={`${base}images/snackpure-logo.png`} alt="Snack Pure" className="portfolio-logo" />
+                <img src={`${base}images/snackpure-logo.png`} alt="Snack Pure" className="portfolio-logo" loading="lazy" />
               </div>
               <div className="port-info">
                 <div className="port-tag">Company Incorporation</div>
@@ -506,7 +522,7 @@ export default function RegistrationServices() {
             </div>
             <div className="port-card">
               <div className="port-img">
-                <img src={`${base}images/apisClt.png`} alt="APIS India" className="portfolio-logo" />
+                <img src={`${base}images/apisClt.png`} alt="APIS India" className="portfolio-logo" loading="lazy" />
               </div>
               <div className="port-info">
                 <div className="port-tag">Multi-State Compliance</div>
@@ -532,6 +548,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Requirements Review</h4>
@@ -545,6 +562,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Document Checklist</h4>
@@ -558,6 +576,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Application Preparation</h4>
@@ -571,6 +590,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Filing & Submission</h4>
@@ -584,6 +604,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Query Response</h4>
@@ -597,6 +618,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Certificate Delivery</h4>
@@ -621,6 +643,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>98% First-Time Approval</h4>
@@ -635,6 +658,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Fast Turnaround</h4>
@@ -649,6 +673,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Single Point of Contact</h4>
@@ -663,6 +688,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Proactive Renewal Management</h4>
@@ -677,6 +703,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Complete Confidentiality</h4>
@@ -691,6 +718,7 @@ export default function RegistrationServices() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Transparent Pricing</h4>

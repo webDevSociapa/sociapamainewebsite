@@ -62,11 +62,8 @@ export default function BrandStrategy() {
   return (
     <div className="brand-strategy-page">
       <Helmet>
-        <title>Brand Strategy Agency India | Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
-        />
+        <title>Brand Strategy Services India | Sociapa – Build a Brand That Stands Out</title>
+        <meta name="description" content="Sociapa offers expert brand strategy services in India – competitor analysis, brand positioning, brand archetype, brand naming & tagline. Build a powerful brand identity today." />
         <meta
           name="keywords"
           content="brand strategy agency India, brand positioning, brand consulting, brand naming, user persona, competitor analysis, brand archetype"
@@ -75,19 +72,16 @@ export default function BrandStrategy() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Brand Strategy Agency India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming & tagline for D2C & FMCG brands."
-        />
+        <meta property="og:title" content="Brand Strategy Services India | Sociapa – Build a Brand That Stands Out" />
+        <meta property="og:description" content="Sociapa offers expert brand strategy services in India – competitor analysis, brand positioning, brand archetype, brand naming & tagline. Build a powerful brand identity today." />
         <meta property="og:url" content="https://sociapa.com/brand-strategy" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Brand Strategy Agency India | Sociapa" />
-        <meta name="twitter:description" content="Sociapa is India's leading brand strategy agency — Competitor analysis, user personas, brand positioning, brand archetype, naming &amp; tagline for D2C &amp; FMCG brands." />
+        <meta name="twitter:title" content="Brand Strategy Services India | Sociapa – Build a Brand That Stands Out" />
+        <meta name="twitter:description" content="Sociapa offers expert brand strategy services in India – competitor analysis, brand positioning, brand archetype, brand naming & tagline. Build a powerful brand identity today." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -163,6 +157,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/competitor_analysis.png`}
                 alt="Competitor Analysis"
+                loading="lazy"
               />
             </div>
             <h3>Competitor Analysis</h3>
@@ -182,6 +177,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/user_persona_development.png`}
                 alt="User Persona Development"
+                loading="lazy"
               />
             </div>
             <h3>User Persona Development</h3>
@@ -201,6 +197,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_positioning_and_storyline.png`}
                 alt="Brand Positioning & Storyline"
+                loading="lazy"
               />
             </div>
             <h3>Brand Positioning &amp; Storyline</h3>
@@ -220,6 +217,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_archetype_definition.png`}
                 alt="Brand Archetype Definition"
+                loading="lazy"
               />
             </div>
             <h3>Brand Archetype Definition</h3>
@@ -239,6 +237,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_naming_and_tagline.png`}
                 alt="Brand Naming & Tagline"
+                loading="lazy"
               />
             </div>
             <h3>Brand Naming &amp; Tagline</h3>
@@ -258,6 +257,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_audit.png`}
                 alt="Brand Audit"
+                loading="lazy"
               />
             </div>
             <h3>Brand Audit</h3>
@@ -290,6 +290,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_mapping.png`}
                 alt="Brand Mapping"
+                loading="lazy"
               />
             </span>
             <span>Brand Mapping</span>
@@ -299,6 +300,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/swot_analysis.png`}
                 alt="SWOT Analysis"
+                loading="lazy"
               />
             </span>
             <span>SWOT Analysis</span>
@@ -308,6 +310,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/perceptual_mapping.png`}
                 alt="Perceptual Mapping"
+                loading="lazy"
               />
             </span>
             <span>Perceptual Mapping</span>
@@ -317,6 +320,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/jobs_to_be_done.png`}
                 alt="Jobs-to-be-Done"
+                loading="lazy"
               />
             </span>
             <span>Jobs-to-be-Done</span>
@@ -326,6 +330,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/archetype_framework.png`}
                 alt="Archetype Framework"
+                loading="lazy"
               />
             </span>
             <span>Archetype Framework</span>
@@ -335,6 +340,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/primary_research.png`}
                 alt="Primary Research"
+                loading="lazy"
               />
             </span>
             <span>Primary Research</span>
@@ -344,6 +350,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/focus_groups.png`}
                 alt="Focus Groups"
+                loading="lazy"
               />
             </span>
             <span>Focus Groups</span>
@@ -353,6 +360,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/semrush.png`}
                 alt="SEMrush"
+                loading="lazy"
               />
             </span>
             <span>SEMrush / Ahrefs</span>
@@ -362,6 +370,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_strategy_doc.png`}
                 alt="Brand Strategy Doc"
+                loading="lazy"
               />
             </span>
             <span>Brand Strategy Doc</span>
@@ -371,6 +380,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/positioning_canvas.png`}
                 alt="Positioning Canvas"
+                loading="lazy"
               />
             </span>
             <span>Positioning Canvas</span>
@@ -397,6 +407,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/discovery.png`}
                 alt="Discovery"
+                loading="lazy"
               />
             </div>
             <h4>Discovery</h4>
@@ -407,6 +418,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/research.png`}
                 alt="Research"
+                loading="lazy"
               />
             </div>
             <h4>Research</h4>
@@ -417,6 +429,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/strategy_build.png`}
                 alt="Strategy Build"
+                loading="lazy"
               />
             </div>
             <h4>Strategy Build</h4>
@@ -427,6 +440,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/brand_document.png`}
                 alt="Brand Document"
+                loading="lazy"
               />
             </div>
             <h4>Brand Document</h4>
@@ -437,6 +451,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/activation.png`}
                 alt="Activation"
+                loading="lazy"
               />
             </div>
             <h4>Activation</h4>
@@ -461,6 +476,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/160plus_brands_delivered.png`}
                 alt="160+ Brands Delivered"
+                loading="lazy"
               />
             </div>
             <h3>160+ Brands Delivered</h3>
@@ -471,6 +487,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/research_first_approach.png`}
                 alt="Research-First Approach"
+                loading="lazy"
               />
             </div>
             <h3>Research-First Approach</h3>
@@ -481,6 +498,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/execution_ready_deliverables.png`}
                 alt="Execution-Ready Deliverables"
+                loading="lazy"
               />
             </div>
             <h3>Execution-Ready Deliverables</h3>
@@ -491,6 +509,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/full_funnel_integration.png`}
                 alt="Full-Funnel Integration"
+                loading="lazy"
               />
             </div>
             <h3>Full-Funnel Integration</h3>
@@ -501,6 +520,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/d2c_and_startup_specialists.png`}
                 alt="D2C & Startup Specialists"
+                loading="lazy"
               />
             </div>
             <h3>D2C &amp; Startup Specialists</h3>
@@ -511,6 +531,7 @@ export default function BrandStrategy() {
               <img
                 src={`${base}assets/images/services_icons/brand_strategy/confidential_and_ip_protected.png`}
                 alt="Confidential & IP-Protected"
+                loading="lazy"
               />
             </div>
             <h3>Confidential &amp; IP-Protected</h3>

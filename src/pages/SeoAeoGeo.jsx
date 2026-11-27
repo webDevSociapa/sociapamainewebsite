@@ -55,7 +55,7 @@ export default function SeoAeoGeo() {
     <>
       <Helmet>
         <title>SEO Services India | AI SEO, AEO &amp; GEO Agency for Higher Rankings | Sociapa</title>
-        <meta name="description" content="Grow your business with Sociapa's SEO, AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization) services in India. Improve Google rankings, AI search visibility, organic traffic, featured snippets, local SEO, and lead generation with data-driven strategies." />
+        <meta name="description" content="Grow your business with Sociapa" />
         <link rel="canonical" href="https://sociapa.com/seo-aeo-geo" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -64,14 +64,14 @@ export default function SeoAeoGeo() {
         <meta property="og:description" content="Increase your online visibility with SEO, AEO, and GEO services from Sociapa. We optimize your website for Google, AI search engines, featured snippets, voice search, and generative AI platforms to drive qualified traffic and leads." />
         <meta property="og:url" content="https://sociapa.com/seo-aeo-geo" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta property="og:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="SEO Services India | AI SEO, AEO & GEO Agency | Sociapa" />
-        <meta name="twitter:description" content="Boost rankings, AI visibility, and organic growth with Sociapa's SEO, AEO, and GEO services. Get found on Google, ChatGPT, Gemini, AI Overviews, and other AI-powered search platforms." />
-        <meta name="twitter:image" content="https://www.sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta name="twitter:title" content="SEO Services India | AI SEO, AEO & GEO Agency for Higher Rankings | Sociapa" />
+        <meta name="twitter:description" content="Increase your online visibility with SEO, AEO, and GEO services from Sociapa. We optimize your website for Google, AI search engines, featured snippets, voice search, and generative AI platforms to drive qualified traffic and leads." />
+        <meta name="twitter:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -85,7 +85,7 @@ export default function SeoAeoGeo() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best SEO AEO GEO Services India | Sociapa","item":"https://www.sociapa.com/seo-aeo-geo"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best SEO AEO GEO Services India | Sociapa","item":"https://sociapa.com/seo-aeo-geo"}]})}</script>
       </Helmet>
       <div className="seo-aeo-geo-page">
       {/* Hero Banner Section */}
@@ -128,6 +128,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Technical SEO</h3>
@@ -142,6 +143,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>On-Page SEO &amp; Content Optimisation</h3>
@@ -156,6 +158,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Off-Page SEO &amp; Link Building</h3>
@@ -170,6 +173,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Answer Engine Optimisation (AEO)</h3>
@@ -184,6 +188,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Generative Engine Optimisation (GEO)</h3>
@@ -198,6 +203,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Local SEO &amp; Google Business Profile</h3>
@@ -478,6 +484,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Audit &amp; Discovery</h3>
@@ -491,6 +498,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Strategy Build</h3>
@@ -504,6 +512,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Technical Fix</h3>
@@ -517,6 +526,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Content &amp; Schema</h3>
@@ -530,6 +540,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Authority Building</h3>
@@ -543,6 +554,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Report &amp; Optimise</h3>
@@ -568,6 +580,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Full-Spectrum Search Coverage</h3>
@@ -582,6 +595,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Data-Driven, Not Guesswork</h3>
@@ -596,6 +610,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Category Expertise in D2C &amp; FMCG</h3>
@@ -610,6 +625,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Future-Proof SEO Strategy</h3>
@@ -624,6 +640,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Content + SEO in One Team</h3>
@@ -638,6 +655,7 @@ export default function SeoAeoGeo() {
                 width="60"
                 height="60"
                 style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                loading="lazy"
               />
             </div>
             <h3>Monthly Transparency Reports</h3>

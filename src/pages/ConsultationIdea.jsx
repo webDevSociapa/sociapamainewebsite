@@ -33,20 +33,20 @@ export default function ConsultationIdea() {
     <div className="consultation-idea-page">
       <Helmet>
         <title>Brand Consultation Services in Noida &amp; Delhi NCR | Sociapa</title>
-        <meta name="description" content="Build a stronger brand with Sociapa's Brand Consultation Services in Noida & Delhi NCR. We help businesses with brand strategy, positioning, identity, messaging, and growth-focused marketing consultation." />
+        <meta name="description" content="Build a stronger brand with Sociapa" />
         <link rel="canonical" href="https://sociapa.com/consultation-idea" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Brand Consultation Services in Noida & Delhi NCR | Sociapa" />
-        <meta property="og:description" content="Expert brand consultation and strategy services to help your business grow. We define brand identity, messaging, positioning, and communication strategy for businesses in India." />
+        <meta property="og:description" content="Get expert brand consultation from Sociapa. We help businesses define their brand strategy, positioning, messaging, identity, and marketing roadmap to achieve long-term growth." />
         <meta property="og:url" content="https://sociapa.com/consultation-idea" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta property="og:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Brand Consultation Services in Noida & Delhi NCR | Sociapa" />
-        <meta name="twitter:description" content="Sociapa's brand consultation services help businesses define brand strategy, positioning, identity, and messaging for sustainable growth." />
-        <meta name="twitter:image" content="https://www.sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta name="twitter:description" content="Get expert brand consultation from Sociapa. We help businesses define their brand strategy, positioning, messaging, identity, and marketing roadmap to achieve long-term growth." />
+        <meta name="twitter:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
       </Helmet>
       <div className="serInsideBnr">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
@@ -102,6 +102,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Digital Marketing Audit</h3>
@@ -124,6 +125,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Growth Strategy Development</h3>
@@ -146,6 +148,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Brand Positioning</h3>
@@ -168,6 +171,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Digital Marketing Workshops</h3>
@@ -190,6 +194,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Market Research &amp; Analysis</h3>
@@ -212,6 +217,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Ongoing Strategic Advisory</h3>
@@ -244,6 +250,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Digital Audit Framework
@@ -256,6 +263,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               RACE Planning
@@ -268,6 +276,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               SEMrush Research
@@ -280,6 +289,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Google Analytics
@@ -292,6 +302,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Jobs-to-be-Done
@@ -304,6 +315,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Brand Positioning Maps
@@ -316,6 +328,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Budget Modelling
@@ -328,6 +341,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Customer Journey Maps
@@ -340,6 +354,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Competitor Benchmarks
@@ -352,6 +367,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               Agile Sprint Planning
@@ -376,6 +392,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Discovery Call</h4>
@@ -389,6 +406,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Audit &amp; Research</h4>
@@ -402,6 +420,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Insight Generation</h4>
@@ -415,6 +434,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Strategy Development</h4>
@@ -428,6 +448,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Strategy Presentation</h4>
@@ -441,6 +462,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Implementation Support</h4>
@@ -472,6 +494,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Data-Led Diagnosis</h4>
@@ -486,6 +509,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Execution-Connected Strategy</h4>
@@ -500,6 +524,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Senior Advisor Access</h4>
@@ -514,6 +539,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>ROI-Focused Outputs</h4>
@@ -528,6 +554,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Deep India Market Knowledge</h4>
@@ -542,6 +569,7 @@ export default function ConsultationIdea() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Agile &amp; Iterative</h4>

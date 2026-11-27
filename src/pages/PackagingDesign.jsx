@@ -62,11 +62,8 @@ export default function PackagingDesign() {
   return (
     <div className="packaging-design-page">
       <Helmet>
-        <title>Packaging Design Services India | Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
-        />
+        <title>Packaging Service in Noida &amp; Delhi NCR, India - Sociapa</title>
+        <meta name="description" content="Best Packaging Company in Noida & Delhi NCR-Graphic design plays a vital role in brand promoting with visually appealing graphics." />
         <meta
           name="keywords"
           content="packaging design agency India, FMCG packaging design, D2C packaging design, product packaging design, box design, label design"
@@ -75,19 +72,16 @@ export default function PackagingDesign() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Packaging Design Services India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce & quick commerce packaging, and dieline production."
-        />
+        <meta property="og:title" content="Creative/Graphic Designing Service in Noida & Delhi NCR, India - Sociapa" />
+        <meta property="og:description" content="Best Packaging Company in Noida & Delhi NCR-Graphic design plays a vital role in brand promoting with visually appealing graphics." />
         <meta property="og:url" content="https://sociapa.com/best-packaging-design-agency-india" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Packaging Design Services India | Sociapa" />
-        <meta name="twitter:description" content="Sociapa provides top-tier packaging design services in India — Primary packaging, offline retail packaging, ecommerce &amp; quick commerce packaging, and dieline production." />
+        <meta name="twitter:title" content="Creative/Graphic Designing Service in Noida & Delhi NCR, India - Sociapa" />
+        <meta name="twitter:description" content="Best Packaging Company in Noida & Delhi NCR-Graphic design plays a vital role in brand promoting with visually appealing graphics." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -102,7 +96,7 @@ export default function PackagingDesign() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sociapa.com/" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sociapa.com/our-services" }, { "@type": "ListItem", "position": 3, "name": "Best Packaging Design Agency India | Sociapa", "item": "https://www.sociapa.com/best-packaging-design-agency-india" }] })}</script>
+        <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sociapa.com/" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://sociapa.com/our-services" }, { "@type": "ListItem", "position": 3, "name": "Best Packaging Design Agency India | Sociapa", "item": "https://sociapa.com/best-packaging-design-agency-india" }] })}</script>
       </Helmet>
 
       {/* Hero Banner Section */}
@@ -163,6 +157,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/primary_packaging_design.png`}
                 alt="Primary Packaging Design"
+                loading="lazy"
               />
             </div>
             <h3>Primary Packaging Design</h3>
@@ -182,6 +177,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/industry_based_packaging.png`}
                 alt="Retail & Offline Sales Packaging"
+                loading="lazy"
               />
             </div>
             <h3>Retail &amp; Offline Sales Packaging</h3>
@@ -201,6 +197,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/ecommerce_packaging_design.png`}
                 alt="Ecommerce Packaging Design"
+                loading="lazy"
               />
             </div>
             <h3>Ecommerce Packaging Design</h3>
@@ -220,6 +217,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/ecommerce_packaging_design.png`}
                 alt="Quick Commerce Packaging"
+                loading="lazy"
               />
             </div>
             <h3>Quick Commerce Packaging</h3>
@@ -239,6 +237,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/industry_based_packaging.png`}
                 alt="Industry-Based Packaging"
+                loading="lazy"
               />
             </div>
             <h3>Industry-Based Packaging</h3>
@@ -258,6 +257,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/packaging_dieline_and_production.png`}
                 alt="Packaging Dieline & Production"
+                loading="lazy"
               />
             </div>
             <h3>Packaging Dieline &amp; Production</h3>
@@ -290,6 +290,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/adobe_illustrator.svg`}
                 alt="Adobe Illustrator"
+                loading="lazy"
               />
             </span>
             <span>Adobe Illustrator</span>
@@ -299,6 +300,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/adobe_photoshop.svg`}
                 alt="Adobe Photoshop"
+                loading="lazy"
               />
             </span>
             <span>Adobe Photoshop</span>
@@ -308,6 +310,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/adobe_indesign.svg`}
                 alt="Adobe InDesign"
+                loading="lazy"
               />
             </span>
             <span>Adobe InDesign</span>
@@ -317,6 +320,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/artioscad.svg`}
                 alt="ArtiosCAD"
+                loading="lazy"
               />
             </span>
             <span>ArtiosCAD</span>
@@ -326,6 +330,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/die_cutting_tools.svg`}
                 alt="Die Cutting Tools"
+                loading="lazy"
               />
             </span>
             <span>Die Cutting Tools</span>
@@ -335,6 +340,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/pantone.svg`}
                 alt="Pantone Colour System"
+                loading="lazy"
               />
             </span>
             <span>Pantone Colour System</span>
@@ -344,6 +350,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/pre_press_software.svg`}
                 alt="Pre-Press Software"
+                loading="lazy"
               />
             </span>
             <span>Pre-Press Software</span>
@@ -353,6 +360,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/esko_suite.svg`}
                 alt="Esko Suite"
+                loading="lazy"
               />
             </span>
             <span>Esko Suite</span>
@@ -362,6 +370,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/3d_mock_up_tools.svg`}
                 alt="3D Mock-Up Tools"
+                loading="lazy"
               />
             </span>
             <span>3D Mock-Up Tools</span>
@@ -371,6 +380,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/fssai_compliance.svg`}
                 alt="FSSAI Compliance"
+                loading="lazy"
               />
             </span>
             <span>FSSAI Compliance</span>
@@ -397,6 +407,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/brief_and_research.png`}
                 alt="Brief & Research"
+                loading="lazy"
               />
             </div>
             <h4>Brief &amp; Research</h4>
@@ -407,6 +418,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/concept_design.png`}
                 alt="Concept Design"
+                loading="lazy"
               />
             </div>
             <h4>Concept Design</h4>
@@ -417,6 +429,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/concept_design.png`}
                 alt="Refinement"
+                loading="lazy"
               />
             </div>
             <h4>Refinement</h4>
@@ -427,6 +440,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/dieline_and_pre_press.png`}
                 alt="Dieline & Pre-Press"
+                loading="lazy"
               />
             </div>
             <h4>Dieline &amp; Pre-Press</h4>
@@ -437,6 +451,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/packaging_dieline_and_production.png`}
                 alt="Print-Ready Delivery"
+                loading="lazy"
               />
             </div>
             <h4>Print-Ready Delivery</h4>
@@ -461,6 +476,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/channel_specific_expertise.png`}
                 alt="Channel-Specific Expertise"
+                loading="lazy"
               />
             </div>
             <h3>Channel-Specific Expertise</h3>
@@ -471,6 +487,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/consumer_research_led_design.png`}
                 alt="Consumer Research-Led Design"
+                loading="lazy"
               />
             </div>
             <h3>Consumer Research-Led Design</h3>
@@ -481,6 +498,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/compliance_ready_packaging.png`}
                 alt="Compliance-Ready Packaging"
+                loading="lazy"
               />
             </div>
             <h3>Compliance-Ready Packaging</h3>
@@ -491,6 +509,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/die_cutting_tools.svg`}
                 alt="Print Production Support"
+                loading="lazy"
               />
             </div>
             <h3>Print Production Support</h3>
@@ -501,6 +520,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/digital_and_print_optimised.png`}
                 alt="Digital & Print Optimised"
+                loading="lazy"
               />
             </div>
             <h3>Digital &amp; Print Optimised</h3>
@@ -511,6 +531,7 @@ export default function PackagingDesign() {
               <img
                 src={`${base}assets/images/services_icons/packaging_design/compliance_ready_packaging.png`}
                 alt="Sustainable Packaging Options"
+                loading="lazy"
               />
             </div>
             <h3>Sustainable Packaging Options</h3>

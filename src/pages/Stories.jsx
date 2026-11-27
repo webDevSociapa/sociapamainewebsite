@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './Stories.css';
@@ -45,17 +45,11 @@ export default function Stories() {
   return (
     <>
       <Helmet>
-        <title>Instagram Stories &amp; Brand Highlights | Sociapa</title>
-        <meta
-          name="description"
-          content="Explore Sociapa's latest campaigns, influencer highlights, award moments, and behind-the-scenes stories on Instagram."
-        />
+        <title>Best Digital Marketing Firm In Noida &amp; Delhi NCR, India -Sociapa</title>
+        <meta name="description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability & creating a solid foundation for your business." />
         <link rel="canonical" href="https://sociapa.com/stories" />
-        <meta property="og:title" content="Instagram Stories & Brand Highlights | Sociapa" />
-        <meta
-          property="og:description"
-          content="Explore Sociapa's latest campaigns, influencer highlights, award moments, and behind-the-scenes stories on Instagram."
-        />
+        <meta property="og:title" content="Best Digital Marketing Firm In Noida & Delhi NCR, India -Sociapa" />
+        <meta property="og:description" content="#1 Digital Marketing Agency in Delhi NCR - we believe in sustainability & creating a solid foundation for your business." />
         <meta property="og:url" content="https://sociapa.com/stories" />
       </Helmet>
 

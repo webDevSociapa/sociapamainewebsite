@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -51,21 +51,15 @@ export default function AppDevelopment() {
   return (
     <div className="app-dev-page">
       <Helmet>
-        <title>Mobile App Development Services India | iOS & Android Apps - Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa is a premier mobile app development agency in India. We design and engineer scalable iOS, Android, Flutter, and React Native mobile applications with world-class UI/UX, robust security, and seamless API integrations."
-        />
+        <title>App Development Services | SOCIAPA</title>
+        <meta name="description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta
           name="keywords"
           content="Mobile App Development Services India, iOS App Development Company, Android App Developers Noida, React Native App Agency, Flutter Mobile Apps, Custom Mobile App Development Delhi NCR, D2C Shopping Apps"
         />
         <link rel="canonical" href="https://sociapa.com/services-app-development" />
-        <meta property="og:title" content="Mobile App Development Services India | iOS & Android Apps - Sociapa" />
-        <meta
-          property="og:description"
-          content="Build scalable, intuitive, and high-converting iOS & Android mobile applications with Sociapa. World-class UI/UX design, native Swift & Kotlin engineering, and cross-platform Flutter/React Native solutions."
-        />
+        <meta property="og:title" content="App Development Services | SOCIAPA" />
+        <meta property="og:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta property="og:url" content="https://sociapa.com/services-app-development" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
@@ -74,11 +68,8 @@ export default function AppDevelopment() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Mobile App Development Services India - Sociapa" />
-        <meta
-          name="twitter:description"
-          content="Engineer world-class iOS & Android mobile applications. Native & cross-platform Flutter/React Native solutions built for enterprise scale."
-        />
+        <meta name="twitter:title" content="App Development Services | SOCIAPA" />
+        <meta name="twitter:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta name="twitter:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
 
         {/* Structured Data: FAQPage */}

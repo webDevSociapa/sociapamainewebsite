@@ -362,14 +362,14 @@ export default function PublicRelation() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Public-Relation.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Public-Relation.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Best PR Agency in India - Sociapa" />
+        <meta name="twitter:title" content="Best PR Company in Noida | Brand Communication Agency in Delhi – Sociapa" />
         <meta name="twitter:description" content="Best PR Agency in Noida & Delhi NCR, India- Sociapa offers comprehensive PR solutions tailored to meet the unique needs of businesses. We develop a ground-breaking strategy for the brand to reach its target consumers and markets." />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Public-Relation.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Public-Relation.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -383,7 +383,7 @@ export default function PublicRelation() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best PR Agency India | Sociapa","item":"https://www.sociapa.com/best-pr-agency-india"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best PR Agency India | Sociapa","item":"https://sociapa.com/best-pr-agency-india"}]})}</script>
       </Helmet>
 
       {/* Hero Banner */}
@@ -674,10 +674,10 @@ export default function PublicRelation() {
 <section className="creativeSS">
   <div className="container">
     <div className="row">
-      <div className="col s3 center"><img src={`${base}images/mediaBrief400.png`} alt="Creatives" className="responsive-img w-100" /></div>
-      <div className="col s3 center"><img src={`${base}images/thinCrust400.png`} alt="Creatives" className="responsive-img w-100" /></div>
-      <div className="col s3 center"><img src={`${base}images/apisRopes400.png`} alt="Creatives" className="responsive-img w-100" /></div>
-      <div className="col s3 center"><img src={`${base}images/apisOnboard400.png`} alt="Creatives" className="responsive-img w-100" /></div>
+      <div className="col s3 center"><img src={`${base}images/mediaBrief400.png`} alt="Creatives" className="responsive-img w-100" loading="lazy" /></div>
+      <div className="col s3 center"><img src={`${base}images/thinCrust400.png`} alt="Creatives" className="responsive-img w-100" loading="lazy" /></div>
+      <div className="col s3 center"><img src={`${base}images/apisRopes400.png`} alt="Creatives" className="responsive-img w-100" loading="lazy" /></div>
+      <div className="col s3 center"><img src={`${base}images/apisOnboard400.png`} alt="Creatives" className="responsive-img w-100" loading="lazy" /></div>
     </div>
   </div>
 </section>

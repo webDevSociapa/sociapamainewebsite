@@ -221,12 +221,12 @@ export default function Audit() {
   return (
     <>
       <Helmet>
-        <title>Request Free Website &amp; SEO Audit - Sociapa</title>
-        <meta name="description" content="Get a free comprehensive website, SEO, UI/UX & social media audit from Sociapa. No hidden costs. 100% confidential analysis delivered in 24 hours." />
+        <title>Audit | SOCIAPA</title>
+        <meta name="description" content="Press-Release — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
         <meta name="keywords" content="Free Website Audit, SEO Audit, UI UX Audit, Digital Marketing Audit Noida Delhi" />
         <link rel="canonical" href="https://sociapa.com/free-website-audit" />
-        <meta property="og:title" content="Request Free Website & SEO Audit - Sociapa" />
-        <meta property="og:description" content="Get a free comprehensive website, SEO, UI/UX & social media audit from Sociapa. No hidden costs." />
+        <meta property="og:title" content="Free Website Audit | SOCIAPA" />
+        <meta property="og:description" content="Press-Release — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
         <meta property="og:url" content="https://sociapa.com/free-website-audit" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
@@ -236,8 +236,8 @@ export default function Audit() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Free Website Audit - Sociapa" />
-        <meta name="twitter:description" content="Get a free comprehensive website, SEO, UI/UX & social media audit from Sociapa. No hidden costs." />
+        <meta name="twitter:title" content="Free Website Audit | SOCIAPA" />
+        <meta name="twitter:description" content="Press-Release — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
@@ -613,7 +613,7 @@ export default function Audit() {
             <div className="audit-logos-row">
               {TRUSTED_CLIENTS.map((client, idx) => (
                 <div key={idx} className="audit-logo-item">
-                  <img src={client.logo} alt={client.name} className="audit-client-logo" />
+                  <img src={client.logo} alt={client.name} className="audit-client-logo" loading="lazy" />
                 </div>
               ))}
             </div>

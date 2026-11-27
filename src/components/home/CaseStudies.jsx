@@ -10,7 +10,7 @@ export default function CaseStudies() {
       num: '01',
       img: 'images/case_study/figma_card_02_sebum.png',
       category: 'Influencer Activation • 2021',
-      title: 'PACKAGING CAMPAIGN',
+      title: 'PACKAGING DESIGN',
       tags: ['INFLUENCER STRATEGY', 'DIGITAL PR'],
       desc: 'Modern clinical skincare packaging, vector dieline architecture & brand identity system engineered for Sebum Dermatics.',
       link: '/case-studies/packaging',

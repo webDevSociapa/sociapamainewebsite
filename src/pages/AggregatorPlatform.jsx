@@ -54,6 +54,7 @@ const faqsData = [
 
 
 export default function AggregatorPlatform() {
+  const base = import.meta.env.BASE_URL;
     const [openFaq, setOpenFaq] = useState(null);
     const toggleFaq = (idx) => setOpenFaq(openFaq === idx ? null : idx);
     
@@ -75,14 +76,14 @@ export default function AggregatorPlatform() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Aggregator Platform Services - Sociapa" />
+        <meta name="twitter:title" content="Looking for Aggregator Platform Service in Noida & Delhi NCR - Contact Sociapa" />
         <meta name="twitter:description" content="Get Best Aggregator Platform Service in Noida & Delhi NCR- In Digital era, aggregator business is booming, and it has transformed the industry. Sociapa can assist you in expanding your business." />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -96,7 +97,7 @@ export default function AggregatorPlatform() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Aggregator Platform Service | Sociapa","item":"https://www.sociapa.com/aggregator-platform-service"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Aggregator Platform Service | Sociapa","item":"https://sociapa.com/aggregator-platform-service"}]})}</script>
       </Helmet>
 
       <div className="serInsideBnr">
@@ -107,10 +108,10 @@ export default function AggregatorPlatform() {
           <picture>
             <source
               media="(max-width: 767px)"
-              srcSet="/images/aggregator-service-banner-mobile.jpeg"
+              srcSet={`${base}images/aggregator-service-banner-mobile.jpeg`}
             />
             <img
-              src="/images/aggregator-service-banner.jpeg"
+              src={`${base}images/aggregator-service-banner.jpeg`}
               alt="Aggregator Platform Service"
               className="responsive-img w-100"
             />
@@ -135,7 +136,7 @@ export default function AggregatorPlatform() {
           <div className="services-grid">
             <div className="svc-card">
               <div className="svc-icon">
-                <img src="/icons/aggregator/amazon-and-flipkart.png" alt="Amazon & Flipkart Management" width="50" height="50" />
+                <img src={`${base}icons/aggregator/amazon-and-flipkart.png`} alt="Amazon & Flipkart Management" width="50" height="50" loading="lazy" />
               </div>
               <h3>Amazon & Flipkart Management</h3>
       <p>End-to-end marketplace management, including Seller Central setup, listing optimisation, A+ Content, Sponsored Ads, Brand Store management, and review optimisation to increase visibility and sales.</p>
@@ -149,7 +150,7 @@ export default function AggregatorPlatform() {
 
     <div className="svc-card">
       <div className="svc-icon">
-        <img src="/icons/aggregator/q-commerce.png" alt="Q-Commerce Management" width="50" height="50" />
+        <img src={`${base}icons/aggregator/q-commerce.png`} alt="Q-Commerce Management" width="50" height="50" loading="lazy" />
       </div>
       <h3>Q-Commerce Management</h3>
       <p>Manage your brand across Blinkit, Swiggy Instamart, and Zepto with optimised listings, inventory management, and promotional campaigns to improve product visibility, availability, and sales.</p>
@@ -163,7 +164,7 @@ export default function AggregatorPlatform() {
 
     <div className="svc-card">
       <div className="svc-icon">
-        <img src="/icons/aggregator/food-delivery.png" alt="Food Delivery Platforms" width="50" height="50" />
+        <img src={`${base}icons/aggregator/food-delivery.png`} alt="Food Delivery Platforms" width="50" height="50" loading="lazy" />
       </div>
       <h3>Food Delivery Platforms</h3>
       <p>Manage your restaurant's presence on Zomato and Swiggy with menu optimisation, promotional campaigns, and review management to increase visibility, orders, and customer engagement.</p>
@@ -177,7 +178,7 @@ export default function AggregatorPlatform() {
 
     <div className="svc-card">
       <div className="svc-icon">
-        <img src="/icons/aggregator/catalogue-management.png" alt="Catalogue Management" width="50" height="50" />
+        <img src={`${base}icons/aggregator/catalogue-management.png`} alt="Catalogue Management" width="50" height="50" loading="lazy" />
       </div>
       <h3>Catalogue Management</h3>
       <p>Create and optimise product catalogues with SEO-friendly titles, descriptions, images, and attribute mapping to improve search visibility and drive more sales across marketplaces.</p>
@@ -191,7 +192,7 @@ export default function AggregatorPlatform() {
 
     <div className="svc-card">
       <div className="svc-icon">
-        <img src="/icons/aggregator/in-platform-advertising.png" alt="In-Platform Advertising" width="50" height="50" />
+        <img src={`${base}icons/aggregator/in-platform-advertising.png`} alt="In-Platform Advertising" width="50" height="50" loading="lazy" />
       </div>
       <h3>In-Platform Advertising</h3>
       <p>Maximise sales with Amazon PPC, Flipkart Smart ROI Ads, and Q-commerce promotions. We create data-driven campaigns that improve visibility, optimise ad spend, and drive profitable growth.</p>
@@ -204,7 +205,7 @@ export default function AggregatorPlatform() {
 
     <div className="svc-card">
       <div className="svc-icon">
-        <img src="/icons/aggregator/sales-analytics-reporting.png" alt="Sales Analytics & Reporting" width="50" height="50" />
+        <img src={`${base}icons/aggregator/sales-analytics-reporting.png`} alt="Sales Analytics & Reporting" width="50" height="50" loading="lazy" />
       </div>
       <h3>Sales Analytics & Reporting</h3>
       <p>Track marketplace performance with unified reporting across all platforms, including sales, ad performance, organic rankings, review scores, and actionable insights to support smarter growth.</p>
@@ -229,70 +230,70 @@ export default function AggregatorPlatform() {
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/amazon.png" alt="Amazon India" />
+          <img src={`${base}icons/aggregator/amazon.png`} alt="Amazon India" loading="lazy" />
         </span>
         <span className="tool-name">Amazon India</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/flipkart.png" alt="Flipkart" />
+          <img src={`${base}icons/aggregator/flipkart.png`} alt="Flipkart" loading="lazy" />
         </span>
         <span className="tool-name">Flipkart</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/blinkit.png" alt="Blinkit" />
+          <img src={`${base}icons/aggregator/blinkit.png`} alt="Blinkit" loading="lazy" />
         </span>
         <span className="tool-name">Blinkit</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/swiggy-instamart.png" alt="Swiggy Instamart" />
+          <img src={`${base}icons/aggregator/swiggy-instamart.png`} alt="Swiggy Instamart" loading="lazy" />
         </span>
         <span className="tool-name">Swiggy Instamart</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/zepto.png" alt="Zepto" />
+          <img src={`${base}icons/aggregator/zepto.png`} alt="Zepto" loading="lazy" />
         </span>
         <span className="tool-name">Zepto</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/bigbasket.png" alt="BigBasket" />
+          <img src={`${base}icons/aggregator/bigbasket.png`} alt="BigBasket" loading="lazy" />
         </span>
         <span className="tool-name">BigBasket</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/zomato.png" alt="Zomato" />
+          <img src={`${base}icons/aggregator/zomato.png`} alt="Zomato" loading="lazy" />
         </span>
         <span className="tool-name">Zomato</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/swiggy-food.png" alt="Swiggy Food" />
+          <img src={`${base}icons/aggregator/swiggy-food.png`} alt="Swiggy Food" loading="lazy" />
         </span>
         <span className="tool-name">Swiggy Food</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/makemytrip.png" alt="MakeMyTrip" />
+          <img src={`${base}icons/aggregator/makemytrip.png`} alt="MakeMyTrip" loading="lazy" />
         </span>
         <span className="tool-name">MakeMyTrip</span>
       </div>
 
       <div className="tool-chip">
         <span className="tool-icon">
-          <img src="/icons/aggregator/jiomart.png" alt="JioMart" />
+          <img src={`${base}icons/aggregator/jiomart.png`} alt="JioMart" loading="lazy" />
         </span>
         <span className="tool-name">JioMart</span>
       </div>
@@ -331,7 +332,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/platform-algorithm-expertise.png" alt="Platform Algorithm Expertise" width="50" height="50" />
+          <img src={`${base}icons/aggregator/platform-algorithm-expertise.png`} alt="Platform Algorithm Expertise" width="50" height="50" loading="lazy" />
         </div>
         <h4>Platform Algorithm Expertise</h4>
         <p>Deep knowledge of Amazon A9, Flipkart, and Q-commerce ranking algorithms—we know what signals drive visibility and sales rank.</p>
@@ -339,7 +340,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/multi-platform-management.png" alt="Multi-Platform Management" width="50" height="50" />
+          <img src={`${base}icons/aggregator/multi-platform-management.png`} alt="Multi-Platform Management" width="50" height="50" loading="lazy" />
         </div>
         <h4>Multi-Platform Management</h4>
         <p>One team managing all your marketplace channels—consistent brand presentation, unified reporting, and no coordination gaps between platforms.</p>
@@ -347,7 +348,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/profitable-acos-management.png" alt="Profitable ACOS Management" width="50" height="50" />
+          <img src={`${base}icons/aggregator/profitable-acos-management.png`} alt="Profitable ACOS Management" width="50" height="50" loading="lazy" />
         </div>
         <h4>Profitable ACOS Management</h4>
         <p>We optimise for profitable growth—not just top-line sales. Our PPC management targets ACOS within your margin requirements.</p>
@@ -355,7 +356,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/promotions-calendar-planning.png" alt="Promotions Planning" width="50" height="50" />
+          <img src={`${base}icons/aggregator/promotions-calendar-planning.png`} alt="Promotions Planning" width="50" height="50" loading="lazy" />
         </div>
         <h4>Promotions Calendar Planning</h4>
         <p>Big Billion Days, Great Indian Festival, Republic Day sales—we plan and execute platform promotions months in advance for maximum impact.</p>
@@ -363,7 +364,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/review-rating-management.png" alt="Review & Rating Management" width="50" height="50" />
+          <img src={`${base}icons/aggregator/review-rating-management.png`} alt="Review & Rating Management" width="50" height="50" loading="lazy" />
         </div>
         <h4>Review & Rating Management</h4>
         <p>Structured review generation, response management, and rating monitoring—protecting and improving your social proof on every platform.</p>
@@ -371,7 +372,7 @@ export default function AggregatorPlatform() {
 
       <div className="why-card">
         <div className="why-icon">
-          <img src="/icons/aggregator/unified-analytics-dashboard.png" alt="Unified Analytics Dashboard" width="50" height="50" />
+          <img src={`${base}icons/aggregator/unified-analytics-dashboard.png`} alt="Unified Analytics Dashboard" width="50" height="50" loading="lazy" />
         </div>
         <h4>Unified Analytics Dashboard</h4>
         <p>Single dashboard showing sales, ACOS, rankings, and reviews across all platforms—one view of your entire marketplace business performance.</p>

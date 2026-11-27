@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Privacy Policy - SOCIAPA" />
+        <meta name="twitter:title" content="privacy-policy— SOCIAPA" />
         <meta name="twitter:description" content="privacy-policy - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
@@ -95,14 +95,12 @@ export default function PrivacyPolicy() {
               <h2 className="poppins-semibold">Responsible Disclosure
               </h2>
               <p className="text-justify">WPP appreciates and values the Identification and detailing of security weaknesses carried out  by good natured, moral security researchers. </p>
-              <h2 className="poppins-semibold">Contacting Us </h2>
-              <p className="text-justify">If you have any questions about this privacy policy, the practices or dealings with this Site,
-                Our mailing address is:<a href="mailto:mail@sociapa.com" className="text-black"> mail@sociapa.com</a>
+              <h2 className="poppins-semibold">Contacting Us</h2>
+              <p className="text-justify">If you have any questions about this privacy policy, the practices or dealings with this Site, our mailing address is: <a href="mailto:mail@sociapa.com" className="text-black">mail@sociapa.com</a>.
               </p>
-              <p className="text-justify">you can contact us at: Sociapa, C-25, C Block, Sector 58, Noida, Uttar Pradesh 201301.</p>
-              <h2 className="poppins-semibold">Changes to this privacy policy
-              </h2>
-              <p className="text-justify">We audit this privacy policy consistently to ensure that it is up-to-date with our utilization of your personal data, and agreeable with applicable information assurance laws. We hold the right, at our discretion, to update this privacy policy whenever. The updated privacy policy will be posted on our site. You are urged to audit this privacy policy periodically. This privacy policy was updated in December 2021.</p>
+              <p className="text-justify">You can contact us at: Sociapa, BL-02, Sector 116, Noida, Uttar Pradesh 201306.</p>
+              <h2 className="poppins-semibold">Changes to this privacy policy</h2>
+              <p className="text-justify">We audit this privacy policy consistently to ensure that it is up-to-date with our utilization of your personal data, and agreeable with applicable information assurance laws. We hold the right, at our discretion, to update this privacy policy whenever. The updated privacy policy will be posted on our site. You are urged to audit this privacy policy periodically. This privacy policy was updated in November 2026.</p>
             </div>
           </div>
 

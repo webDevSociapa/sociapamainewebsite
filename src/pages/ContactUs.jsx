@@ -1,4 +1,4 @@
-import SeoHead from '../components/SeoHead';
+import { Helmet } from 'react-helmet-async';
 import ContactForm from '../components/ContactForm';
 import './ContactUs.css';
 
@@ -38,12 +38,23 @@ export default function ContactUs() {
 
   return (
     <>
-      <SeoHead
-        title="Contact us for all of your digital marketing needs -Sociapa"
-        description="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design & Digital Marketing Services in India Sociapa"
-        canonicalUrl="https://sociapa.com/contact-us"
-        schemaJson={localBusinessSchema}
-      />
+      <Helmet>
+        <title>Contact us for all of your digital marketing needs -Sociapa</title>
+        <meta name="description" content="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design &amp; Digital Marketing Services in India Sociapa" />
+        <link rel="canonical" href="https://sociapa.com/contact-us" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="SOCIAPA" />
+        <meta property="og:title" content="Contact us for all of your digital marketing needs -Sociapa" />
+        <meta property="og:description" content="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design &amp; Digital Marketing Services in India Sociapa" />
+        <meta property="og:url" content="https://sociapa.com/contact-us" />
+        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact us for all of your digital marketing needs -Sociapa" />
+        <meta name="twitter:description" content="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design &amp; Digital Marketing Services in India Sociapa" />
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+      </Helmet>
 
       <div className="contact-us-page">
       {/* ══════════════════════════ HERO BANNER ══════════════════════════ */}

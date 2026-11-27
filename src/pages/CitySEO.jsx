@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import legacySeoMeta from '../data/legacySeoMeta.json';
 import './CitySEO.css';
 
 const CitySEO = ({ seoData }) => {
@@ -15,24 +16,31 @@ const CitySEO = ({ seoData }) => {
     );
   }
 
+  const cleanPath = (seoData.path || '').trim();
+  const slug = cleanPath.replace(/^\//, '');
+  const legacy = legacySeoMeta[slug] || legacySeoMeta[slug.toLowerCase()];
+  const pageTitle = (legacy && legacy.title) || seoData.title || 'Digital Marketing Agency | Sociapa';
+  const pageDesc = (legacy && legacy.description) || seoData.description || '';
+  const pageCanon = `https://sociapa.com${cleanPath}`;
+
   // The extracted HTML from the old site typically includes h1, h3, p tags.
   // We wrap it in a clean container and apply sociapa styling.
 
   return (
     <>
       <Helmet>
-        <title>{seoData.title || 'Digital Marketing Agency | Sociapa'}</title>
-        <meta name="description" content={seoData.description || ''} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDesc} />
         {seoData.keywords && <meta name="keywords" content={seoData.keywords} />}
-        <link rel="canonical" href={`https://sociapa.com${seoData.path}`} />
+        <link rel="canonical" href={pageCanon} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         {/* Open Graph */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={seoData.title || 'Digital Marketing Agency | Sociapa'} />
-        <meta property="og:description" content={seoData.description || ''} />
-        <meta property="og:url" content={`https://sociapa.com${seoData.path}`} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:url" content={pageCanon} />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
@@ -41,8 +49,8 @@ const CitySEO = ({ seoData }) => {
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content={seoData.title || 'Digital Marketing Agency | Sociapa'} />
-        <meta name="twitter:description" content={seoData.description || ''} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDesc} />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
 
         {/* BreadcrumbList Schema */}

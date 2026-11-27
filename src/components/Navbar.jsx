@@ -59,7 +59,7 @@ export default function Navbar() {
       <div className={`mobile-nav ${menuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-header">
           <Link to="/" onClick={() => { window.scrollTo(0, 0); setMenuOpen(false); }}>
-            <img src={`${import.meta.env.BASE_URL}logonew.webp`} alt="Sociapa" className="navbar-logo" width="140" height="37" />
+            <img src={`${import.meta.env.BASE_URL}logonew.webp`} alt="Sociapa" className="navbar-logo" width="140" height="37" loading="lazy" />
           </Link>
           <button className="mobile-nav-close" onClick={() => setMenuOpen(false)} aria-label="Close menu">✕</button>
         </div>

@@ -76,14 +76,14 @@ export default function DigitalMarketing() {
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="SOCIAPA" />
-      <meta property="og:image" content="https://www.sociapa.com/images/services/Digital-Marketing.jpg" />
+      <meta property="og:image" content="https://sociapa.com/images/services/Digital-Marketing.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@sociapa" />
-      <meta name="twitter:title" content="Best Digital Marketing Services in India - Sociapa" />
+      <meta name="twitter:title" content="Best Digital Marketing Agency in Noida & Delhi NCR - Sociapa" />
       <meta name="twitter:description" content="Digital Marketing Agency in Noida & Delhi NCR- we strive to provide a perfect balance of method and product, with creative designs and guaranteed results. At Sociapa, we manage brands in the digital sphere with an innovative way." />
-      <meta name="twitter:image" content="https://www.sociapa.com/images/services/Digital-Marketing.jpg" />
+      <meta name="twitter:image" content="https://sociapa.com/images/services/Digital-Marketing.jpg" />
 
       {/* FAQPage Schema - Required by SOCIAPA (1).docx */}
       <script type="application/ld+json">{JSON.stringify({
@@ -96,7 +96,7 @@ export default function DigitalMarketing() {
         }))
       })}</script>
       {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best Digital Marketing Agency in Noida & Delhi NCR","item":"https://www.sociapa.com/best-digital-marketing-services-india"}]})}</script>
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best Digital Marketing Agency in Noida & Delhi NCR","item":"https://sociapa.com/best-digital-marketing-services-india"}]})}</script>
     </Helmet>
     <div className="digital-marketing-page">
       {/* Hero Banner Section */}
@@ -144,6 +144,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Search Engine Optimisation (SEO)</h3>
@@ -158,6 +159,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Pay Per Click (PPC)</h3>
@@ -172,6 +174,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Affiliate Marketing</h3>
@@ -186,6 +189,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Analytics &amp; Reporting</h3>
@@ -200,6 +204,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Conversion Rate Optimisation</h3>
@@ -214,6 +219,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Strategy &amp; Consulting</h3>
@@ -239,6 +245,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Google Ads</span>
@@ -251,6 +258,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Google Analytics 4</span>
@@ -263,6 +271,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Google Tag Manager</span>
@@ -275,6 +284,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>SEMrush</span>
@@ -287,6 +297,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Ahrefs</span>
@@ -299,6 +310,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Looker Studio</span>
@@ -311,6 +323,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Bing Ads</span>
@@ -323,6 +336,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Meta Business Suite</span>
@@ -335,6 +349,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Hotjar</span>
@@ -347,6 +362,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </span>
           <span>Impact / Post Affiliate</span>
@@ -374,6 +390,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Audit &amp; Discovery</h3>
@@ -387,6 +404,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Strategy Build</h3>
@@ -400,6 +418,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Creative &amp; Copy</h3>
@@ -413,6 +432,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Campaign Launch</h3>
@@ -426,6 +446,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Optimise &amp; Scale</h3>
@@ -439,6 +460,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Reporting</h3>
@@ -463,6 +485,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Google Certified Partner</h3>
@@ -476,6 +499,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Data-First Approach</h3>
@@ -489,6 +513,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Agile Execution</h3>
@@ -502,6 +527,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Full-Service Under One Roof</h3>
@@ -515,6 +541,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Industry-Specific Expertise</h3>
@@ -528,6 +555,7 @@ export default function DigitalMarketing() {
               width="60"
               height="60"
               style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+              loading="lazy"
             />
           </div>
           <h3>Transparent Reporting</h3>

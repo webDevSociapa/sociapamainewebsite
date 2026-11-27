@@ -17,14 +17,17 @@ class MailService
         }
     }
 
-    private static array $config = [
-        'smtp_host'  => 'smtp.gmail.com',
-        'smtp_port'  => 465,
-        'smtp_user'  => 'webdev@sociapa.com',
-        'smtp_pass'  => 'czwwxybqwipigmjw',
-        'from_email' => 'webdev@sociapa.com',
-        'from_name'  => 'Sociapa'
-    ];
+    private static function getSmtpConfig(): array
+    {
+        return [
+            'smtp_host'  => (string)(env('SMTP_HOST') ?: env('MAIL_HOST', 'smtp.gmail.com')),
+            'smtp_port'  => (int)(env('SMTP_PORT') ?: env('MAIL_PORT', 465)),
+            'smtp_user'  => (string)(env('SMTP_USER') ?: env('MAIL_USERNAME', 'webdev@sociapa.com')),
+            'smtp_pass'  => (string)(env('SMTP_PASS') ?: env('MAIL_PASSWORD', '')),
+            'from_email' => (string)(env('MAIL_FROM_ADDRESS', 'webdev@sociapa.com')),
+            'from_name'  => (string)(env('MAIL_FROM_NAME', 'Sociapa')),
+        ];
+    }
 
     private static array $adminRecipients = [
         'mail@sociapa.com',
@@ -91,6 +94,11 @@ class MailService
             self::log('info', "MailService: Email sending is currently DISABLED. Skipped sending to {$toEmail}.");
             return true;
         }
+        $smtpConfig = self::getSmtpConfig();
+        if (empty($smtpConfig['smtp_user']) || empty($smtpConfig['smtp_pass'])) {
+            self::log('error', "MailService: SMTP credentials not configured in .env (MAIL_PASSWORD / SMTP_PASS).");
+            return false;
+        }
         $context = stream_context_create([
             'ssl' => [
                 'verify_peer'       => false,
@@ -101,7 +109,7 @@ class MailService
 
         // Try SSL port 465 first
         $socket = @stream_socket_client(
-            "ssl://" . self::$config['smtp_host'] . ":" . self::$config['smtp_port'],
+            "ssl://" . $smtpConfig['smtp_host'] . ":" . $smtpConfig['smtp_port'],
             $errno,
             $errstr,
             12,
@@ -113,7 +121,7 @@ class MailService
         // Fallback to TLS on port 587 if 465 fails
         if (!$socket) {
             $socket = @stream_socket_client(
-                "tcp://" . self::$config['smtp_host'] . ":587",
+                "tcp://" . $smtpConfig['smtp_host'] . ":587",
                 $errno,
                 $errstr,
                 12,
@@ -151,10 +159,10 @@ class MailService
         fputs($socket, "AUTH LOGIN\r\n");
         fgets($socket, 512);
 
-        fputs($socket, base64_encode(self::$config['smtp_user']) . "\r\n");
+        fputs($socket, base64_encode($smtpConfig['smtp_user']) . "\r\n");
         fgets($socket, 512);
 
-        fputs($socket, base64_encode(self::$config['smtp_pass']) . "\r\n");
+        fputs($socket, base64_encode($smtpConfig['smtp_pass']) . "\r\n");
         $authCode = fgets($socket, 512);
 
         if (substr($authCode, 0, 3) != '235') {
@@ -163,7 +171,7 @@ class MailService
             return false;
         }
 
-        fputs($socket, "MAIL FROM: <" . self::$config['from_email'] . ">\r\n");
+        fputs($socket, "MAIL FROM: <" . $smtpConfig['from_email'] . ">\r\n");
         fgets($socket, 512);
 
         fputs($socket, "RCPT TO: <{$toEmail}>\r\n");
@@ -174,7 +182,7 @@ class MailService
 
         $headers  = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
-        $headers .= "From: " . self::$config['from_name'] . " <" . self::$config['from_email'] . ">\r\n";
+        $headers .= "From: " . $smtpConfig['from_name'] . " <" . $smtpConfig['from_email'] . ">\r\n";
         $headers .= "To: <{$toEmail}>\r\n";
         if (!empty($replyToEmail)) {
             $rName = !empty($replyToName) ? $replyToName : $replyToEmail;

@@ -1,3 +1,16 @@
+# Block direct HTTP access to .env and secret files
+<FilesMatch "^\.env">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+AddDefaultCharset UTF-8
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /sociapareact/
@@ -38,7 +51,6 @@
   RewriteRule ^influencer-need\.php$ influencer-need [R=301,L,NC]
   RewriteRule ^services-app-development\.php$ services-app-development [R=301,L,NC]
   RewriteRule ^ad-experiences(\.php)?/?$ pay-per-click-ppc-services-india [R=301,L,NC]
-  RewriteRule ^10-Best-Video-Campaigns-Of-The-Decade(\.php)?/?$ videos [R=301,L,NC]
   RewriteRule ^awards?(\.php)?/?$ best-creative-and-digital-agency-award [R=301,L,NC]
 
   # City Variations
@@ -48,7 +60,11 @@
   RewriteRule ^digital-marketing-agency-in-prayagraj-india(\.php)?/?$ digital-marketing-agency-in-allahabad-india [R=301,L,NC]
   RewriteRule ^seo-agency-in-amritser-india(\.php)?/?$ seo-agency-in-amritsar-india [R=301,L,NC]
 
-  # 2. React SPA Router fallback
+  # 2. Prerendered route HTML: serve subfolder index.html if present
+  RewriteCond %{DOCUMENT_ROOT}/sociapareact/dist/$1/index.html -f
+  RewriteRule ^(.*)/?$ dist/$1/index.html [L]
+
+  # 3. React SPA Router fallback
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

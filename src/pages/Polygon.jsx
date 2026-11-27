@@ -51,21 +51,15 @@ export default function Polygon() {
   return (
     <div className="polygon-page">
       <Helmet>
-        <title>Polygon Targeting & Precision Hyperlocal Audience Mapping - Sociapa</title>
-        <meta
-          name="description"
-          content="Maximize advertising ROI with custom-drawn polygon targeting from Sociapa. Map exact property perimeters, competitor stores, events, and campuses with zero spillover."
-        />
+        <title>Polygon Targeting | SOCIAPA</title>
+        <meta name="description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta
           name="keywords"
           content="Polygon Targeting, Polygon Geofencing, Custom Boundary Advertising, Hyperlocal Audience Mapping, Competitor Conquesting, Location Intelligence India"
         />
         <link rel="canonical" href="https://sociapa.com/polygon" />
-        <meta property="og:title" content="Polygon Targeting & Precision Hyperlocal Audience Mapping - Sociapa" />
-        <meta
-          property="og:description"
-          content="Maximize advertising ROI with custom-drawn polygon targeting. Map exact property perimeters, competitor stores, events, and campuses with zero spillover."
-        />
+        <meta property="og:title" content="Polygon Targeting | SOCIAPA" />
+        <meta property="og:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta property="og:url" content="https://sociapa.com/polygon" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
@@ -74,11 +68,8 @@ export default function Polygon() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Polygon Targeting & Audience Mapping - Sociapa" />
-        <meta
-          name="twitter:description"
-          content="Maximize advertising ROI with custom-drawn polygon targeting from Sociapa. Map exact property perimeters with zero spillover."
-        />
+        <meta name="twitter:title" content="Polygon Targeting | SOCIAPA" />
+        <meta name="twitter:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
         <meta name="twitter:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
 
         {/* Structured Data: FAQPage */}
@@ -232,7 +223,7 @@ export default function Polygon() {
           <div className="poly-grid">
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Polygon-Geo-Fencing-Ads.png`} alt="Automotive Showrooms" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Polygon-Geo-Fencing-Ads.png`} alt="Automotive Showrooms" width="32" height="32" loading="lazy" />
               </div>
               <h3>Automotive Dealership Conquesting</h3>
               <p>
@@ -247,7 +238,7 @@ export default function Polygon() {
 
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Audience-Brief.png`} alt="Trade Shows & Expos" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Audience-Brief.png`} alt="Trade Shows & Expos" width="32" height="32" loading="lazy" />
               </div>
               <h3>Exhibition Halls &amp; Trade Shows</h3>
               <p>
@@ -262,7 +253,7 @@ export default function Polygon() {
 
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Full-Funnel-Coverage.png`} alt="Luxury Real Estate" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Full-Funnel-Coverage.png`} alt="Luxury Real Estate" width="32" height="32" loading="lazy" />
               </div>
               <h3>Luxury Real Estate &amp; Golf Clubs</h3>
               <p>
@@ -277,7 +268,7 @@ export default function Polygon() {
 
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Platform-Strategy.png`} alt="University Campuses" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Platform-Strategy.png`} alt="University Campuses" width="32" height="32" loading="lazy" />
               </div>
               <h3>University &amp; Tech Park Campuses</h3>
               <p>
@@ -292,7 +283,7 @@ export default function Polygon() {
 
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Real-Time-Optimisation.png`} alt="Anchor Retail Isolation" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Real-Time-Optimisation.png`} alt="Anchor Retail Isolation" width="32" height="32" loading="lazy" />
               </div>
               <h3>Mall Anchor Stores &amp; Plazas</h3>
               <p>
@@ -307,7 +298,7 @@ export default function Polygon() {
 
             <div className="poly-card">
               <div className="poly-card-icon">
-                <img src={`${base}icons/ads-experience/Impact-Report.png`} alt="Verified Footfall Attribution" width="32" height="32" />
+                <img src={`${base}icons/ads-experience/Impact-Report.png`} alt="Verified Footfall Attribution" width="32" height="32" loading="lazy" />
               </div>
               <h3>Conversion Zone Footfall Attribution</h3>
               <p>

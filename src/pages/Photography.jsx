@@ -26,14 +26,14 @@ export default function Photography() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Photography.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Photography.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Best Photography Services in India - Sociapa" />
+        <meta name="twitter:title" content="High-Quality Photography & Videography Service in Noida & Delhi NCR, India - Sociapa" />
         <meta name="twitter:description" content="Looking for Best Photography & Videography Service in Noida & Delhi NCR,India? Sociapa is your one-stop solution for all things related to digital marketing." />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Photography.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Photography.jpg" />
       </Helmet>
 
       <div className="serInsideBnr">
@@ -80,6 +80,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Product Photography</h3>
@@ -94,6 +95,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Food Photography</h3>
@@ -108,6 +110,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Corporate Photography</h3>
@@ -122,6 +125,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Campaign & Advertising Photography</h3>
@@ -136,6 +140,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Event Photography</h3>
@@ -150,6 +155,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Lifestyle & Influencer Photography</h3>
@@ -174,6 +180,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Sony Alpha A7</span>
@@ -186,6 +193,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Canon EOS R5</span>
@@ -198,6 +206,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Studio Lighting</span>
@@ -210,6 +219,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Adobe Lightroom</span>
@@ -222,6 +232,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Adobe Photoshop</span>
@@ -234,6 +245,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Drone Photography</span>
@@ -246,6 +258,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>In-House Studio</span>
@@ -258,6 +271,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Professional Retouching</span>
@@ -270,6 +284,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>360° Product Spin</span>
@@ -282,6 +297,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Props & Styling</span>
@@ -309,6 +325,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Creative Brief</h4>
@@ -322,6 +339,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Pre-Production</h4>
@@ -335,6 +353,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Photography Shoot</h4>
@@ -348,6 +367,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Culling & Selection</h4>
@@ -361,6 +381,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Retouching & Edit</h4>
@@ -374,6 +395,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Final Delivery</h4>
@@ -397,6 +419,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>In-House Studio</h4>
@@ -410,6 +433,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Art Direction Included</h4>
@@ -423,6 +447,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>48-Hour Proofs</h4>
@@ -436,6 +461,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Multi-Format Delivery</h4>
@@ -449,6 +475,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Volume Capability</h4>
@@ -462,6 +489,7 @@ export default function Photography() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Marketing Aligned</h4>

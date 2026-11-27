@@ -85,11 +85,8 @@ export default function ContentDevelopment() {
   return (
     <div className="content-development-page">
       <Helmet>
-        <title>Content Designing &amp; Copywriting Services India | Sociapa</title>
-        <meta
-          name="description"
-          content="Transform your brand narrative with Sociapa's content designing & copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers."
-        />
+        <title>Content Designing Service in Noida &amp; Delhi NCR- For innovative content ideas, contact Sociapa</title>
+        <meta name="description" content="Looking for Content Marketing Agency in Noida & Delhi NCR? Connect with Sociapa for ROI oriented Content Marketing Services in India for Large Corporates, Brands & Startups." />
         <meta
           name="keywords"
           content="content designing agency India, copywriting services, SEO content writing, website copywriting, social media content development"
@@ -98,19 +95,16 @@ export default function ContentDevelopment() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Content Designing &amp; Copywriting Services India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Transform your brand narrative with Sociapa's content designing & copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers."
-        />
+        <meta property="og:title" content="Content Designing Service in Noida & Delhi NCR- For innovative content ideas, contact Sociapa" />
+        <meta property="og:description" content="Looking for Content Marketing Agency in Noida & Delhi NCR? Connect with Sociapa for ROI oriented Content Marketing Services in India for Large Corporates, Brands & Startups." />
         <meta property="og:url" content="https://sociapa.com/content-designing" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Content Designing &amp; Copywriting Services India | Sociapa" />
-        <meta name="twitter:description" content="Transform your brand narrative with Sociapa's content designing &amp; copywriting services. We craft SEO blogs, website copy, social media content, email marketing, video scripts, and B2B whitepapers." />
+        <meta name="twitter:title" content="Content Designing Service in Noida & Delhi NCR- For innovative content ideas, contact Sociapa" />
+        <meta name="twitter:description" content="Looking for Content Marketing Agency in Noida & Delhi NCR? Connect with Sociapa for ROI oriented Content Marketing Services in India for Large Corporates, Brands & Startups." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -185,6 +179,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/blog_and_article_writing.png`}
                   alt="Blog & Article Writing"
+                  loading="lazy"
                 />
               </div>
               <h3>Blog &amp; Article Writing</h3>
@@ -204,6 +199,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/website_copywriting.png`}
                   alt="Website Copywriting"
+                  loading="lazy"
                 />
               </div>
               <h3>Website Copywriting</h3>
@@ -222,6 +218,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/social_media_copywriting.png`}
                   alt="Social Media Copywriting"
+                  loading="lazy"
                 />
               </div>
               <h3>Social Media Copywriting</h3>
@@ -241,6 +238,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/email_copywriting.png`}
                   alt="Email Copywriting"
+                  loading="lazy"
                 />
               </div>
               <h3>Email Copywriting</h3>
@@ -259,6 +257,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/video_scripts_and_storyboards.png`}
                   alt="Video Scripts & Storyboards"
+                  loading="lazy"
                 />
               </div>
               <h3>Video Scripts &amp; Storyboards</h3>
@@ -277,6 +276,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/whitepapers_and_case_studies.png`}
                   alt="Whitepapers & Case Studies"
+                  loading="lazy"
                 />
               </div>
               <h3>Whitepapers &amp; Case Studies</h3>
@@ -308,6 +308,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/semrush.png`}
                   alt="SEMrush"
+                  loading="lazy"
                 />
               </span>
               SEMrush
@@ -317,6 +318,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/ahrefs.png`}
                   alt="Ahrefs"
+                  loading="lazy"
                 />
               </span>
               Ahrefs
@@ -326,6 +328,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/surferseo.png`}
                   alt="SurferSEO"
+                  loading="lazy"
                 />
               </span>
               SurferSEO
@@ -335,6 +338,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/grammarly_business.png`}
                   alt="Grammarly Business"
+                  loading="lazy"
                 />
               </span>
               Grammarly Business
@@ -344,6 +348,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/copyscale.png`}
                   alt="Copyscape"
+                  loading="lazy"
                 />
               </span>
               Copyscape
@@ -353,6 +358,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/hemingway_editor.png`}
                   alt="Hemingway Editor"
+                  loading="lazy"
                 />
               </span>
               Hemingway Editor
@@ -362,6 +368,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/notion_cms.png`}
                   alt="Notion CMS"
+                  loading="lazy"
                 />
               </span>
               Notion CMS
@@ -371,6 +378,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/google_search_console.png`}
                   alt="Google Search Console"
+                  loading="lazy"
                 />
               </span>
               Google Search Console
@@ -380,6 +388,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/ai_assisted_research.png`}
                   alt="AI-Assisted Research"
+                  loading="lazy"
                 />
               </span>
               AI-Assisted Research
@@ -389,6 +398,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/clearscope.png`}
                   alt="Clearscope"
+                  loading="lazy"
                 />
               </span>
               Clearscope
@@ -417,6 +427,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/content_audit.png`}
                   alt="Content Audit"
+                  loading="lazy"
                 />
               </div>
               <h4>Content Audit</h4>
@@ -428,6 +439,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/strategy_and_calendar.png`}
                   alt="Strategy & Calendar"
+                  loading="lazy"
                 />
               </div>
               <h4>Strategy &amp; Calendar</h4>
@@ -439,6 +451,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/research_and_outline.png`}
                   alt="Research & Outline"
+                  loading="lazy"
                 />
               </div>
               <h4>Research &amp; Outline</h4>
@@ -450,6 +463,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/writing_and_design.png`}
                   alt="Writing & Design"
+                  loading="lazy"
                 />
               </div>
               <h4>Writing &amp; Design</h4>
@@ -461,6 +475,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/review_and_edit.png`}
                   alt="Review & Edit"
+                  loading="lazy"
                 />
               </div>
               <h4>Review &amp; Edit</h4>
@@ -472,6 +487,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/publish_and_track.png`}
                   alt="Publish & Track"
+                  loading="lazy"
                 />
               </div>
               <h4>Publish &amp; Track</h4>
@@ -497,6 +513,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/seo_led_strategy.png`}
                   alt="SEO-Led Strategy"
+                  loading="lazy"
                 />
               </div>
               <h4>SEO-Led Strategy</h4>
@@ -508,6 +525,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/brand_voice_mastery.png`}
                   alt="Brand Voice Mastery"
+                  loading="lazy"
                 />
               </div>
               <h4>Brand Voice Mastery</h4>
@@ -519,6 +537,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/volume_at_quality.png`}
                   alt="Volume at Quality"
+                  loading="lazy"
                 />
               </div>
               <h4>Volume at Quality</h4>
@@ -530,6 +549,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/multilingual_capability.png`}
                   alt="Multilingual Capability"
+                  loading="lazy"
                 />
               </div>
               <h4>Multilingual Capability</h4>
@@ -541,6 +561,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/performance_tracking.png`}
                   alt="Performance Tracking"
+                  loading="lazy"
                 />
               </div>
               <h4>Performance Tracking</h4>
@@ -552,6 +573,7 @@ export default function ContentDevelopment() {
                 <img
                   src={`${base}assets/images/services_icons/content_designing/content_repurposing.png`}
                   alt="Content Repurposing"
+                  loading="lazy"
                 />
               </div>
               <h4>Content Repurposing</h4>

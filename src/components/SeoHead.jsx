@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 
 export default function SeoHead({
-  title = "Best Digital Marketing & Advertising Agency in Noida & Delhi NCR - Sociapa",
-  description = "Best Digital Marketing & Advertising Agency in Noida & Delhi NCR – Sociapa allows businesses to improve their online presence, attract targeted traffic and experience extraordinary growth.",
+  title = "Best Digital Marketing & Advertising Agency, Best FMCG marketing and digital agency in Noida & Delhi NCR, India - Sociapa",
+  description = "Best Digital Marketing & Advertising Agency in Noida & Delhi NCR – Sociapa allows businesses to improve their online presence, attract targeted traffic and experience extraordinary growth by providing a wide range of services, including SEO, PPC, social media marketing and creative advertising solutions.",
   canonicalUrl = "https://sociapa.com/",
   ogImage = "https://sociapa.com/logoSociapa.png",
   ogType = "website",

@@ -65,14 +65,14 @@ export default function SocialMediaMarketing() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://www.sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/services/Social-Media-Marketing.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
-        <meta name="twitter:title" content="Social Media Marketing Services in Noida &amp; Delhi NCR - Sociapa" />
+        <meta name="twitter:title" content="Sociapa Social Media Marketing services in Noida & Delhi NCR -Explore to grow your brand." />
         <meta name="twitter:description" content="Social Media Marketing Services in Noida & Delhi NCR, india- Increased Brand Recognition, Loyalty, and Love.Customer Experience & Conversion | Best Digital Marketing Company In Noida & Delhi NCR" />
-        <meta name="twitter:image" content="https://www.sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/services/Social-Media-Marketing.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -86,7 +86,7 @@ export default function SocialMediaMarketing() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best Social Media Marketing Agency India | Sociapa","item":"https://www.sociapa.com/best-social-media-marketing-agency-india"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Best Social Media Marketing Agency India | Sociapa","item":"https://sociapa.com/best-social-media-marketing-agency-india"}]})}</script>
       </Helmet>
       <div className="serInsideBnr">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>
@@ -125,6 +125,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Social Media Strategy</h3>
@@ -139,6 +140,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Content Creation & Copywriting</h3>
@@ -153,6 +155,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Community Management</h3>
@@ -167,6 +170,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Paid Social Advertising</h3>
@@ -181,6 +185,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Analytics & Monthly Reporting</h3>
@@ -195,6 +200,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h3>Influencer Collaboration</h3>
@@ -219,6 +225,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Instagram</span>
@@ -231,6 +238,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Facebook</span>
@@ -243,6 +251,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>LinkedIn</span>
@@ -255,6 +264,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>YouTube</span>
@@ -267,6 +277,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>X (Twitter)</span>
@@ -279,6 +290,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Pinterest</span>
@@ -291,6 +303,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Snapchat</span>
@@ -303,6 +316,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Hootsuite</span>
@@ -315,6 +329,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Buffer</span>
@@ -327,6 +342,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </span>
               <span>Sprout Social</span>
@@ -355,6 +371,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Brand &amp; Audience Audit</h4>
@@ -368,6 +385,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Strategy &amp; Calendar</h4>
@@ -381,6 +399,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Content Production</h4>
@@ -394,6 +413,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Scheduling &amp; Publishing</h4>
@@ -407,6 +427,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Paid Amplification</h4>
@@ -420,6 +441,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Monthly Review</h4>
@@ -443,6 +465,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>In-House Creative Studio</h4>
@@ -456,6 +479,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Data-Driven Decisions</h4>
@@ -469,6 +493,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Agile Content Operations</h4>
@@ -482,6 +507,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Vernacular Content Capability</h4>
@@ -495,6 +521,7 @@ export default function SocialMediaMarketing() {
                   width="60"
                   height="60"
                   style={{ width: '60px', height: '60px', objectFit: 'contain' }}
+                  loading="lazy"
                 />
               </div>
               <h4>Dedicated Account Manager</h4>

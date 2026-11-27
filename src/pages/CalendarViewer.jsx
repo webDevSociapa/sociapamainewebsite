@@ -4,7 +4,7 @@ import './CalendarViewer.css'
 
 export default function CalendarViewer() {
   const base = import.meta.env.BASE_URL || '/';
-  const calendarUrl = `${base}calendar-2026/index.html`;
+  const calendarUrl = `${base}calendar-embed/index.html`;
 
   return (
     <>

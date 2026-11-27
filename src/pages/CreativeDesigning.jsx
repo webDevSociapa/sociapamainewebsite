@@ -62,11 +62,8 @@ export default function CreativeDesigning() {
   return (
     <div className="creative-designing-page">
       <Helmet>
-        <title>Creative Designing Agency in India | Sociapa</title>
-        <meta
-          name="description"
-          content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design."
-        />
+        <title>Digital Creative Agency in Noida &amp; Delhi NCR, India – Sociapa</title>
+        <meta name="description" content="Sociapa is a leading creative and digital agency in Noida, offering comprehensive solutions to businesses. With expertise in branding, web design, social media marketing, and more, Sociapa crafts compelling digital experiences that resonate with the target audience." />
         <meta
           name="keywords"
           content="creative designing agency India, logo design, UI UX design, graphic design studio, social media creatives, branding agency"
@@ -75,19 +72,16 @@ export default function CreativeDesigning() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:title" content="Creative Designing Agency in India | Sociapa" />
-        <meta
-          property="og:description"
-          content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design."
-        />
+        <meta property="og:title" content="Digital Creative Agency in Noida & Delhi NCR, India – Sociapa" />
+        <meta property="og:description" content="Sociapa is a leading creative and digital agency in Noida, offering comprehensive solutions to businesses. With expertise in branding, web design, social media marketing, and more, Sociapa crafts compelling digital experiences that resonate with the target audience." />
         <meta property="og:url" content="https://sociapa.com/creative-designing" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Creative Designing Agency in India | Sociapa" />
-        <meta name="twitter:description" content="Sociapa is a leading creative design agency in India offering strategic branding, logo design, marketing creatives, social media graphics, and UI/UX design." />
+        <meta name="twitter:title" content="Digital Creative Agency in Noida & Delhi NCR, India – Sociapa" />
+        <meta name="twitter:description" content="Sociapa is a leading creative and digital agency in Noida, offering comprehensive solutions to businesses. With expertise in branding, web design, social media marketing, and more, Sociapa crafts compelling digital experiences that resonate with the target audience." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -161,6 +155,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/logo_and_brand_identity.svg`}
                   alt="Logo & Brand Identity"
+                  loading="lazy"
                 />
               </div>
               <h3>Logo &amp; Brand Identity</h3>
@@ -180,6 +175,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/social_media_creatives.svg`}
                   alt="Social Media Creatives"
+                  loading="lazy"
                 />
               </div>
               <h3>Social Media Creatives</h3>
@@ -199,6 +195,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/brand_merchandise_and_collatera.svg`}
                   alt="Brand Merchandise & Collateral"
+                  loading="lazy"
                 />
               </div>
               <h3>Brand Merchandise &amp; Collateral</h3>
@@ -218,6 +215,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/uiux_designing.svg`}
                   alt="UI/UX Designing"
+                  loading="lazy"
                 />
               </div>
               <h3>UI/UX Designing</h3>
@@ -237,6 +235,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/marketing_creatives.svg`}
                   alt="Marketing Creatives"
+                  loading="lazy"
                 />
               </div>
               <h3>Marketing Creatives</h3>
@@ -256,6 +255,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/brand_identity_systems.svg`}
                   alt="Brand Identity Systems"
+                  loading="lazy"
                 />
               </div>
               <h3>Brand Identity Systems</h3>
@@ -287,6 +287,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/illustrator.svg`}
                   alt="Adobe Illustrator"
+                  loading="lazy"
                 />
               </span>
               Adobe Illustrator
@@ -296,6 +297,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/photoshop.svg`}
                   alt="Adobe Photoshop"
+                  loading="lazy"
                 />
               </span>
               Adobe Photoshop
@@ -305,6 +307,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/figma.svg`}
                   alt="Figma"
+                  loading="lazy"
                 />
               </span>
               Figma
@@ -314,6 +317,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/adobe_xd.svg`}
                   alt="Adobe XD"
+                  loading="lazy"
                 />
               </span>
               Adobe XD
@@ -323,6 +327,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/after_effects.svg`}
                   alt="After Effects"
+                  loading="lazy"
                 />
               </span>
               After Effects
@@ -332,6 +337,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/adobe_indesign.svg`}
                   alt="Adobe InDesign"
+                  loading="lazy"
                 />
               </span>
               Adobe InDesign
@@ -341,6 +347,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/coreldraw.svg`}
                   alt="CorelDRAW"
+                  loading="lazy"
                 />
               </span>
               CorelDRAW
@@ -350,6 +357,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/adobe_lightroom.svg`}
                   alt="Adobe Lightroom"
+                  loading="lazy"
                 />
               </span>
               Adobe Lightroom
@@ -359,6 +367,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/typeface_fontlab.svg`}
                   alt="Typeface / FontLab"
+                  loading="lazy"
                 />
               </span>
               Typeface / FontLab
@@ -368,6 +377,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/canva_pro.svg`}
                   alt="Canva Pro"
+                  loading="lazy"
                 />
               </span>
               Canva Pro
@@ -396,6 +406,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/discovery_brief.svg`}
                   alt="Discovery Brief"
+                  loading="lazy"
                 />
               </div>
               <h4>Discovery Brief</h4>
@@ -407,6 +418,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/mood_boarding.svg`}
                   alt="Mood Boarding"
+                  loading="lazy"
                 />
               </div>
               <h4>Mood Boarding</h4>
@@ -418,6 +430,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/concept_design.svg`}
                   alt="Concept Design"
+                  loading="lazy"
                 />
               </div>
               <h4>Concept Design</h4>
@@ -429,6 +442,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/refinement.svg`}
                   alt="Refinement"
+                  loading="lazy"
                 />
               </div>
               <h4>Refinement</h4>
@@ -440,6 +454,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/final_artwork.svg`}
                   alt="Final Artwork"
+                  loading="lazy"
                 />
               </div>
               <h4>Final Artwork</h4>
@@ -451,6 +466,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/brand_handoff.svg`}
                   alt="Brand Handoff"
+                  loading="lazy"
                 />
               </div>
               <h4>Brand Handoff</h4>
@@ -474,6 +490,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/strategy_first_design.svg`}
                   alt="Strategy-First Design"
+                  loading="lazy"
                 />
               </div>
               <h4>Strategy-First Design</h4>
@@ -485,6 +502,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/fast_turnaround.svg`}
                   alt="Fast Turnaround"
+                  loading="lazy"
                 />
               </div>
               <h4>Fast Turnaround</h4>
@@ -496,6 +514,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/unlimited_revisions.svg`}
                   alt="Unlimited Revisions"
+                  loading="lazy"
                 />
               </div>
               <h4>Unlimited Revisions</h4>
@@ -507,6 +526,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/award_winning_team.svg`}
                   alt="Award-Winning Team"
+                  loading="lazy"
                 />
               </div>
               <h4>Award-Winning Team</h4>
@@ -518,6 +538,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/multi_format_delivery.svg`}
                   alt="Multi-Format Delivery"
+                  loading="lazy"
                 />
               </div>
               <h4>Multi-Format Delivery</h4>
@@ -529,6 +550,7 @@ export default function CreativeDesigning() {
                 <img
                   src={`${base}assets/images/services_icons/creative_designing/brand_consistency_guarantee.svg`}
                   alt="Brand Consistency Guarantee"
+                  loading="lazy"
                 />
               </div>
               <h4>Brand Consistency Guarantee</h4>

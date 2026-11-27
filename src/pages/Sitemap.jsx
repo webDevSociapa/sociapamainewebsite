@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './Sitemap.css';
@@ -147,8 +147,8 @@ export default function Sitemap() {
   return (
     <div className="sitemap-page-wrapper">
       <Helmet>
-        <title>Sitemap &amp; Complete Site Directory | Sociapa</title>
-        <meta name="description" content="Explore the comprehensive page directory of Sociapa. Navigate services, branding solutions, case studies, influencer marketplace, and resources." />
+        <title>Sitemap | SOCIAPA</title>
+        <meta name="description" content="Sociapa" />
         <link rel="canonical" href="https://sociapa.com/sitemap" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>

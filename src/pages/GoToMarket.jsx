@@ -55,10 +55,7 @@ export default function GoToMarket() {
     <div className="gotomarket-page">
       <Helmet>
         <title>Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa</title>
-        <meta
-          name="description"
-          content="Launch your product successfully with Sociapa's Go-To-Market (GTM) strategy services. We offer influencer marketing, social media, performance marketing, quick commerce setup, UGC, product photography, retail activation, and end-to-end product launch solutions for D2C and FMCG brands."
-        />
+        <meta name="description" content="Launch your product successfully with Sociapa" />
         <meta
           name="keywords"
           content="go to market strategy India, GTM agency, product launch strategy, D2C launch agency, quick commerce launch, FMCG go to market"
@@ -68,10 +65,7 @@ export default function GoToMarket() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
-        <meta
-          property="og:description"
-          content="Launch your product successfully with Sociapa's Go-To-Market (GTM) strategy services. We offer influencer marketing, social media, performance marketing, quick commerce setup, UGC, product photography, retail activation, and end-to-end product launch solutions for D2C and FMCG brands."
-        />
+        <meta property="og:description" content="Accelerate your product launch with Sociapa" />
         <meta property="og:url" content="https://sociapa.com/go-to-market" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta property="og:image:width" content="1200" />
@@ -79,7 +73,7 @@ export default function GoToMarket() {
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
-        <meta name="twitter:description" content="Launch your product successfully with Sociapa's Go-To-Market (GTM) strategy services. We offer influencer marketing, social media, performance marketing, quick commerce setup, UGC, product photography, retail activation, and end-to-end product launch solutions for D2C and FMCG brands." />
+        <meta name="twitter:description" content="Accelerate your product launch with Sociapa" />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -94,7 +88,7 @@ export default function GoToMarket() {
           }))
         })}</script>
         {/* BreadcrumbList Schema - Required by SOCIAPA (1).docx */}
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://www.sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Go To Market Strategy Services India | Sociapa","item":"https://www.sociapa.com/go-to-market"}]})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sociapa.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://sociapa.com/our-services"},{"@type":"ListItem","position":3,"name":"Go To Market Strategy Services India | Sociapa","item":"https://sociapa.com/go-to-market"}]})}</script>
       </Helmet>
 
       {/* Hero Banner Section */}
@@ -155,6 +149,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/primary_packaging_design.png`}
                 alt="Social Media Marketing"
+                loading="lazy"
               />
             </div>
             <h3>Social Media Marketing</h3>
@@ -174,6 +169,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/influencer_platform.png`}
                 alt="Influencer Marketing"
+                loading="lazy"
               />
             </div>
             <h3>Influencer Marketing</h3>
@@ -193,6 +189,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/concept_design.png`}
                 alt="Performance Marketing"
+                loading="lazy"
               />
             </div>
             <h3>Performance Marketing</h3>
@@ -212,6 +209,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/brief_and_research.png`}
                 alt="UGC Marketing"
+                loading="lazy"
               />
             </div>
             <h3>UGC Marketing</h3>
@@ -231,6 +229,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/ecommerce_packaging_design.png`}
                 alt="Product Photography & AI Photography"
+                loading="lazy"
               />
             </div>
             <h3>Product Photography &amp; AI Photography</h3>
@@ -250,6 +249,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/quick_commerce_packaging.png`}
                 alt="Quick Commerce Setup"
+                loading="lazy"
               />
             </div>
             <h3>Quick Commerce Setup</h3>
@@ -282,6 +282,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/3d_mockup_tools.png`}
                 alt="Meta Business Suite"
+                loading="lazy"
               />
             </span>
             <span>Meta Business Suite</span>
@@ -291,6 +292,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/concept_design.png`}
                 alt="Google Ads"
+                loading="lazy"
               />
             </span>
             <span>Google Ads</span>
@@ -300,6 +302,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/pre_press_software.png`}
                 alt="Google Analytics 4"
+                loading="lazy"
               />
             </span>
             <span>Google Analytics 4</span>
@@ -309,6 +312,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/influencer_platform.png`}
                 alt="Influencer Platforms"
+                loading="lazy"
               />
             </span>
             <span>Influencer Platforms</span>
@@ -318,6 +322,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/quick_commerce_packaging.png`}
                 alt="Blinkit / Zepto"
+                loading="lazy"
               />
             </span>
             <span>Blinkit / Zepto</span>
@@ -327,6 +332,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/retail_and_offline_sales_packaging.png`}
                 alt="Amazon Seller Central"
+                loading="lazy"
               />
             </span>
             <span>Amazon Seller Central</span>
@@ -336,6 +342,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/dieline_and_prepress.png`}
                 alt="SEMrush"
+                loading="lazy"
               />
             </span>
             <span>SEMrush</span>
@@ -345,6 +352,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/print_ready_delievered.png`}
                 alt="Later / Hootsuite"
+                loading="lazy"
               />
             </span>
             <span>Later / Hootsuite</span>
@@ -354,6 +362,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/brief_and_research.png`}
                 alt="UGC Platforms"
+                loading="lazy"
               />
             </span>
             <span>UGC Platforms</span>
@@ -363,6 +372,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/die_cutting_tools.png`}
                 alt="GTM Dashboard"
+                loading="lazy"
               />
             </span>
             <span>GTM Dashboard</span>
@@ -389,6 +399,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/market_research.png`}
                 alt="Market Research"
+                loading="lazy"
               />
             </div>
             <h4>Market Research</h4>
@@ -399,6 +410,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/audience_strategy.png`}
                 alt="Audience Strategy"
+                loading="lazy"
               />
             </div>
             <h4>Audience Strategy</h4>
@@ -409,6 +421,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/channel_planning.png`}
                 alt="Channel Planning"
+                loading="lazy"
               />
             </div>
             <h4>Channel Planning</h4>
@@ -419,6 +432,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/campaign_launch.png`}
                 alt="Campaign Launch"
+                loading="lazy"
               />
             </div>
             <h4>Campaign Launch</h4>
@@ -429,6 +443,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/measureandscale.png`}
                 alt="Measure & Scale"
+                loading="lazy"
               />
             </div>
             <h4>Measure &amp; Scale</h4>
@@ -453,6 +468,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/brief_and_research.png`}
                 alt="200+ Launches Executed"
+                loading="lazy"
               />
             </div>
             <h3>200+ Launches Executed</h3>
@@ -464,6 +480,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/quick_commerce_packaging.png`}
                 alt="Q-Commerce Specialists"
+                loading="lazy"
               />
             </div>
             <h3>Q-Commerce Specialists</h3>
@@ -475,6 +492,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/primary_packaging_design.png`}
                 alt="In-House UGC & Content"
+                loading="lazy"
               />
             </div>
             <h3>In-House UGC &amp; Content</h3>
@@ -486,6 +504,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/pre_press_software.png`}
                 alt="Data-Driven Decisions"
+                loading="lazy"
               />
             </div>
             <h3>Data-Driven Decisions</h3>
@@ -497,6 +516,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/die_cutting_tools.png`}
                 alt="Full-Funnel Ownership"
+                loading="lazy"
               />
             </div>
             <h3>Full-Funnel Ownership</h3>
@@ -508,6 +528,7 @@ export default function GoToMarket() {
               <img
                 src={`${base}assets/images/services_icons/go_to_market/3d_mockup_tools.png`}
                 alt="Integrated Execution"
+                loading="lazy"
               />
             </div>
             <h3>Integrated Execution</h3>

@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+﻿import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { API_BASE_URL, postApi } from '../config/api';
 import './Influencer.css';
@@ -116,20 +116,20 @@ export default function Influencer() {
     <div className="influencer-page-wrapper">
       <Helmet>
         <title>Best Influencer Marketing Agency in Noida &amp; Delhi NCR, India - Sociapa</title>
-        <meta name="description" content="Influencer Marketing in Noida & Delhi NCR, India - Reach Us Out, If You’re A Brand Or an Influencer service. We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
+        <meta name="description" content="Influencer Marketing in Noida & Delhi NCR,India- Reach Us Out ,If You’re A Brand Or an Influencer service.We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
         <meta name="keywords" content="Influencer marketing services in Delhi, Creator network India, Influencer marketplace" />
         <link rel="canonical" href="https://sociapa.com/influencers-marketplace" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Best Influencer Marketing Agency in Noida & Delhi NCR, India - Sociapa" />
-        <meta property="og:description" content="Influencer Marketing in Noida & Delhi NCR, India - Reach Us Out, If You’re A Brand Or an Influencer service. We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
+        <meta property="og:description" content="Influencer Marketing in Noida & Delhi NCR,India- Reach Us Out ,If You’re A Brand Or an Influencer service.We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
         <meta property="og:url" content="https://sociapa.com/influencers-marketplace" />
         <meta property="og:site_name" content="SOCIAPA" />
         <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Influencer Marketing Agency in Noida & Delhi NCR, India - Sociapa" />
-        <meta name="twitter:description" content="Connect with top influencers across India. Sociapa manages data-driven influencer campaigns that build brand credibility and drive engagement." />
+        <meta name="twitter:description" content="Influencer Marketing in Noida & Delhi NCR,India- Reach Us Out ,If You’re A Brand Or an Influencer service.We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
         <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
       </Helmet>
 
