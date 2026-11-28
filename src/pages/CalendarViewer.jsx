@@ -19,12 +19,12 @@ export default function CalendarViewer() {
         <meta property="og:description" content="Plan your 2026 marketing campaigns around India's key festivals, holidays, and commercial opportunities with Sociapa." />
         <meta property="og:url" content="https://sociapa.com/calendar-2026" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Sociapa Social Media &amp; Marketing Calendar 2026" />
         <meta name="twitter:description" content="Plan your 2026 marketing campaigns around India's key festivals, holidays, and commercial opportunities with Sociapa." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       <div className="calendar-viewer-wrapper">

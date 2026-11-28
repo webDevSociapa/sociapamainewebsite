@@ -67,14 +67,14 @@ export default function GoToMarket() {
         <meta property="og:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
         <meta property="og:description" content="Accelerate your product launch with Sociapa" />
         <meta property="og:url" content="https://sociapa.com/go-to-market" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Go-To-Market (GTM) Strategy Services India | Product Launch Experts | Sociapa" />
         <meta name="twitter:description" content="Accelerate your product launch with Sociapa" />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

@@ -19,14 +19,14 @@ export default function CompanyProfile() {
         <meta property="og:description" content="Full-service brand & creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
         <meta property="og:url" content="https://sociapa.com/sociapa-profile" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Sociapa Brand & Creative Portfolio 2026 | Digital Marketing Agency India" />
         <meta name="twitter:description" content="Full-service brand & creative agency – digital marketing, social media, packaging, photography, SEO/AEO/GEO and PR. 100+ brands. 7+ years." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         {/* High-priority preload for Slide 1 (<0.5s instant paint) & predictive prefetch */}
         <link rel="preload" as="image" href={`${base}images/profile_slides/slide_1.jpg`} fetchpriority="high" />
         <link rel="prefetch" href={`${base}images/profile_slides/slide_2.jpg`} />

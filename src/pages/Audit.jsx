@@ -142,9 +142,10 @@ export default function Audit() {
       mobile: form.mobile,
       audit: form.audit
     };
+    const submitPayload = campaignFile ? { ...payload, attachment: campaignFile } : payload;
 
     try {
-      await postApi('/audit', payload);
+      await postApi('/audit', submitPayload);
     } catch (err) {
       console.warn('Audit submission notice:', err);
     }
@@ -163,7 +164,8 @@ export default function Audit() {
       // analytics notice
     }
 
-    setSubmittedData({ ...payload });
+    setSubmittedData({ ...payload, fileName: campaignFile?.name || '' });
+    setCampaignFile(null);
     setSubmitted(true);
     setShowModal(true);
     setIsSubmitting(false);
@@ -231,14 +233,14 @@ export default function Audit() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Free Website Audit | SOCIAPA" />
         <meta name="twitter:description" content="Press-Release — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       {/* ── 1. FULL-BLEED HERO BANNER ── */}
@@ -311,6 +313,12 @@ export default function Audit() {
                       <span className="detail-label">Audit Focus</span>
                       <span className="detail-value">{submittedData?.audit || form.audit}</span>
                     </div>
+                    {submittedData?.fileName && (
+                      <div className="audit-success-detail-row">
+                        <span className="detail-label">Attached Document</span>
+                        <span className="detail-value">📎 {submittedData.fileName}</span>
+                      </div>
+                    )}
                     <div className="audit-success-detail-row">
                       <span className="detail-label">Delivery Timeline</span>
                       <span className="detail-value status-active">● Within 24 Business Hours</span>
@@ -322,6 +330,7 @@ export default function Audit() {
                       onClick={() => {
                         setSubmitted(false);
                         setShowModal(false);
+                        setCampaignFile(null);
                         setForm({ audit: 'SEO', name: '', website: '', email: '', mobile: '', agree: true });
                       }}
                       className="audit-reset-btn"
@@ -392,8 +401,16 @@ export default function Audit() {
                             <input
                               type="file"
                               id="audit-campaign-file"
-                              accept=".pdf,.doc,.docx,.ppt,.pptx"
-                              onChange={e => setCampaignFile(e.target.files?.[0] || null)}
+                              accept=".pdf,.doc,.docx,.ppt,.pptx,.zip,.png,.jpg,.jpeg"
+                              onChange={e => {
+                                const file = e.target.files?.[0] || null;
+                                if (file && file.size > 15 * 1024 * 1024) {
+                                  alert('File size exceeds 15 MB. Please select a smaller document.');
+                                  e.target.value = '';
+                                  return;
+                                }
+                                setCampaignFile(file);
+                              }}
                               className="audit-file-hidden-input"
                             />
                             <label htmlFor="audit-campaign-file" className="audit-file-label">

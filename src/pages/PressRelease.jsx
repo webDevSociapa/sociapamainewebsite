@@ -156,14 +156,14 @@ export default function PressRelease() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/sociapa-outlook-business-800x400.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Recent News & Press Release - Sociapa Newsroom" />
         <meta name="twitter:description" content="Sociapa is where your Marketing Brilliance begins. Here we provides the latest stories regarding our services, cients and businesses." />
-        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-outlook-business-800x400.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       {/* ── FULL BLEED HERO BANNER ── */}

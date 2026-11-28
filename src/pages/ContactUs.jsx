@@ -47,7 +47,7 @@ export default function ContactUs() {
         <meta property="og:title" content="Contact us for all of your digital marketing needs -Sociapa" />
         <meta property="og:description" content="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design &amp; Digital Marketing Services in India Sociapa" />
         <meta property="og:url" content="https://sociapa.com/contact-us" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact us for all of your digital marketing needs -Sociapa" />
         <meta name="twitter:description" content="Looking for an ROI Driven Marketing Partner for your Business. Contact Us for Branding, Experiential Design &amp; Digital Marketing Services in India Sociapa" />

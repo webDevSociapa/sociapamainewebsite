@@ -76,14 +76,14 @@ export default function DigitalMarketing() {
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:site_name" content="SOCIAPA" />
-      <meta property="og:image" content="https://sociapa.com/images/services/Digital-Marketing.jpg" />
+      <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@sociapa" />
       <meta name="twitter:title" content="Best Digital Marketing Agency in Noida & Delhi NCR - Sociapa" />
       <meta name="twitter:description" content="Digital Marketing Agency in Noida & Delhi NCR- we strive to provide a perfect balance of method and product, with creative designs and guaranteed results. At Sociapa, we manage brands in the digital sphere with an innovative way." />
-      <meta name="twitter:image" content="https://sociapa.com/images/services/Digital-Marketing.jpg" />
+      <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
 
       {/* FAQPage Schema - Required by SOCIAPA (1).docx */}
       <script type="application/ld+json">{JSON.stringify({

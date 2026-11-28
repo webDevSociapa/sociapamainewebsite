@@ -76,14 +76,14 @@ export default function AggregatorPlatform() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Looking for Aggregator Platform Service in Noida & Delhi NCR - Contact Sociapa" />
         <meta name="twitter:description" content="Get Best Aggregator Platform Service in Noida & Delhi NCR- In Digital era, aggregator business is booming, and it has transformed the industry. Sociapa can assist you in expanding your business." />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Aggregator-Platform-Service.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

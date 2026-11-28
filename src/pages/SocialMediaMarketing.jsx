@@ -65,14 +65,14 @@ export default function SocialMediaMarketing() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Sociapa Social Media Marketing services in Noida & Delhi NCR -Explore to grow your brand." />
         <meta name="twitter:description" content="Social Media Marketing Services in Noida & Delhi NCR, india- Increased Brand Recognition, Loyalty, and Love.Customer Experience & Conversion | Best Digital Marketing Company In Noida & Delhi NCR" />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Social-Media-Marketing.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

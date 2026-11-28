@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -63,14 +63,14 @@ export default function AppDevelopment() {
         <meta property="og:url" content="https://sociapa.com/services-app-development" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="App Development Services | SOCIAPA" />
         <meta name="twitter:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
 
         {/* Structured Data: FAQPage */}
         <script type="application/ld+json">{JSON.stringify({

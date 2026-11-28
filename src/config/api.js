@@ -18,16 +18,49 @@ export const API_BASE_URL = `${prefix}/api.php`;
 export async function postApi(endpoint, body) {
   const actionName = (endpoint || 'inquiry').replace(/^\/+/, '').split('?')[0];
 
+  const isBinaryValue = (val) =>
+    (typeof File !== 'undefined' && val instanceof File) ||
+    (typeof Blob !== 'undefined' && val instanceof Blob);
+
+  const isFormDataBody = typeof FormData !== 'undefined' && body instanceof FormData;
+  const hasFilePayload =
+    isFormDataBody ||
+    (body && typeof body === 'object' && Object.values(body).some(isBinaryValue));
+
+  let requestBody;
+  const fetchHeaders = { Accept: 'application/json' };
+  const plainFields = {};
+
+  if (hasFilePayload) {
+    const fd = isFormDataBody ? body : new FormData();
+    if (!isFormDataBody && body && typeof body === 'object') {
+      Object.entries(body).forEach(([k, v]) => {
+        if (v !== undefined && v !== null) {
+          fd.append(k, v);
+        }
+      });
+    }
+    fd.forEach((v, k) => {
+      if (isBinaryValue(v)) {
+        plainFields[k] = v.name || 'Uploaded File';
+      } else {
+        plainFields[k] = v;
+      }
+    });
+    requestBody = fd;
+  } else {
+    Object.assign(plainFields, body || {});
+    fetchHeaders['Content-Type'] = 'application/json';
+    requestBody = JSON.stringify(body || {});
+  }
+
   // 1. Deliver directly via local/server Gmail SMTP Engine
   let responseData = { success: true };
   try {
     const res = await fetch(`${prefix}/api.php?action=${actionName}`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(body)
+      headers: fetchHeaders,
+      body: requestBody
     });
     if (res.ok) {
       responseData = await res.json();
@@ -36,24 +69,26 @@ export async function postApi(endpoint, body) {
     console.warn('SMTP Direct Delivery Notice:', err);
   }
 
-  // 2. Fallback cloud mailer in background
-  try {
-    fetch('https://formsubmit.co/ajax/mail@sociapa.com', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        ...body,
-        _subject: `New Lead: ${actionName.toUpperCase()} - Sociapa`,
-        _cc: 'dheeraj@sociapa.com,webdev@sociapa.com',
-        _captcha: 'false',
-        _template: 'table'
-      })
-    }).catch(() => {});
-  } catch (e) {
-    // silent
+  // 2. Fallback cloud mailer in background (only when direct SMTP did not confirm delivery)
+  if (!responseData || !responseData.smtp_sent) {
+    try {
+      fetch('https://formsubmit.co/ajax/mail@sociapa.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          ...plainFields,
+          _subject: `New Lead: ${actionName.toUpperCase()} - Sociapa`,
+          _cc: 'dheeraj@sociapa.com,webdev@sociapa.com',
+          _captcha: 'false',
+          _template: 'table'
+        })
+      }).catch(() => {});
+    } catch (e) {
+      // silent
+    }
   }
 
   // 3. Guaranteed clean resolution for UI

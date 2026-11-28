@@ -72,14 +72,14 @@ export default function RegistrationServices() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Registration-Services.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="GST, MSME, TRADEMARK and FSSAI Registration Services in Noida & Delhi NCR, India - Sociapa" />
         <meta name="twitter:description" content="Registration Services in Noida & Delhi NCR-To make registration simple and easy process Sociapa, will assist you in every step . Get 100% support and expert assistance." />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Registration-Services.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

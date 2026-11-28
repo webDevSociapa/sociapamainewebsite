@@ -42,7 +42,7 @@ const CitySEO = ({ seoData }) => {
         <meta property="og:description" content={pageDesc} />
         <meta property="og:url" content={pageCanon} />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -51,7 +51,7 @@ const CitySEO = ({ seoData }) => {
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDesc} />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
 
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">

@@ -24,11 +24,11 @@ export default function AboutUs() {
         <meta property="og:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. we have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
         <meta property="og:url" content="https://sociapa.com/about" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Know more about our digital marketing services in Noida & Delhi NCR - Sociapa" />
         <meta name="twitter:description" content="About Sociapa— At Sociapa, we believe that our company values allow us to deliver an unrivalled level of service to your business. we have expertise in Digital marketing, Social Media Marketing, Video Production and more." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         {/* ProfilePage Schema - Required by SOCIAPA (1).docx */}
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",

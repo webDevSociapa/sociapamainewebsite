@@ -4,12 +4,12 @@ export default function SeoHead({
   title = "Best Digital Marketing & Advertising Agency, Best FMCG marketing and digital agency in Noida & Delhi NCR, India - Sociapa",
   description = "Best Digital Marketing & Advertising Agency in Noida & Delhi NCR – Sociapa allows businesses to improve their online presence, attract targeted traffic and experience extraordinary growth by providing a wide range of services, including SEO, PPC, social media marketing and creative advertising solutions.",
   canonicalUrl = "https://sociapa.com/",
-  ogImage = "https://sociapa.com/logoSociapa.png",
+  ogImage = "https://sociapa.com/images/sociapa-og-preview.png",
   ogType = "website",
   schemaJson = null
 }) {
   const cleanCanonical = (canonicalUrl || "https://sociapa.com/").replace("https://www.sociapa.com", "https://sociapa.com");
-  const cleanOgImage = (ogImage || "").replace("https://www.sociapa.com", "https://sociapa.com");
+  const cleanOgImage = (ogImage || "https://sociapa.com/images/sociapa-og-preview.png").replace("https://www.sociapa.com", "https://sociapa.com");
 
   return (
     <Helmet>
@@ -32,7 +32,7 @@ export default function SeoHead({
       <meta name="twitter:site" content="@sociapa" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image" content={cleanOgImage} />
 
       {schemaJson && (
         <script type="application/ld+json">

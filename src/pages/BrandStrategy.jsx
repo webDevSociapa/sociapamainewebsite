@@ -75,14 +75,14 @@ export default function BrandStrategy() {
         <meta property="og:title" content="Brand Strategy Services India | Sociapa – Build a Brand That Stands Out" />
         <meta property="og:description" content="Sociapa offers expert brand strategy services in India – competitor analysis, brand positioning, brand archetype, brand naming & tagline. Build a powerful brand identity today." />
         <meta property="og:url" content="https://sociapa.com/brand-strategy" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Brand Strategy Services India | Sociapa – Build a Brand That Stands Out" />
         <meta name="twitter:description" content="Sociapa offers expert brand strategy services in India – competitor analysis, brand positioning, brand archetype, brand naming & tagline. Build a powerful brand identity today." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

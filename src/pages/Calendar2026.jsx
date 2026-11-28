@@ -16,11 +16,11 @@ export default function Calendar2026() {
         <meta property="og:description" content="Sociapa's Social Media Calendar 2026 – plan your brand campaigns around important dates, festivals, and events in India." />
         <meta property="og:url" content="https://sociapa.com/2026" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Social Media Calendar 2026 | Sociapa" />
         <meta name="twitter:description" content="Sociapa's 2026 Social Media Calendar – coming soon. Plan your brand campaigns around India's major festivals and events." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       {/* Hero Section */}

@@ -75,14 +75,14 @@ export default function BrandIdentityDesign() {
         <meta property="og:title" content="Brand Identity Design Services India | Sociapa – Create a Memorable Brand Identity" />
         <meta property="og:description" content="Build a memorable brand with Sociapa" />
         <meta property="og:url" content="https://sociapa.com/brand-identity-design" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Brand Identity Design Services India | Sociapa – Create a Memorable Brand Identity" />
         <meta name="twitter:description" content="Build a memorable brand with Sociapa" />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

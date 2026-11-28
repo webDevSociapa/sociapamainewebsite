@@ -64,14 +64,14 @@ export default function SeoAeoGeo() {
         <meta property="og:description" content="Increase your online visibility with SEO, AEO, and GEO services from Sociapa. We optimize your website for Google, AI search engines, featured snippets, voice search, and generative AI platforms to drive qualified traffic and leads." />
         <meta property="og:url" content="https://sociapa.com/seo-aeo-geo" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="SEO Services India | AI SEO, AEO & GEO Agency for Higher Rankings | Sociapa" />
         <meta name="twitter:description" content="Increase your online visibility with SEO, AEO, and GEO services from Sociapa. We optimize your website for Google, AI search engines, featured snippets, voice search, and generative AI platforms to drive qualified traffic and leads." />
-        <meta name="twitter:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

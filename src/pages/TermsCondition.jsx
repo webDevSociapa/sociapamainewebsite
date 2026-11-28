@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import './LegalPages.css';
 
@@ -18,14 +18,14 @@ export default function TermsCondition() {
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:site_name" content="SOCIAPA" />
-                <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+                <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@sociapa" />
                 <meta name="twitter:title" content="terms-condition— SOCIAPA" />
                 <meta name="twitter:description" content="terms-condition — Press - Release This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business, | SOCIAPA" />
-                <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+                <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
             </Helmet>
             <div className="legal-page-container">
                 <div className="container legal-content">

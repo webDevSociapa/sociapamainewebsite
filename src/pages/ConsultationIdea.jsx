@@ -42,11 +42,11 @@ export default function ConsultationIdea() {
         <meta property="og:description" content="Get expert brand consultation from Sociapa. We help businesses define their brand strategy, positioning, messaging, identity, and marketing roadmap to achieve long-term growth." />
         <meta property="og:url" content="https://sociapa.com/consultation-idea" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Brand Consultation Services in Noida & Delhi NCR | Sociapa" />
         <meta name="twitter:description" content="Get expert brand consultation from Sociapa. We help businesses define their brand strategy, positioning, messaging, identity, and marketing roadmap to achieve long-term growth." />
-        <meta name="twitter:image" content="https://sociapa.com/wp-content/uploads/2021/09/sociapa-News.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
       <div className="serInsideBnr">
         <h1 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', border: 0 }}>

@@ -76,14 +76,14 @@ export default function InfluencerMarketing() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Influencer-Marketing.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Top Influencer Marketing Company in Noida & Delhi NCR, India – Sociapa" />
         <meta name="twitter:description" content="Influencer Agency Delhi - Sociapa is among the top influencer marketing companies in Noida. Sociapa makes it possible for you to positively and appropriately connect with your target audience. Build your brand by working with creators, bloggers, and social media influencers." />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Influencer-Marketing.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -115,7 +115,7 @@ export default function InfluencerMarketing() {
 
       <div className="stats-bar">
         <div className="stats-inner">
-          <div><span className="stat-num">2,000+</span><div className="stat-lbl">Vetted Influencers in Network</div></div>
+          <div><span className="stat-num">5,000+</span><div className="stat-lbl">Vetted Influencers in Network</div></div>
           <div><span className="stat-num">500+</span><div className="stat-lbl">Campaigns Executed</div></div>
           <div><span className="stat-num">200M+</span><div className="stat-lbl">Total Campaign Reach</div></div>
           <div><span className="stat-num">4.5x</span><div className="stat-lbl">Average Earned Media Value</div></div>

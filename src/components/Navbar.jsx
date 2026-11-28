@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 const navItems = [
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/our-services' },
-  { label: 'Influencer', href: '/influencers-marketplace' },
+  { label: 'Influencer', href: '/influencer-marketing-services' },
   { label: 'Blog', href: '/blog' },
   { label: 'Career', href: '/career' },
   { label: 'Audit', href: '/free-website-audit' },

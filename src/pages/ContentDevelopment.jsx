@@ -98,14 +98,14 @@ export default function ContentDevelopment() {
         <meta property="og:title" content="Content Designing Service in Noida & Delhi NCR- For innovative content ideas, contact Sociapa" />
         <meta property="og:description" content="Looking for Content Marketing Agency in Noida & Delhi NCR? Connect with Sociapa for ROI oriented Content Marketing Services in India for Large Corporates, Brands & Startups." />
         <meta property="og:url" content="https://sociapa.com/content-designing" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Content Designing Service in Noida & Delhi NCR- For innovative content ideas, contact Sociapa" />
         <meta name="twitter:description" content="Looking for Content Marketing Agency in Noida & Delhi NCR? Connect with Sociapa for ROI oriented Content Marketing Services in India for Large Corporates, Brands & Startups." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

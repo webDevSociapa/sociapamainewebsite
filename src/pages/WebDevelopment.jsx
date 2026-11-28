@@ -68,14 +68,14 @@ export default function WebDevelopment() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Growth-Focused Website design & development Service in Noida & Delhi NCR, India- Sociapa" />
         <meta name="twitter:description" content="Looking for the Best Web Design Company in Noida & Delhi NCR with Strong Web Development Services. We build websites that are designed to grow your business.We at Sociapa offering cost effective & Customized Website design that suits your business need." />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Website-App-Development.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { API_BASE_URL, postApi } from '../config/api';
 import './Influencer.css';
@@ -126,11 +126,11 @@ export default function Influencer() {
         <meta property="og:description" content="Influencer Marketing in Noida & Delhi NCR,India- Reach Us Out ,If You’re A Brand Or an Influencer service.We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
         <meta property="og:url" content="https://sociapa.com/influencers-marketplace" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Best Influencer Marketing Agency in Noida & Delhi NCR, India - Sociapa" />
         <meta name="twitter:description" content="Influencer Marketing in Noida & Delhi NCR,India- Reach Us Out ,If You’re A Brand Or an Influencer service.We combine data-driven insights and creative strategy to produce meaningful relationships between brands and creators." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       {/* ── 1. FULL-BLEED HERO BANNER ── */}

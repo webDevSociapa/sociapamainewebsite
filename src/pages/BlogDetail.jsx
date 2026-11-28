@@ -284,7 +284,7 @@ export default function BlogDetail() {
 
   const seoTitle = metaInfo.title.includes('Sociapa') || metaInfo.title.includes('SOCIAPA') ? metaInfo.title : `${metaInfo.title} | Sociapa Newsroom`;
   const seoDesc = metaInfo.desc || 'Explore digital marketing, SEO, and AI trends from Sociapa.';
-  const seoImg = metaInfo.img || `${import.meta.env.BASE_URL}images/sociapa-og.jpg`;
+  const seoImg = metaInfo.img || `${import.meta.env.BASE_URL}images/sociapa-og-preview.png`;
 
   return (
     <>

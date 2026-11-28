@@ -31,3 +31,9 @@ Whenever ANY new page is created or an existing page is edited in this project:
 
 See detailed rule reference in [heading_structure.md](file:///.agents/rules/heading_structure.md).
 
+## Live Deployment & Git Push Rule (CRITICAL — Zero Unapproved Deploys)
+1. **NEVER deploy to the live production server (`sociapa.com`) or push to Git (`origin/main`) without explicit user confirmation first.**
+2. Always apply and test edits on **local (`live-code/` + local `dist/` at `http://localhost/sociapareact/`)** first, show the user what changed, and **explicitly ask for confirmation** before running any live server deployment, live file upload, or `git push`.
+3. Even when the user says "fix this now" ("abhi k abhi sahi kro"), fix and verify **locally only** unless the user explicitly mentions deploying live / pushing to server & Git.
+4. **Zero Production Breakage:** When live deployment IS explicitly approved, always create a server backup first, preserve server `.env`/configs, check diffs/syntax cleanly, build with production `/` base, restart cache if needed, and verify live HTTP `200` + assets on `https://sociapa.com/` so nothing breaks in production.
+

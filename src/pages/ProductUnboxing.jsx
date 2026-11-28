@@ -64,14 +64,14 @@ export default function ProductUnboxing() {
         <meta property="og:title" content="Product Unboxing Experience Services India | Sociapa" />
         <meta property="og:description" content="Turn every product delivery into a memorable brand experience with custom unboxing design, influencer PR kits, premium packaging, branded inserts, and creator-ready product presentation from Sociapa." />
         <meta property="og:url" content="https://sociapa.com/product-unboxing-experience" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Product Unboxing Experience Services India | Sociapa" />
         <meta name="twitter:description" content="Turn every product delivery into a memorable brand experience with custom unboxing design, influencer PR kits, premium packaging, branded inserts, and creator-ready product presentation from Sociapa." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

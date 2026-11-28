@@ -74,14 +74,14 @@ export default function AdExperience() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Programmatic Ad Agency for High-Impact Ad Experiences | Sociapa" />
         <meta name="twitter:description" content="Unlock next-level digital advertising with Sociapa. From rich media and immersive video to native and interstitial formats, we craft programmatic campaigns that engage, convert and amplify your brand’s reach" />
-        <meta name="twitter:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

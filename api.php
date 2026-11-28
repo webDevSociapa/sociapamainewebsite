@@ -34,6 +34,71 @@ if (!$data || !is_array($data)) {
     $data = $_POST;
 }
 
+// Collect valid uploaded files from $_FILES (PDF / DOC / DOCX / PPT / PPTX / ZIP / Images up to 20 MB)
+$attachments = [];
+$fileErrors = [];
+$allowedExts = ['pdf', 'doc', 'docx', 'ppt', 'pptx', 'txt', 'rtf', 'csv', 'xls', 'xlsx', 'zip', 'png', 'jpg', 'jpeg', 'webp'];
+$mimeByExt = [
+    'pdf'  => 'application/pdf',
+    'doc'  => 'application/msword',
+    'docx' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'ppt'  => 'application/vnd.ms-powerpoint',
+    'pptx' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+    'txt'  => 'text/plain',
+    'rtf'  => 'application/rtf',
+    'csv'  => 'text/csv',
+    'xls'  => 'application/vnd.ms-excel',
+    'xlsx' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'zip'  => 'application/zip',
+    'png'  => 'image/png',
+    'jpg'  => 'image/jpeg',
+    'jpeg' => 'image/jpeg',
+    'webp' => 'image/webp',
+];
+if (!empty($_FILES)) {
+    foreach ($_FILES as $fieldName => $fileInfo) {
+        if (!is_array($fileInfo)) continue;
+        $names = is_array($fileInfo['name']) ? $fileInfo['name'] : [$fileInfo['name']];
+        $tmps  = is_array($fileInfo['tmp_name']) ? $fileInfo['tmp_name'] : [$fileInfo['tmp_name']];
+        $errs  = is_array($fileInfo['error']) ? $fileInfo['error'] : [$fileInfo['error']];
+        $sizes = is_array($fileInfo['size']) ? $fileInfo['size'] : [$fileInfo['size']];
+
+        foreach ($names as $idx => $origName) {
+            $errCode = $errs[$idx] ?? UPLOAD_ERR_NO_FILE;
+            if ($errCode === UPLOAD_ERR_NO_FILE) continue;
+            if ($errCode !== UPLOAD_ERR_OK) {
+                $fileErrors[] = "{$fieldName}: upload error code {$errCode}";
+                continue;
+            }
+            $tmpPath = $tmps[$idx] ?? '';
+            $fSize   = (int)($sizes[$idx] ?? 0);
+            if (!$tmpPath || !is_readable($tmpPath) || $fSize <= 0 || $fSize > 20 * 1024 * 1024) {
+                $fileErrors[] = "{$fieldName}: unreadable or invalid size ({$fSize})";
+                continue;
+            }
+            $baseName = basename((string)$origName);
+            $ext = strtolower(pathinfo($baseName, PATHINFO_EXTENSION));
+            if ($ext === '' || !in_array($ext, $allowedExts, true)) {
+                $fileErrors[] = "{$fieldName}: disallowed extension ({$ext})";
+                continue;
+            }
+            $safeName = preg_replace('/[^A-Za-z0-9._-]/', '_', $baseName) ?: ("document.{$ext}");
+            $rawBytes = @file_get_contents($tmpPath);
+            if ($rawBytes === false || $rawBytes === '') {
+                $fileErrors[] = "{$fieldName}: failed reading tmp file";
+                continue;
+            }
+            $attachments[] = [
+                'field' => (string)$fieldName,
+                'name'  => $safeName,
+                'mime'  => $mimeByExt[$ext] ?? 'application/octet-stream',
+                'size'  => $fSize,
+                'data'  => $rawBytes,
+            ];
+        }
+    }
+}
+
 // Block empty / bot submissions so blank lead emails are never triggered
 $hasFormValue = false;
 $leadKeys = ['email', 'phone', 'mobile', 'name', 'full_name', 'first_name', 'website', 'website_url', 'message'];
@@ -84,6 +149,16 @@ foreach ($data as $k => $v) {
     <tr style='border-bottom:1px solid #f1f5f9;'>
         <td style='padding:12px 16px;font-size:12px;color:#64748b;font-weight:700;text-transform:uppercase;width:35%;'>{$label}</td>
         <td style='padding:12px 16px;font-size:14px;color:#0f172a;font-weight:600;'>{$cleanVal}</td>
+    </tr>";
+}
+foreach ($attachments as $att) {
+    $attLabel = htmlspecialchars(ucwords(str_replace(['_', '-'], ' ', $att['field'])) . ' File', ENT_QUOTES, 'UTF-8');
+    $sizeKb = max(1, (int)round($att['size'] / 1024));
+    $attVal = htmlspecialchars($att['name'] . " ({$sizeKb} KB — attached)", ENT_QUOTES, 'UTF-8');
+    $rowsHtml .= "
+    <tr style='border-bottom:1px solid #f1f5f9;'>
+        <td style='padding:12px 16px;font-size:12px;color:#64748b;font-weight:700;text-transform:uppercase;width:35%;'>{$attLabel}</td>
+        <td style='padding:12px 16px;font-size:14px;color:#D20C0C;font-weight:700;'>📎 {$attVal}</td>
     </tr>";
 }
 
@@ -156,9 +231,9 @@ function loadSociapaSmtpConfig(): array {
 }
 
 /**
- * Direct SSL SMTP socket sender (Gmail SMTP)
+ * Direct SSL SMTP socket sender (Gmail SMTP) with MIME attachment support
  */
-function sendDirectSmtp(array $recipients, string $subject, string $htmlContent, string $replyEmail = '', string $replyName = ''): bool {
+function sendDirectSmtp(array $recipients, string $subject, string $htmlContent, string $replyEmail = '', string $replyName = '', array $attachments = []): bool {
     $cfg  = loadSociapaSmtpConfig();
     $host = $cfg['host'];
     $port = $cfg['port'] ?: 465;
@@ -177,7 +252,7 @@ function sendDirectSmtp(array $recipients, string $subject, string $htmlContent,
         ]
     ]);
 
-    $socket = @stream_socket_client("ssl://{$host}:{$port}", $errno, $errstr, 12, STREAM_CLIENT_CONNECT, $context);
+    $socket = @stream_socket_client("ssl://{$host}:{$port}", $errno, $errstr, 20, STREAM_CLIENT_CONNECT, $context);
     if (!$socket) {
         return false;
     }
@@ -212,20 +287,46 @@ function sendDirectSmtp(array $recipients, string $subject, string $htmlContent,
     fputs($socket, "DATA\r\n");
     fgets($socket, 512);
 
+    $cleanSubject = str_replace(["\r", "\n"], ' ', $subject);
     $toHeader = implode(', ', array_map(function($r) { return "<{$r}>"; }, $recipients));
     $headers  = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=utf-8\r\n";
     $headers .= "From: Sociapa Leads <{$user}>\r\n";
     $headers .= "To: {$toHeader}\r\n";
     if (!empty($replyEmail) && filter_var($replyEmail, FILTER_VALIDATE_EMAIL)) {
-        $rName = !empty($replyName) ? $replyName : $replyEmail;
+        $rName = str_replace(["\r", "\n"], ' ', !empty($replyName) ? $replyName : $replyEmail);
         $headers .= "Reply-To: {$rName} <{$replyEmail}>\r\n";
     }
-    $headers .= "Subject: {$subject}\r\n";
+    $headers .= "Subject: {$cleanSubject}\r\n";
     $headers .= "Date: " . date('r') . "\r\n";
     $headers .= "X-Mailer: Sociapa Universal Engine\r\n";
 
-    fputs($socket, "{$headers}\r\n{$htmlContent}\r\n.\r\n");
+    if (!empty($attachments)) {
+        $boundary = '=_SociapaMix_' . md5(uniqid((string)mt_rand(), true));
+        $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
+
+        $bodyPayload  = "--{$boundary}\r\n";
+        $bodyPayload .= "Content-Type: text/html; charset=utf-8\r\n";
+        $bodyPayload .= "Content-Transfer-Encoding: base64\r\n\r\n";
+        $bodyPayload .= chunk_split(base64_encode($htmlContent), 76, "\r\n");
+
+        foreach ($attachments as $att) {
+            $safeName = str_replace(['"', "\r", "\n"], '_', $att['name']);
+            $mime     = $att['mime'] ?: 'application/octet-stream';
+            $bodyPayload .= "\r\n--{$boundary}\r\n";
+            $bodyPayload .= "Content-Type: {$mime}; name=\"{$safeName}\"\r\n";
+            $bodyPayload .= "Content-Disposition: attachment; filename=\"{$safeName}\"\r\n";
+            $bodyPayload .= "Content-Transfer-Encoding: base64\r\n\r\n";
+            $bodyPayload .= chunk_split(base64_encode($att['data']), 76, "\r\n");
+        }
+        $bodyPayload .= "--{$boundary}--\r\n";
+    } else {
+        $headers .= "Content-Type: text/html; charset=utf-8\r\n";
+        $bodyPayload = $htmlContent . "\r\n";
+    }
+
+    // SMTP dot-stuffing for lines starting with '.'
+    $fullMessage = preg_replace('/^\./m', '..', "{$headers}\r\n{$bodyPayload}");
+    fputs($socket, "{$fullMessage}\r\n.\r\n");
     $dataRes = fgets($socket, 512);
 
     fputs($socket, "QUIT\r\n");
@@ -234,30 +335,48 @@ function sendDirectSmtp(array $recipients, string $subject, string $htmlContent,
     return (substr($dataRes, 0, 3) === '250');
 }
 
-// 1. Deliver via Direct Gmail SMTP Socket
-$mailSent = sendDirectSmtp($recipients, $subject, $htmlBody, $senderEmail, $senderName);
+// 1. Deliver via Direct Gmail SMTP Socket (with attachments if uploaded)
+$mailSent = sendDirectSmtp($recipients, $subject, $htmlBody, $senderEmail, $senderName, $attachments);
 
 // 2. Fallback: Also try standard mail() if socket failed
 if (!$mailSent) {
-    $flatHeaders = "MIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8\r\nFrom: Sociapa Leads <webdev@sociapa.com>\r\n";
-    @mail(implode(', ', $recipients), $subject, $htmlBody, $flatHeaders);
+    if (!empty($attachments)) {
+        $fbBoundary = '=_SociapaFb_' . md5(uniqid((string)mt_rand(), true));
+        $flatHeaders = "MIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"{$fbBoundary}\"\r\nFrom: Sociapa Leads <webdev@sociapa.com>\r\n";
+        $fbBody  = "--{$fbBoundary}\r\nContent-Type: text/html; charset=utf-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($htmlBody));
+        foreach ($attachments as $att) {
+            $safeName = str_replace(['"', "\r", "\n"], '_', $att['name']);
+            $fbBody .= "\r\n--{$fbBoundary}\r\nContent-Type: {$att['mime']}; name=\"{$safeName}\"\r\nContent-Disposition: attachment; filename=\"{$safeName}\"\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($att['data']));
+        }
+        $fbBody .= "--{$fbBoundary}--\r\n";
+        @mail(implode(', ', $recipients), $subject, $fbBody, $flatHeaders);
+    } else {
+        $flatHeaders = "MIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8\r\nFrom: Sociapa Leads <webdev@sociapa.com>\r\n";
+        @mail(implode(', ', $recipients), $subject, $htmlBody, $flatHeaders);
+    }
 }
 
 // 3. Always log safely to leads_backup.json
 try {
     $logFile = __DIR__ . '/leads_backup.json';
+    $attMeta = array_map(function($a) {
+        return ['field' => $a['field'], 'name' => $a['name'], 'size' => $a['size']];
+    }, $attachments);
     $entry = [
-        'timestamp' => date('c'),
-        'action'    => $action,
-        'smtp_sent' => $mailSent,
-        'data'      => $data
+        'timestamp'   => date('c'),
+        'action'      => $action,
+        'smtp_sent'   => $mailSent,
+        'attachments' => $attMeta,
+        'file_errors' => $fileErrors,
+        'data'        => $data
     ];
     @file_put_contents($logFile, json_encode($entry, JSON_PRETTY_PRINT) . PHP_EOL, FILE_APPEND);
 } catch (Exception $e) {}
 
 echo json_encode([
-    'success'   => true,
-    'smtp_sent' => $mailSent,
-    'message'   => 'Thank you! Your submission has been received successfully.'
+    'success'     => true,
+    'smtp_sent'   => $mailSent,
+    'attachments' => count($attachments),
+    'message'     => 'Thank you! Your submission has been received successfully.'
 ]);
 exit;

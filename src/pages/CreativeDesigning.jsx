@@ -75,14 +75,14 @@ export default function CreativeDesigning() {
         <meta property="og:title" content="Digital Creative Agency in Noida & Delhi NCR, India – Sociapa" />
         <meta property="og:description" content="Sociapa is a leading creative and digital agency in Noida, offering comprehensive solutions to businesses. With expertise in branding, web design, social media marketing, and more, Sociapa crafts compelling digital experiences that resonate with the target audience." />
         <meta property="og:url" content="https://sociapa.com/creative-designing" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Digital Creative Agency in Noida & Delhi NCR, India – Sociapa" />
         <meta name="twitter:description" content="Sociapa is a leading creative and digital agency in Noida, offering comprehensive solutions to businesses. With expertise in branding, web design, social media marketing, and more, Sociapa crafts compelling digital experiences that resonate with the target audience." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

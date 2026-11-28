@@ -828,14 +828,14 @@ export default function CaseStudies() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={activeDetailItem ? `${activeDetailItem.title} | Sociapa Case Studies` : 'Case Studies | Sociapa — Proven Marketing & Packaging ROI'} />
         <meta property="og:description" content="Explore how Sociapa transforms brands and delivers results. Real case studies across FMCG, celebrity launches, packaging design, and performance marketing." />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={activeDetailItem ? `${activeDetailItem.title} | Sociapa Case Studies` : 'Case Studies | Sociapa — Proven Marketing & Packaging ROI'} />
         <meta name="twitter:description" content="Explore how Sociapa transforms brands and delivers results." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       {/* ── TOP HERO BANNER (RELEVANT BANNER ACROSS ALL PAGES EXCEPT EXACT FIGMA DESIGNS) ── */}

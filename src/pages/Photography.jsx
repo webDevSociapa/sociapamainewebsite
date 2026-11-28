@@ -26,14 +26,14 @@ export default function Photography() {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/services/Photography.jpg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="High-Quality Photography & Videography Service in Noida & Delhi NCR, India - Sociapa" />
         <meta name="twitter:description" content="Looking for Best Photography & Videography Service in Noida & Delhi NCR,India? Sociapa is your one-stop solution for all things related to digital marketing." />
-        <meta name="twitter:image" content="https://sociapa.com/images/services/Photography.jpg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
 
       <div className="serInsideBnr">

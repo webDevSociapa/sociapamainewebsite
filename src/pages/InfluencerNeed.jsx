@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import OtherServicesSlider from '../components/OtherServicesSlider';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -136,14 +136,14 @@ export default function InfluencerNeed() {
         <meta property="og:url" content="https://sociapa.com/influencer-need" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/assets/images/services_banner/influencers/influncer.webp" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Influencer | SOCIAPA" />
         <meta name="twitter:description" content="#1 Digital Marketing Agency in Delhi NCR – Sociapa is a leading digital marketing & advertising agency Delhi, Noida & Gurgaon (India). Offering you 360 online marketing and e-commerce solutions for maximizing the efficiency of your business." />
-        <meta name="twitter:image" content="https://sociapa.com/assets/images/services_banner/influencers/influncer.webp" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
 
         {/* Structured Data: FAQPage */}
         <script type="application/ld+json">{JSON.stringify({

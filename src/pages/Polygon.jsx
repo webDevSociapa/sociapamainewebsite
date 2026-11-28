@@ -63,14 +63,14 @@ export default function Polygon() {
         <meta property="og:url" content="https://sociapa.com/polygon" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sociapa" />
         <meta name="twitter:title" content="Polygon Targeting | SOCIAPA" />
         <meta name="twitter:description" content="This is where your Marketing Brilliance begins For all the hard work you’ve put in to consolidate the ideas and structure your business | SOCIAPA" />
-        <meta name="twitter:image" content="https://sociapa.com/images/ad-experience-service-banner.jpeg" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
 
         {/* Structured Data: FAQPage */}
         <script type="application/ld+json">{JSON.stringify({

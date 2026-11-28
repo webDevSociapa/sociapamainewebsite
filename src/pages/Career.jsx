@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { API_BASE_URL, postApi } from '../config/api';
 import './Career.css';
@@ -51,26 +51,20 @@ export default function Career() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData();
-    data.append('full_name', formData.fullName);
-    data.append('email', formData.email);
-    data.append('phone', formData.phone);
-    data.append('experience', formData.experience);
-    data.append('portfolio_url', formData.portfolioUrl);
-    data.append('position', selectedJob);
+    const payload = {
+      name: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      position: selectedJob || 'General Application',
+      experience: formData.experience,
+      portfolio: formData.portfolioUrl
+    };
     if (resumeFile) {
-      data.append('resume', resumeFile);
+      payload.resume = resumeFile;
     }
 
     try {
-      const response = await postApi('/career', {
-        name: formData.fullName,
-        email: formData.email,
-        phone: formData.phone,
-        position: selectedJob?.title || 'General Application',
-        experience: formData.experience,
-        portfolio: formData.portfolioUrl
-      });
+      const response = await postApi('/career', payload);
       let resData = {};
       try {
         resData = await response.json();
@@ -112,11 +106,11 @@ export default function Career() {
         <meta property="og:description" content="Build your Career in Digital Marketing in Noida & Delhi NCR. Choose your passion, drive your thoughts & challenge the status quo with Sociapa." />
         <meta property="og:url" content="https://sociapa.com/career" />
         <meta property="og:site_name" content="SOCIAPA" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Join Sociapa- Looking for digital marketing jobs in Noida & Delhi NCR, India" />
         <meta name="twitter:description" content="Build your Career in Digital Marketing in Noida & Delhi NCR. Choose your passion, drive your thoughts & challenge the status quo with Sociapa." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
       </Helmet>
       <div className="career-page">
         {/* ══════════════════════════ HERO BANNER ══════════════════════════ */}

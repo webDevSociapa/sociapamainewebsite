@@ -75,14 +75,14 @@ export default function PackagingDesign() {
         <meta property="og:title" content="Creative/Graphic Designing Service in Noida & Delhi NCR, India - Sociapa" />
         <meta property="og:description" content="Best Packaging Company in Noida & Delhi NCR-Graphic design plays a vital role in brand promoting with visually appealing graphics." />
         <meta property="og:url" content="https://sociapa.com/best-packaging-design-agency-india" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Creative/Graphic Designing Service in Noida & Delhi NCR, India - Sociapa" />
         <meta name="twitter:description" content="Best Packaging Company in Noida & Delhi NCR-Graphic design plays a vital role in brand promoting with visually appealing graphics." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",

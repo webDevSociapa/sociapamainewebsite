@@ -150,14 +150,14 @@ export default function VideoProduction() {
         <meta property="og:title" content="Video Production | SOCIAPA" />
         <meta property="og:description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
         <meta property="og:url" content="https://sociapa.com/videos" />
-        <meta property="og:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta property="og:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sociapa - Your Social Buddy" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Video Production | SOCIAPA" />
         <meta name="twitter:description" content="Best Video Marketing Services in Noida - Sociapa stands out as the premier provider of video marketing services in Noida. With innovative and captivating video content strategies, Sociapa helps businesses effectively engage their target audience and boost brand visibility." />
-        <meta name="twitter:image" content="https://sociapa.com/logoSociapa.png" />
+        <meta name="twitter:image" content="https://sociapa.com/images/sociapa-og-preview.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
