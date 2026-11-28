@@ -19,10 +19,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 header("Content-Type: application/json; charset=UTF-8");
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Method Not Allowed. Only POST form submissions are accepted.'
+    ]);
+    exit;
+}
+
 $raw = file_get_contents('php://input');
 $data = json_decode($raw, true);
 if (!$data || !is_array($data)) {
     $data = $_POST;
+}
+
+// Block empty / bot submissions so blank lead emails are never triggered
+$hasFormValue = false;
+$leadKeys = ['email', 'phone', 'mobile', 'name', 'full_name', 'first_name', 'website', 'website_url', 'message'];
+if (is_array($data)) {
+    foreach ($leadKeys as $lk) {
+        if (!empty($data[$lk]) && trim((string)$data[$lk]) !== '') {
+            $hasFormValue = true;
+            break;
+        }
+    }
+}
+if (!$hasFormValue) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Empty submission ignored.'
+    ]);
+    exit;
 }
 
 $action = isset($_GET['action']) ? trim($_GET['action']) : (isset($data['action']) ? trim($data['action']) : 'lead');
