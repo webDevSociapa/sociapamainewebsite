@@ -3,6 +3,7 @@ import OtherServicesSlider from '../components/OtherServicesSlider';
 import ServiceOurWorkSection from '../components/ServiceOurWorkSection';
 import ServiceBehindWorkSection from '../components/ServiceBehindWorkSection';
 import ServiceCaseStudiesSlider from '../components/ServiceCaseStudiesSlider';
+import InfluencerReachOutForm from '../components/InfluencerReachOutForm';
 import { serviceClientSectionsData } from '../data/serviceClientSectionsData';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -587,6 +588,9 @@ export default function InfluencerMarketing() {
 
       {/* Our Other Services Carousel */}
       <OtherServicesSlider />
+
+      {/* Brand & Creator Reach Out Form */}
+      <InfluencerReachOutForm />
 
       <section className="cta-section">
         <div className="section-inner section-inner-narrow">
